@@ -1,0 +1,240 @@
+% University Assignment Title Page 
+% LaTeX Template
+% Version 1.0 (27/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% WikiBooks (http://en.wikibooks.org/wiki/LaTeX/Title_Creation)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+% Instructions for using this template:
+% This title page is capable of being compiled as is. This is not useful for 
+% including it in another document. To do this, you have two options: 
+%
+% 1) Copy/paste everything between \begin{document} and \end{document} 
+% starting at \begin{titlepage} and paste this into another LaTeX file where you 
+% want your title page.
+% OR
+% 2) Remove everything outside the \begin{titlepage} and \end{titlepage} and 
+% move this file to the same directory as the LaTeX file you wish to add it to. 
+% Then add \input{./title_page_1.tex} to your LaTeX file where you want your
+% title page.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\title{Title page with logo}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{afterpage}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\newenvironment{dedication}
+  {
+\clearpage           % we want a new page
+   \thispagestyle{empty}% no header and footer
+   \vspace*{\stretch{1}}% some space at the top 
+   \itshape             % the text is in italics
+   \raggedleft          % flush to the right margin
+  }
+  {\par % end the paragraph
+   \vspace{\stretch{3}} % space at bottom is three times that at the top
+   \clearpage           % finish off the page
+  }
+
+\begin{document}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE Universitat Politècnica de Catalunya}\\[1.5cm] % Name of your university/college
+\textsc{\Large Bachelors in Computer Science and Engineering}\\[0.5cm] % Major heading such as course name
+\textsc{\large Minor Heading}\\[0.5cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Graph and matrix algorithms for visualizing high dimensional data}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+ 
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Director:}\\
+Dr. Ricard Gavalda Mestre 
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Co-Director:} \\
+Dr. Marta Arias Vincente % Supervisor's Name
+\end{flushright}
+\end{minipage}\\[2cm]
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Bachelors Thesis of :}\\
+Abhinav Shankaranarayanan Venkataraman
+\end{flushleft}
+\end{minipage}
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+
+%----------------------------------------------------------------------------------------
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+\bigskip
+\bigskip
+{\large June 27,2016}\\[2cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%	LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+\includegraphics{logo.png}\\[1cm] % Include a department/university logo - this will require the graphicx package
+ 
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\newpage
+
+
+
+
+\begin{dedication}
+To my Mother, Father, Professors and Friends. I owe a lot to My professors Ricard Gavalda and Marta Arias and to Babaji at Gurudwara
+\end{dedication}
+\newpage
+\clearpage
+\newpage
+\newpage
+
+\begin{abstract}
+Motivated by the problem of understanding data from
+the medical domain, we consider algorithms for visually representing 
+highly dimensional data so that "similar" entities appear close together. We will study, 
+implement and compare several algorithms based on graph and on matrix
+representation of the data. The first kind are known as "community detection"
+algorithms, the second kind as "clustering" algorithms. The implementations
+should be robust, scalable, and provide a visually appealing representation
+of the main structures in the data.
+
+\end{abstract}
+
+\newpage
+\clearpage
+\newpage
+\section*{Acknowledgement}
+\newpage
+
+\tableofcontents
+\newpage
+
+
+\section{Introduction}
+\par In this section	we provide an overview of the entire work. We mention the context of the project we have studied, approaches that we have used, goal of the project. We also provide the intended planning, economic estimate and sustainability of the work that has been done.
+
+
+\subsection{Context Of the Project}
+\par In the present day scenario, the modern science of algorithms and graph theory has brought significant advances to our understanding of complex data. Many complex systems are representable in the form of graphs. Grpahs have time and again been used to represent real world networks. One of the most pertinent feature of graphs representing real system is community structures or otherwise known as clusters. Community can be defined as the organization of vertices in groups or clusters, with many edges joining the vertices of the same cluster and comparatively fewer vertices joining the vertices in another neighbouring cluster. Such communities form an independent compartment of a graph exhibiting similar role.
+Thus, Community detection is the key for understanding the structure of complex graphs, and ultimately educe information from them.
+\par
+
+
+we have complex data today,
+    often representable in form of graphs. we need to visualize,
+    find structure, etc.
+
+\subsection{Approaches}
+community finding and clustering. separately,
+    visualization tools
+\subsection{Goal of the Project}
+
+\subsection{Planning and Budget}
+
+\subsection{Sustainability}
+
+
+\section{Background}
+explain technical concepts in more detail. for exampleequivalence
+     of graph and matrix representations.
+     state-of-the art in community finding, and clustering
+     state-of-the art in graph visualization
+     
+     
+\subsection{Graphs and Matrix}
+\subsection{State-of-the art in community finding and Clustering}
+\subsection{State-of-the art in Graph Visualization}
+
+\section{Community Finding Algorithm}
+\subsection{Louvain Algorithm}
+\subsubsection{Introduction}
+\subsubsection{Reasoning}
+\subsubsection{Description}
+\subsubsection{Implementation}
+\subsubsection{Experiments}
+\subsubsection{Result}
+
+\section{Matrix Based Algorithm}
+\subsection{Matrix Algorithm}
+\subsubsection{Introduction}
+\subsubsection{Reasoning}
+\subsubsection{Description}
+\subsubsection{Implementation}
+\subsubsection{Experiments}
+\subsubsection{Result}
+
+\section{Visualization}
+\subsection{Alchemy.js}
+\subsubsection{Introduction}
+\subsubsection{Reasoning}
+\subsubsection{Description}
+\subsubsection{Methods and Library}
+\subsubsection{Result}
+
+\section{Overall System Description}
+\subsection{Alchemy.js}
+\subsubsection{Introduction}
+\subsubsection{Implementation Benefits}
+\subsubsection{Description}
+\subsubsection{Result}
+
+\section{Conclusion}
+\subsection{Goals Achieved}
+\subsection{Revision of Planning and Budget}
+\subsection{Future Works}
+\subsection{Personal Conclusion}
+
+
+\bibliography{Reference}
+\end{document}
+
+
+
