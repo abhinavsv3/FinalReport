@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.24)  10 JUN 2016 11:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.24)  10 JUN 2016 18:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -155,6 +155,10 @@ Package: afterpage 1995/10/27 v1.08 After-Page Package (DPC)
 \AP@partial=\box28
 \AP@footins=\box29
 )
+(/usr/share/texlive/texmf-dist/tex/latex/eurosym/eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box30
+)
 (/usr/share/texlive/texmf-dist/tex/latex/todonotes/todonotes.sty
 Package: todonotes 2012/07/25 .dtx Todonotes source and documentation.
 Package: todonotes 2012/07/25
@@ -195,7 +199,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 \pgfutil@everybye=\toks28
 )
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box30
+\pgfutil@abb=\box31
 
 (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
@@ -260,7 +264,7 @@ Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen123
 \pgfmath@count=\count109
-\pgfmath@box=\box31
+\pgfmath@box=\box32
 \pgfmath@toks=\toks32
 \pgfmath@stack@operand=\toks33
 \pgfmath@stack@operation=\toks34
@@ -305,9 +309,9 @@ File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
-\pgfpic=\box32
-\pgf@hbox=\box33
-\pgf@layerbox@main=\box34
+\pgfpic=\box33
+\pgf@hbox=\box34
+\pgf@layerbox@main=\box35
 \pgf@picture@serial@count=\count111
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
@@ -342,7 +346,7 @@ File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
 
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
-\pgfexternal@startupbox=\box35
+\pgfexternal@startupbox=\box36
 ))
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
@@ -355,7 +359,7 @@ File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
 )))
 (/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
-\pgfnodeparttextbox=\box36
+\pgfnodeparttextbox=\box37
 )
 (/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
@@ -392,8 +396,8 @@ File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
 \tikz@lastysaved=\dimen155
 \tikzleveldistance=\dimen156
 \tikzsiblingdistance=\dimen157
-\tikz@figbox=\box37
-\tikz@tempbox=\box38
+\tikz@figbox=\box38
+\tikz@tempbox=\box39
 \tikztreelevel=\count114
 \tikznumberofchildren=\count115
 \tikznumberofcurrentchild=\count116
@@ -432,18 +436,18 @@ LaTeX Info: Redefining \addtolength on input line 77.
 (./Report in Latex.aux)
 \openout1 = `"Report in Latex.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
@@ -452,7 +456,7 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count126
 \scratchdimen=\dimen160
-\scratchbox=\box39
+\scratchbox=\box40
 \nofMPsegments=\count127
 \nofMParguments=\count128
 \everyMPshowfont=\toks37
@@ -516,7 +520,7 @@ File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 <logo.png, id=4, 125.46875pt x 125.46875pt>
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 118.
+Package pdftex.def Info: logo.png used on input line 119.
 (pdftex.def)             Requested size: 125.46843pt x 125.46843pt.
  [1
 
@@ -533,43 +537,146 @@ Package pdftex.def Info: logo.png used on input line 118.
 \openout4 = `"Report in Latex.toc"'.
 
  [5]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 176.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 177.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 176.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 177.
  [6] [7]
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
+File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
+) [8]
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
+[]\OT1/cmr/m/n/12 Amortized
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--272
+
+ []
+
+
+Overfull \hbox (13.43303pt too wide) in paragraph at lines 256--272
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
+[]\OT1/cmr/m/n/12 Software Com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
+[]\OT1/cmr/m/n/12 Amortized
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--288
+[]\OT1/cmr/m/n/12 JavaScript
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--299
+
+ []
+
+
+Overfull \hbox (13.43303pt too wide) in paragraph at lines 274--299
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--299
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--299
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 300--306
+
+ []
+
+
+Overfull \hbox (7.96785pt too wide) in paragraph at lines 311--311
+[]\OT1/cmr/m/n/12 Sno:| 
+ []
+
+
+Overfull \hbox (1.96222pt too wide) in paragraph at lines 311--311
+[]\OT1/cmr/m/n/12 Hours| 
+ []
+
+
+Overfull \hbox (2.10097pt too wide) in paragraph at lines 311--311
+[]\OT1/cmr/m/n/12 Cost(per
+ []
+
+
+Underfull \hbox (badness 2173) in paragraph at lines 311--311
+\OT1/cmr/m/n/12 hour in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
+[]\OT1/cmr/m/n/12 Total(in
+ []
+
+
+Underfull \hbox (badness 6559) in paragraph at lines 313--313
+[]\OT1/cmr/m/n/12 Required Knowl-edge
+ []
+
+! Undefined control sequence.
+l.313 ...Mar 2016 &  70  & 15\euro/h & 1050 \euros
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (28.83145pt too wide) in paragraph at lines 307--324
+[][] 
+ []
+
+[10]
 No file "Report in Latex".bbl.
-[8]
+[11]
 Overfull \vbox (284.16673pt too high) has occurred while \output is active []
 
 
-[9] (./Report in Latex.aux) ) 
+[12] (./Report in Latex.aux) ) 
 Here is how much of TeX's memory you used:
- 12077 strings out of 495028
- 218181 string characters out of 6181497
- 273547 words of memory out of 5000000
- 15018 multiletter control sequences out of 15000+600000
- 11680 words of font info for 41 fonts, out of 8000000 for 9000
+ 12391 strings out of 495028
+ 221937 string characters out of 6181497
+ 280883 words of memory out of 5000000
+ 15324 multiletter control sequences out of 15000+600000
+ 11797 words of font info for 42 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 63i,6n,57p,745b,590s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
-2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "Report in Latex.pdf" (11 pages, 133617 bytes).
+ 63i,8n,57p,745b,590s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/eurosym/feymr10.pfb>
+Output written on "Report in Latex.pdf" (14 pages, 148180 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+ 99 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
