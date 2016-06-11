@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.24)  10 JUN 2016 18:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.24)  11 JUN 2016 19:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -436,18 +436,18 @@ LaTeX Info: Redefining \addtolength on input line 77.
 (./Report in Latex.aux)
 \openout1 = `"Report in Latex.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
@@ -520,7 +520,7 @@ File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 <logo.png, id=4, 125.46875pt x 125.46875pt>
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 119.
+Package pdftex.def Info: logo.png used on input line 120.
 (pdftex.def)             Requested size: 125.46843pt x 125.46843pt.
  [1
 
@@ -537,129 +537,127 @@ Package pdftex.def Info: logo.png used on input line 119.
 \openout4 = `"Report in Latex.toc"'.
 
  [5]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 177.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 180.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 177.
- [6] [7]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 180.
+ [1] [2]
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-) [8]
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
+) [3]
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 []\OT1/cmr/m/n/12 Amortized
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--272
+Underfull \hbox (badness 10000) in paragraph at lines 263--279
 
  []
 
 
-Overfull \hbox (13.43303pt too wide) in paragraph at lines 256--272
+Overfull \hbox (13.43303pt too wide) in paragraph at lines 263--279
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--285
+Underfull \hbox (badness 10000) in paragraph at lines 292--292
 []\OT1/cmr/m/n/12 Software Com-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--286
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
 []\OT1/cmr/m/n/12 Amortized
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 288--288
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
 []\OT1/cmr/m/n/12 JavaScript
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--299
+Underfull \hbox (badness 10000) in paragraph at lines 281--306
 
  []
 
 
-Overfull \hbox (13.43303pt too wide) in paragraph at lines 274--299
+Overfull \hbox (13.43303pt too wide) in paragraph at lines 281--306
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--299
+Underfull \hbox (badness 10000) in paragraph at lines 281--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--299
+Underfull \hbox (badness 10000) in paragraph at lines 281--306
 
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 300--306
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 307--313
 
  []
 
 
-Overfull \hbox (7.96785pt too wide) in paragraph at lines 311--311
-[]\OT1/cmr/m/n/12 Sno:| 
- []
-
-
-Overfull \hbox (1.96222pt too wide) in paragraph at lines 311--311
+Overfull \hbox (1.96222pt too wide) in paragraph at lines 318--318
 []\OT1/cmr/m/n/12 Hours| 
  []
 
 
-Overfull \hbox (2.10097pt too wide) in paragraph at lines 311--311
+Overfull \hbox (2.10097pt too wide) in paragraph at lines 318--318
 []\OT1/cmr/m/n/12 Cost(per
  []
 
 
-Underfull \hbox (badness 2173) in paragraph at lines 311--311
+Underfull \hbox (badness 2173) in paragraph at lines 318--318
 \OT1/cmr/m/n/12 hour in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--312
+Underfull \hbox (badness 10000) in paragraph at lines 318--319
 []\OT1/cmr/m/n/12 Total(in
  []
 
 
-Underfull \hbox (badness 6559) in paragraph at lines 313--313
+Underfull \hbox (badness 6559) in paragraph at lines 320--320
 []\OT1/cmr/m/n/12 Required Knowl-edge
  []
 
-! Undefined control sequence.
-l.313 ...Mar 2016 &  70  & 15\euro/h & 1050 \euros
-                                                   \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-
-Overfull \hbox (28.83145pt too wide) in paragraph at lines 307--324
+Overfull \hbox (37.36737pt too wide) in paragraph at lines 314--331
 [][] 
  []
 
-[10]
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--353
+
+ []
+
+[5] [6]
+Overfull \hbox (1.59871pt too wide) in paragraph at lines 391--392
+\OT1/cmr/m/n/12 Graph ,\OT1/cmr/m/it/12 G \OT1/cmr/m/n/12 , is con-struct con-s
+ist-ing of two fi-nite sets, the set \OT1/cmr/m/it/12 V \OT1/cmr/m/n/12 = \OMS/
+cmsy/m/n/12 f $\OML/cmm/m/it/12 v[]; v[]; [] ; v[]$
+ []
+
+[7] [8]
+Overfull \vbox (117.28339pt too high) has occurred while \output is active []
+
+
+[9]
 No file "Report in Latex".bbl.
-[11]
-Overfull \vbox (284.16673pt too high) has occurred while \output is active []
-
-
-[12] (./Report in Latex.aux) ) 
+[10] (./Report in Latex.aux) ) 
 Here is how much of TeX's memory you used:
- 12391 strings out of 495028
- 221937 string characters out of 6181497
- 280883 words of memory out of 5000000
- 15324 multiletter control sequences out of 15000+600000
- 11797 words of font info for 42 fonts, out of 8000000 for 9000
+ 12395 strings out of 495028
+ 221975 string characters out of 6181497
+ 283883 words of memory out of 5000000
+ 15326 multiletter control sequences out of 15000+600000
+ 12418 words of font info for 44 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  63i,8n,57p,745b,590s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public
@@ -673,10 +671,10 @@ xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/eurosym/feymr10.pfb>
-Output written on "Report in Latex.pdf" (14 pages, 148180 bytes).
+Output written on "Report in Latex.pdf" (17 pages, 157639 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
+ 108 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

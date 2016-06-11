@@ -38,6 +38,7 @@
 \usepackage{afterpage}
 \usepackage{eurosym}
 \usepackage[colorinlistoftodos]{todonotes}
+\setcounter{secnumdepth}{5}
 
 \newenvironment{dedication}
   {
@@ -64,7 +65,7 @@
 %	HEADING SECTIONS
 %----------------------------------------------------------------------------------------
 
-\textsc{\LARGE Universitat Politècnica de Catalunya}\\[1.5cm] % Name of your university/college
+\textsc{\LARGE Universitat Politècnica de Catalunya}\\[2.5cm] % Name of your university/college
 \textsc{\Large Bachelors in Computer Science and Engineering}\\[0.5cm] % Major heading such as course name
 \textsc{\large Minor Heading}\\[0.5cm] % Minor heading such as course title
 
@@ -162,6 +163,7 @@ I would like to Acknowledge the support provided by my faculty and admins at my 
 
 
 \section{Introduction}
+\setcounter{page}{1}
 \par In this section	we provide an overview of the entire work. We mention the context of the project we have studied, approaches that we have used, goal of the project. We also provide the intended planning, economic estimate and sustainability of the work that has been done.
 
 
@@ -170,7 +172,8 @@ I would like to Acknowledge the support provided by my faculty and admins at my 
 Thus, Community detection is the key for understanding the structure of complex graphs, and ultimately educe information from them.
 
 \subsection{Approaches}
-\subsection{For Community Identification}
+In this section we discuss the various approches that are involved in dealing with the input to the project for community identification, for clustering and for visualization purposes. 
+\subsubsection{For Community Identification}
 Virtually in every scientific field dealing with empirical data, primary approach to get a first impression on the data is by trying to identify groups having "similar" behaviour in data. There are numerous methods to achieve this objective of which 
 
 \begin{itemize}
@@ -178,18 +181,22 @@ Virtually in every scientific field dealing with empirical data, primary approac
 \item Clustering
 \end{itemize}
 
-\subsubsection{Community Detection}
-\paragraph{Definition}
-Communities are a part of the graph that has fewer ties with the rest of the system. Commmunity detection traditionally focueses on the graph structures while clusting algorithms focuses on node attributes. 
+\paragraph{Community Detection}
+\paragraph{Definition of a Community}
+Communities are a part of the graph that has fewer ties with the rest of the system. Community detection traditionally focuses on the graph structures while clustering algorithms focuses on node attributes. 
 
 
 \subsubsection{Clustering}
 
 Traditional Clustering Methods are as follows:
 \begin{itemize}
+
 \item Graph Partitioning 
+
 \item Hierarchical Clustering
+
 \item Partitional Clustering
+
 \item Spectral Clustering
 
 \end{itemize}
@@ -304,40 +311,101 @@ economic cost of each of the phases of the project. The cost per hour is intende
 approximation of the current cost per work hour of young analysts and developers in our
 environment.\\
 
-\begin{tabular}{|p{0.5cm}||p{4cm}|p{2.5cm}|p{1cm}|p{1.5cm}|p{2cm}|}
+\begin{tabular}{|p{0.8cm}||p{4cm}|p{2.5cm}|p{1cm}|p{1.5cm}|p{2cm}|}
  \hline
  \multicolumn{6}{|c|}{Table 3 - Human Resource Budget} \\
  \hline
  Sno: & Phase&Deadline &Hours &Cost(per hour in \euro)&Total(in \euro)\\
  \hline
-1   & Required Knowledge Acqusition  &1 Mar 2016 &  70  & 15\euro/h & 1050 \euros \\
+1   & Required Knowledge Acqusition  &1 Mar 2016 &  70  & 15\euro/h & 1050 \euro \\
 2   & Paper Analysis  &1 Apr 2016& 150 &  15\euro/h  & 2250 \euro \\
 3   & Design and Implementation&30 Apr 2016 &230&  20\euro/h  & 4600 \euro \\
 4   & Testing I  &15 May 2016&75 &15\euro/h  & 0 1125\euro \\
 5   & Testing II  &31 May 2016&75 &  15\euro/h  & 0 1125\euro \\
-5   & Report Writing  &15 Jun 2016&100 &  15\euro/h  & 1500\euro \\
+6   & Report Writing  &15 Jun 2016&100 &  15\euro/h  & 1500\euro \\
 \hline
 \hline
-   & \textbf{Total}  &  & 600&   & \textbf{10525} \euro \\
+   & \textbf{Total}  &  & \textbf{600}&   & \textbf{10525} \euro \\
  \hline
 \end{tabular}
 
+\paragraph{Total Budget}
+The following table, Table 4, summarizes the total budget for the project. This encompasses the
+hardware, software and human resources budget.
+\\ \\ 
+\begin{tabular}{|p{1cm}||p{4cm}|p{3cm}|}
+ \hline
+ \multicolumn{3}{|c|}{Table 4 - Total Budget} \\
+ \hline
+ Sno: &Resource &Total Cost(in \euro) \\
+ \hline
+ 1   & Hardware Budget  & 1000 \euro \\
+ 2   & Software Budget  & 0 \euro \\
+ 3   & Software Budget  & 10525 \euro \\
+ \hline
+\hline
+   & \textbf{Total}  & \textbf{11525} \euro \\
+ \hline
+ 
+ 
+
+\end{tabular}
 
 
 \subsection{Sustainability}
+Sustainability is a key factor in any project design. We evaluate the project based on three
+factors of sustainability namely economic sustainability, social sustainability and environmental
+sustainability.
+\subsubsection{Economic Sustainability}
+ In this document we specify
+the budget estimation of the project. From our estimation it can be said that this will be the
+maximum bound on the budget for the project. This takes into account all the factors namely
+the hardware costs, software costs and human resource costs. The cost estimated in the project is the least possible cost and hence is a nonpareil project estimate for any indistinguishable project. The budget
+may exceed our calculations only during unexpected times. When the proposed plan is precisely followed the estimated lower costs gets achieved. 
+Also the product that we aim at developing here is tested with all kinds of data and we aim at
+building a very high quality software which in turn provides a durable software that will not
+wear out easily.  Most of the software used in the project is open source which has zero product cost. The The hardware required is nothing but computers that becomes a mandatory part
+of any project in the present days.
 
+\subsubsection{Social Sustainability}
+The project aims at developing web based platform to perform learning cum visualization
+analytics. This is indirectly going to analyze the learning characteristics of the patients and
+provide a feedback both to the medical analyzer and health planner. This is going to improve
+the quality of health analysis in the state. All this requires is a simple computer connected to
+the internet. This has very keen social motive and this project when completed is going to
+improve the standard of learning in schools. Thus this has a great social responsibility. This is in
+turn justifies why this project has a great social sustainability.
+
+\subsubsection{Environmental Sustainability}
+From the sections of temporal planning and the budget planning we understand that we have a
+computer running throughout the project. If we make an assumption that the amount of
+energy used by a single computer comes to around 250 watts. And given that we spend 500
+hours on the project then the energy expended is 125KW. This amounts to 48.125 kg of
+$CO_2$ . This is indeed a high amount but well within the permissible limits. This can be reduced
+by reducing the code size which is possible by reusing the already existing code. But the project
+is actually environmentally sustainable.
 
 \section{Background Knowledge}
 In this section we present the background knowledge required to understand and solve the problem
 \subsection{Graph Notation}
-Graph ,G , is construct consisting of two finite sets, the set V = \{ $v_1,v_2, \ldots ,v_n$ \} of vertices and the set E = \{ $e_1,e_2, \ldots,e_n$  \} of edges where each edge is a pair of vertices from V, for instance,
+Graph ,\textit{G} , is construct consisting of two finite sets, the set \textit{V} = \{ $v_1,v_2, \ldots ,v_n$ \} of vertices and the set \textit{E} = \{ $e_1,e_2, \ldots,e_n$  \} of edges where each edge is a pair of vertices from \textit{V}, for instance,
 \begin{center}
 $e_i = (v_j,v_k)$
 \end{center}
-is an edge from $v_j$ to $v_k$ represented as G=(V,E).
+is an edge from $v_j$ to $v_k$ represented as \textit{G}=(\textit{V},\textit{E}). In other words  E $\subset V^2$, which is the set of all unordered.
 
-\subsection{Matrix Notation}
-\subsection{Equivalence between Graph and Matrix Represenation}
+
+\subsection{Graph Matrix Notation}
+Graphs can be appropritely represented in the form of matrices for instance, adjacency matrix, admittance matrix etc.,
+\\
+Let \textit{G}=(\textit{V},\textit{E}) be a simple graph with vertex set \textbf{V} and edge set \textbf{E}, then the adjacency matrix is square $|V|^2$ matrix \textbf{M} such that its element $M_{i,j}$ is \textit{1} when there is an edge from $v_i$ to $v_j$,where $v_i \in \textbf{V}$ , $ v_j \in \textbf{V}$ and \textit{0} when there is no edge.
+The adjacency matrix of a graph of order \textit{n} entitles the entire the topology of a graph.  The diagonal elements of the adjacency matrix are all \textit{0} for undirected graphs \textbf{M}.
+\par The sum of the elements of \textit{i}-th row or column yields the degree of node \textit{i}. If the edges are weighted, one defines the weight matrix \textbf{W}, whose element \textit{W}$_{ij}$ expresses the weight of the edges between vertices \textit{i} and \textit{j}.
+
+\par The \textit{spectrum} of a graph \textbf{G} is the set of eigenvalues of it's adjacency matrix \textbf{M}. If \textbf{D}  is the diagonal matrix whose element \textit{D} $_{i,i}$ equals the degree of vertex i ($v_i \in$ \textit{V}).
+
+
+
 \subsection{State-of-the-art in Community finding}
 \subsection{State-of-the-art in Clustering}
 \subsection{State-of-the-art in Graph Visualization}
@@ -377,14 +445,26 @@ explain technical concepts in more detail. for exampleequivalence
 \subsection{Alchemy.js}
 \subsubsection{Introduction}
 \subsubsection{Implementation Benefits}
+sdgbf akjsfkldsnfksndafnadfa
+fasfadf
+adfasfasfadf
+asfasfadf
+afadfadf
 \subsubsection{Description}
 \subsubsection{Result}
+\subsection{Benefits to the community}
+This can be used in places where there is difficulty in visualization of a very complex landscape
+of data such as medical domain. In Medical domain a patient can be a vector of diseases and
+visualization of such patients (patients graph–which shows relations of how two patients are
+similar, a graph in which patient-patient edge weight is the similarity value ) would be useful for
+analyzing and predicting the disease landscape of a region and in turn multiple regions.
 
 \section{Conclusion}
 \subsection{Goals Achieved}
 \subsection{Revision of Planning and Budget}
 \subsection{Future Works}
 \subsection{Personal Conclusion}
+This is one of the greatest project experience.	
 
 
 \bibliography{Reference}
