@@ -6,60 +6,65 @@
 \contentsline {paragraph}{\numberline {1.2.1.1}Community Detection}{2}
 \contentsline {paragraph}{\numberline {1.2.1.2}Definition of a Community}{2}
 \contentsline {subsubsection}{\numberline {1.2.2}Clustering}{2}
-\contentsline {subsubsection}{\numberline {1.2.3}For Visualization}{2}
-\contentsline {subsubsection}{\numberline {1.2.4}Computational Complexity}{2}
-\contentsline {subsection}{\numberline {1.3}Goal of the Project}{2}
-\contentsline {subsection}{\numberline {1.4}Planning}{2}
-\contentsline {subsubsection}{\numberline {1.4.1}Task Description}{2}
-\contentsline {subsection}{\numberline {1.5}Economic Budget}{3}
-\contentsline {subsubsection}{\numberline {1.5.1}An Introduction to Economic Budget}{3}
-\contentsline {subsubsection}{\numberline {1.5.2}Estimation of Economic Budget}{4}
-\contentsline {paragraph}{\numberline {1.5.2.1}Hardware Budget}{4}
-\contentsline {paragraph}{\numberline {1.5.2.2}Software Budget}{4}
-\contentsline {paragraph}{\numberline {1.5.2.3}Human Resource Budget}{5}
-\contentsline {paragraph}{\numberline {1.5.2.4}Total Budget}{5}
-\contentsline {subsection}{\numberline {1.6}Sustainability}{6}
-\contentsline {subsubsection}{\numberline {1.6.1}Economic Sustainability}{6}
-\contentsline {subsubsection}{\numberline {1.6.2}Social Sustainability}{6}
-\contentsline {subsubsection}{\numberline {1.6.3}Environmental Sustainability}{7}
-\contentsline {section}{\numberline {2}Background Knowledge}{7}
-\contentsline {subsection}{\numberline {2.1}Graph Notation}{7}
-\contentsline {subsection}{\numberline {2.2}Graph Matrix Notation}{7}
-\contentsline {subsection}{\numberline {2.3}State-of-the-art in Community finding}{8}
-\contentsline {subsection}{\numberline {2.4}State-of-the-art in Clustering}{8}
-\contentsline {subsection}{\numberline {2.5}State-of-the-art in Graph Visualization}{8}
-\contentsline {section}{\numberline {3}Community Finding Algorithm}{9}
-\contentsline {subsection}{\numberline {3.1}Louvain Algorithm}{9}
-\contentsline {subsubsection}{\numberline {3.1.1}Introduction}{9}
-\contentsline {subsubsection}{\numberline {3.1.2}Reasoning}{9}
-\contentsline {subsubsection}{\numberline {3.1.3}Description}{9}
-\contentsline {subsubsection}{\numberline {3.1.4}Implementation}{9}
-\contentsline {subsubsection}{\numberline {3.1.5}Experiments}{9}
-\contentsline {subsubsection}{\numberline {3.1.6}Result}{9}
-\contentsline {section}{\numberline {4}Matrix Based Algorithm}{9}
-\contentsline {subsection}{\numberline {4.1}Matrix Algorithm}{9}
-\contentsline {subsubsection}{\numberline {4.1.1}Introduction}{9}
-\contentsline {subsubsection}{\numberline {4.1.2}Reasoning}{9}
-\contentsline {subsubsection}{\numberline {4.1.3}Description}{9}
-\contentsline {subsubsection}{\numberline {4.1.4}Implementation}{9}
-\contentsline {subsubsection}{\numberline {4.1.5}Experiments}{9}
-\contentsline {subsubsection}{\numberline {4.1.6}Result}{9}
-\contentsline {section}{\numberline {5}Visualization}{9}
-\contentsline {subsection}{\numberline {5.1}Alchemy.js}{9}
-\contentsline {subsubsection}{\numberline {5.1.1}Introduction}{9}
-\contentsline {subsubsection}{\numberline {5.1.2}Reasoning}{9}
-\contentsline {subsubsection}{\numberline {5.1.3}Description}{9}
-\contentsline {subsubsection}{\numberline {5.1.4}Methods and Library}{9}
-\contentsline {subsubsection}{\numberline {5.1.5}Result}{9}
-\contentsline {section}{\numberline {6}Overall System Description}{9}
-\contentsline {subsection}{\numberline {6.1}Alchemy.js}{9}
-\contentsline {subsubsection}{\numberline {6.1.1}Introduction}{9}
-\contentsline {subsubsection}{\numberline {6.1.2}Implementation Benefits}{9}
-\contentsline {subsubsection}{\numberline {6.1.3}Description}{10}
-\contentsline {subsubsection}{\numberline {6.1.4}Result}{10}
-\contentsline {subsection}{\numberline {6.2}Benefits to the community}{10}
-\contentsline {section}{\numberline {7}Conclusion}{10}
-\contentsline {subsection}{\numberline {7.1}Goals Achieved}{10}
-\contentsline {subsection}{\numberline {7.2}Revision of Planning and Budget}{10}
-\contentsline {subsection}{\numberline {7.3}Future Works}{10}
-\contentsline {subsection}{\numberline {7.4}Personal Conclusion}{10}
+\contentsline {paragraph}{\numberline {1.2.2.1}Graph Partitioning}{2}
+\contentsline {paragraph}{\numberline {1.2.2.2}Hierarchical Clustering}{2}
+\contentsline {paragraph}{\numberline {1.2.2.3}Partitional Clustering}{2}
+\contentsline {paragraph}{\numberline {1.2.2.4}Spectral Clustering}{2}
+\contentsline {subsubsection}{\numberline {1.2.3}For Visualization}{3}
+\contentsline {paragraph}{\numberline {1.2.3.1}Web UI and Time per Query}{3}
+\contentsline {subsubsection}{\numberline {1.2.4}Computational Complexity}{3}
+\contentsline {subsection}{\numberline {1.3}Goal of the Project}{4}
+\contentsline {subsection}{\numberline {1.4}Planning}{4}
+\contentsline {subsubsection}{\numberline {1.4.1}Task Description}{4}
+\contentsline {subsection}{\numberline {1.5}Economic Budget}{5}
+\contentsline {subsubsection}{\numberline {1.5.1}An Introduction to Economic Budget}{5}
+\contentsline {subsubsection}{\numberline {1.5.2}Estimation of Economic Budget}{5}
+\contentsline {paragraph}{\numberline {1.5.2.1}Hardware Budget}{6}
+\contentsline {paragraph}{\numberline {1.5.2.2}Software Budget}{6}
+\contentsline {paragraph}{\numberline {1.5.2.3}Human Resource Budget}{7}
+\contentsline {paragraph}{\numberline {1.5.2.4}Total Budget}{7}
+\contentsline {subsection}{\numberline {1.6}Sustainability}{7}
+\contentsline {subsubsection}{\numberline {1.6.1}Economic Sustainability}{8}
+\contentsline {subsubsection}{\numberline {1.6.2}Social Sustainability}{8}
+\contentsline {subsubsection}{\numberline {1.6.3}Environmental Sustainability}{8}
+\contentsline {section}{\numberline {2}Background Knowledge}{9}
+\contentsline {subsection}{\numberline {2.1}Graph Notation}{9}
+\contentsline {subsection}{\numberline {2.2}Graph Matrix Notation}{9}
+\contentsline {subsection}{\numberline {2.3}State-of-the-art in Community finding}{10}
+\contentsline {subsection}{\numberline {2.4}State-of-the-art in Clustering}{10}
+\contentsline {subsection}{\numberline {2.5}State-of-the-art in Graph Visualization}{10}
+\contentsline {section}{\numberline {3}Community Finding Algorithm}{11}
+\contentsline {subsection}{\numberline {3.1}Louvain Algorithm}{11}
+\contentsline {subsubsection}{\numberline {3.1.1}Introduction}{11}
+\contentsline {subsubsection}{\numberline {3.1.2}Reasoning}{11}
+\contentsline {subsubsection}{\numberline {3.1.3}Description}{11}
+\contentsline {subsubsection}{\numberline {3.1.4}Implementation}{11}
+\contentsline {subsubsection}{\numberline {3.1.5}Experiments}{11}
+\contentsline {subsubsection}{\numberline {3.1.6}Result}{11}
+\contentsline {section}{\numberline {4}Matrix Based Algorithm}{11}
+\contentsline {subsection}{\numberline {4.1}Matrix Algorithm}{11}
+\contentsline {subsubsection}{\numberline {4.1.1}Introduction}{11}
+\contentsline {subsubsection}{\numberline {4.1.2}Reasoning}{11}
+\contentsline {subsubsection}{\numberline {4.1.3}Description}{11}
+\contentsline {subsubsection}{\numberline {4.1.4}Implementation}{11}
+\contentsline {subsubsection}{\numberline {4.1.5}Experiments}{11}
+\contentsline {subsubsection}{\numberline {4.1.6}Result}{11}
+\contentsline {section}{\numberline {5}Visualization}{11}
+\contentsline {subsection}{\numberline {5.1}Alchemy.js}{11}
+\contentsline {subsubsection}{\numberline {5.1.1}Introduction}{11}
+\contentsline {subsubsection}{\numberline {5.1.2}Reasoning}{11}
+\contentsline {subsubsection}{\numberline {5.1.3}Description}{11}
+\contentsline {subsubsection}{\numberline {5.1.4}Methods and Library}{11}
+\contentsline {subsubsection}{\numberline {5.1.5}Result}{11}
+\contentsline {section}{\numberline {6}Overall System Description}{11}
+\contentsline {subsection}{\numberline {6.1}Alchemy.js}{11}
+\contentsline {subsubsection}{\numberline {6.1.1}Introduction}{11}
+\contentsline {subsubsection}{\numberline {6.1.2}Implementation Benefits}{11}
+\contentsline {subsubsection}{\numberline {6.1.3}Description}{12}
+\contentsline {subsubsection}{\numberline {6.1.4}Result}{12}
+\contentsline {subsection}{\numberline {6.2}Benefits to the community}{12}
+\contentsline {section}{\numberline {7}Conclusion}{12}
+\contentsline {subsection}{\numberline {7.1}Goals Achieved}{12}
+\contentsline {subsection}{\numberline {7.2}Revision of Planning and Budget}{12}
+\contentsline {subsection}{\numberline {7.3}Future Works}{12}
+\contentsline {subsection}{\numberline {7.4}Personal Conclusion}{12}

@@ -201,15 +201,65 @@ Traditional Clustering Methods are as follows:
 
 \end{itemize}
 
+\paragraph{Graph Partitioning}
+ The problem of graph partitioning is a hard problem. The graph partitioning consists of dividing the vertices in \textit{g} groups of predefined sizes. 
+ There are two broad categories of methods : Local and Global.
+\paragraph{Hierarchical Clustering}
+Hierarchical clustering aims to identify groups of vertices with high similarities. It can be calssifies into two categories:
+ \begin{enumerate}
+\item \textit{Aggolomerative algorithm} : in one in which Agglomerative algorithms, in which clusters are iteratively merged if their similarity is sufficiently
+high
+\item \textit{Divisive algorithms}, in which clusters are iteratively
+split by removing edges connecting vertices with
+low similarity.
+\end{enumerate} 
+
+\paragraph{Partitional Clustering}
+
+\paragraph{Spectral Clustering}
+
+
+
+
 
 \subsubsection{For  Visualization}
+Graph visualization is a important task in various scientific application. Visualization of data as graphs Visualizing these data
+as graphs provides the non-experts with an intuitive means
+to explore the content of the data, identify interesting patterns,
+etc. Such operations require interactive visualizations
+(as opposed to a static image) in which graph elements are
+rendered as distinct visual objects; e.g., DOM objects in a
+web browser. This way, the user can manipulate the graph
+directly from the UI, e.g., click on a node or an edge to
+get additional information (metadata), highlight parts of the
+graph, etc. Given that graphs in many real-world scenarios
+are huge, the aforementioned visualizations pose significant
+technical challenges from a data management perspective
 
+\paragraph{Web UI and Time per Query}
+\begin{enumerate}
+\item \textit{Program execution and Computation} : 
+\item \textit{Building the JSON Object}
+\item \textit{Communication Time}
+\item \textit{Rendering }
+\end{enumerate}
+The total time is the sum of all the above times. 
 \subsubsection{Computational Complexity}
  The estimate of the amount of resources required for by the algorithm to perform a task is defined as computational complexity. The humongous amount of data on the real graphs or real networks that are available in the current scenario causes the efficiency of the clustering algorithm to be crucial.
+\par In a brief, Algorithms that have polynomial complexity describe the Class \textbf{P}. Problems whose solutions can be verified in a polynomial time span the class \textbf{NP} of \textit{non--deterministic polynomial time} problems, which includes \textbf{P}. problem is \textbf{NP}-hard if a solution for it can be
+translated into a solution for any \textbf{NP}-problem. However,
+a \textbf{NP}-hard problem needs not be in the class \textbf{NP}. If it
+does belong to \textbf{NP} it is called \textbf{NP}-complete. The class
+of \textbf{NP}-complete problems has drawn a special attention
+in computer science, as it includes many famous problems like the Travelling Salesman, Boolean Satisfiability
+(\textbf{SAT}), Linear Programming, etc.
+The fact that \textbf{NP} problems have a solution which is verifiable in polynomial
+time does not mean that NP problems have polynomial
+complexity, i. e., that they are in \textbf{P}. In fact, the question of whether \textbf{NP}=\textbf{P} is the most important open problem in theoretical computer science. \textbf{NP}-hard problems
+need not be in \textbf{NP} (in which case they would be \textbf{NP}-complete), but they are at least as hard as \textbf{NP}-complete
+problems, so they are unlikely to have polynomial complexity, although a proof of that is still missing.
+\par Many clustering Algorithms or problems related to clustering are \textbf{NP}-hard. This makes it irrelavant to use the exact algorithm, in which case we use an approximation algorithm. Approximation algorithm are methods that do not deliver the exact solution but an approximate solution but with an advantage of lower complexity. [Community detection paper]
 
-
-community finding and clustering. separately,
-    visualization tools
 \subsection{Goal of the Project}
 
 \subsection{Planning}
