@@ -131,7 +131,7 @@ Abhinav Shankaranarayanan Venkataraman
 
 
 \begin{dedication}
-To my Mother, Father, Professors and Friends. I owe a lot to My professors Ricard Gavalda and Marta Arias and to Babaji at Gurudwara
+%To my Mother, Father, Professors and Friends. I owe a lot to My professors Ricard Gavalda and Marta Arias and to Babaji at Gurudwara
 \end{dedication}
 \newpage
 \clearpage
@@ -154,7 +154,7 @@ of the main structures in the data.
 \clearpage
 \newpage
 \section*{Acknowledgement}
-I would like to Acknowledge the support provided by my faculty and admins at my home university -- SASTRA University, Thanjavur and UPC Barcelona for supporting me throughout the project.
+%I would like to Acknowledge the support provided by my faculty and admins at my home university -- SASTRA University, Thanjavur and UPC Barcelona for supporting me throughout the project.
 
 \newpage
 
@@ -171,8 +171,17 @@ I would like to Acknowledge the support provided by my faculty and admins at my 
 \par In the present day scenario, the modern science of algorithms and graph theory has brought significant advances to our understanding of complex data. Many complex systems are representable in the form of graphs. Graphs have time and again been used to represent real world networks. One of the most pertinent feature of graphs representing real system is community structures or otherwise known as clusters. Community can be defined as the organization of vertices in groups or clusters, with many edges joining the vertices of the same cluster and comparatively fewer vertices joining the vertices in another neighbouring cluster. Such communities form an independent compartment of a graph exhibiting similar role.
 Thus, Community detection is the key for understanding the structure of complex graphs, and ultimately educe information from them.
 
+\par Everyday, the number of chronic and complex patients and diseases in the health system keeps
+increasing by multiple folds. In the current scenario, a patient does not have one disease but a
+set of diseases. For Example a person with diabetes has a heart disease, kidney disease, blood
+pressure etc. This may vary between sexes, ages etc and thus is a very complex landscape to
+explore. Visualizing this landscape of diseases would help to analyse the source, the treatment
+and even the path way of research to done. Thus, such a visualization would be helpful for the
+medical experts and health planner to understand the landscape of diseases much better.
+\par Driven by this problem of understanding data from the medical domain, the project would consider algorithms for visualizing high dimensional data so that "similar" entities called
+communities are close together. Hence, we address this visualization of such high dimensional data using the algorithms and visualization technologies. All the solutions that are possible to resolve the problem will be analysed and the best solution will be determined. The project will also involve study of various algorithms and their respective analysis based on the quality and quantity of data using multiple appropriate experiments. 
 \subsection{Approaches}
-In this section we discuss the various approches that are involved in dealing with the input to the project for community identification, for clustering and for visualization purposes. 
+In this section we discuss the various approaches that are involved in dealing with the input to the project for community identification, for clustering and for visualization purposes. 
 \subsubsection{For Community Identification}
 Virtually in every scientific field dealing with empirical data, primary approach to get a first impression on the data is by trying to identify groups having "similar" behaviour in data. There are numerous methods to achieve this objective of which 
 
@@ -207,7 +216,7 @@ Traditional Clustering Methods are as follows:
 \paragraph{Hierarchical Clustering}
 Hierarchical clustering aims to identify groups of vertices with high similarities. It can be calssifies into two categories:
  \begin{enumerate}
-\item \textit{Aggolomerative algorithm} : in one in which Agglomerative algorithms, in which clusters are iteratively merged if their similarity is sufficiently
+\item \textit{Agglomerative algorithm} : in one in which Agglomerative algorithms, in which clusters are iteratively merged if their similarity is sufficiently
 high
 \item \textit{Divisive algorithms}, in which clusters are iteratively
 split by removing edges connecting vertices with
@@ -438,11 +447,22 @@ is actually environmentally sustainable.
 \section{Background Knowledge}
 In this section we present the background knowledge required to understand and solve the problem
 \subsection{Graph Notation}
+
+\subsubsection{Graph Definition}
 Graph ,\textit{G} , is construct consisting of two finite sets, the set \textit{V} = \{ $v_1,v_2, \ldots ,v_n$ \} of vertices and the set \textit{E} = \{ $e_1,e_2, \ldots,e_n$  \} of edges where each edge is a pair of vertices from \textit{V}, for instance,
 \begin{center}
 $e_i = (v_j,v_k)$
 \end{center}
-is an edge from $v_j$ to $v_k$ represented as \textit{G}=(\textit{V},\textit{E}). In other words  E $\subset V^2$, which is the set of all unordered.
+is an edge from $v_j$ to $v_k$ represented as \textit{G}=(\textit{V},\textit{E}). In other words  E $\subset V^2$, which is the set of all unordered. The vertices ($v_j$ and $v_k$) that represent an edge are called \textit{endpoints} and the edge is said to be adjacent to each of its end points. 
+
+
+
+\begin{figure}[h]
+\caption{Example Graph G=(V,E) Bull Graph}
+\includegraphics[scale=0.5]{bull.png}
+\centering
+
+\end{figure}
 
 
 \subsection{Graph Matrix Notation}
@@ -456,14 +476,12 @@ The adjacency matrix of a graph of order \textit{n} entitles the entire the topo
 
 
 
-\subsection{State-of-the-art in Community finding}
+\subsection{State-of-the-art in Community Detection}
+A critical review in the context of Community Detection has been made.  
+
+
 \subsection{State-of-the-art in Clustering}
 \subsection{State-of-the-art in Graph Visualization}
-
-explain technical concepts in more detail. for exampleequivalence
-     of graph and matrix representations.
-     state-of-the art in community finding, and clustering
-     state-of-the art in graph visualization
 
 \section{Community Finding Algorithm}
 \subsection{Louvain Algorithm}
@@ -490,6 +508,7 @@ explain technical concepts in more detail. for exampleequivalence
 \subsubsection{Description}
 \subsubsection{Methods and Library}
 \subsubsection{Result}
+
 
 \section{Overall System Description}
 \subsection{Alchemy.js}
