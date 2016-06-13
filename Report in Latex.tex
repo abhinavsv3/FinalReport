@@ -30,15 +30,17 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[12pt]{article}
+\documentclass[12pt]{report}
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage{amsmath}
+\usepackage{url}
 \usepackage{graphicx}
 \usepackage{afterpage}
 \usepackage{eurosym}
 \usepackage[colorinlistoftodos]{todonotes}
 \setcounter{secnumdepth}{5}
+\usepackage{cite}
 
 \newenvironment{dedication}
   {
@@ -131,7 +133,7 @@ Abhinav Shankaranarayanan Venkataraman
 
 
 \begin{dedication}
-%To my Mother, Father, Professors and Friends. I owe a lot to My professors Ricard Gavalda and Marta Arias and to Babaji at Gurudwara
+To my Mother, Father, Professors and Friends. I owe a lot to My professors Ricard Gavalda and Marta Arias and to Babaji at Gurudwara
 \end{dedication}
 \newpage
 \clearpage
@@ -154,13 +156,14 @@ of the main structures in the data.
 \clearpage
 \newpage
 \section*{Acknowledgement}
-%I would like to Acknowledge the support provided by my faculty and admins at my home university -- SASTRA University, Thanjavur and UPC Barcelona for supporting me throughout the project.
+I would like to Acknowledge the support provided by my faculty and admins at my home university -- SASTRA University, Thanjavur and UPC Barcelona for supporting me throughout the project.
 
 \newpage
 
 \tableofcontents
 \newpage
 
+\chapter{Introduction}
 
 \section{Introduction}
 \setcounter{page}{1}
@@ -267,7 +270,7 @@ time does not mean that NP problems have polynomial
 complexity, i. e., that they are in \textbf{P}. In fact, the question of whether \textbf{NP}=\textbf{P} is the most important open problem in theoretical computer science. \textbf{NP}-hard problems
 need not be in \textbf{NP} (in which case they would be \textbf{NP}-complete), but they are at least as hard as \textbf{NP}-complete
 problems, so they are unlikely to have polynomial complexity, although a proof of that is still missing.
-\par Many clustering Algorithms or problems related to clustering are \textbf{NP}-hard. This makes it irrelavant to use the exact algorithm, in which case we use an approximation algorithm. Approximation algorithm are methods that do not deliver the exact solution but an approximate solution but with an advantage of lower complexity. [Community detection paper]
+\par Many clustering Algorithms or problems related to clustering are \textbf{NP}-hard. This makes it irrelavant to use the exact algorithm, in which case we use an approximation algorithm. Approximation algorithm are methods that do not deliver the exact solution but an approximate solution but with an advantage of lower complexity. \cite{communitypaper}
 
 \subsection{Goal of the Project}
 
@@ -444,7 +447,8 @@ $CO_2$ . This is indeed a high amount but well within the permissible limits. Th
 by reducing the code size which is possible by reusing the already existing code. But the project
 is actually environmentally sustainable.
 
-\section{Background Knowledge}
+\chapter{Background Knowledge}
+\section{Introduction}
 In this section we present the background knowledge required to understand and solve the problem
 \subsection{Graph Notation}
 
@@ -453,17 +457,23 @@ Graph ,\textit{G} , is construct consisting of two finite sets, the set \textit{
 \begin{center}
 $e_i = (v_j,v_k)$
 \end{center}
-is an edge from $v_j$ to $v_k$ represented as \textit{G}=(\textit{V},\textit{E}). In other words  E $\subset V^2$, which is the set of all unordered. The vertices ($v_j$ and $v_k$) that represent an edge are called \textit{endpoints} and the edge is said to be adjacent to each of its end points. 
-
-
+is an edge from $v_j$ to $v_k$ represented as \textit{G}=(\textit{V},\textit{E}). In other words  E $\subset V^2$, which is the set of all unordered. The vertices ($v_j$ and $v_k$) that represent an edge are called \textit{endpoints} and the edge is said to be adjacent to each of its end points.  \cite{PeterLinz}
 
 \begin{figure}[h]
 \caption{Example Graph G=(V,E) Bull Graph}
 \includegraphics[scale=0.5]{bull.png}
 \centering
-
 \end{figure}
 
+The neighbourhood of a node $v_i$ is the set of
+nodes $v_i$ is connected to, N($v_i$) = $\{v_j | (v_i, v_j) \in E, v_i \neq
+v_j, 1 \leq j \leq n\}$. The degree of a node vi, or the size of
+the neighborhood connected to $v_i$, is denoted as d($v_i$) =
+$|N(v_i)|$. 
+\par A degree sequence, \textit{D}, specifies the set of all node
+degrees as tuples, such that D = {($v_i, d(v_i)$} and follows a
+probability distribution called the \textit{degree distribution} with
+mean $d_m$. \cite{githubtest1}
 
 \subsection{Graph Matrix Notation}
 Graphs can be appropritely represented in the form of matrices for instance, adjacency matrix, admittance matrix etc.,
@@ -477,19 +487,23 @@ The adjacency matrix of a graph of order \textit{n} entitles the entire the topo
 
 
 \subsection{State-of-the-art in Community Detection}
-A critical review in the context of Community Detection has been made.  
+
+\cite{louvain} \cite{PeterLinz}
 
 
 \subsection{State-of-the-art in Clustering}
 \subsection{State-of-the-art in Graph Visualization}
 
-\section{Community Finding Algorithm}
+\chapter{Community Finding Algorithm}
+\section{Introduction}
+In this section we would describe the community detection algorithms such as louvain and various tests that were performed to choose the algorithm. 
 \subsection{Louvain Algorithm}
 \subsubsection{Introduction}
 \subsubsection{Reasoning}
 \subsubsection{Description}
 \subsubsection{Implementation}
 \subsubsection{Experiments}
+\cite{githubtest1}
 \subsubsection{Result}
 
 \section{Matrix Based Algorithm}
@@ -501,7 +515,8 @@ A critical review in the context of Community Detection has been made.
 \subsubsection{Experiments}
 \subsubsection{Result}
 
-\section{Visualization}
+\chapter{Visualization Techniques}
+\section{Introduction}
 \subsection{Alchemy.js}
 \subsubsection{Introduction}
 \subsubsection{Reasoning}
@@ -509,9 +524,9 @@ A critical review in the context of Community Detection has been made.
 \subsubsection{Methods and Library}
 \subsubsection{Result}
 
-
+\chapter{Overall System Description}
 \section{Overall System Description}
-\subsection{Alchemy.js}
+\subsection{Web.py}
 \subsubsection{Introduction}
 \subsubsection{Implementation Benefits}
 sdgbf akjsfkldsnfksndafnadfa
@@ -520,6 +535,7 @@ adfasfasfadf
 asfasfadf
 afadfadf
 \subsubsection{Description}
+git hub repository  : \url{https://github.com/abhinavsv3/webproject}
 \subsubsection{Result}
 \subsection{Benefits to the community}
 This can be used in places where there is difficulty in visualization of a very complex landscape
@@ -528,15 +544,27 @@ visualization of such patients (patients graph–which shows relations of how tw
 similar, a graph in which patient-patient edge weight is the similarity value ) would be useful for
 analyzing and predicting the disease landscape of a region and in turn multiple regions.
 
-\section{Conclusion}
-\subsection{Goals Achieved}
-\subsection{Revision of Planning and Budget}
-\subsection{Future Works}
+\chapter{Conclusion and Future Works}
+\section{Goals Achieved}
+\section{Revision of Planning and Budget}
+\section{Future Works}
+\section{Availability and requirements}
+\begin{enumerate}
+\item \textbf{Project Name}: Graph and matrix algorithms for visualizing high dimensional
+\item \textbf{Project Homepage}: \url{https://github.com/abhinavsv3/webproject dimensional}
+\item \textbf{Operating System}: Platform Independent. Preferably Unix--like operating system
+\item \textbf{Programming Language}: Python 2.7
+\item \textbf{Other Requirements} : Alchemy.js, Python Packages, Web.py
+\end{enumerate}
+
+\subsection{Conclusion}
+This is one of the greatest project experience.	
 \subsection{Personal Conclusion}
 This is one of the greatest project experience.	
 
 
-\bibliography{Reference}
+\bibliographystyle{plain}
+\bibliography{mybib}{}
 \end{document}
 
 

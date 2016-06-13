@@ -1,0 +1,29 @@
+\begin{thebibliography}{1}
+
+\bibitem{louvain}
+Vincent~D Blondel, Jean-Loup Guillaume, Renaud Lambiotte, and Etienne Lefebvre.
+\newblock Fast unfolding of communities in large networks.
+\newblock {\em Journal of statistical mechanics: theory and experiment},
+  2008(10):P10008, 2008.
+
+\bibitem{communitypaper}
+Santo Fortunato.
+\newblock Community detection in graphs.
+\newblock {\em Physics reports}, 486(3):75--174, 2010.
+
+\bibitem{PeterLinz}
+Peter Linz.
+\newblock {\em An Introduction to Formal Languages and Automata}.
+\newblock D. C. Heath and Company, Lexington, MA, USA, 1990.
+
+\bibitem{githubtest2}
+Pratha Sah.
+\newblock Random modular network generator, •.
+
+\bibitem{githubtest1}
+Pratha Sah, Lisa~O. Singh, Aaron Clauset, and Shweta Bansal.
+\newblock Exploring community structure in biological networks with random
+  graphs.
+\newblock {\em BMC Bioinformatics}, 15(1):1--14, 2014.
+
+\end{thebibliography}
