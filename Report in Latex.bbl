@@ -6,6 +6,12 @@ Vincent~D Blondel, Jean-Loup Guillaume, Renaud Lambiotte, and Etienne Lefebvre.
 \newblock {\em Journal of statistical mechanics: theory and experiment},
   2008(10):P10008, 2008.
 
+\bibitem{modularityNP}
+Ulrik Brandes, Daniel Delling, Marco Gaertler, Robert G{\"o}rke, Martin Hoefer,
+  Zoran Nikoloski, and Dorothea Wagner.
+\newblock Maximizing modularity is hard.
+\newblock {\em arXiv preprint physics/0608255}, 2006.
+
 \bibitem{communitypaper}
 Santo Fortunato.
 \newblock Community detection in graphs.
@@ -16,9 +22,11 @@ Peter Linz.
 \newblock {\em An Introduction to Formal Languages and Automata}.
 \newblock D. C. Heath and Company, Lexington, MA, USA, 1990.
 
-\bibitem{githubtest2}
-Pratha Sah.
-\newblock Random modular network generator, •.
+\bibitem{newman2006modularity}
+Mark~EJ Newman.
+\newblock Modularity and community structure in networks.
+\newblock {\em Proceedings of the national academy of sciences},
+  103(23):8577--8582, 2006.
 
 \bibitem{githubtest1}
 Pratha Sah, Lisa~O. Singh, Aaron Clauset, and Shweta Bansal.

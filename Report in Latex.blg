@@ -3,47 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Report in Latex.aux
 The style file: plain.bst
 Database file #1: mybib.bib
-Warning--entry type for "githubtest2" isn't style-file defined
---line 49 of file mybib.bib
-You've used 5 entries,
+You've used 6 entries,
             2118 wiz_defined-function locations,
-            531 strings with 4684 characters,
-and the built_in function-call counts, 1467 in all, are:
-= -- 138
-> -- 67
+            541 strings with 5016 characters,
+and the built_in function-call counts, 1980 in all, are:
+= -- 188
+> -- 105
 < -- 0
-+ -- 28
-- -- 22
-* -- 103
-:= -- 257
-add.period$ -- 14
-call.type$ -- 5
-change.case$ -- 25
++ -- 43
+- -- 36
+* -- 154
+:= -- 351
+add.period$ -- 18
+call.type$ -- 6
+change.case$ -- 35
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 52
-empty$ -- 121
-format.name$ -- 22
-if$ -- 296
+cite$ -- 6
+duplicate$ -- 66
+empty$ -- 145
+format.name$ -- 36
+if$ -- 391
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 5
-newline$ -- 27
-num.names$ -- 10
-pop$ -- 28
+int.to.str$ -- 6
+missing$ -- 7
+newline$ -- 33
+num.names$ -- 12
+pop$ -- 31
 preamble$ -- 1
-purify$ -- 21
+purify$ -- 30
 quote$ -- 0
-skip$ -- 35
+skip$ -- 41
 stack$ -- 0
-substring$ -- 82
-swap$ -- 5
+substring$ -- 118
+swap$ -- 6
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 18
+type$ -- 22
 warning$ -- 0
-while$ -- 15
-width$ -- 6
-write$ -- 54
-(There was 1 warning)
+while$ -- 19
+width$ -- 7
+write$ -- 67

@@ -197,6 +197,18 @@ Virtually in every scientific field dealing with empirical data, primary approac
 \paragraph{Definition of a Community}
 Communities are a part of the graph that has fewer ties with the rest of the system. Community detection traditionally focuses on the graph structures while clustering algorithms focuses on node attributes. 
 
+Several tyoes of community detection algorithms can be distinguished
+\paragraph{Divisive algorithms}
+Divisive algorithms detect inter-community links and remove them from the network
+
+\paragraph{Agglomerative algorithms}
+Agglomerative algorithm merges similar nodes or communities in a recursive manner.
+
+\paragraph{Optimization Methods}
+Optimization methods are mainly based on maximization of an objective function.
+
+
+
 
 \subsubsection{Clustering}
 
@@ -214,8 +226,9 @@ Traditional Clustering Methods are as follows:
 \end{itemize}
 
 \paragraph{Graph Partitioning}
- The problem of graph partitioning is a hard problem. The graph partitioning consists of dividing the vertices in \textit{g} groups of predefined sizes. 
- There are two broad categories of methods : Local and Global.
+ A typical problem in graph partitioning is the division of a set of tasks between the processors of a parallel computer so as to minimize the necessary amount of interprocessor communication.
+ \par In such an application the number of processors is usually known in advance and at least an approximate figure for the number of tasks that each processor can handle. Thus we know the number and size of the groups into which the network is to be split. Also, the goal is usually to find the best division of the network regardless of whether a good division even exists; there is little point in an algorithm or method that fails to divide the network in some cases.\cite{newman2006modularity}
+
 \paragraph{Hierarchical Clustering}
 Hierarchical clustering aims to identify groups of vertices with high similarities. It can be calssifies into two categories:
  \begin{enumerate}
@@ -273,6 +286,7 @@ problems, so they are unlikely to have polynomial complexity, although a proof o
 \par Many clustering Algorithms or problems related to clustering are \textbf{NP}-hard. This makes it irrelavant to use the exact algorithm, in which case we use an approximation algorithm. Approximation algorithm are methods that do not deliver the exact solution but an approximate solution but with an advantage of lower complexity. \cite{communitypaper}
 
 \subsection{Goal of the Project}
+The ability to detect groups or communities can be significant practical importance for example, a groups of world wide web (WWW) can lead to web pages on related topics, group of social network can correspond to social units or communities that share common interest.Simply finding that a graph contains tightly knit groups at all can convey useful information if a metabolic network were divided into such groups, for instance, it could provide evidence for a modular view of the network's dynamics, with different groups of nodes performing different functions with some degree of independence. There are two tempting methods that have a long history of being studied. One is graph partitioning and the other one being hierachycal cluster. Both these domains address the same question of spliting a task into communities.
 
 \subsection{Planning}
 \subsubsection{Task Description}
@@ -494,11 +508,23 @@ The adjacency matrix of a graph of order \textit{n} entitles the entire the topo
 \subsection{State-of-the-art in Clustering}
 \subsection{State-of-the-art in Graph Visualization}
 
-\chapter{Community Finding Algorithm}
+\chapter{Community Detection Algorithm}
 \section{Introduction}
 In this section we would describe the community detection algorithms such as louvain and various tests that were performed to choose the algorithm. 
-\subsection{Louvain Algorithm}
-\subsubsection{Introduction}
+\section{Louvain Algorithm}
+\subsection{Introduction}
+
+The problem of community detection requires the graph to be split into communities of tightly packed or in other words densely connected nodes with nodes of different community being sparely connected. 
+
+Several algorithms have been proposed for perfoming good partition in a reasonably good speed.
+Distinguishably there are several types of community detection algorithms, namely: divisive algorithms, which aims in removal of the inter-community links, agglomerative algorithms, which aim in merging similar nodes and optimization methods which aim in maximzing the objective function. 
+\subsection{Modularity}
+The quality of partitioning that results from application of method is often measured using modularity. The \textit{modularity} of a partition is hence a scalar value between -1 and 1 that is used to measure the density of the links inside the communities as compared to the density of the links between the communities.
+\par
+Modularity not only serves as a quality measure for detecting the quality of split or partition, but also acts as an objective function to optimize.  Exact modularity optimization is \textbf{NP-Complete} in the strong sense \cite{modularityNP}.
+\subsection{Definition}
+Let G=(V,E) be a simple graph,where \textit{V} is the set of vertices and \textit{E} is the set of undirected edges. Let $n=|V|$ and $m=|E|$. Let degree of a vertex \textit{v} be, deg(\textit{v}) where \textit{v} $\in$ V.
+$\[ Q = \sum \]$
 \subsubsection{Reasoning}
 \subsubsection{Description}
 \subsubsection{Implementation}
