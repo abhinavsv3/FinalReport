@@ -44,6 +44,8 @@
 \usepackage{cite}
 \usepackage{algorithm}
 \usepackage{algorithmic}
+\usepackage{float}
+\newfloat{algorithm}{t}{lop}
 
 \makeatletter
 \def\BState{\State\hskip-\ALG@thistlm}
@@ -239,6 +241,13 @@ Traditional Clustering Methods are as follows:
 \paragraph{Graph Partitioning}
  A typical problem in graph partitioning is the division of a set of tasks between the processors of a parallel computer so as to minimize the necessary amount of interprocessor communication.
  \par In such an application the number of processors is usually known in advance and at least an approximate figure for the number of tasks that each processor can handle. Thus we know the number and size of the groups into which the network is to be split. Also, the goal is usually to find the best division of the network regardless of whether a good division even exists; there is little point in an algorithm or method that fails to divide the network in some cases.\cite{newman2006modularity}
+The figure ~\ref{grapar} shows a simple graph partitioning
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{graphpart.png}
+\caption{\label{grapar}Graph Paritioning}
+
+\end{figure}
 
 \paragraph{Hierarchical Clustering}
 Hierarchical clustering aims to identify groups of vertices with high similarities. It can be calssifies into two categories:
@@ -248,8 +257,14 @@ high
 \item \textit{Divisive algorithms}, in which clusters are iteratively
 split by removing edges connecting vertices with
 low similarity.
+The figure ~\ref{herar} demonstrates the hierarchcal clustering in a diagramatic manner.
 \end{enumerate} 
 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{hirac.png}
+\caption{\label{herar}From a thickly knit graph to a dendogram}
+\end{figure}
 \paragraph{Partitional Clustering}
 
 \paragraph{Spectral Clustering}
@@ -567,10 +582,32 @@ The above equation can be continently rewritten as follows:
 Q(C_s) &= \sum_{C \in C_s}\left[ \frac{|E(C)|}{m} - \left( \frac{\sum_{v \in C}deg(v)}{2m} \right)^2 \right]
 \end{split}
 \end{equation}
+In simpler terms the value is of Q can be expressed as 
+\begin{equation} \label{eq1}
+\begin{split}
+Q &= \left( \text{Number of Intra-Cluster Communities} \right) - (\text{Expected number of Edges})
+\end{split}
+\end{equation}
 
+As given in \cite{louvain}
 
+\begin{equation}
+    \begin{split}
+Q &= \frac{1}{2m} \sum_{ij} \left(A_{ij} - P_{ij}\right) \delta(C_i,C_j)
+\end{split}
+    \end{equation}
+
+\begin{equation}
+\begin{split}
+\delta(C_i,C_j) &= \begin{cases} 1 ,& if C_i = C_j \\
+ 0,& otherwise
+ \end{cases}
+\end{split}
+\end{equation}
+
+where, $P_{ij}$ is the expected number of edges between nodes $v_i$ and $v_j$. $P_ij$ is $\frac{k_ik_j}{2m}$ where $k_x$ is sum of the weights of the edges attached to the vertex $v_x$ for a given random graph G (This is otherwise called as a null model).
+    
 \subsubsection{Properties of Modularity}
- FORMULA
 \begin{enumerate}
  \item Q depends on nodes in the same clusters only. 
   \item Larger modularity implies better Communities.
@@ -592,7 +629,7 @@ Q(C_s) \leq \frac{1}{2m} \sum_{ij} A_{ij} \delta(C_i,C_j) \leq \frac{1}{2m} \sum
 The implementation  of the algorihtm is based on the paper "Fast unfolding of communities in large networks" \cite{louvain}.  The implementation is done using basic python packages. 
  The Algorithm has two phases that are repeated iteratively to bring the final solution to the problem. The following figure ~\ref{loupic} demonstrates the algorithm in the form of a flow diagram,
  
-\begin{algorithm}
+\begin{algorithm}[H]
 \caption{Louvain Algorithm Pseudocode}
 \begin{algorithmic} 
 \REQUIRE A graph G = (V,E)
@@ -620,7 +657,28 @@ possible. This was taken from the paper "Fast unfolding of communities in large 
 \subsubsection{First Phase : Optimizing Modularity}
 The first phase of louvain algorithm 
 Let G be a graph with N nodes in the network. The algorithm assigns a different community to each node in the network.  The number of nodes is equal to the number of communities in the graph. The report uses the terms node and vertices interchangeably.  Let $v_i$ be be a node such that $v_j$ $\in$ N($v_i$). The gain of modularity is then calculated by removing $v_i$ and placing it in community of $v_j$. If the gain is positive the $v_i$ is moved to the community of $v_j$ else $v_i$ stays in it's original community. This procedure is iterated and the phase one stops when a local maxima of the modularity is achieved, that is when no more move of nodes from one community to another is possible. The ordering of the nodes can affect or effect the computation time which can be a part of future works. 
-\par The main algorithm relies on the calculation of modularity. Listing 3.1 demonstarted the calculation using a python snippet. The first phase of the algorithm has been written into a python code snippent and is presented in the Listing 3.2. 
+
+\begin{algorithm}[H]
+\caption{Phase 1 in Louvain Algorithm Pseudocode}
+\begin{algorithmic} 
+\REQUIRE A graph G = (V,E)
+\ENSURE Partition network greedily using modularity
+\STATE Assign a different community to each node
+\WHILE{$Local Optimum Reached$}
+\FORALL{Each node $v_i$}
+\STATE{ For each node $v_j$ $\in$ N($v_i$), consider removing $v_i$ from community of $v_i$ and place it in the community of $v_j$}
+\STATE Calculate the modularity gain
+\IF {\textit{ModularityGain} is Positive}
+\STATE remove $v_i$ from community of $v_i$ and place it in the community of $v_j$
+\ELSE 
+\STATE No Change
+\ENDIF
+\ENDFOR
+\ENDWHILE
+\end{algorithmic}
+\end{algorithm}
+
+\par The main algorithm relies on the calculation of modularity. Listing 3.1 demonstarted the calculation using a python snippet. The first phase of the algorithm has been written into a python code snippet and is presented in the Listing 3.2. 
 
 \begin{lstlisting}[language=Python, caption=Modularity Calculation]
 # a method from the louvain class. 
@@ -685,7 +743,6 @@ while 1:
 return best_partition
 
 \end{lstlisting}
-
 \paragraph{Second Phase}
 
 \subsubsection{Experiments}
@@ -702,7 +759,43 @@ return best_partition
 \subsubsection{Result}
 
 \chapter{Visualization Techniques}
+
 \section{Introduction}
+
+\begin{lstlisting}[language=Python, caption=Creation of JSON Object using Python]
+import json as j
+from copy import deepcopy
+la=[]
+lb=[]
+jd = {"nodes":la,"edges":lb}
+# for the node 
+k = {}
+k['id'] = "1"
+k['cluster']= "1"
+k['title'] = "Abc"
+k["relatedness"]="0.5"
+jd['nodes'].append(deepcopy(k))
+print jd
+k['id'] = "2"
+k['cluster']= "2"
+k['title'] = "two"
+k["relatedness"]="0.5"
+jd['nodes'].append(deepcopy(k))
+
+#For the Edge
+m = {}
+m["source"] = "1"
+m["target"] =  "2"
+m["relatedness"] = "0.5"
+jd['edges'].append(m)
+
+prin = j.dumps(jd,indent = 4)
+print prin
+
+f = open("crea.json","w")
+f.write(prin)
+f.close()
+\end{lstlisting}
 \subsection{Alchemy.js}
 \subsubsection{Introduction}
 \subsubsection{Reasoning}
@@ -735,6 +828,8 @@ analyzing and predicting the disease landscape of a region and in turn multiple 
 \section{Revision of Planning and Budget}
 \section{Future Works}
 Order of inputs can influence the computation time. The problem of finding specific heuristics to solve this ordering problem can improve the louvain algorithms computation time.
+Zooming effect
+merging the dashboard to the graph board
 \section{Availability and requirements}
 \begin{enumerate}
 \item \textbf{Project Name}: Graph and matrix algorithms for visualizing high dimensional
