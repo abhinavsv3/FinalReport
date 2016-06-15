@@ -54,6 +54,7 @@
 \citation{generalcommunity}
 \citation{louvain}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Average normalized performance rank of each algorithm in terms of partitioning quality and speed}}{13}}
+\newlabel{Fig1}{{2.2}{13}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1.4}State-of-the-art in Graph Visualization}{13}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {3}Community Detection Algorithm}{14}}
 \@writefile{lof}{\addvspace {10\p@ }}
@@ -63,59 +64,64 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Introduction}{14}}
 \citation{modularityNP}
 \citation{modularityNP}
-\citation{louvain}
-\citation{louvain}
-\citation{louvain}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Modularity}{15}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2.1}Definition}{15}}
 \newlabel{eq1}{{3.1}{15}}
 \newlabel{eq1}{{3.2}{15}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Implementation}{15}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Visualization of the steps of our algorithm. Each pass is made of two phases: one where modularity is optimized by allowing only local changes of communities; one where the found communities are aggregated in order to build a new network of communities. The passes are repeated iteratively until no increase of modularity is possible. This was taken from the paper "Fast unfolding of communities in large networks" \cite  {louvain}}}{16}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3.1}First Phase}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2.2}Properties of Modularity}{15}}
+\citation{louvain}
+\citation{louvain}
+\citation{louvain}
+\citation{louvain}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Louvain}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}Implementation}{16}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Louvain Algorithm Pseudocode}}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.4.1}First Phase : Optimizing Modularity}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces  Visualization of the steps of our algorithm. Each pass is made of two phases: one where modularity is optimized by allowing only local changes of communities; one where the found communities are aggregated in order to build a new network of communities. The passes are repeated iteratively until no increase of modularity is possible. This was taken from the paper "Fast unfolding of communities in large networks" \cite  {louvain}}}{17}}
+\newlabel{loupic}{{3.1}{17}}
 \@writefile{lol}{\contentsline {lstlisting}{\numberline {3.1}Modularity Calculation}{17}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.2}First Phase of Louvain Algorithm}{17}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.2}First Phase of Louvain Algorithm}{18}}
 \citation{githubtest1}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {3.2.3.1.1}Second Phase}{19}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3.2}Experiments}{19}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3.3}Result}{19}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Matrix Based Algorithm}{19}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Matrix Algorithm}{19}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.1}Introduction}{19}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.2}Reasoning}{19}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.3}Description}{19}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.4}Implementation}{19}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.5}Experiments}{19}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.6}Result}{19}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Visualization Techniques}{20}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {3.2.4.1.1}Second Phase}{19}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.4.2}Experiments}{19}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.4.3}Result}{20}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Matrix Based Algorithm}{20}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Matrix Algorithm}{20}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.1}Introduction}{20}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.2}Reasoning}{20}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.3}Description}{20}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.4}Implementation}{20}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.5}Experiments}{20}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.6}Result}{20}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Visualization Techniques}{21}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Introduction}{20}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Alchemy.js}{20}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1.1}Introduction}{20}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1.2}Reasoning}{20}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1.3}Description}{20}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1.4}Methods and Library}{20}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1.5}Result}{20}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Overall System Description}{21}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Introduction}{21}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Alchemy.js}{21}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1.1}Introduction}{21}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1.2}Reasoning}{21}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1.3}Description}{21}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1.4}Methods and Library}{21}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1.5}Result}{21}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Overall System Description}{22}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Overall System Description}{21}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Web.py}{21}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.1.1}Introduction}{21}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.1.2}Implementation Benefits}{21}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.1.3}Description}{21}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.1.4}Result}{21}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}Benefits to the community}{21}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusion and Future Works}{22}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Overall System Description}{22}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Web.py}{22}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.1.1}Introduction}{22}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.1.2}Implementation Benefits}{22}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.1.3}Description}{22}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.1.4}Result}{22}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}Benefits to the community}{22}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusion and Future Works}{23}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Goals Achieved}{22}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Revision of Planning and Budget}{22}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.3}Future Works}{22}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.4}Availability and requirements}{22}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.1}Conclusion}{23}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.2}Personal Conclusion}{23}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Goals Achieved}{23}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Revision of Planning and Budget}{23}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Future Works}{23}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}Availability and requirements}{23}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.1}Conclusion}{24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.2}Personal Conclusion}{24}}
 \bibstyle{plain}
 \bibdata{mybib}
 \bibcite{louvain}{1}

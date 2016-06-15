@@ -42,6 +42,12 @@
 \usepackage[colorinlistoftodos]{todonotes}
 \setcounter{secnumdepth}{5}
 \usepackage{cite}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+\makeatletter
+\def\BState{\State\hskip-\ALG@thistlm}
+\makeatother
 
 \newenvironment{dedication}
   {
@@ -339,10 +345,10 @@ resources. One very important factor that we need to consider is that we only ge
 of the total cost. This may vary depending on the systems in use. To calculate the amortization
 we consider to factors namely, first the overall life of the hardware or software in use. Second
 that the project is completed in 5 months. Hence the amortization cost comes one eighth
-of the actual life of the component.
+of the actual life of the component.\\
 
 \paragraph{Hardware Budget} Hardware budget accounts for the actual and the amortized costs of the hardware elements
-used by the project. The cost is fictitious as it has not been developed commercially. Table 1
+used by the project. The cost is fictitious as it has not been developed commercially. Table 1.
 intents to estimate the economic cost of each of the hardware component of the project.
 \\\\
 \begin{tabular}{|p{1cm}||p{3cm}|p{2cm}|p{3cm}|p{3cm}|}
@@ -356,6 +362,7 @@ intents to estimate the economic cost of each of the hardware component of the p
 \hline
    & \textbf{Total}  &  &  \textbf{1000}\euro  & \textbf{125} \euro \\
  \hline
+
 \end{tabular}
 
 \paragraph{Software Budget}
@@ -516,16 +523,17 @@ As said before there are various algorithms that can be used for community detec
 \item simulated annealing
 \item extremal optimization
 \end{itemize}
-The following figure the average normalized performance rank of each algorithm in terms of partitioning quality and speed. Taken from the paper that proposed Combo algorithm \cite{generalcommunity}. 
+The following figure ~\ref{Fig1} the average normalized performance rank of each algorithm in terms of partitioning quality and speed. Taken from the paper that proposed Combo algorithm \cite{generalcommunity}. 
 \begin{figure}[h]
-\caption{Average normalized performance rank of each algorithm in terms of partitioning quality and speed}
 \includegraphics[scale=0.5]{lou.png}
 \centering
+\caption{\label{Fig1}Average normalized performance rank of each algorithm in terms of partitioning quality and speed}
+
 \end{figure}
 The main Objective of the project is to visuvalize the data on screen thus needs an algorithm that is fast and should be effective.  Hence louvain algorithm was choosen for the implementation. The implementation can be found in the later scection of the project.
 
 
-Louvain algorithm \cite{louvain} is fast,recursive and is more effective on real world graphs. Oweing to our object of projecting medical domain we require an algorithm that gives a better trade off between being effective and being fast. Hence Louvain algoithm was choosen.
+Louvain algorithm algorithm is considered as state-of-the art algorithm for community detection\cite{louvain}. The algorithm is fast,recursive and is more effective on real world graphs. Oweing to our object of projecting medical domain we require an algorithm that gives a better trade off between being effective and being fast. Hence Louvain algoithm was choosen.
 
 
 \subsection{State-of-the-art in Graph Visualization}
@@ -560,22 +568,57 @@ Q(C_s) &= \sum_{C \in C_s}\left[ \frac{|E(C)|}{m} - \left( \frac{\sum_{v \in C}d
 \end{split}
 \end{equation}
 
+
+\subsubsection{Properties of Modularity}
+ FORMULA
+\begin{enumerate}
+ \item Q depends on nodes in the same clusters only. 
+  \item Larger modularity implies better Communities.
+    \item 
+    \begin{equation}
+    \begin{split}
+Q(C_s) \leq \frac{1}{2m} \sum_{ij} A_{ij} \delta(C_i,C_j) \leq \frac{1}{2m} \sum_{ij} A_{ij} \leq 1
+\end{split}
+    \end{equation}
+ \item Value taken by Q can be negative
+ \end{enumerate}
+ 
+ \subsection{Louvain}
+ Louvian algorithm is considered as the state-of-the art algorithm for community detection for identifying community structures \cite{louvain}. Louvain algorithm consists of two phases:
+
+
 \subsection{Implementation}
 
 The implementation  of the algorihtm is based on the paper "Fast unfolding of communities in large networks" \cite{louvain}.  The implementation is done using basic python packages. 
- The Algorithm has two phases that are repeated iteratively to bring the final solution to the problem. The following figure(Figure 3.1) demonstrates the algorithm in the form of a flow diagram,
+ The Algorithm has two phases that are repeated iteratively to bring the final solution to the problem. The following figure ~\ref{loupic} demonstrates the algorithm in the form of a flow diagram,
+ 
+\begin{algorithm}
+\caption{Louvain Algorithm Pseudocode}
+\begin{algorithmic} 
+\REQUIRE A graph G = (V,E)
+\ENSURE Local optimum community split has happened
+
+\WHILE{$Local Optimum Reached$}
+\STATE Phase1 : Split or partition the graph by optimizing modularity greedily
+\STATE Phase2 : Agglomerate the found clusters into new nodes
+\ENDWHILE
+\end{algorithmic}
+\end{algorithm}
+
 
  \begin{figure}[h]
-\caption{Visualization of the steps of our algorithm. Each pass is made of two phases:
+
+\includegraphics[scale=0.5]{loustep.png}
+\caption{\label{loupic} Visualization of the steps of our algorithm. Each pass is made of two phases:
 one where modularity is optimized by allowing only local changes of communities;
 one where the found communities are aggregated in order to build a new network of
 communities. The passes are repeated iteratively until no increase of modularity is
 possible. This was taken from the paper "Fast unfolding of communities in large networks" \cite{louvain}}
-\includegraphics[scale=0.5]{loustep.png}
 \centering
 \end{figure}
 
-\subsubsection{First Phase}
+\subsubsection{First Phase : Optimizing Modularity}
+The first phase of louvain algorithm 
 Let G be a graph with N nodes in the network. The algorithm assigns a different community to each node in the network.  The number of nodes is equal to the number of communities in the graph. The report uses the terms node and vertices interchangeably.  Let $v_i$ be be a node such that $v_j$ $\in$ N($v_i$). The gain of modularity is then calculated by removing $v_i$ and placing it in community of $v_j$. If the gain is positive the $v_i$ is moved to the community of $v_j$ else $v_i$ stays in it's original community. This procedure is iterated and the phase one stops when a local maxima of the modularity is achieved, that is when no more move of nodes from one community to another is possible. The ordering of the nodes can affect or effect the computation time which can be a part of future works. 
 \par The main algorithm relies on the calculation of modularity. Listing 3.1 demonstarted the calculation using a python snippet. The first phase of the algorithm has been written into a python code snippent and is presented in the Listing 3.2. 
 
