@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{louvain}
 Vincent~D Blondel, Jean-Loup Guillaume, Renaud Lambiotte, and Etienne Lefebvre.
@@ -17,9 +17,15 @@ Santo Fortunato.
 \newblock Community detection in graphs.
 \newblock {\em Physics reports}, 486(3):75--174, 2010.
 
+\bibitem{ResolLimit}
+Santo Fortunato and Marc Barthelemy.
+\newblock Resolution limit in community detection.
+\newblock {\em Proceedings of the National Academy of Sciences}, 104(1):36--41,
+  2007.
+
 \bibitem{PeterLinz}
 Peter Linz.
-\newblock {\em An Issntroduction to Formal Languages and Automata}.
+\newblock {\em An Introduction to Formal Languages and Automata}.
 \newblock D. C. Heath and Company, Lexington, MA, USA, 1990.
 
 \bibitem{newman2006modularity}
@@ -27,6 +33,11 @@ Mark~EJ Newman.
 \newblock Modularity and community structure in networks.
 \newblock {\em Proceedings of the national academy of sciences},
   103(23):8577--8582, 2006.
+
+\bibitem{pylouvain}
+Julien Odent and Michael Saint-Guillain.
+\newblock Automatic detection of community strucures in networks, November
+  26,2012.
 
 \bibitem{githubtest1}
 Pratha Sah, Lisa~O. Singh, Aaron Clauset, and Shweta Bansal.
@@ -39,5 +50,13 @@ Stanislav Sobolevsky, Riccardo Campari, Alexander Belyi, and Carlo Ratti.
 \newblock General optimization technique for high-quality community detection
   in complex networks.
 \newblock {\em Physical Review E}, 90(1):012811, 2014.
+
+\bibitem{sirlarca}
+M.~Zamora, M.~Baradad, E.~Amado, S.~Cordomí, E.~Limón, J.~Ribera, M.~Arias,
+  and R.~Gavaldà.
+\newblock Characterizing chronic disease and polymedication prescription
+  patterns from electronic health records.
+\newblock In {\em Data Science and Advanced Analytics (DSAA), 2015. 36678 2015.
+  IEEE International Conference on}, pages 1--9, Oct 2015.
 
 \end{thebibliography}

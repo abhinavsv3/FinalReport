@@ -4,52 +4,54 @@
 \contentsline {section}{\numberline {1.2}Goal of the Project}{2}
 \contentsline {section}{\numberline {1.3}Planning}{3}
 \contentsline {subsubsection}{\numberline {1.3.0.1}Task Description}{3}
-\contentsline {subsection}{\numberline {1.3.1}Economic Budget}{4}
-\contentsline {subsubsection}{\numberline {1.3.1.1}An Introduction to Economic Budget}{4}
-\contentsline {subsubsection}{\numberline {1.3.1.2}Estimation of Economic Budget}{4}
-\contentsline {paragraph}{\numberline {1.3.1.2.1}Hardware Budget}{4}
-\contentsline {paragraph}{\numberline {1.3.1.2.2}Software Budget}{5}
-\contentsline {paragraph}{\numberline {1.3.1.2.3}Human Resource Budget}{5}
-\contentsline {paragraph}{\numberline {1.3.1.2.4}Total Budget}{6}
-\contentsline {subsection}{\numberline {1.3.2}Sustainability}{6}
-\contentsline {subsubsection}{\numberline {1.3.2.1}Economic Sustainability}{6}
-\contentsline {subsubsection}{\numberline {1.3.2.2}Social Sustainability}{7}
-\contentsline {subsubsection}{\numberline {1.3.2.3}Environmental Sustainability}{7}
-\contentsline {chapter}{\numberline {2}Background Knowledge}{8}
-\contentsline {section}{\numberline {2.1}Introduction}{8}
-\contentsline {subsection}{\numberline {2.1.1}Graph Notation}{8}
-\contentsline {subsubsection}{\numberline {2.1.1.1}Graph Definition}{8}
-\contentsline {subsection}{\numberline {2.1.2}Graph Matrix Notation}{9}
-\contentsline {subsection}{\numberline {2.1.3}Approaches}{9}
-\contentsline {subsubsection}{\numberline {2.1.3.1}For Community Identification}{10}
-\contentsline {paragraph}{\numberline {2.1.3.1.1}Community Detection}{10}
-\contentsline {paragraph}{\numberline {2.1.3.1.2}Definition of a Community}{10}
-\contentsline {paragraph}{\numberline {2.1.3.1.3}Divisive algorithms}{10}
-\contentsline {paragraph}{\numberline {2.1.3.1.4}Agglomerative algorithms}{10}
-\contentsline {paragraph}{\numberline {2.1.3.1.5}Optimization Methods}{10}
-\contentsline {subsubsection}{\numberline {2.1.3.2}Clustering}{10}
-\contentsline {paragraph}{\numberline {2.1.3.2.1}Graph Partitioning}{11}
-\contentsline {paragraph}{\numberline {2.1.3.2.2}Hierarchical Clustering}{11}
-\contentsline {paragraph}{\numberline {2.1.3.2.3}Partitional Clustering}{12}
-\contentsline {paragraph}{\numberline {2.1.3.2.4}Spectral Clustering}{12}
-\contentsline {subsubsection}{\numberline {2.1.3.3}For Visualization}{12}
-\contentsline {paragraph}{\numberline {2.1.3.3.1}Web UI and Time per Query}{12}
-\contentsline {subsubsection}{\numberline {2.1.3.4}Computational Complexity}{13}
-\contentsline {subsection}{\numberline {2.1.4}State-of-the-art in Community Detection}{13}
-\contentsline {subsection}{\numberline {2.1.5}State-of-the-art in Graph Visualization}{15}
-\contentsline {chapter}{\numberline {3}Community Detection Algorithm}{16}
-\contentsline {section}{\numberline {3.1}Introduction}{16}
-\contentsline {section}{\numberline {3.2}Louvain Algorithm}{16}
-\contentsline {subsection}{\numberline {3.2.1}Introduction}{16}
-\contentsline {subsection}{\numberline {3.2.2}Modularity}{17}
-\contentsline {subsubsection}{\numberline {3.2.2.1}Definition}{17}
-\contentsline {subsubsection}{\numberline {3.2.2.2}Properties of Modularity}{18}
-\contentsline {subsection}{\numberline {3.2.3}Louvain}{18}
-\contentsline {subsection}{\numberline {3.2.4}Implementation}{18}
-\contentsline {subsubsection}{\numberline {3.2.4.1}First Phase : Optimizing Modularity}{19}
-\contentsline {paragraph}{\numberline {3.2.4.1.1}Second Phase}{22}
-\contentsline {subsubsection}{\numberline {3.2.4.2}Experiments}{22}
-\contentsline {subsubsection}{\numberline {3.2.4.3}Result}{23}
+\contentsline {section}{\numberline {1.4}Economic Budget}{4}
+\contentsline {subsection}{\numberline {1.4.1}An Introduction to Economic Budget}{4}
+\contentsline {subsection}{\numberline {1.4.2}Estimation of Economic Budget}{4}
+\contentsline {subsubsection}{\numberline {1.4.2.1}Hardware Budget}{5}
+\contentsline {subsubsection}{\numberline {1.4.2.2}Software Budget}{5}
+\contentsline {subsubsection}{\numberline {1.4.2.3}Human Resource Budget}{6}
+\contentsline {subsubsection}{\numberline {1.4.2.4}Total Budget}{6}
+\contentsline {section}{\numberline {1.5}Sustainability}{7}
+\contentsline {subsection}{\numberline {1.5.1}Economic Sustainability}{7}
+\contentsline {subsection}{\numberline {1.5.2}Social Sustainability}{7}
+\contentsline {subsection}{\numberline {1.5.3}Environmental Sustainability}{7}
+\contentsline {chapter}{\numberline {2}Background Knowledge}{9}
+\contentsline {section}{\numberline {2.1}Introduction}{9}
+\contentsline {subsection}{\numberline {2.1.1}Graph Notation}{9}
+\contentsline {subsubsection}{\numberline {2.1.1.1}Graph Definition}{9}
+\contentsline {subsection}{\numberline {2.1.2}Graph Matrix Notation}{10}
+\contentsline {subsection}{\numberline {2.1.3}Approaches}{10}
+\contentsline {subsubsection}{\numberline {2.1.3.1}For Community Identification}{11}
+\contentsline {paragraph}{\numberline {2.1.3.1.1}Community Detection}{11}
+\contentsline {paragraph}{\numberline {2.1.3.1.2}Definition of a Community}{11}
+\contentsline {paragraph}{\numberline {2.1.3.1.3}Divisive algorithms}{11}
+\contentsline {paragraph}{\numberline {2.1.3.1.4}Agglomerative algorithms}{11}
+\contentsline {paragraph}{\numberline {2.1.3.1.5}Optimization Methods}{11}
+\contentsline {subsubsection}{\numberline {2.1.3.2}Clustering}{11}
+\contentsline {paragraph}{\numberline {2.1.3.2.1}Graph Partitioning}{12}
+\contentsline {paragraph}{\numberline {2.1.3.2.2}Hierarchical Clustering}{12}
+\contentsline {paragraph}{\numberline {2.1.3.2.3}Partitional Clustering}{13}
+\contentsline {paragraph}{\numberline {2.1.3.2.4}Spectral Clustering}{13}
+\contentsline {subsubsection}{\numberline {2.1.3.3}For Visualization}{13}
+\contentsline {paragraph}{\numberline {2.1.3.3.1}Web UI and Time per Query}{13}
+\contentsline {subsubsection}{\numberline {2.1.3.4}Computational Complexity}{14}
+\contentsline {subsection}{\numberline {2.1.4}State-of-the-art in Community Detection}{14}
+\contentsline {subsection}{\numberline {2.1.5}State-of-the-art in Graph Visualization}{16}
+\contentsline {chapter}{\numberline {3}Community Detection Algorithm}{17}
+\contentsline {section}{\numberline {3.1}Introduction}{17}
+\contentsline {section}{\numberline {3.2}Louvain Algorithm}{17}
+\contentsline {subsection}{\numberline {3.2.1}Introduction}{17}
+\contentsline {subsection}{\numberline {3.2.2}Modularity}{18}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Definition}{18}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Properties of Modularity}{19}
+\contentsline {subsection}{\numberline {3.2.3}Louvain}{19}
+\contentsline {subsection}{\numberline {3.2.4}Implementation}{19}
+\contentsline {subsubsection}{\numberline {3.2.4.1}First Phase : Optimizing Modularity}{20}
+\contentsline {paragraph}{\numberline {3.2.4.1.1}Second Phase : Agglomerating the communities found in first phase into new nodes}{22}
+\contentsline {subsubsection}{\numberline {3.2.4.2}Observations of Louvain}{22}
+\contentsline {subsubsection}{\numberline {3.2.4.3}Usage of Louvain in the project}{22}
+\contentsline {subsubsection}{\numberline {3.2.4.4}Experiments}{23}
+\contentsline {subsubsection}{\numberline {3.2.4.5}Result}{23}
 \contentsline {section}{\numberline {3.3}Matrix Based Algorithm}{23}
 \contentsline {subsection}{\numberline {3.3.1}Matrix Algorithm}{23}
 \contentsline {subsubsection}{\numberline {3.3.1.1}Introduction}{23}
