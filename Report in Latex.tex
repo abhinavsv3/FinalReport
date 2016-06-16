@@ -82,7 +82,7 @@
 
 \textsc{\LARGE Universitat Politècnica de Catalunya}\\[2.5cm] % Name of your university/college
 \textsc{\Large Bachelors in Computer Science and Engineering}\\[0.5cm] % Major heading such as course name
-\textsc{\large Minor Heading}\\[0.5cm] % Minor heading such as course title
+%\textsc{\large Minor Heading}\\[0.5cm] % Minor heading such as course title
 
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
@@ -106,7 +106,7 @@ Dr. Ricard Gavalda Mestre
 \begin{minipage}{0.4\textwidth}
 \begin{flushright} \large
 \emph{Co-Director:} \\
-Dr. Marta Arias Vincente % Supervisor's Name
+Dr. Marta Arias Vicente % Supervisor's Name
 \end{flushright}
 \end{minipage}\\[2cm]
 
@@ -126,7 +126,7 @@ Abhinav Shankaranarayanan Venkataraman
 %----------------------------------------------------------------------------------------
 \bigskip
 \bigskip
-{\large June 27,2016}\\[2cm] % Date, change the \today to a set date if you want to be precise
+{\large June 20,2016}\\[2cm] % Date, change the \today to a set date if you want to be precise
 
 %----------------------------------------------------------------------------------------
 %	LOGO SECTION
@@ -178,166 +178,55 @@ I would like to Acknowledge the support provided by my faculty and admins at my 
 
 \chapter{Introduction}
 
-\section{Introduction}
 \setcounter{page}{1}
-\par In this section	we provide an overview of the entire work. We mention the context of the project we have studied, approaches that we have used, goal of the project. We also provide the intended planning, economic estimate and sustainability of the work that has been done.
+\par In this section an entire overview of the full project is provided. We mention the context of the project we have studied and the goal of the project. We also provide the intended planning, economic estimate and sustainability of the work that has been done.
 
 
-\subsection{Context Of the Project}
+\section{Context Of the Project}
 \par In the present day scenario, the modern science of algorithms and graph theory has brought significant advances to our understanding of complex data. Many complex systems are representable in the form of graphs. Graphs have time and again been used to represent real world networks. One of the most pertinent feature of graphs representing real system is community structures or otherwise known as clusters. Community can be defined as the organization of vertices in groups or clusters, with many edges joining the vertices of the same cluster and comparatively fewer vertices joining the vertices in another neighbouring cluster. Such communities form an independent compartment of a graph exhibiting similar role.
-Thus, Community detection is the key for understanding the structure of complex graphs, and ultimately educe information from them.
+Thus, community detection is the key for understanding the structure of complex graphs, and ultimately deduce information from them.
 
-\par Everyday, the number of chronic and complex patients and diseases in the health system keeps
-increasing by multiple folds. In the current scenario, a patient does not have one disease but a
-set of diseases. For Example a person with diabetes has a heart disease, kidney disease, blood
+\par The networks and highly dimensional data that motivate this problem emerge from the healthcare domain, and particularly from the analysis of complex, chronic disease, which is the major cost factor in modern societies. In the current scenario, a patient does not have one disease but a
+set of diseases. For example a person with diabetes has a heart disease, kidney disease, high blood
 pressure etc. This may vary between sexes, ages etc and thus is a very complex landscape to
 explore. Visualizing this landscape of diseases would help to analyse the source, the treatment
 and even the path way of research to done. Thus, such a visualization would be helpful for the
 medical experts and health planner to understand the landscape of diseases much better.
-\par Driven by this problem of understanding data from the medical domain, the project would consider algorithms for visualizing high dimensional data so that "similar" entities called
-communities are close together. Hence, we address this visualization of such high dimensional data using the algorithms and visualization technologies. All the solutions that are possible to resolve the problem will be analysed and the best solution will be determined. The project will also involve study of various algorithms and their respective analysis based on the quality and quantity of data using multiple appropriate experiments. 
-\subsection{Approaches}
-In this section we discuss the various approaches that are involved in dealing with the input to the project for community identification, for clustering and for visualization purposes. 
-\subsubsection{For Community Identification}
-Virtually in every scientific field dealing with empirical data, primary approach to get a first impression on the data is by trying to identify groups having "similar" behaviour in data. There are numerous methods to achieve this objective of which 
-
-\begin{itemize}
-\item Community Detection
-\item Clustering
-\end{itemize}
-
-\paragraph{Community Detection}
-\paragraph{Definition of a Community}
-Communities are a part of the graph that has fewer ties with the rest of the system. Community detection traditionally focuses on the graph structures while clustering algorithms focuses on node attributes. 
-
-Several tyoes of community detection algorithms can be distinguished
-\paragraph{Divisive algorithms}
-Divisive algorithms detect inter-community links and remove them from the network
-
-\paragraph{Agglomerative algorithms}
-Agglomerative algorithm merges similar nodes or communities in a recursive manner.
-
-\paragraph{Optimization Methods}
-Optimization methods are mainly based on maximization of an objective function.
+\par Within the perspective of the LARCA project, two kinds of networks could be useful to study in this scneario: one in which nodes are patients and edges indicate their similarity, and another one in which nodes are diagnostics/diseases, and edges indicate their association in a population. Hence, we address this visualization of such high dimensional data using the algorithms and visualization technologies. LARCA has been involved in  \cite{sirlarca} . A few solutions that are possible to resolve the problem will be analysed and the best solution will be determined. The project will also involve study of various algorithms and their respective analysis based on the quality and quantity of data using multiple appropriate experiments. 
 
 
+%\paragraph{General usefulness of community detection}
+%The ability to detect groups or communities can be significant practical importance for example, a groups of world wide web (WWW) can lead to web pages on related topics, group of social network can correspond to social units or communities that share common interest.Simply finding that a graph contains tightly knit groups at all can convey useful information if a metabolic network were divided into such groups, for instance, it could provide evidence for a modular view of the network's dynamics, with different groups of nodes performing different functions with some degree of independence. There are two tempting methods that have a long history of being studied. One is graph partitioning and the other one being hierachycal cluster. Both these domains address the same question of spliting a task into communities.
 
-
-\subsubsection{Clustering}
-
-Traditional Clustering Methods are as follows:
-\begin{itemize}
-
-\item Graph Partitioning 
-
-\item Hierarchical Clustering
-
-\item Partitional Clustering
-
-\item Spectral Clustering
-
-\end{itemize}
-
-\paragraph{Graph Partitioning}
- A typical problem in graph partitioning is the division of a set of tasks between the processors of a parallel computer so as to minimize the necessary amount of interprocessor communication.
- \par In such an application the number of processors is usually known in advance and at least an approximate figure for the number of tasks that each processor can handle. Thus we know the number and size of the groups into which the network is to be split. Also, the goal is usually to find the best division of the network regardless of whether a good division even exists; there is little point in an algorithm or method that fails to divide the network in some cases.\cite{newman2006modularity}
-The figure ~\ref{grapar} shows a simple graph partitioning
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.3]{graphpart.png}
-\caption{\label{grapar}Graph Paritioning}
-
-\end{figure}
-
-\paragraph{Hierarchical Clustering}
-Hierarchical clustering aims to identify groups of vertices with high similarities. It can be calssifies into two categories:
- \begin{enumerate}
-\item \textit{Agglomerative algorithm} : in one in which Agglomerative algorithms, in which clusters are iteratively merged if their similarity is sufficiently
-high
-\item \textit{Divisive algorithms}, in which clusters are iteratively
-split by removing edges connecting vertices with
-low similarity.
-The figure ~\ref{herar} demonstrates the hierarchcal clustering in a diagramatic manner.
-\end{enumerate} 
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.5]{hirac.png}
-\caption{\label{herar}From a thickly knit graph to a dendogram}
-\end{figure}
-\paragraph{Partitional Clustering}
-
-\paragraph{Spectral Clustering}
-
-
-
-
-
-\subsubsection{For  Visualization}
-Graph visualization is a important task in various scientific application. Visualization of data as graphs Visualizing these data
-as graphs provides the non-experts with an intuitive means
-to explore the content of the data, identify interesting patterns,
-etc. Such operations require interactive visualizations
-(as opposed to a static image) in which graph elements are
-rendered as distinct visual objects; e.g., DOM objects in a
-web browser. This way, the user can manipulate the graph
-directly from the UI, e.g., click on a node or an edge to
-get additional information (metadata), highlight parts of the
-graph, etc. Given that graphs in many real-world scenarios
-are huge, the aforementioned visualizations pose significant
-technical challenges from a data management perspective
-
-\paragraph{Web UI and Time per Query}
+\section{Goal of the Project}
+The project is built with due recommendations from the director of the project. The project is aimed at using medical domain and thus slides to the side of faster implemenation for better visualization. Hence, there are 4 facets of goals for the project which are enumerated as below:
 \begin{enumerate}
-\item \textit{Program execution and Computation} : 
-\item \textit{Building the JSON Object}
-\item \textit{Communication Time}
-\item \textit{Rendering }
+\item First objective of the project is to survey a few algorithms that aim in community finding keeping in mind that the input is from the medical domain 
+\item Next, to choose couple of algorithms that benefit the purpose of graphs from medical domain and for the purpose of visualization.
+\item Implement the algorithms and test the effciency of the algorithm using variety of graphs.
+\item Lastly but more importantly to build a Graphic User Interface (GUI) which enables visualization of the raw input on a web browser.
+
 \end{enumerate}
-The total time is the sum of all the above times. 
-\subsubsection{Computational Complexity}
- The estimate of the amount of resources required for by the algorithm to perform a task is defined as computational complexity. The humongous amount of data on the real graphs or real networks that are available in the current scenario causes the efficiency of the clustering algorithm to be crucial.
-\par In a brief, Algorithms that have polynomial complexity describe the Class \textbf{P}. Problems whose solutions can be verified in a polynomial time span the class \textbf{NP} of \textit{non--deterministic polynomial time} problems, which includes \textbf{P}. problem is \textbf{NP}-hard if a solution for it can be
-translated into a solution for any \textbf{NP}-problem. However,
-a \textbf{NP}-hard problem needs not be in the class \textbf{NP}. If it
-does belong to \textbf{NP} it is called \textbf{NP}-complete. The class
-of \textbf{NP}-complete problems has drawn a special attention
-in computer science, as it includes many famous problems like the Travelling Salesman, Boolean Satisfiability
-(\textbf{SAT}), Linear Programming, etc.
-The fact that \textbf{NP} problems have a solution which is verifiable in polynomial
-time does not mean that NP problems have polynomial
-complexity, i. e., that they are in \textbf{P}. In fact, the question of whether \textbf{NP}=\textbf{P} is the most important open problem in theoretical computer science. \textbf{NP}-hard problems
-need not be in \textbf{NP} (in which case they would be \textbf{NP}-complete), but they are at least as hard as \textbf{NP}-complete
-problems, so they are unlikely to have polynomial complexity, although a proof of that is still missing.
-\par Many clustering Algorithms or problems related to clustering are \textbf{NP}-hard. This makes it irrelavant to use the exact algorithm, in which case we use an approximation algorithm. Approximation algorithm are methods that do not deliver the exact solution but an approximate solution but with an advantage of lower complexity. \cite{communitypaper}
-
-\subsection{Goal of the Project}
-The ability to detect groups or communities can be significant practical importance for example, a groups of world wide web (WWW) can lead to web pages on related topics, group of social network can correspond to social units or communities that share common interest.Simply finding that a graph contains tightly knit groups at all can convey useful information if a metabolic network were divided into such groups, for instance, it could provide evidence for a modular view of the network's dynamics, with different groups of nodes performing different functions with some degree of independence. There are two tempting methods that have a long history of being studied. One is graph partitioning and the other one being hierachycal cluster. Both these domains address the same question of spliting a task into communities.
-
-\subsection{Planning}
+\section{Planning}
+Planning is essential component of any project. It helps to keep pace with the time.
+The total duration of the project is 5 months starting from early February 2016 to the end of June 2016. The following describes the tasks that were planned to be performed in the project.
 \subsubsection{Task Description}
 The tasks for the project have been subdivided into various task phases which are enumerated below : 
 \begin{itemize}
 \item \textbf{Required knowledge acquisition}\\
-Before any immersion into the real topic, it was necessary to acquire the knowledge
-necessary to understand the problem. In this phase we familiarize with the term
-modularity, Louvain algorithm for community detection and various other algorithms
-used for community detection.
-Acquisition of knowledge about visualization tools to be used and make conversant with python is also
-required.
-\item \textbf{Paper Analysis}\\ In this phase we analyze and compare several works about
-community detection and clustering algorithm over high dimensional graph-like data.
-Doing this we became conscious of functionalities that our proposal should have and we
-are thus able to guide all the subsequent phases.
+Necessary knowledge to understand the problem needs to be gained in order to deal with the original topic.In this phase we familiarize with the term of community detection, graph theory and understand all the possible methods that are in practice to deal with the problem. Knowledge about a few visualization methods is also necessary to implement the visualization of the project.
+\item \textbf{Paper Analysis}\\ 
+Analysis of paper related to community detection and clustering algorithms over high dimentional graph data is done in this phase of the project. This phase is necessary to understand various functionalities that the project deals with and to assist in the subsequent phases of the project.
 
-\item \textbf{Design and Implementation} \\ In this phase the project is designed and coded implementing all the functionalities of the solution. 
+\item \textbf{Design and Implementation} \\
+The required functionalities are listed and implemented using a programming language. In this phase the methods of the project are designed and programmed using the choose language. 
+The implementation is done for both the community detection algorithm and for the visualization aspect of the project.
 \item \textbf{Testing I}\\
+In this phase the program is tested using generated test cases and errors are identified and corrected. Multiple recoding is done in this phase of the project
 In this phase we test the program in order to identify errors in
 the implementation. It includes the successive recoding.
 \item \textbf{Testing II}\\
-In this phase we perform tests over synthetic and real data
-streams. We evaluate the performance of the program and we study
-the effects of concept drift.
+In this phase we perform tests are performed on the GUI to ensure the limits of GUI. 
 \item \textbf{Report Writing}\\
 In this phase the report of the project is written.
 \end{itemize} 
@@ -346,7 +235,7 @@ In this phase the report of the project is written.
 Economic management is primarily based on an estimate of income and expenditure called as
 budget. Development of a sustainable budget leads to proper economic management of the
 project. Budget and sustainability is one of the most important phase of the project
-management. In this phase we analyze the budget for the project. We also aim at providing an
+management. In this phase we analyse the budget for the project. We also aim at providing an
 estimate of the project budget and optimize the same. We look at the expenditure from various
 aspects such as software costs, hardware costs, license costs and human resource costs.
 Additionally we also account the software for its sustainability. One important factor to note is
@@ -392,7 +281,7 @@ intents to estimate the economic cost of each of the software component of the p
  \hline
  \multicolumn{5}{|c|}{Table 2 - Software Budget} \\
  \hline
- Sno: & Software Component&Useful Life &Total Cost(in \euro) &Amortized Cost(in \euro)\\
+ Sno: & Software Component&Useful Life(in years) &Total Cost(in \euro) &Amortized Cost(in \euro)\\
  \hline
 1   & Linux OS  &5 &  0\euro  & 0 \euro \\
 2   & JavaScript Engine  &1 &  0\euro  & 0 \euro \\
@@ -525,6 +414,120 @@ The adjacency matrix of a graph of order \textit{n} entitles the entire the topo
 
 \par The \textit{spectrum} of a graph \textbf{G} is the set of eigenvalues of it's adjacency matrix \textbf{M}. If \textbf{D}  is the diagonal matrix whose element \textit{D} $_{i,i}$ equals the degree of vertex i ($v_i \in$ \textit{V}).
 
+\subsection{Approaches}
+In this section we discuss the various approaches that are involved in dealing with the input to the project for community identification, for clustering and for visualization purposes. 
+\subsubsection{For Community Identification}
+Virtually in every scientific field dealing with empirical data, primary approach to get a first impression on the data is by trying to identify groups having "similar" behaviour in data. There are numerous methods to achieve this objective of which 
+
+\begin{itemize}
+\item Community Detection
+\item Clustering
+\end{itemize}
+
+\paragraph{Community Detection}
+\paragraph{Definition of a Community}
+Communities are a part of the graph that has fewer ties with the rest of the system. Community detection traditionally focuses on the graph structugmres while clustering algorithms focuses on node attributes. 
+
+Several tyoes of community detection algorithms can be distinguished
+\paragraph{Divisive algorithms}
+Divisive algorithms detect inter-community links and remove them from the network
+
+\paragraph{Agglomerative algorithms}
+Agglomerative algorithm merges similar nodes or communities in a recursive manner.
+
+\paragraph{Optimization Methods}
+Optimization methods are mainly based on maximization of an objective function.
+
+
+
+
+\subsubsection{Clustering}
+
+Traditional Clustering Methods are as follows:
+\begin{itemize}
+
+\item Graph Partitioning 
+
+\item Hierarchical Clustering
+
+\item Partitional Clustering
+
+\item Spectral Clustering
+
+\end{itemize}
+
+\paragraph{Graph Partitioning}
+ A typical problem in graph partitioning is the division of a set of tasks between the processors of a parallel computer so as to minimize the necessary amount of interprocessor communication.
+ \par In such an application the number of processors is usually known in advance and at least an approximate figure for the number of tasks that each processor can handle. Thus we know the number and size of the groups into which the network is to be split. Also, the goal is usually to find the best division of the network regardless of whether a good division even exists; there is little point in an algorithm or method that fails to divide the network in some cases.\cite{newman2006modularity}
+The figure ~\ref{grapar} shows a simple graph partitioning
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{graphpart.png}
+\caption{\label{grapar}Graph Paritioning}
+
+\end{figure}
+
+\paragraph{Hierarchical Clustering}
+Hierarchical clustering aims to identify groups of vertices with high similarities. It can be calssifies into two categories:
+ \begin{enumerate}
+\item \textit{Agglomerative algorithm} : in one in which Agglomerative algorithms, in which clusters are iteratively merged if their similarity is sufficiently
+high
+\item \textit{Divisive algorithms}, in which clusters are iteratively
+split by removing edges connecting vertices with
+low similarity.
+The figure ~\ref{herar} demonstrates the hierarchcal clustering in a diagramatic manner.
+\end{enumerate} 
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{hirac.png}
+\caption{\label{herar}From a thickly knit graph to a dendogram}
+\end{figure}
+\paragraph{Partitional Clustering}
+
+\paragraph{Spectral Clustering}
+
+
+
+
+
+\subsubsection{For  Visualization}
+Graph visualization is a important task in various scientific application. Visualization of data as graphs Visualizing these data
+as graphs provides the non-experts with an intuitive means
+to explore the content of the data, identify interesting patterns,
+etc. Such operations require interactive visualizations
+(as opposed to a static image) in which graph elements are
+rendered as distinct visual objects; e.g., DOM objects in a
+web browser. This way, the user can manipulate the graph
+directly from the UI, e.g., click on a node or an edge to
+get additional information (metadata), highlight parts of the
+graph, etc. Given that graphs in many real-world scenarios
+are huge, the aforementioned visualizations pose significant
+technical challenges from a data management perspective
+
+\paragraph{Web UI and Time per Query}
+\begin{enumerate}
+\item \textit{Program execution and Computation} : 
+\item \textit{Building the JSON Object}
+\item \textit{Communication Time}
+\item \textit{Rendering }
+\end{enumerate}
+The total time is the sum of all the above times. 
+\subsubsection{Computational Complexity}
+ The estimate of the amount of resources required for by the algorithm to perform a task is defined as computational complexity. The humongous amount of data on the real graphs or real networks that are available in the current scenario causes the efficiency of the clustering algorithm to be crucial.
+\par In a brief, Algorithms that have polynomial complexity describe the Class \textbf{P}. Problems whose solutions can be verified in a polynomial time span the class \textbf{NP} of \textit{non--deterministic polynomial time} problems, which includes \textbf{P}. problem is \textbf{NP}-hard if a solution for it can be
+translated into a solution for any \textbf{NP}-problem. However,
+a \textbf{NP}-hard problem needs not be in the class \textbf{NP}. If it
+does belong to \textbf{NP} it is called \textbf{NP}-complete. The class
+of \textbf{NP}-complete problems has drawn a special attention
+in computer science, as it includes many famous problems like the Travelling Salesman, Boolean Satisfiability
+(\textbf{SAT}), Linear Programming, etc.
+The fact that \textbf{NP} problems have a solution which is verifiable in polynomial
+time does not mean that NP problems have polynomial
+complexity, i. e., that they are in \textbf{P}. In fact, the question of whether \textbf{NP}=\textbf{P} is the most important open problem in theoretical computer science. \textbf{NP}-hard problems
+need not be in \textbf{NP} (in which case they would be \textbf{NP}-complete), but they are at least as hard as \textbf{NP}-complete
+problems, so they are unlikely to have polynomial complexity, although a proof of that is still missing.
+\par Many clustering Algorithms or problems related to clustering are \textbf{NP}-hard. This makes it irrelavant to use the exact algorithm, in which case we use an approximation algorithm. Approximation algorithm are methods that do not deliver the exact solution but an approximate solution but with an advantage of lower complexity. \cite{communitypaper}
 
 
 \subsection{State-of-the-art in Community Detection}
