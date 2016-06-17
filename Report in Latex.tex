@@ -382,7 +382,7 @@ is actually environmentally sustainable.
 In this section we present the background knowledge required to understand and solve the problem
 \section{Graph Notation}
 
-\subsubsection{Graph Definition}
+\subsection{Graph Definition}
 Graph ,\textit{G} , is construct consisting of two finite sets, the set \textit{V} = \{ $v_1,v_2, \ldots ,v_n$ \} of vertices and the set \textit{E} = \{ $e_1,e_2, \ldots,e_n$  \} of edges where each edge is a pair of vertices from \textit{V}, for instance,
 \begin{center}
 $e_i = (v_j,v_k)$
@@ -761,7 +761,7 @@ In the project the above algorithm has been implemented in python taking inspira
 \subsubsection{Experiments}
 \subsubsection{Result}
 
-\chapter{Visualization Techniques}
+\chapter{Visualization Module}
 In the field of \textit{Mathematics} and \textit{Computer Science} graph drawing is an area that uses both graph theory and infomation visualization to generate a 2-D depection of graphs. 
 
 
@@ -798,7 +798,7 @@ $<$/script$>$
 \section{Getting the data from the Louvain Python code to Alchemy }
 According to the authors of Alchemy.js. Alchemy.js takes a simple data format called GraphJSON. GraphJSON serves as a light weight and flexible representation of graph data, easily consued locally or over the web. 
 \par 
-GraphJSON is a JSON Object which has 2 object namely: \textit{nodes} and  \textit{edges} . These are induvidual arrays that represent the nodes and edges that will be represented in the graph visualization. 
+GraphJSON is a JSON Object which has 2 object namely: \textit{nodes} and  \textit{edges} . These are individual arrays that represent the nodes and edges that will be represented in the graph visualization. 
 \par \textbf{Nodes} : id key is the only unique value that should be present in the nodes
 \par \textbf{Edges} : source and target key are the only unique value that should be present in the edges.
 
@@ -849,7 +849,7 @@ GraphJSON is a JSON Object which has 2 object namely: \textit{nodes} and  \texti
 \subsubsection{Result}
 
 \chapter{Overall System Description}
-The project uses two inistingusable technologies of a raw python code and a JavaScript program that can represent or draw the output of the python code on screen. This lead to a need to include a new element of a web framework that helps in combining both the tasks.  A web framework is one that aims to allevate the overhead associated with common activities performed in the web development. 
+The project uses two indistinguishable technologies of a raw python code and a JavaScript program that can represent or draw the output of the python code on screen. This lead to a need to include a new element of a web framework that helps in combining both the tasks.  A web framework is one that aims to allevate the overhead associated with common activities performed in the web development. 
 \section{Choice of Web.py}
 An exploration one a few python web frameworks such as Django, Grok and web.py. A sample application in Django was built to see if Django suits the need of the project. Django was eliminated oweing to the fact that it was heavier for a simple task that we wish to perform in the project. Distinguishing the features of both Grok and web.py. Web.py was chosen as the web framework for the project as it allowed successful integration of the existing python code with the web framework. 
 The auxiliary main project was more associated with building a web project based on Angular.js , which was also the suggestion of the project director. But web.py commanded the current need of the project that is to perform the integration task.  
