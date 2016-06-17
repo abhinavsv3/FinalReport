@@ -442,8 +442,7 @@ Optimization methods are mainly based on maximization of an objective function.
 
 
 \subsubsection{Clustering}
-
-Traditional Clustering Methods are as follows:
+According to the paper "Community detection in graph" \cite{communitypaper} there are 4 major traditional clustering methods namely : 
 \begin{itemize}
 
 \item Graph Partitioning 
@@ -457,16 +456,14 @@ Traditional Clustering Methods are as follows:
 \end{itemize}
 
 \paragraph{Graph Partitioning}
- A typical problem in graph partitioning is the division of a set of tasks between the processors of a parallel computer so as to minimize the necessary amount of interprocessor communication.
- \par In such an application the number of processors is usually known in advance and at least an approximate figure for the number of tasks that each processor can handle. Thus we know the number and size of the groups into which the network is to be split. Also, the goal is usually to find the best division of the network regardless of whether a good division even exists; there is little point in an algorithm or method that fails to divide the network in some cases.\cite{newman2006modularity}
-The figure ~\ref{grapar} shows a simple graph partitioning
+This problem deals with dividing graph into groups of predefined size such that the number of edges between the groups is minimized. The paper \cite{communitypaper}  also defines cut size as the number of edges lying between the clusters.  Figure ~\ref{grapar} shows a problem with 14 vetices and presents a solution for spliting into 2 groups. 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{graphpart.png}
-\caption{\label{grapar}Graph Paritioning}
+\caption{\label{grapar}Graph Paritioning \cite{communitypaper}}
 
 \end{figure}
-
+\par \textit{Minimum Bisection Problem}, is a special problem case that considers partitioning the network into 2 groups of equal size. This problem is an NP-Hard problem. Intutively, to obtain ful partitioning we need to iteratively find all the minimum partition. This is not of significant use in the current problem of finding communities. 
 \paragraph{Hierarchical Clustering}
 Hierarchical clustering aims to identify groups of vertices with high similarities. It can be calssifies into two categories:
  \begin{enumerate}
@@ -711,7 +708,7 @@ In the second phase the algorithm builds the new network. The communities that a
 \end{enumerate}
 
 \subsubsection{Usage of Louvain in the project}
-In the project the above algorithm has been implemented in python taking inspiration and reusing some part of the pylouvain program API for implementation \cite{pylouvain}.
+In the project the above algorithm has been implemented in python taking inspiration and reusing some part of the pylouvain program API for implementation \cite{pylouvain}. Python was chosen as the programming language as recommended by the project Director. The project work is said to form a part of a major project work on medical domain in LARCA. The director of the project informed that the main project is written in javascipt and python hence, python was choosen as the programming language for the project.
 
 \subsubsection{Experiments}
 \cite{githubtest1}
@@ -764,7 +761,43 @@ f = open("crea.json","w")
 f.write(prin)
 f.close()
 \end{lstlisting}
-\subsection{Alchemy.js}
+\section{Alchemy.js}
+According to the creator of the Alchemy.js Software \cite{Alchemy}
+Alchemy.js is a graph drawing software built on \textit{d3}. Alchemy.js is an application which provides graph visualization with very little over head.  
+\subsection{Dependencies}
+Alchemy needs 3 main units to  form as an application namely:  \textit{alchemy.css}, \textit{alchemy.js} and \textit{data}. CSS and JavaScript are major dependencies in Alchemy.js. Installation of \textit{jQuery} and \textit{d3} is also useful. \textit{alchemy.min.js}, \textit{alchemy.css} and \textit{alchemy.min.css } will be updated in the CDN (Content Delivery netwrok)
+\subsection{Steps to use the Alchemy.js}
+ In this project we have uploaded the \textit{alchemy.min.js}, \textit{alchemy.css} and \textit{alchemy.min.css } into the project's file repository http://abhinavsv3.github.io/javascriptsal and hence will be using the link in the following explanation. 
+The following describes the steps that are followed in use of Alchemy.js :
+\begin{enumerate}
+
+\item \textit{Include the files in this format}\\
+$<$link rel="stylesheet" href="http://abhinavsv3.github.io/javascriptsal/alchemy.min.css"/$>$
+\\
+\ldots\\
+$<$script src="http://abhinavsv3.github.io/javascriptsal/alchemy.min1.js"$></script>$
+
+\item \textit{Include an element with "alchemy" ID as the id and class }\\
+The alchemy class is used to apply styles while the alchemy id is used programatically. By default Alchemy.js looks for the alchemy div but this can be overridden.
+$<$div class="alchemy" id="alchemy"$><$/div$>$
+
+\item \textit{Provide Alchemy.js with a JSON dataSource}
+
+\item \textit{Begin Alchemy.js}
+$<$script$>$
+  alchemy.begin$(\{"dataSource": someData\})$
+$<$/script$>$
+
+
+
+\end{enumerate}
+\section{Getting the data from the Louvain Python code to Alchemy }
+According to the authors of Alchemy.js. Alchemy.js takes a simple data format called GraphJSON. GraphJSON serves as a light weight and flexible representation of graph data, easily consued locally or over the web. 
+\par 
+GraphJSON is a JSON Object which has 2 object namely: \textit{nodes} and  \textit{edges} . These are induvidual arrays that represent the nodes and edges that will be represented in the graph visualization. 
+\par \textbf{Nodes} : id key is the only unique value that should be present in the nodes
+\par \textbf{Edges} : source and target key are the only unique value that should be present in the edges.
+
 \subsubsection{Introduction}
 \subsubsection{Reasoning}
 \subsubsection{Description}

@@ -62,24 +62,27 @@
 \contentsline {subsubsection}{\numberline {3.3.1.6}Result}{23}
 \contentsline {chapter}{\numberline {4}Visualization Techniques}{24}
 \contentsline {section}{\numberline {4.1}Introduction}{24}
-\contentsline {subsection}{\numberline {4.1.1}Alchemy.js}{25}
-\contentsline {subsubsection}{\numberline {4.1.1.1}Introduction}{25}
-\contentsline {subsubsection}{\numberline {4.1.1.2}Reasoning}{25}
-\contentsline {subsubsection}{\numberline {4.1.1.3}Description}{25}
-\contentsline {subsubsection}{\numberline {4.1.1.4}Methods and Library}{25}
-\contentsline {subsubsection}{\numberline {4.1.1.5}Result}{25}
-\contentsline {chapter}{\numberline {5}Overall System Description}{26}
-\contentsline {section}{\numberline {5.1}Overall System Description}{26}
-\contentsline {subsection}{\numberline {5.1.1}Web.py}{26}
-\contentsline {subsubsection}{\numberline {5.1.1.1}Introduction}{26}
-\contentsline {subsubsection}{\numberline {5.1.1.2}Implementation Benefits}{26}
-\contentsline {subsubsection}{\numberline {5.1.1.3}Description}{26}
-\contentsline {subsubsection}{\numberline {5.1.1.4}Result}{26}
-\contentsline {subsection}{\numberline {5.1.2}Benefits to the community}{26}
-\contentsline {chapter}{\numberline {6}Conclusion and Future Works}{27}
-\contentsline {section}{\numberline {6.1}Goals Achieved}{27}
-\contentsline {section}{\numberline {6.2}Revision of Planning and Budget}{27}
-\contentsline {section}{\numberline {6.3}Future Works}{27}
-\contentsline {section}{\numberline {6.4}Availability and requirements}{27}
-\contentsline {subsection}{\numberline {6.4.1}Conclusion}{28}
-\contentsline {subsection}{\numberline {6.4.2}Personal Conclusion}{28}
+\contentsline {section}{\numberline {4.2}Alchemy.js}{25}
+\contentsline {subsection}{\numberline {4.2.1}Dependencies}{25}
+\contentsline {subsection}{\numberline {4.2.2}Steps to use the Alchemy.js}{25}
+\contentsline {section}{\numberline {4.3}Getting the data from the Louvain Python code to Alchemy }{26}
+\contentsline {subsubsection}{\numberline {4.3.0.1}Introduction}{26}
+\contentsline {subsubsection}{\numberline {4.3.0.2}Reasoning}{26}
+\contentsline {subsubsection}{\numberline {4.3.0.3}Description}{26}
+\contentsline {subsubsection}{\numberline {4.3.0.4}Methods and Library}{26}
+\contentsline {subsubsection}{\numberline {4.3.0.5}Result}{26}
+\contentsline {chapter}{\numberline {5}Overall System Description}{27}
+\contentsline {section}{\numberline {5.1}Overall System Description}{27}
+\contentsline {subsection}{\numberline {5.1.1}Web.py}{27}
+\contentsline {subsubsection}{\numberline {5.1.1.1}Introduction}{27}
+\contentsline {subsubsection}{\numberline {5.1.1.2}Implementation Benefits}{27}
+\contentsline {subsubsection}{\numberline {5.1.1.3}Description}{27}
+\contentsline {subsubsection}{\numberline {5.1.1.4}Result}{27}
+\contentsline {subsection}{\numberline {5.1.2}Benefits to the community}{27}
+\contentsline {chapter}{\numberline {6}Conclusion and Future Works}{28}
+\contentsline {section}{\numberline {6.1}Goals Achieved}{28}
+\contentsline {section}{\numberline {6.2}Revision of Planning and Budget}{28}
+\contentsline {section}{\numberline {6.3}Future Works}{28}
+\contentsline {section}{\numberline {6.4}Availability and requirements}{28}
+\contentsline {subsection}{\numberline {6.4.1}Conclusion}{29}
+\contentsline {subsection}{\numberline {6.4.2}Personal Conclusion}{29}

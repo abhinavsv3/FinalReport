@@ -5,45 +5,48 @@ The style file: plain.bst
 Database file #1: mybib.bib
 Warning--entry type for "pylouvain" isn't style-file defined
 --line 22 of file mybib.bib
-You've used 10 entries,
+Warning--entry type for "Alchemy" isn't style-file defined
+--line 31 of file mybib.bib
+Warning--to sort, need author or key in Alchemy
+You've used 11 entries,
             2118 wiz_defined-function locations,
-            567 strings with 5826 characters,
-and the built_in function-call counts, 3456 in all, are:
-= -- 321
-> -- 197
+            569 strings with 5840 characters,
+and the built_in function-call counts, 3604 in all, are:
+= -- 333
+> -- 198
 < -- 1
-+ -- 79
++ -- 80
 - -- 68
-* -- 267
-:= -- 599
-add.period$ -- 29
-call.type$ -- 10
-change.case$ -- 63
+* -- 272
+:= -- 613
+add.period$ -- 30
+call.type$ -- 11
+change.case$ -- 66
 chr.to.int$ -- 0
-cite$ -- 10
-duplicate$ -- 114
-empty$ -- 253
+cite$ -- 12
+duplicate$ -- 121
+empty$ -- 276
 format.name$ -- 68
-if$ -- 695
+if$ -- 732
 int.to.chr$ -- 0
-int.to.str$ -- 10
+int.to.str$ -- 11
 missing$ -- 10
-newline$ -- 52
+newline$ -- 55
 num.names$ -- 20
-pop$ -- 63
+pop$ -- 71
 preamble$ -- 1
-purify$ -- 54
+purify$ -- 56
 quote$ -- 0
-skip$ -- 78
+skip$ -- 88
 stack$ -- 0
-substring$ -- 187
-swap$ -- 16
+substring$ -- 192
+swap$ -- 17
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 38
-warning$ -- 0
+type$ -- 42
+warning$ -- 1
 while$ -- 32
-width$ -- 12
-write$ -- 108
-(There was 1 warning)
+width$ -- 13
+write$ -- 113
+(There were 3 warnings)
