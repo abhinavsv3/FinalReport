@@ -202,10 +202,10 @@ medical experts and health planner to understand the landscape of diseases much 
 %The ability to detect groups or communities can be significant practical importance for example, a groups of world wide web (WWW) can lead to web pages on related topics, group of social network can correspond to social units or communities that share common interest.Simply finding that a graph contains tightly knit groups at all can convey useful information if a metabolic network were divided into such groups, for instance, it could provide evidence for a modular view of the network's dynamics, with different groups of nodes performing different functions with some degree of independence. There are two tempting methods that have a long history of being studied. One is graph partitioning and the other one being hierachycal cluster. Both these domains address the same question of spliting a task into communities.
 
 \section{Goal of the Project}
-The project is built with due recommendations from the director of the project. The project is aimed at using medical domain and thus slides to the side of implemenation which involves faster computation for better visualization. Hence, there are 4 facets or goals for the project which are enumerated as below:
+The project is built with due recommendations from the director of the project. The project is aimed at using medical domain and thus slides to the side of implemenation which involves faster computation for better visualization. Hence, there are four facets or goals for the project which are enumerated as below:
 \begin{enumerate}
-\item First objective of the project is to survey a few algorithms that aim in community finding keeping in mind that the input is from the medical domain 
-\item Next, to choose couple of algorithms that benefit the purpose of graphs from medical domain and for the purpose of visualization.
+\item The first objective of the project is to survey a few algorithms that aim in community finding keeping in mind that the input is from the medical domain 
+\item Next, to choose two algorithms that benefit the purpose of organizing graphs from medical domain and for the purpose of visualization.
 \item Implement the algorithms and test the efficiency of the algorithm using variety of graphs.
 \item Lastly but more importantly to build a Graphic User Interface (GUI) which enables visualization of the raw input on a web browser by drawing graphs.
 
@@ -219,7 +219,7 @@ The tasks for the project have been subdivided into various task phases which ar
 \item \textbf{Required knowledge acquisition}\\
 Necessary knowledge to understand the problem needs to be gained in order to deal with the original topic.In this phase we familiarize with the term of community detection, graph theory and understand all the possible methods that are in practice to deal with the problem. Knowledge about a few visualization methods is also necessary to implement the visualization of the project.
 \item \textbf{Paper Analysis}\\ 
-Analysis of paper related to community detection and clustering algorithms over high dimentional graph data is done in this phase of the project. This phase is necessary to understand various functionalities that the project deals with and to assist in the subsequent phases of the project.
+Analysis of paper related to community detection and clustering algorithms over high dimensional graph data is done in this phase of the project. This phase is necessary to understand various functionalities that the project deals with and to assist in the subsequent phases of the project.
 \item \textbf{Design and Implementation} \\
 The required functionalities are listed and implemented using a programming language. In this phase the methods of the project are designed and programmed using the choose language. 
 The implementation is done for both the community detection algorithm and for the visualization aspect of the project.
@@ -380,19 +380,20 @@ is actually environmentally sustainable.
 
 \chapter{Background Knowledge}
 In this section we present the background knowledge required to understand and solve the problem
-\section{Graph Notation}
+\section{Graph Notion}
+Many real-world probelms can be solved by describing it by means of a diagram that consists of a set of points in which a few or all the pairs of points are joined together by lines. It is interesting to find whether any two given points are joined by lines or not. A mathematical abstraction of this situation is termed as graphs 
+\cite{BondyNMurthy}. In the project of concern where we deal with representing the medical data in this manner it becomes necessary to talk about graphs.
 
-\subsection{Graph Definition}
-Graph ,\textit{G} , is construct consisting of two finite sets, the set \textit{V} = \{ $v_1,v_2, \ldots ,v_n$ \} of vertices and the set \textit{E} = \{ $e_1,e_2, \ldots,e_n$  \} of edges where each edge is a pair of vertices from \textit{V}, for instance,
+\section{Graph Definition}
+A Graph $G$ is formed by two finite sets, the set \textit{V} = \{ $v_1,v_2, \ldots ,v_n$ \} of vertices and the set \textit{E} = \{ $e_1,e_2, \ldots,e_n$  \} of edges where each edge is a pair of vertices from \textit{V}, for instance,
 \begin{center}
 $e_i = (v_j,v_k)$
 \end{center}
-is an edge from $v_j$ to $v_k$ represented as \textit{G}=(\textit{V},\textit{E}). In other words  E $\subset V^2$, which is the set of all unordered. The vertices ($v_j$ and $v_k$) that represent an edge are called \textit{endpoints} and the edge is said to be adjacent to each of its end points.  The definition has been framed accordint to the book on An "Introduction to Formal Languages and Automata" \cite{PeterLinz}
-
+is an edge from $v_j$ to $v_k$ represented as \textit{G}=(\textit{V},\textit{E}). In other words  E $\subset V^2$, which is the set of all unordered edges. The vertices ($v_j$ and $v_k$) that represent an edge are called \textit{endpoints} and the edge is said to be adjacent to each of its end points.
 \begin{figure}[h]
-\caption{Example Graph G=(V,E) Bull Graph}
-\includegraphics[scale=0.5]{bull.png}
 \centering
+\includegraphics[scale=0.5]{bull.png}
+\caption{Example Graph G=(V,E) Bull Graph (Created using the project)}
 \end{figure}
 
 The neighbourhood of a node $v_i$ is the set of
@@ -403,20 +404,21 @@ $|N(v_i)|$.
 \par A degree sequence, \textit{D}, specifies the set of all node
 degrees as tuples, such that D = {($v_i, d(v_i)$} and follows a
 probability distribution called the \textit{degree distribution} with
-mean $d_m$. \cite{githubtest1}
+mean $d_m$ \cite{githubtest1}.
 
-\subsection{Graph Matrix Notation}
-Graphs can be appropriately represented in the form of matrices for instance, adjacency matrix, admittance matrix etc.,
+\section{Graph Matrix Notation}
+The matrix is commonly use dot represent grpahs for computer processing. The advantage of using matrix is usually that matrix algebra can be readily applied to study the structural property of matrix. There are number of ways in which one can represent the graph in it's matrix form for example, adjacency matrix and Laplacian matrix. 
 \\
 Let \textit{G}=(\textit{V},\textit{E}) be a simple graph with vertex set \textbf{V} and edge set \textbf{E}, then the adjacency matrix is square $|V|^2$ matrix \textbf{M} such that its element $M_{i,j}$ is \textit{1} when there is an edge from $v_i$ to $v_j$,where $v_i \in \textbf{V}$ , $ v_j \in \textbf{V}$ and \textit{0} when there is no edge.
 The adjacency matrix of a graph of order \textit{n} entitles the entire the topology of a graph.  The diagonal elements of the adjacency matrix are all \textit{0} for undirected graphs \textbf{M}.
+
 \par The sum of the elements of \textit{i}-th row or column yields the degree of node \textit{i}. If the edges are weighted, one defines the weight matrix \textbf{W}, whose element \textit{W}$_{ij}$ expresses the weight of the edges between vertices \textit{i} and \textit{j}.
 
-\par The \textit{spectrum} of a graph \textbf{G} is the set of eigenvalues of it's adjacency matrix \textbf{M}. If \textbf{D}  is the diagonal matrix whose element \textit{D} $_{i,i}$ equals the degree of vertex i ($v_i \in$ \textit{V}).
+\par The \textit{spectrum} of a graph \textbf{G} is the set of eigenvalues of it's adjacency matrix \textbf{M}. If \textbf{D}  is the diagonal matrix whose element \textit{D}$_{i,i}$ equals its degree of vertex $i$ ($v_i \in$ \textit{V}) \cite{matrep}.
 
-\subsection{Approaches}
+\section{Approaches}
 In this section we discuss the various approaches that are involved in dealing with the input to the project for community identification, for clustering and for visualization purposes. 
-\subsubsection{For Community Identification}
+\subsection{For Community Identification}
 Virtually in every scientific field dealing with empirical data, primary approach to get a first impression on the data is by trying to identify groups having "similar" behaviour in data. There are numerous methods to achieve this objective of which 
 
 \begin{itemize}
@@ -424,8 +426,8 @@ Virtually in every scientific field dealing with empirical data, primary approac
 \item Clustering
 \end{itemize}
 
-\paragraph{Community Detection}
-\paragraph{Definition of a Community}
+\subsubsection{Community Detection}
+\subsubsection{Definition of a Community}
 Communities are a part of the graph that has fewer ties with the rest of the system. Community detection traditionally focuses on the graph structugmres while clustering algorithms focuses on node attributes. 
 
 Several tyoes of community detection algorithms can be distinguished
@@ -478,17 +480,24 @@ The figure ~\ref{herar} demonstrates the hierarchcal clustering in a diagramatic
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{hirac.png}
-\caption{\label{herar}From a thickly knit graph to a dendogram}
+\caption{\label{herar}From a thickly knit graph to a dendogram [This intuitive diagram was taken from a powerpoint presentation for a data mining class]}
 \end{figure}
 \paragraph{Partitional Clustering}
-
+Partitional clustering is method to find the clusters as a set of data points.  The number of clusters is preassigned. let us call this number as $k$. The vertex is a point on the metric space with a defined distance measure between the pair of points in the space.  The distance represents the difference in dissimilarity between the vertices. The main objective in this method is to separate the points in $k$ clusters such to maximize ((or) minimize) a given cost function based on distances between points and from points to $centroids$ that are suitably defined positions in space. 
+Some of the most used functions are : \textit{Minimum k-clustering} ,  \textit{k-clustering sum}, \textit{k-center} and \textit{k-median}. One of the most popular partitional technique in literature is \textit{k-means clustering} where the cost function is total intra-cluster distance \cite{communitypaper}. This method of clustering is out of scope for the project in concern.
 \paragraph{Spectral Clustering}
+According to the paper \cite{communitypaper}, Let us suppose to have a set of $n$ objects $x_1 , x_2 , \ldots , x_n$
+with a pairwise similarity function S defined between
+them, which is symmetric and non-negative (i. e.,
+S($x_i , x_j$) = S($x_j , x_i$) $\geq$ 0, $\forall$i,j = $1, ..n$). Spectral clustering includes all methods and techniques that partition
+the set into clusters by using the eigenvectors of matrices,
+like S itself or other matrices derived from it. In particular, the objects could be points in some metric space,
+or the vertices of a graph. Spectral clustering consists of
+a transformation of the initial set of objects into a set of
+points in space, whose coordinates are elements of eigenvectors: the set of points is then clustered via standard
+techniques, like \textit{k-means clustering}.
 
-
-
-
-
-\subsubsection{For  Visualization}
+\subsection{For  Visualization}
 Graph visualization is a important task in various scientific application. Visualization of data as graphs Visualizing these data
 as graphs provides the non-experts with an intuitive means
 to explore the content of the data, identify interesting patterns,
@@ -500,17 +509,9 @@ directly from the UI, e.g., click on a node or an edge to
 get additional information (metadata), highlight parts of the
 graph, etc. Given that graphs in many real-world scenarios
 are huge, the aforementioned visualizations pose significant
-technical challenges from a data management perspective
+technical challenges from a data management perspective \cite{graphviz}.
 
-\paragraph{Web UI and Time per Query}
-\begin{enumerate}
-\item \textit{Program execution and Computation} : 
-\item \textit{Building the JSON Object}
-\item \textit{Communication Time}
-\item \textit{Rendering }
-\end{enumerate}
-The total time is the sum of all the above times. 
-\subsubsection{Computational Complexity}
+\section{Computational Complexity}
  The estimate of the amount of resources required for by the algorithm to perform a task is defined as computational complexity. The humongous amount of data on the real graphs or real networks that are available in the current scenario causes the efficiency of the clustering algorithm to be crucial.
 \par In a brief, Algorithms that have polynomial complexity describe the Class \textbf{P}. Problems whose solutions can be verified in a polynomial time span the class \textbf{NP} of \textit{non--deterministic polynomial time} problems, which includes \textbf{P}. problem is \textbf{NP}-hard if a solution for it can be
 translated into a solution for any \textbf{NP}-problem. However,
@@ -523,12 +524,12 @@ The fact that \textbf{NP} problems have a solution which is verifiable in polyno
 time does not mean that NP problems have polynomial
 complexity, i. e., that they are in \textbf{P}. In fact, the question of whether \textbf{NP}=\textbf{P} is the most important open problem in theoretical computer science. \textbf{NP}-hard problems
 need not be in \textbf{NP} (in which case they would be \textbf{NP}-complete), but they are at least as hard as \textbf{NP}-complete
-problems, so they are unlikely to have polynomial complexity, although a proof of that is still missing.
+problems, so they are unlikely to have polynomial complexity, although a proof of that is still missing. Reference to this has been imbibed from the paper "Community detection in graphs" \cite{communitypaper}.
 \par Many clustering Algorithms or problems related to clustering are \textbf{NP}-hard. This makes it irrelavant to use the exact algorithm, in which case we use an approximation algorithm. Approximation algorithm are methods that do not deliver the exact solution but an approximate solution but with an advantage of lower complexity. \cite{communitypaper}
 
-\subsection{State-of-the-art in Community Detection}
-Modularity is the objective function that is widely used both as a measure and as a optimzing method for partitioning community.
-As said before there are various algorithms that can be used for community detection . In reference to the paper \cite{generalcommunity} which discusses 6 different community detection algorithms namely: 
+\section{State-of-the-art in Community Detection}
+Modularity is the objective function that is widely used both as a measure and as a optimizing method for partitioning community.
+As said before there are various algorithms that can be used for community detection . In reference to the paper \cite{generalcommunity} discusses six different community detection algorithms namely: 
 \begin{itemize}
 \item Louvain Method
 \item Le Martelot
@@ -539,47 +540,46 @@ As said before there are various algorithms that can be used for community detec
 \end{itemize}
 The following figure ~\ref{Fig1} the average normalized performance rank of each algorithm in terms of partitioning quality and speed. Taken from the paper that proposed Combo algorithm \cite{generalcommunity}. 
 \begin{figure}[h]
-\includegraphics[scale=0.5]{lou.png}
 \centering
+\includegraphics[scale=0.5]{lou.png}
 \caption{\label{Fig1}Average normalized performance rank of each algorithm in terms of partitioning quality and speed}
 
 \end{figure}
-The main Objective of the project is to visuvalize the data on screen thus needs an algorithm that is fast and should be effective.  Hence louvain algorithm was choosen for the implementation. The implementation can be found in the later scection of the project.
+The main objective of the project is to visualize the data on screen thus needs an algorithm that is fast and should be effective.  Hence louvain algorithm was choose for the implementation. The implementation can be found in the later section of the report.
 
 
-Louvain algorithm algorithm is considered as state-of-the art algorithm for community detection\cite{louvain}. The algorithm is fast,recursive and is more effective on real world graphs. Oweing to our object of projecting medical domain we require an algorithm that gives a better trade off between being effective and being fast. Hence Louvain algoithm was choosen.
+Louvain algorithm algorithm is considered as state-of-the art algorithm for community detection\cite{louvain}. The algorithm is fast,recursive and is more effective than the other algorithms in real-world graphs. Due to our goal of projecting medical domain we require an algorithm that gives a better trade off between being effective and being fast. Hence Louvain algoithm was chosen.
 
 
-\subsection{State-of-the-art in Graph Visualization}
+\section{State-of-the-art in Graph Visualization}
 
-\subsection{Degree Distribution}
-Degree of a node($v_i$) in the graph G = (V,E) where V is the set of vertices and E is the set of edges is the number of edges that a  node has to other nodes. Usually denoted as deg($v_i$). \textit{Degree distribution} can be thus described as the probability distribution of there degrees over the entire graph.  Degree distribution is significant in the study of community networks and hence bringing it into consideration.  It is usually denoted as \textit{P(k)} of a graph which is the fraction of nodes in the network with degree \textit{k}.
+
+\section{Degree Distribution}
+Degree of a node($v_i$) in the graph $G = (V,E)$ where $V$ is the set of vertices and $E$ is the set of edges is the number of edges that a  node has to other nodes. Usually denoted as deg($v_i$). \textit{Degree distribution} can be thus described as the probability distribution of there degrees over the entire graph.  Degree distribution is significant in the study of community networks and hence bringing it into consideration.  It is usually denoted as $P(k)$ of a graph which is the fraction of nodes in the network with degree $k$.
 \begin{equation}
 \begin{split}
 P(k) &= \frac{N_k}{N}
 \end{split}
 \end{equation}
 where $N_k$ is the number of  nodes with degree \textit{k} and \textit{N} is the total number of nodes in the graph.
-\subsubsection{Scale-Free Graph}
+\subsection{Scale-Free Graph}
 The graphs whose degree distribution follows power law are called as Scale-Free graphs or scale free networks. 
 \\
 Examples of Scale-Free graphs include Social network graph,protein-protien interation network etc.
 
-\chapter{Community Detection Algorithm}
-\section{Introduction}
+\chapter{Louvain Community Detection Algorithm}
 In this section we would describe the community detection algorithms such as louvain and various tests that were performed to choose the algorithm. 
-\section{Louvain Algorithm}
-\subsection{Introduction}
+\section{Introduction}
 
 The problem of community detection requires the graph to be split into communities of tightly packed or in other words densely connected nodes with nodes of different community being sparely connected. 
 
 Several algorithms have been proposed for perfoming good partition in a reasonably good speed.
-Distinguishably there are several types of community detection algorithms, namely: divisive algorithms, which aims in removal of the inter-community links, agglomerative algorithms, which aim in merging similar nodes and optimization methods which aim in maximzing the objective function. 
-\subsection{Modularity}
+Distinguishably there are several types of community detection algorithms, namely: divisive algorithms, which aims in removal of the inter-community links, agglomerative algorithms, which aim in merging similar nodes and optimization methods which aim in maximizing the objective function. 
+\section{Modularity}
 The quality of partitioning that results from application of method is often measured using modularity. The \textit{modularity} of a partition is hence a scalar value between -1 and 1 that is used to measure the density of the links inside the communities as compared to the density of the links between the communities.
 \par
 Modularity not only serves as a quality measure for detecting the quality of split or partition, but also acts as an objective function to optimize.  Exact modularity optimization is \textbf{NP-Complete} in the strong sense \cite{modularityNP}.
-\subsubsection{Definition}
+\subsection{Definition}
 Let G=(V,E) be a simple graph,where \textit{V} is the set of vertices and \textit{E} is the set of undirected edges. Let $n=|V|$ and $m=|E|$. Let degree of a vertex \textit{v} be, deg(\textit{v}) where \textit{v} $\in$ V. Let C be the community, $C \subseteq V$, be the subset of vertices. A \textit{clustering} $C_s =\{C_1,C_2, \ldots, C_k\}$ of G is a partition of V such each vertex is present exactly in one cluster.  We thus define \textit{modularity } as follows: \cite{modularityNP}
 
 \begin{equation} \label{eq1}
@@ -619,7 +619,7 @@ Q &= \frac{1}{2m} \sum_{ij} \left(A_{ij} - P_{ij}\right) \delta(C_i,C_j)
 
 where, $P_{ij}$ is the expected number of edges between nodes $v_i$ and $v_j$. $P_ij$ is $\frac{k_ik_j}{2m}$ where $k_x$ is sum of the weights of the edges attached to the vertex $v_x$ for a given random graph G (This is otherwise called as a null model).
     
-\subsubsection{Properties of Modularity}
+\subsection{Properties of Modularity}
 \begin{enumerate}
  \item Q depends on nodes in the same clusters only. 
   \item Larger modularity implies better Communities.
@@ -632,11 +632,11 @@ Q(C_s) \leq \frac{1}{2m} \sum_{ij} A_{ij} \delta(C_i,C_j) \leq \frac{1}{2m} \sum
  \item Value taken by Q can be negative
  \end{enumerate}
  
- \subsection{Louvain}
+ \section{Louvain}
  Louvian algorithm is considered as the state-of-the art algorithm for community detection for identifying community structures \cite{louvain}. Louvain algorithm consists of two phases:
 
 
-\subsection{Implementation}
+\section{Implementation of the Algorithm}
 
 The implementation  of the algorihtm is based on the paper "Fast unfolding of communities in large networks" \cite{louvain}.  The implementation is done using basic python packages. 
  The Algorithm has two phases that are repeated iteratively to bring the final solution to the problem. The following figure ~\ref{loupic} demonstrates the algorithm in the form of a flow diagram,

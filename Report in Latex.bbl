@@ -3,17 +3,34 @@
 \bibitem{Alchemy}
 Alchemy: Alchemy.js is a graph drawing application program.
 
+\bibitem{graphviz}
+Nikos Bikakis, John Liagouris, Maria Krommyda, George Papastefanatos, and Timos
+  Sellis.
+\newblock graphvizdb: A scalable platform for interactive large graph
+  visualization.
+
 \bibitem{louvain}
 Vincent~D Blondel, Jean-Loup Guillaume, Renaud Lambiotte, and Etienne Lefebvre.
 \newblock Fast unfolding of communities in large networks.
 \newblock {\em Journal of statistical mechanics: theory and experiment},
   2008(10):P10008, 2008.
 
+\bibitem{BondyNMurthy}
+John~Adrian Bondy and Uppaluri Siva~Ramachandra Murty.
+\newblock {\em Graph theory with applications}, volume 290.
+\newblock Macmillan London, 1976.
+
 \bibitem{modularityNP}
 Ulrik Brandes, Daniel Delling, Marco Gaertler, Robert G{\"o}rke, Martin Hoefer,
   Zoran Nikoloski, and Dorothea Wagner.
 \newblock Maximizing modularity is hard.
 \newblock {\em arXiv preprint physics/0608255}, 2006.
+
+\bibitem{matrep}
+David Emms, Edwin~R Hancock, Simone Severini, and Richard~C Wilson.
+\newblock A matrix representation of graphs and its spectrum as a graph
+  invariant.
+\newblock {\em Electr. J. Comb}, 13(1), 2006.
 
 \bibitem{communitypaper}
 Santo Fortunato.
@@ -25,11 +42,6 @@ Santo Fortunato and Marc Barthelemy.
 \newblock Resolution limit in community detection.
 \newblock {\em Proceedings of the National Academy of Sciences}, 104(1):36--41,
   2007.
-
-\bibitem{PeterLinz}
-Peter Linz.
-\newblock {\em An Introduction to Formal Languages and Automata}.
-\newblock D. C. Heath and Company, Lexington, MA, USA, 1990.
 
 \bibitem{pylouvain}
 Julien Odent and Michael Saint-Guillain.
