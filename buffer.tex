@@ -710,3 +710,101 @@ This is one of the greatest project experience.
 
 
 
+\begin{lstlisting}[language=Python, caption=Creation of JSON Object using Python]
+import json as j
+from copy import deepcopy
+la=[]
+lb=[]
+jd = {"nodes":la,"edges":lb}
+# for the node 
+k = {}
+k['id'] = "1"
+k['cluster']= "1"
+k['title'] = "Abc"
+k["relatedness"]="0.5"
+jd['nodes'].append(deepcopy(k))
+print jd
+k['id'] = "2"
+k['cluster']= "2"
+k['title'] = "two"
+k["relatedness"]="0.5"
+jd['nodes'].append(deepcopy(k))
+
+#For the Edge
+m = {}
+m["source"] = "1"
+m["target"] =  "2"
+m["relatedness"] = "0.5"
+jd['edges'].append(m)
+
+prin = j.dumps(jd,indent = 4)
+print prin
+
+f = open("crea.json","w")
+f.write(prin)
+f.close()
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python, caption=Modularity Calculation]
+# a method from the louvain class. 
+# The variables are as equivalent as 
+# in the above formula 3.2
+ def modularity_calc(self,partition):
+        q = 0
+        m2 = self.m * 2 
+        for i in range(len(partition)):
+            q += self.s_in[i] / m2 - (self.s_tot[i] / m2) ** 2
+        return q
+    
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python, caption=First Phase of Louvain Algorithm]
+best_partition = self.make_initial_partition(network)
+while 1:
+    improvement = 0
+    for node in network[0]:
+        node_community = self.communities[node]
+        # default best community is its own
+        best_community = node_community
+        best_gain = 0
+        # remove _node from its community
+        best_partition[node_community].remove(node)
+        best_shared_links = 0
+        for e in self.edges_of_node[node]:
+            if e[0][0] == e[0][1]:
+                continue
+            if e[0][0] == node and self.communities[e[0][1]] == node_community or e[0][1] == node and self.communities[e[0][0]] == node_community:
+                best_shared_links += e[1]
+        self.s_in[node_community] -= 2 * (best_shared_links + self.w[node])
+        self.s_tot[node_community] -= self.e_sum[node]
+        self.communities[node] = -1
+        communities = {} # only consider neighbors of different communities
+        for neighbor in self.get_neighbors(node):
+            community = self.communities[neighbor]
+            if community in communities:
+                continue
+            communities[community] = 1
+            shared_links = 0
+            for e in self.edges_of_node[node]:
+                if e[0][0] == e[0][1]:
+                    continue
+                if e[0][0] == node and self.communities[e[0][1]] == community or e[0][1] == node and self.communities[e[0][0]] == community:
+                    shared_links += e[1]
+            # compute modularity gain obtained by moving _node to the community of _neighbor
+            gain = self.modularity_calc_gain(node, community, shared_links)
+            if gain > best_gain:
+                best_community = community
+                best_gain = gain
+                best_shared_links = shared_links
+        # insert _node into the community maximizing the modularity gain
+        best_partition[best_community].append(node)
+        self.communities[node] = best_community
+        self.s_in[best_community] += 2 * (best_shared_links + self.w[node])
+        self.s_tot[best_community] += self.e_sum[node]
+        if node_community != best_community:
+            improvement = 1
+    if not improvement:
+        break
+return best_partition
+
+\end{lstlisting}

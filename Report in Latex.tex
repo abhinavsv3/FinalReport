@@ -192,19 +192,19 @@ pressure etc. This may vary between sexes, ages etc and thus is a very complex l
 explore. Visualizing this landscape of diseases would help to analyse the source, the treatment
 and even the path way of research to done. Thus, such a visualization would be helpful for the
 medical experts and health planner to understand the landscape of diseases much better.
-\par Within the perspective of the LARCA project, two kinds of networks could be useful to study in this scneario: one in which nodes are patients and edges indicate their similarity, and another one in which nodes are diagnostics/diseases, and edges indicate their association in a population. Hence, we address this visualization of such high dimensional data using the algorithms and visualization technologies. LARCA has been involved in  \cite{sirlarca} . A few solutions that are possible to resolve the problem will be analysed and the best solution will be determined. The project will also involve study of various algorithms and their respective analysis based on the quality and quantity of data using multiple appropriate experiments. 
+\par Within the perspective of the LARCA project, two kinds of networks could be useful to study in this scneario: one in which nodes are patients and edges indicate their similarity, and another one in which nodes are diagnostics/diseases, and edges indicate their association in a population. Hence, we address this visualization of such high dimensional data using the algorithms and visualization technologies. LARCA has been involved in  healthcare project by LARCA, a publication of the same has been made in the DSAA conference \cite{sirlarca} . A few solutions that are possible to resolve the problem will be analysed and tests will be conducted. The project will also involve study of various algorithms and their respective analysis based on the quality and quantity of data using multiple appropriate experiments. Although, the project is motivated by the real high dimensional data it is not easy to get such data and hence would use simpler ones for testing the project.  
 
 
 %\paragraph{General usefulness of community detection}
 %The ability to detect groups or communities can be significant practical importance for example, a groups of world wide web (WWW) can lead to web pages on related topics, group of social network can correspond to social units or communities that share common interest.Simply finding that a graph contains tightly knit groups at all can convey useful information if a metabolic network were divided into such groups, for instance, it could provide evidence for a modular view of the network's dynamics, with different groups of nodes performing different functions with some degree of independence. There are two tempting methods that have a long history of being studied. One is graph partitioning and the other one being hierachycal cluster. Both these domains address the same question of spliting a task into communities.
 
 \section{Goal of the Project}
-The project is built with due recommendations from the director of the project. The project is aimed at using medical domain and thus slides to the side of faster implemenation for better visualization. Hence, there are 4 facets of goals for the project which are enumerated as below:
+The project is built with due recommendations from the director of the project. The project is aimed at using medical domain and thus slides to the side of implemenation which involves faster computation for better visualization. Hence, there are 4 facets or goals for the project which are enumerated as below:
 \begin{enumerate}
 \item First objective of the project is to survey a few algorithms that aim in community finding keeping in mind that the input is from the medical domain 
 \item Next, to choose couple of algorithms that benefit the purpose of graphs from medical domain and for the purpose of visualization.
-\item Implement the algorithms and test the effciency of the algorithm using variety of graphs.
-\item Lastly but more importantly to build a Graphic User Interface (GUI) which enables visualization of the raw input on a web browser.
+\item Implement the algorithms and test the efficiency of the algorithm using variety of graphs.
+\item Lastly but more importantly to build a Graphic User Interface (GUI) which enables visualization of the raw input on a web browser by drawing graphs.
 
 \end{enumerate}
 \section{Planning}
@@ -217,7 +217,6 @@ The tasks for the project have been subdivided into various task phases which ar
 Necessary knowledge to understand the problem needs to be gained in order to deal with the original topic.In this phase we familiarize with the term of community detection, graph theory and understand all the possible methods that are in practice to deal with the problem. Knowledge about a few visualization methods is also necessary to implement the visualization of the project.
 \item \textbf{Paper Analysis}\\ 
 Analysis of paper related to community detection and clustering algorithms over high dimentional graph data is done in this phase of the project. This phase is necessary to understand various functionalities that the project deals with and to assist in the subsequent phases of the project.
-
 \item \textbf{Design and Implementation} \\
 The required functionalities are listed and implemented using a programming language. In this phase the methods of the project are designed and programmed using the choose language. 
 The implementation is done for both the community detection algorithm and for the visualization aspect of the project.
@@ -259,7 +258,7 @@ intents to estimate the economic cost of each of the hardware component of the p
  \hline
  \multicolumn{5}{|c|}{Table 1 - Hardware Budget} \\
  \hline
- Sno: & Hardware Component&Useful Life &Total Cost(in \euro) &Amortized Cost(in \euro)\\
+ Sno: & Hardware Component&Useful Life(in years) &Total Cost(in \euro) &Amortized Cost(in \euro)\\
  \hline
 1   & PC System  &4 &  1000\euro  & 125 \euro \\
 \hline
@@ -364,23 +363,21 @@ The project aims at developing web based platform to perform learning cum visual
 analytics. This is indirectly going to analyze the learning characteristics of the patients and
 provide a feedback both to the medical analyzer and health planner. This is going to improve
 the quality of health analysis in the state. All this requires is a simple computer connected to
-the internet. This has very keen social motive and this project when completed is going to
-improve the standard of learning in schools. Thus this has a great social responsibility. This is in
+the internet.  Thus this has a great social responsibility. This is in
 turn justifies why this project has a great social sustainability.
 
 \subsection{Environmental Sustainability}
 From the sections of temporal planning and the budget planning we understand that we have a
 computer running throughout the project. If we make an assumption that the amount of
 energy used by a single computer comes to around 250 watts. And given that we spend 500
-hours on the project then the energy expended is 125KW. This amounts to 48.125 kg of
-$CO_2$ . This is indeed a high amount but well within the permissible limits. This can be reduced
+hours on the project then the energy expended is 125KW.  On average, electricity sources emit 1.222lbs CO2 per kWh (0.0005925 metric tons = 0.53750695845 Kg of CO2 per kWh). (Source: EPA eGRID Summary Tables and Data Files). This amounts to a upper bound of 67.1884 kg of
+$CO_2$ considering that the energy was produced by using coal lignite. This can be reduced
 by reducing the code size which is possible by reusing the already existing code. But the project
 is actually environmentally sustainable.
 
 \chapter{Background Knowledge}
-\section{Introduction}
 In this section we present the background knowledge required to understand and solve the problem
-\subsection{Graph Notation}
+\section{Graph Notation}
 
 \subsubsection{Graph Definition}
 Graph ,\textit{G} , is construct consisting of two finite sets, the set \textit{V} = \{ $v_1,v_2, \ldots ,v_n$ \} of vertices and the set \textit{E} = \{ $e_1,e_2, \ldots,e_n$  \} of edges where each edge is a pair of vertices from \textit{V}, for instance,
@@ -518,14 +515,13 @@ a \textbf{NP}-hard problem needs not be in the class \textbf{NP}. If it
 does belong to \textbf{NP} it is called \textbf{NP}-complete. The class
 of \textbf{NP}-complete problems has drawn a special attention
 in computer science, as it includes many famous problems like the Travelling Salesman, Boolean Satisfiability
-(\textbf{SAT}), Linear Programming, etc.
+(\textbf{SAT}), Integer Programming, etc.
 The fact that \textbf{NP} problems have a solution which is verifiable in polynomial
 time does not mean that NP problems have polynomial
 complexity, i. e., that they are in \textbf{P}. In fact, the question of whether \textbf{NP}=\textbf{P} is the most important open problem in theoretical computer science. \textbf{NP}-hard problems
 need not be in \textbf{NP} (in which case they would be \textbf{NP}-complete), but they are at least as hard as \textbf{NP}-complete
 problems, so they are unlikely to have polynomial complexity, although a proof of that is still missing.
 \par Many clustering Algorithms or problems related to clustering are \textbf{NP}-hard. This makes it irrelavant to use the exact algorithm, in which case we use an approximation algorithm. Approximation algorithm are methods that do not deliver the exact solution but an approximate solution but with an advantage of lower complexity. \cite{communitypaper}
-
 
 \subsection{State-of-the-art in Community Detection}
 Modularity is the objective function that is widely used both as a measure and as a optimzing method for partitioning community.
@@ -552,6 +548,19 @@ Louvain algorithm algorithm is considered as state-of-the art algorithm for comm
 
 
 \subsection{State-of-the-art in Graph Visualization}
+
+\subsection{Degree Distribution}
+Degree of a node($v_i$) in the graph G = (V,E) where V is the set of vertices and E is the set of edges is the number of edges that a  node has to other nodes. Usually denoted as deg($v_i$). \textit{Degree distribution} can be thus described as the probability distribution of there degrees over the entire graph.  Degree distribution is significant in the study of community networks and hence bringing it into consideration.  It is usually denoted as \textit{P(k)} of a graph which is the fraction of nodes in the network with degree \textit{k}.
+\begin{equation}
+\begin{split}
+P(k) &= \frac{N_k}{N}
+\end{split}
+\end{equation}
+where $N_k$ is the number of  nodes with degree \textit{k} and \textit{N} is the total number of nodes in the graph.
+\subsubsection{Scale-Free Graph}
+The graphs whose degree distribution follows power law are called as Scale-Free graphs or scale free networks. 
+\\
+Examples of Scale-Free graphs include Social network graph,protein-protien interation network etc.
 
 \chapter{Community Detection Algorithm}
 \section{Introduction}
@@ -724,43 +733,9 @@ In the project the above algorithm has been implemented in python taking inspira
 \subsubsection{Result}
 
 \chapter{Visualization Techniques}
+In the field of \textit{Mathematics} and \textit{Computer Science} graph drawing is an area that uses both graph theory and infomation visualization to generate a 2-D depection of graphs. 
 
-\section{Introduction}
 
-\begin{lstlisting}[language=Python, caption=Creation of JSON Object using Python]
-import json as j
-from copy import deepcopy
-la=[]
-lb=[]
-jd = {"nodes":la,"edges":lb}
-# for the node 
-k = {}
-k['id'] = "1"
-k['cluster']= "1"
-k['title'] = "Abc"
-k["relatedness"]="0.5"
-jd['nodes'].append(deepcopy(k))
-print jd
-k['id'] = "2"
-k['cluster']= "2"
-k['title'] = "two"
-k["relatedness"]="0.5"
-jd['nodes'].append(deepcopy(k))
-
-#For the Edge
-m = {}
-m["source"] = "1"
-m["target"] =  "2"
-m["relatedness"] = "0.5"
-jd['edges'].append(m)
-
-prin = j.dumps(jd,indent = 4)
-print prin
-
-f = open("crea.json","w")
-f.write(prin)
-f.close()
-\end{lstlisting}
 \section{Alchemy.js}
 According to the creator of the Alchemy.js Software \cite{Alchemy}
 Alchemy.js is a graph drawing software built on \textit{d3}. Alchemy.js is an application which provides graph visualization with very little over head.  
@@ -805,9 +780,28 @@ GraphJSON is a JSON Object which has 2 object namely: \textit{nodes} and  \texti
 \subsubsection{Result}
 
 \chapter{Overall System Description}
-\section{Overall System Description}
-\subsection{Web.py}
-\subsubsection{Introduction}
+The project uses two inistingusable technologies of a raw python code and a JavaScript program that can represent or draw the output of the python code on screen. This lead to a need to include a new element of a web framework that helps in combining both the tasks.  A web framework is one that aims to allevate the overhead associated with common activities performed in the web development. 
+\section{Choice of Web.py}
+An exploration one a few python web frameworks such as Django, Grok and web.py. A sample application in Django was built to see if Django suits the need of the project. Django was eliminated oweing to the fact that it was heavier for a simple task that we wish to perform in the project. Distinguishing the features of both Grok and web.py. Web.py was chosen as the web framework for the project as it allowed successful integration of the existing python code with the web framework. 
+The auxiliary main project was more associated with building a web project based on Angular.js , which was also the suggestion of the project director. But web.py commanded the current need of the project that is to perform the integration task.  
+\section{Front End frame work}
+Bootstrap was an intuitive web front-end frame work that has been implemented in the project.  Bootstrap can be divided into various matrix cubes enabling us to place buttons to run the application.
+
+
+
+\section{using the application}
+The web application thus developed is intutive enough such that even though it performs tasks of computation and integration into the web it looks simple. Minimal and most necessary elements have been implemented.
+In the following we describe the entire working flow of the Web Application:
+\begin{enumerate}
+\item \textbf{"Login Page"} In this part a simple login password is described.  
+\item \textbf{File Loader Page} After logining the user lands in a file loader page where provision has been provided to upload a text file containing the adjacency matrix of the graphs are present in the "start" "Destination" or "Start" "Weight" "Destination" format. In this space only numerical values can be accepted for supporting the simplity of the background process. Another space to provide a key that maps the names of the node numbers. This helps to present another dimention of seeing the data in the form of names.  Viewing the names of the node over nodes helps the user to deepen his vision of analysis. 
+\item \textbf{Dash Board} In this part of the web application the user lands in a page that presents to the user 4 different variety of visual representation of the input data :  Community graphs (Diplaying the links between various communities), Full graph split into communities represented with different colors, Original graph input(Helps to see if the input was proper) and a Matrix view of the graph
+\item On clicking on the visualization the user wants to take the web aplication switches to the graph that the user has clicked.
+\end{enumerate}
+
+
+
+
 \subsubsection{Implementation Benefits}
 sdgbf akjsfkldsnfksndafnadfa
 fasfadf
@@ -832,7 +826,7 @@ Order of inputs can influence the computation time. The problem of finding speci
 Zooming effect
 merging the dashboard to the graph board.
 The project relies fully on louvain. One can speculate on whether modularity is the only measure that exists. THinking about a completely new measure would be interesting. 
-
+Database for passwords. 
 \section{Availability and requirements}
 \begin{enumerate}
 \item \textbf{Project Name}: Graph and matrix algorithms for visualizing high dimensional
@@ -847,69 +841,6 @@ This is one of the greatest project experience.
 \subsection{Personal Conclusion}
 This is one of the greatest project experience.	
 
-\begin{lstlisting}[language=Python, caption=Modularity Calculation]
-# a method from the louvain class. 
-# The variables are as equivalent as 
-# in the above formula 3.2
- def modularity_calc(self,partition):
-        q = 0
-        m2 = self.m * 2 
-        for i in range(len(partition)):
-            q += self.s_in[i] / m2 - (self.s_tot[i] / m2) ** 2
-        return q
-    
-\end{lstlisting}
-
-\begin{lstlisting}[language=Python, caption=First Phase of Louvain Algorithm]
-best_partition = self.make_initial_partition(network)
-while 1:
-    improvement = 0
-    for node in network[0]:
-        node_community = self.communities[node]
-        # default best community is its own
-        best_community = node_community
-        best_gain = 0
-        # remove _node from its community
-        best_partition[node_community].remove(node)
-        best_shared_links = 0
-        for e in self.edges_of_node[node]:
-            if e[0][0] == e[0][1]:
-                continue
-            if e[0][0] == node and self.communities[e[0][1]] == node_community or e[0][1] == node and self.communities[e[0][0]] == node_community:
-                best_shared_links += e[1]
-        self.s_in[node_community] -= 2 * (best_shared_links + self.w[node])
-        self.s_tot[node_community] -= self.e_sum[node]
-        self.communities[node] = -1
-        communities = {} # only consider neighbors of different communities
-        for neighbor in self.get_neighbors(node):
-            community = self.communities[neighbor]
-            if community in communities:
-                continue
-            communities[community] = 1
-            shared_links = 0
-            for e in self.edges_of_node[node]:
-                if e[0][0] == e[0][1]:
-                    continue
-                if e[0][0] == node and self.communities[e[0][1]] == community or e[0][1] == node and self.communities[e[0][0]] == community:
-                    shared_links += e[1]
-            # compute modularity gain obtained by moving _node to the community of _neighbor
-            gain = self.modularity_calc_gain(node, community, shared_links)
-            if gain > best_gain:
-                best_community = community
-                best_gain = gain
-                best_shared_links = shared_links
-        # insert _node into the community maximizing the modularity gain
-        best_partition[best_community].append(node)
-        self.communities[node] = best_community
-        self.s_in[best_community] += 2 * (best_shared_links + self.w[node])
-        self.s_tot[best_community] += self.e_sum[node]
-        if node_community != best_community:
-            improvement = 1
-    if not improvement:
-        break
-return best_partition
-
-\end{lstlisting}
 
 
 \lstlistoflistings

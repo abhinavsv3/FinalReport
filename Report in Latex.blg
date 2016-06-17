@@ -8,45 +8,45 @@ Warning--entry type for "pylouvain" isn't style-file defined
 Warning--entry type for "Alchemy" isn't style-file defined
 --line 31 of file mybib.bib
 Warning--to sort, need author or key in Alchemy
-You've used 11 entries,
+You've used 10 entries,
             2118 wiz_defined-function locations,
-            569 strings with 5840 characters,
-and the built_in function-call counts, 3604 in all, are:
-= -- 333
-> -- 198
+            563 strings with 5755 characters,
+and the built_in function-call counts, 3289 in all, are:
+= -- 299
+> -- 191
 < -- 1
-+ -- 80
-- -- 68
-* -- 272
-:= -- 613
-add.period$ -- 30
-call.type$ -- 11
-change.case$ -- 66
++ -- 77
+- -- 66
+* -- 248
+:= -- 562
+add.period$ -- 27
+call.type$ -- 10
+change.case$ -- 62
 chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 121
-empty$ -- 276
-format.name$ -- 68
-if$ -- 732
+cite$ -- 11
+duplicate$ -- 110
+empty$ -- 247
+format.name$ -- 66
+if$ -- 667
 int.to.chr$ -- 0
-int.to.str$ -- 11
-missing$ -- 10
-newline$ -- 55
-num.names$ -- 20
-pop$ -- 71
+int.to.str$ -- 10
+missing$ -- 9
+newline$ -- 50
+num.names$ -- 18
+pop$ -- 69
 preamble$ -- 1
-purify$ -- 56
+purify$ -- 53
 quote$ -- 0
-skip$ -- 88
+skip$ -- 81
 stack$ -- 0
-substring$ -- 192
-swap$ -- 17
+substring$ -- 156
+swap$ -- 16
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 42
+type$ -- 38
 warning$ -- 1
-while$ -- 32
-width$ -- 13
-write$ -- 113
+while$ -- 28
+width$ -- 12
+write$ -- 102
 (There were 3 warnings)

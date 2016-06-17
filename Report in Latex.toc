@@ -10,33 +10,34 @@
 \contentsline {subsubsection}{\numberline {1.4.2.1}Hardware Budget}{5}
 \contentsline {subsubsection}{\numberline {1.4.2.2}Software Budget}{5}
 \contentsline {subsubsection}{\numberline {1.4.2.3}Human Resource Budget}{6}
-\contentsline {subsubsection}{\numberline {1.4.2.4}Total Budget}{6}
+\contentsline {subsubsection}{\numberline {1.4.2.4}Total Budget}{7}
 \contentsline {section}{\numberline {1.5}Sustainability}{7}
 \contentsline {subsection}{\numberline {1.5.1}Economic Sustainability}{7}
 \contentsline {subsection}{\numberline {1.5.2}Social Sustainability}{7}
-\contentsline {subsection}{\numberline {1.5.3}Environmental Sustainability}{7}
+\contentsline {subsection}{\numberline {1.5.3}Environmental Sustainability}{8}
 \contentsline {chapter}{\numberline {2}Background Knowledge}{9}
-\contentsline {section}{\numberline {2.1}Introduction}{9}
-\contentsline {subsection}{\numberline {2.1.1}Graph Notation}{9}
-\contentsline {subsubsection}{\numberline {2.1.1.1}Graph Definition}{9}
-\contentsline {subsection}{\numberline {2.1.2}Graph Matrix Notation}{10}
-\contentsline {subsection}{\numberline {2.1.3}Approaches}{10}
-\contentsline {subsubsection}{\numberline {2.1.3.1}For Community Identification}{11}
-\contentsline {paragraph}{\numberline {2.1.3.1.1}Community Detection}{11}
-\contentsline {paragraph}{\numberline {2.1.3.1.2}Definition of a Community}{11}
-\contentsline {paragraph}{\numberline {2.1.3.1.3}Divisive algorithms}{11}
-\contentsline {paragraph}{\numberline {2.1.3.1.4}Agglomerative algorithms}{11}
-\contentsline {paragraph}{\numberline {2.1.3.1.5}Optimization Methods}{11}
-\contentsline {subsubsection}{\numberline {2.1.3.2}Clustering}{11}
-\contentsline {paragraph}{\numberline {2.1.3.2.1}Graph Partitioning}{12}
-\contentsline {paragraph}{\numberline {2.1.3.2.2}Hierarchical Clustering}{12}
-\contentsline {paragraph}{\numberline {2.1.3.2.3}Partitional Clustering}{13}
-\contentsline {paragraph}{\numberline {2.1.3.2.4}Spectral Clustering}{13}
-\contentsline {subsubsection}{\numberline {2.1.3.3}For Visualization}{13}
-\contentsline {paragraph}{\numberline {2.1.3.3.1}Web UI and Time per Query}{13}
-\contentsline {subsubsection}{\numberline {2.1.3.4}Computational Complexity}{14}
-\contentsline {subsection}{\numberline {2.1.4}State-of-the-art in Community Detection}{14}
-\contentsline {subsection}{\numberline {2.1.5}State-of-the-art in Graph Visualization}{16}
+\contentsline {section}{\numberline {2.1}Graph Notation}{9}
+\contentsline {subsubsection}{\numberline {2.1.0.1}Graph Definition}{9}
+\contentsline {subsection}{\numberline {2.1.1}Graph Matrix Notation}{10}
+\contentsline {subsection}{\numberline {2.1.2}Approaches}{10}
+\contentsline {subsubsection}{\numberline {2.1.2.1}For Community Identification}{11}
+\contentsline {paragraph}{\numberline {2.1.2.1.1}Community Detection}{11}
+\contentsline {paragraph}{\numberline {2.1.2.1.2}Definition of a Community}{11}
+\contentsline {paragraph}{\numberline {2.1.2.1.3}Divisive algorithms}{11}
+\contentsline {paragraph}{\numberline {2.1.2.1.4}Agglomerative algorithms}{11}
+\contentsline {paragraph}{\numberline {2.1.2.1.5}Optimization Methods}{11}
+\contentsline {subsubsection}{\numberline {2.1.2.2}Clustering}{11}
+\contentsline {paragraph}{\numberline {2.1.2.2.1}Graph Partitioning}{12}
+\contentsline {paragraph}{\numberline {2.1.2.2.2}Hierarchical Clustering}{12}
+\contentsline {paragraph}{\numberline {2.1.2.2.3}Partitional Clustering}{13}
+\contentsline {paragraph}{\numberline {2.1.2.2.4}Spectral Clustering}{13}
+\contentsline {subsubsection}{\numberline {2.1.2.3}For Visualization}{13}
+\contentsline {paragraph}{\numberline {2.1.2.3.1}Web UI and Time per Query}{13}
+\contentsline {subsubsection}{\numberline {2.1.2.4}Computational Complexity}{14}
+\contentsline {subsection}{\numberline {2.1.3}State-of-the-art in Community Detection}{14}
+\contentsline {subsection}{\numberline {2.1.4}State-of-the-art in Graph Visualization}{16}
+\contentsline {subsection}{\numberline {2.1.5}Degree Distribution}{16}
+\contentsline {subsubsection}{\numberline {2.1.5.1}Scale-Free Graph}{16}
 \contentsline {chapter}{\numberline {3}Community Detection Algorithm}{17}
 \contentsline {section}{\numberline {3.1}Introduction}{17}
 \contentsline {section}{\numberline {3.2}Louvain Algorithm}{17}
@@ -61,28 +62,27 @@
 \contentsline {subsubsection}{\numberline {3.3.1.5}Experiments}{23}
 \contentsline {subsubsection}{\numberline {3.3.1.6}Result}{23}
 \contentsline {chapter}{\numberline {4}Visualization Techniques}{24}
-\contentsline {section}{\numberline {4.1}Introduction}{24}
-\contentsline {section}{\numberline {4.2}Alchemy.js}{25}
-\contentsline {subsection}{\numberline {4.2.1}Dependencies}{25}
-\contentsline {subsection}{\numberline {4.2.2}Steps to use the Alchemy.js}{25}
-\contentsline {section}{\numberline {4.3}Getting the data from the Louvain Python code to Alchemy }{26}
-\contentsline {subsubsection}{\numberline {4.3.0.1}Introduction}{26}
-\contentsline {subsubsection}{\numberline {4.3.0.2}Reasoning}{26}
-\contentsline {subsubsection}{\numberline {4.3.0.3}Description}{26}
-\contentsline {subsubsection}{\numberline {4.3.0.4}Methods and Library}{26}
-\contentsline {subsubsection}{\numberline {4.3.0.5}Result}{26}
-\contentsline {chapter}{\numberline {5}Overall System Description}{27}
-\contentsline {section}{\numberline {5.1}Overall System Description}{27}
-\contentsline {subsection}{\numberline {5.1.1}Web.py}{27}
-\contentsline {subsubsection}{\numberline {5.1.1.1}Introduction}{27}
-\contentsline {subsubsection}{\numberline {5.1.1.2}Implementation Benefits}{27}
-\contentsline {subsubsection}{\numberline {5.1.1.3}Description}{27}
-\contentsline {subsubsection}{\numberline {5.1.1.4}Result}{27}
-\contentsline {subsection}{\numberline {5.1.2}Benefits to the community}{27}
-\contentsline {chapter}{\numberline {6}Conclusion and Future Works}{28}
-\contentsline {section}{\numberline {6.1}Goals Achieved}{28}
-\contentsline {section}{\numberline {6.2}Revision of Planning and Budget}{28}
-\contentsline {section}{\numberline {6.3}Future Works}{28}
-\contentsline {section}{\numberline {6.4}Availability and requirements}{28}
-\contentsline {subsection}{\numberline {6.4.1}Conclusion}{29}
-\contentsline {subsection}{\numberline {6.4.2}Personal Conclusion}{29}
+\contentsline {section}{\numberline {4.1}Alchemy.js}{24}
+\contentsline {subsection}{\numberline {4.1.1}Dependencies}{24}
+\contentsline {subsection}{\numberline {4.1.2}Steps to use the Alchemy.js}{24}
+\contentsline {section}{\numberline {4.2}Getting the data from the Louvain Python code to Alchemy }{25}
+\contentsline {subsubsection}{\numberline {4.2.0.1}Introduction}{25}
+\contentsline {subsubsection}{\numberline {4.2.0.2}Reasoning}{25}
+\contentsline {subsubsection}{\numberline {4.2.0.3}Description}{25}
+\contentsline {subsubsection}{\numberline {4.2.0.4}Methods and Library}{25}
+\contentsline {subsubsection}{\numberline {4.2.0.5}Result}{25}
+\contentsline {chapter}{\numberline {5}Overall System Description}{26}
+\contentsline {section}{\numberline {5.1}Choice of Web.py}{26}
+\contentsline {section}{\numberline {5.2}Front End frame work}{26}
+\contentsline {section}{\numberline {5.3}using the application}{27}
+\contentsline {subsubsection}{\numberline {5.3.0.6}Implementation Benefits}{27}
+\contentsline {subsubsection}{\numberline {5.3.0.7}Description}{27}
+\contentsline {subsubsection}{\numberline {5.3.0.8}Result}{28}
+\contentsline {subsection}{\numberline {5.3.1}Benefits to the community}{28}
+\contentsline {chapter}{\numberline {6}Conclusion and Future Works}{29}
+\contentsline {section}{\numberline {6.1}Goals Achieved}{29}
+\contentsline {section}{\numberline {6.2}Revision of Planning and Budget}{29}
+\contentsline {section}{\numberline {6.3}Future Works}{29}
+\contentsline {section}{\numberline {6.4}Availability and requirements}{29}
+\contentsline {subsection}{\numberline {6.4.1}Conclusion}{30}
+\contentsline {subsection}{\numberline {6.4.2}Personal Conclusion}{30}
