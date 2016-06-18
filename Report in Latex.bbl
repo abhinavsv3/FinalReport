@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{gephi}
+Mathieu Bastian, Sebastien Heymann, Mathieu Jacomy, et~al.
+\newblock Gephi: an open source software for exploring and manipulating
+  networks.
+\newblock {\em ICWSM}, 8:361--362, 2009.
+
 \bibitem{graphviz}
 Nikos Bikakis, John Liagouris, Maria Krommyda, George Papastefanatos, and Timos
   Sellis.
@@ -16,6 +22,18 @@ Vincent~D Blondel, Jean-Loup Guillaume, Renaud Lambiotte, and Etienne Lefebvre.
 John~Adrian Bondy and Uppaluri Siva~Ramachandra Murty.
 \newblock {\em Graph theory with applications}, volume 290.
 \newblock Macmillan London, 1976.
+
+\bibitem{protovis}
+Michael Bostock and Jeffrey Heer.
+\newblock Protovis: A graphical toolkit for visualization.
+\newblock {\em IEEE Trans. Visualization \& Comp. Graphics (Proc. InfoVis)},
+  2009.
+
+\bibitem{d3}
+Michael Bostock, Vadim Ogievetsky, and Jeffrey Heer.
+\newblock D3: Data-driven documents.
+\newblock {\em IEEE Trans. Visualization \& Comp. Graphics (Proc. InfoVis)},
+  2011.
 
 \bibitem{modularityNP}
 Ulrik Brandes, Daniel Delling, Marco Gaertler, Robert G{\"o}rke, Martin Hoefer,
