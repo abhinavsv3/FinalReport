@@ -72,6 +72,11 @@ Julien Odent and Michael Saint-Guillain.
 Mark Otto and Jacob Thornton.
 \newblock Bootstrap.
 
+\bibitem{graphjslib}
+Graciously Kharumnuid~Swarup Roy.
+\newblock Effectiveness of javascript graph visualization libraries in
+  visualizing gene regulatory networks (grn).
+
 \bibitem{githubtest1}
 Pratha Sah, Lisa~O. Singh, Aaron Clauset, and Shweta Bansal.
 \newblock Exploring community structure in biological networks with random

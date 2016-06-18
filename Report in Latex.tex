@@ -149,7 +149,7 @@ Abhinav Shankaranarayanan Venkataraman
 
 
 \begin{dedication}
-To my Mother, Father, Professors and Friends. I owe a lot to My professors Ricard Gavalda and Marta Arias and to Babaji at Gurudwara
+To my Mother, Father, Professors and Friends. With a heart filled with Joy and Dedication, I attribute all my effort, work and knowledge to my professors Ricard Gavalda and Marta Arias and to Babaji at Gurudwara
 \end{dedication}
 \newpage
 \clearpage
@@ -173,6 +173,7 @@ of the main structures in the data.
 \newpage
 \section*{Acknowledgement}
 I would like to Acknowledge the support provided by my faculty and admins at my home university -- SASTRA University, Thanjavur and UPC Barcelona for supporting me throughout the project.
+I thank the Gurudwara near in Collblanc at Barcelona for stand by us for our needs. 
 
 \newpage
 
@@ -396,7 +397,7 @@ is an edge from $v_j$ to $v_k$ represented as \textit{G}=(\textit{V},\textit{E})
 \caption{Example Graph G=(V,E) Bull Graph (Created using the project)}
 \end{figure}
 
-The neighbourhood of a node $v_i$ is the set of
+The neighbourhood of a node or vertex $v_i$ is the set of
 nodes $v_i$ is connected to, N($v_i$) = $\{v_j | (v_i, v_j) \in E, v_i \neq
 v_j, 1 \leq j \leq n\}$. The degree of a node $v_i$, or the size of
 the neighbourhood connected to $v_i$, is denoted as d($v_i$) =
@@ -571,29 +572,61 @@ According to the paper "Resilience of the Internet to Random Breakdowns" \cite{s
 \end{figure}
 
 \section{State-of-the-art in Graph Visualization}
-Researchers have designed various tool-kits for the purpose of information visualization. Newer visualization techniques are introduced by creating new components or sub-classing the existing ones. The main aim of the project will be analyse the way inwhich the visual frameworks can be used and what kind of intermediate trasitions that are possible between the python program and the visualization framework. The project requires to JavaSciript for visualization. A study on various JavaScipt visualization was made in the paper . In the paper "Effectiveness of JavaScript Graph Visualization Libraries in Visualizing Gene Regulatory Networks (GRN)" \cite{graphjslib} TABLE I gives an summary of a few different JavaScript graph visualization libraries .
-SUMMERY OF DIFFERENT JAVASCRIPT GRAPH VISUALIZATION LIBRARIES
+Researchers have designed various tool-kits for the purpose of information visualization. Newer visualization techniques are introduced by creating new components or sub-classing the existing ones. The main aim of the project will be analyse the way inwhich the visual frameworks can be used and what kind of intermediate trasitions that are possible between the python program and the visualization framework. The project director's sugestion was to go with a JavaScript Library.
+
+\textbf{Advantage of JavaScript Libraries} \cite{graphjslib}
+\begin{enumerate}
+\item \textit{Easy to use} : JavaScript is very easy to use, write and learn. It also saves time for the developer to write the code.
+\item \textit{Reliable and standardized} : JavaScript libraries are more reliable and standardized and remains widely supported by several major web browsers. 
+\item \textit{JSON is Standard}: JSON or JavaScript Object Notation is a standard input/output format for data sharing.
+\item \textit{Simple and light-weight animation possible in JavaScript} JavaScript libraries need knowledge of CSS, HTML and editor to write the program. Contacting with Java or Adobe Flash , JavaScript animation require less learning and less time to make a cheap and effective animation 
+\end{enumerate}
+
+Due to these advantages JavaScript was suggested as the visualization as it is light, fast and data is easier to represent in JavaScript which satisfies the goal of the project. Next task is to find a JavaScript visualization framework.  
+
+\par In the paper ``Effectiveness of JavaScript Graph Visualization Libraries in Visualizing Gene Regulatory Networks (GRN)" \cite{graphjslib} ``TABLE I" gives an summary of a few different JavaScript graph visualization libraries. Considering all the factor four of the visual techniques were chosen for the purpose of study and analysis of which one will be chosen for implementation. 
 \subsection{Protovis}
-\cite{protovis}
-\subsection{D3}
-D3 unlike traditional 
-\cite{d3}
+Protovis is a domain-specific
+language for constructing visualizations by composing simple
+graphical marks such as bars, lines and labels. In Protovis, designers
+specify visualizations as a hierarchy of marks with visual properties
+defined as functions of data. Inheritance of properties across
+composed marks similar to cascading of style sheets used in web
+design enables concise visualization definitions with a large expressive
+range and a minimum of intervening abstractions. Protovis is implemented
+in JavaScript, with rendering support for HTML 5 canvas,
+SVG, and Flash. The above extract is as given in the main paper about Protovis
+\cite{protovis}.
+
+\subsection{D3.js}
+D3.js or simply D3 is a JavaScript library for manupulating documents based on data. D3 takes full advantage of cascading Style Sheets(CSS), HTML5 and Scalable vector graphics (SVG). D3 is viewed as the successor of Protovis. D3 targets at animation,interaction and complex and dynamic visualization in web.  It uses pre-built JavaScript
+functions in its kernel in order to select elements, create SVG
+objects, style them or add transitions and dynamic effects to
+them.\cite{graphjslib}. Paper ``D3: Data-Driven Documents" \cite{d3} describes d3in its rightful way. D3 provides a wide set of example of which these were of great interest to the project:
+\begin{enumerate}
+\item
+For graph: Force-Directed Graph, Labeled Force Layout,Forced Graph Editor , Directed Graph Editor, CodeFlower, University Program Transfers - Interactive, Better force layout node selection
+\item For matrix visualization : Day/Hour Heatmap
+\end{enumerate}
 \subsection{Gephi}
-\cite{gephi}
+
+Gephi is an open source software which use 3D render engine for visualization of graphs. 
+A flexible and multi-task architecture brings new possibilities
+to work with complex data sets and produce
+valuable visual results. 
+Gephi involves many key features in the context of interactive exploration and
+interpretation of networks.  spatializing, filtering,
+navigating, manipulating and clustering are allowed in Gephi.Dynamic network visualization is also possible in Gephi \cite{gephi}.
+Although gephi is not JavaScript it is cited and considered for its externsive use in graph visualization. It is interesting to note that Gephi has JavaScript viewer such as JavaScript GEXF available on github. 
+
 \subsection{Alchemy.js}
-
-
+Alchemy.js is a JavaScript framework build entirely on d3. Goal of Alchemy.js is help the developer build and run graph visualizations with minimal overhead. A developer in Alchemy.js does not have to write much code to viaulize the data The very small amount of your work you do will actually just be in configuring Alchemy.js to visualize the data, along with whatever features you want to include in the application.
 
 \chapter{Louvain Community Detection Algorithm}
 In this section we describe the community detection algorithms such as Louvain and various tests that were performed to choose the algorithm. 
-\section{Introduction}
-
-The problem of community detection requires the graph to be split into communities of tightly packed or in other words densely connected nodes with nodes of different community being sparely connected. 
-
-Several algorithms have been proposed for performing good partition in a reasonably good speed.
-Distinguishably there are several types of community detection algorithms, namely: divisive algorithms, which aims in removal of the inter-community links, agglomerative algorithms, which aim in merging similar nodes and optimization methods which aim in maximizing the objective function. 
+ 
 \section{Modularity}
-The quality of partitioning that results from application of method is often measured using modularity. The \textit{modularity} of a partition is hence a scalar value between -1 and 1 that is used to measure the density of the links inside the communities as compared to the density of the links between the communities.
+The quality of partitioning that results from application of method is often measured using modularity. The \textit{modularity} of a partition is hence a scalar value between -1 and 1 that is used to measure the density of the links inside the communities as compared to the density of the links between the communities. This concept was first put forward by Newman \cite{newman2006modularity}.
 \par
 Modularity not only serves as a quality measure for detecting the quality of split or -partition, but also acts as an objective function to optimize.  Exact modularity optimization is \textbf{NP-Complete} in the strong sense \cite{modularityNP}.
 \subsection{Definition}
@@ -649,16 +682,15 @@ Q(C_s) \leq \frac{1}{2m} \sum_{ij} A_{ij} \delta(C_i,C_j) \leq \frac{1}{2m} \sum
  \item Value taken by Q can be negative
  \end{enumerate}
  
- \section{Louvain}
+\section{Implementation of the Louvain Community detection Algorithm}
  Louvain algorithm is considered as the state-of-the art algorithm for community detection for identifying community structures \cite{louvain}. Louvain method developped by Blondel \textit{et al} \cite{louvain} finds high modularity partitions of large networks in short time. It unfolds a complete hierarchy community detection. 
  
 
+\par
 
-\section{Implementation of the Louvain Community detection Algorithm}
-
-The implementation  of the algorihtm is based on the paper "Fast unfolding of communities in large networks" \cite{louvain}.  The implementation is done using basic python packages. 
- The Algorithm has two phases that are repeated iteratively to bring the final solution to the problem. The following figure ~\ref{loupic} demonstrates the algorithm in the form of a flow diagram,
- 
+  The implementation is done using basic python packages. 
+ The Algorithm has two phases that are repeated iteratively to bring the final solution to the problem. The following figure ~\ref{loupic} visualizes the steps in the algorithm and 
+ Algorithm 1 defines a pseudocode for the Louvain method. 
 \begin{algorithm}[H]
 \caption{Louvain Algorithm Pseudocode}
 \begin{algorithmic} 
@@ -684,9 +716,8 @@ possible. This was taken from the paper "Fast unfolding of communities in large 
 \centering
 \end{figure}
 
-\subsubsection{First Phase : Optimizing Modularity}
-The first phase of louvain algorithm 
-Let G be a graph with N nodes in the network. The algorithm assigns a different community to each node in the network.  The number of nodes is equal to the number of communities in the graph. The report uses the terms node and vertices interchangeably.  Let $v_i$ be be a node such that $v_j$ $\in$ N($v_i$). The gain of modularity is then calculated by removing $v_i$ and placing it in community of $v_j$. If the gain is positive the $v_i$ is moved to the community of $v_j$ else $v_i$ stays in it's original community. This procedure is iterated and the phase one stops when a local maxima of the modularity is achieved, that is when no more move of nodes from one community to another is possible. The ordering of the nodes can affect or effect the computation time which can be a part of future works. 
+\subsection{First Phase : Optimizing Modularity}
+In the first phase the algorithm assigns a different community to each node in the network.  The number of nodes is equal to the number of communities in the graph. Let $v_i$ be be a node such that $v_j$ $\in$ N($v_i$). The gain of modularity is then calculated by removing $v_i$ and placing it in community of $v_j$. If the gain is positive the $v_i$ is moved to the community of $v_j$ else $v_i$ stays in it's original community. This procedure is iterated and the phase one stops when a local maxima of the modularity is achieved, that is when no more move of nodes from one community to another is possible. The ordering of the nodes can affect or effect the computation time which can be a part of future works. 
 
 \begin{algorithm}[H]
 \caption{Phase 1 in Louvain Algorithm Pseudocode}
@@ -718,7 +749,7 @@ In the paper it is stated that the gain in modularity as $\bigtriangleup$Q
 \end{equation}
 where $\sum_{in}$ is the sum of the weights of the links inside C and $\sum_{tot}$ is the sum of the weights of the links incident to nodes in C, $k_i$ is the sum of weights of the links incident to node i, $k_{i,in}$ is the sum of the weights  of all the links in the network.
 
-\paragraph{Second Phase : Agglomerating the communities found in first phase into new nodes}
+\subsection{Second Phase : Agglomerating the communities found in first phase into new nodes}
 In the second phase the algorithm builds the new network. The communities that are found during the first phase are now the nodes here. According to the paper \cite{louvain}, the weights of the links between the new nodes are given by the sum of the weight of the links between nodes in the corresponding two communities. The edges between nodes of the same community lead to seld-loops for this community in the new network. The resulting new weighted network is then subjected to first phase  and this process is iteratively done. 
 \begin{algorithm}[H]
 
@@ -730,17 +761,17 @@ In the second phase the algorithm builds the new network. The communities that a
 \STATE $W_{ij}$ = $\sum$ \{All edges between $C_i$ and $C_j$\} where $W_{ij}$ is the edge between newly formed nodes $v_i$ and $v_j$
 \end{algorithmic}
 \end{algorithm}
-\subsubsection{Observations of Louvain}
+\section{Observations of Louvain}
 \begin{enumerate}
 \item The final output of the Louvain algorithm forms a complete hierachical structure.
-\item Resolution limit problem \cite{ResolLimit} has been resolved in the algorithm stated in the current paper under discussion \cite{louvain} due to the multi-level nature of louvain algorithm.
+\item Resolution limit problem \cite{ResolLimit} has been resolved in the algorithm stated in the current paper under discussion \cite{louvain} due to the multi-level nature of Louvain algorithm.
 \item Modularity can be redefined for weighted graphs and Louvain works well with weighted graphs.
 \end{enumerate}
 
-\subsubsection{Usage of Louvain in the project}
-In the project the above algorithm has been implemented in python taking inspiration and reusing some part of the pylouvain program API for implementation \cite{pylouvain}. Python was chosen as the programming language as recommended by the project Director. The project work is said to form a part of a major project work on medical domain in LARCA. The director of the project informed that the main project is written in javascipt and python hence, python was choosen as the programming language for the project.
+\section{Mode of implementation of the Louvain Algorithm}
+In the project the above algorithm has been implemented in python taking inspiration and reusing some part of the pylouvain program API for implementation \cite{pylouvain}. Using python was a requirement of the project directors, in case the code has to be reused in a larger ongoing project which is programmed in Python and Javascript. Hence Python was used to implement the Louvain Algorithm.
 
-\subsection{Experiments}
+\section{Experiments}
 \cite{githubtest1}
 \\
 \begin{figure}[H]
@@ -959,6 +990,7 @@ The project relies fully on louvain. One can speculate on whether modularity is 
 \item  Double-click on a node to fade out all but its immediate neighbours.
 \item We deal with large graphs thus it would be nice to have some search functionalities. jQuery can be used to create an autocompleting search box that can be featured on the graph display page which can search the name of the patient or the treatment that is needed. 
 \item Fish eye can be introduced. Since alchemy.js is a framework that runs on d3 it can easily be extended o d3. Hence the fish-eye module can help to view every node along  with it's neighbours in a more expanded format.
+\item Forced editor layout which is a tool to dynamically add nodes and edges after the graph visualization has taken place. D3 has a forced editor sample which could be useful for further study.
 \end{enumerate}
 \item In the Overall structure:
 \begin{enumerate}
