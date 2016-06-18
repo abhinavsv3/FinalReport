@@ -11,45 +11,45 @@ Warning--empty journal in graphviz
 Warning--empty year in graphviz
 Warning--empty journal in graphjslib
 Warning--empty year in graphjslib
-You've used 17 entries,
+You've used 19 entries,
             2118 wiz_defined-function locations,
-            598 strings with 6816 characters,
-and the built_in function-call counts, 5559 in all, are:
-= -- 508
-> -- 344
+            609 strings with 7088 characters,
+and the built_in function-call counts, 6120 in all, are:
+= -- 565
+> -- 364
 < -- 2
-+ -- 136
-- -- 118
-* -- 418
-:= -- 977
-add.period$ -- 47
-call.type$ -- 17
-change.case$ -- 108
++ -- 144
+- -- 124
+* -- 454
+:= -- 1069
+add.period$ -- 53
+call.type$ -- 19
+change.case$ -- 117
 chr.to.int$ -- 0
-cite$ -- 21
-duplicate$ -- 182
-empty$ -- 386
-format.name$ -- 118
-if$ -- 1104
+cite$ -- 23
+duplicate$ -- 200
+empty$ -- 437
+format.name$ -- 124
+if$ -- 1222
 int.to.chr$ -- 0
-int.to.str$ -- 17
-missing$ -- 16
-newline$ -- 84
-num.names$ -- 34
-pop$ -- 116
+int.to.str$ -- 19
+missing$ -- 17
+newline$ -- 94
+num.names$ -- 38
+pop$ -- 127
 preamble$ -- 1
-purify$ -- 92
+purify$ -- 99
 quote$ -- 0
-skip$ -- 134
+skip$ -- 149
 stack$ -- 0
-substring$ -- 247
-swap$ -- 22
+substring$ -- 288
+swap$ -- 24
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 66
+type$ -- 74
 warning$ -- 4
-while$ -- 48
-width$ -- 19
-write$ -- 171
+while$ -- 54
+width$ -- 21
+write$ -- 192
 (There were 6 warnings)

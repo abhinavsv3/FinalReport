@@ -772,7 +772,7 @@ In the second phase the algorithm builds the new network. The communities that a
 In the project the above algorithm has been implemented in python taking inspiration and reusing some part of the pylouvain program API for implementation \cite{pylouvain}. Using python was a requirement of the project directors, in case the code has to be reused in a larger ongoing project which is programmed in Python and Javascript. Hence Python was used to implement the Louvain Algorithm.
 
 \section{Experiments}
-\cite{githubtest1}
+\cite{githubtest1} \cite{snap}
 \\
 \begin{figure}[H]
 \centering
@@ -801,38 +801,29 @@ In the project the above algorithm has been implemented in python taking inspira
 
 \subsubsection{Result}
 
-\section{Matrix Based Algorithm}
-\subsection{Matrix Algorithm}
-\subsubsection{Introduction}
-\subsubsection{Reasoning}
-\subsubsection{Description}
-\subsubsection{Implementation}
-\subsubsection{Experiments}
-\subsubsection{Result}
 
 \chapter{Visualization Module}
-For visual representation, softwares such as D3, Alchemy.js, plot.ly, Gephi and graphviz were tested
-using example graphs. Graphviz was only used for structural representation and was more useful for
-only small graphs. Plot.ly is most used for representation over charts and not graphs. Gephi is a tool
-used for data analysis for understanding and exploring graph based data however it has some
-drawbacks in the logistics of the project. Softwares such as HyperTree, HyperGraphs were also
-searched upon but they did not have a python API or was not based on JavaScipt but instead has a
-Java Code based APIs. I have surely overlooked some of the tools but most of the important tools
-pertaining to the project were tested in my system. D3 and Alchemy.js were the last ones left. D3
+Visualization module is developed keeping in mind that python API must exist and should be JavaScript based.As already said these were the requirements that were set by the project directors. In this section an analysis of the selected software and method of choice by exploring all the possible ways will be explained. 
+\section{Exploring the state-of-art}
+For visual representation, softwares such as Protovis, D3, Alchemy.js and Gephi were tested
+using example graphs.  Gephi is a tool
+used for data analysis for understanding and exploring graph based data,however it has some
+drawbacks in the logistics of the project such as Gephi is not JavaScript based although it has a JavaScript viewer. Gephi has more overhead being a software than a simple framework. For a similar reason we refrain from using softwares such as HyperTree, HyperGraphs as they did not have a python API or are not based on JavaScipt but instead has a
+Java Code based APIs.  D3
 provided the necessary tools and was JavaScript and could be linked to python and was the best
 option for the project's logistics. Alchemy.js was built using D3. Alchemy.js required minimal code
 to generate the graphs as most of the customization could be done by just overriding or altering the
 “config” [Configuration part of the Alchemy.js] instead of implementing it entirely using
 JavaScript. Alchemy.js also provides a feature in which the core application can be further extended
 with any other feature of D3. Having D3 to be the base, with minimal code and maximum
-customization Alchemy.js was chosen for visual representation of the graph in this project. Thus the project director also considered alchemy.js as a visualization software as it fits the bigger project. 
+customization Alchemy.js was chosen for visual representation of the graph in this project. Protovis provides a matrix representation in the form of a matrix diagram.  Thus the project director also considered alchemy.js as a visualization software as it fits the bigger project for graph visualization and Protovis API was used to visualize matrix representation. 
 
 
 \section{Alchemy.js}
 
-Alchemy.js is a graph drawing library built to proivde graph visualization with little overhead. It is built on the d3 library, written in Javascript, which runs in most web browsers.   
+Alchemy.js is a graph drawing library built to provide graph visualization with little overhead. It is built on the d3 library, written in Javascript, which runs in most web browsers.   
 
-\section{Dependencies}
+\section{Dependencies for Alchemy.js}
 Alchemy needs three main units to  form as an application namely:  \textit{alchemy.css}, \textit{alchemy.js} and \textit{data}. CSS and JavaScript are major dependencies in Alchemy.js. Installation of \textit{jQuery} and \textit{d3} is also useful. \textit{alchemy.min.js}, \textit{alchemy.css} and \textit{alchemy.min.css } will be updated in the CDN (Content Delivery netwrok)
 \section{Steps to use the Alchemy.js}
  In this project we have uploaded the \textit{alchemy.min.js}, \textit{alchemy.css} and \textit{alchemy.min.css } into the project's file repository http://abhinavsv3.github.io/javascriptsal and hence will be using the link in the following explanation. 
@@ -859,12 +850,14 @@ $<$/script$>$
 
 
 \end{enumerate}
-\section{Getting the data from the Louvain Python code to Alchemy }
+\section{Getting the data from the Louvain Python code to Alchemy. }
  Alchemy.js takes a simple data format called GraphJSON. GraphJSON serves as a light weight and flexible representation of graph data, easily consued locally or over the web. 
 \par 
 GraphJSON is a JSON Object which has 2 object namely: \textit{nodes} and  \textit{edges} . These are individual arrays that represent the nodes and edges that will be represented in the graph visualization. 
 \par \textbf{Nodes} : id key is the only unique value that should be present in the nodes
 \par \textbf{Edges} : source and target key are the only unique value that should be present in the edges.
+\par A python program was implemented to convert the output of the louvain program into json object using the python json package. This converts the output of the louvain program into two JSON object. one JSON object 
+This can be seen as the advantage of system. We compute once and reuse the computed result for various visualizations. 
 
 \section{Tests}
 For the purpose of visualization various test were performed for analysising the compatiability of Alchemy.js and to explore and exploit all the functionalities of alchemy.js and choose the best ones for the project and implement them.
@@ -912,8 +905,8 @@ The folowing will ennumerate the tests that were performed one after another.  A
 \caption{Example Graph G=(V,E) Bull Graph}
 \end{figure}
 
-
-\subsubsection{Result}
+\subsection{Bug Report}
+Bug #472 (https://github.com/GraphAlchemist/Alchemy/issues/472)
 
 \chapter{Overall System Description}
 The project uses two complementary technologies of a raw python code and a JavaScript program that can represent or draw the output of the python code on screen. This lead to a need to include a new element of a web framework for implementing the louvain algorithm and creating a JSON object, and JavaScript to represent the graph on a web browser.   A web framework is one that aims to remove the overhead associated with common activities performed in the web development. 
@@ -954,26 +947,25 @@ In the following we describe the entire working flow of the Web Application:
 
 
 \subsubsection{Implementation Benefits}
-sdgbf akjsfkldsnfksndafnadfa
-fasfadf
-adfasfasfadf
-asfasfadf
-afadfadf
-\subsubsection{Description}
-git hub repository  : \url{https://github.com/abhinavsv3/webproject}
+2-format or single format it still works.  key label. propotional sizing of the commuity graph. Error management.
+\subsubsection{Drawback}
+Very large graph needs a bigger screen and a browser that could handle large JSON objects.
+Alchemy.js works well with firefox than with google chrome. It was found when rendering of edges.
 \subsubsection{Result}
-\subsection{Benefits to the community}
+
+\chapter{Conclusion and Future Works}
+\section{Goals Achieved}
+
+\section{Benefits to the community}
 This can be used in places where there is difficulty in visualization of a very complex landscape
 of data such as medical domain. In Medical domain a patient can be a vector of diseases and
 visualization of such patients (patients graph–which shows relations of how two patients are
 similar, a graph in which patient-patient edge weight is the similarity value ) would be useful for
-analyzing and predicting the disease landscape of a region and in turn multiple regions.
+analysing and predicting the disease landscape of a region and in turn multiple regions.
 
-\chapter{Conclusion and Future Works}
-\section{Goals Achieved}
-\section{Revision of Planning and Budget}
+
 \section{Future Works}
-In the span of five months we were able to build a basics project by comparing, contrasting, including the one that the director suggests and chosing the one that is simple and works well. In this project I would like to suggest a few improvemnets that we would have done given more time. We would like to enumerate on that:
+In the span of five months we were able to build a basics project by comparing, contrasting, including the one that the director suggests and choosing the one that is simple and works well. In this project I would like to suggest a few improvements that we would have done given more time. We would like to enumerate on that:
 
 \begin{enumerate}
 \item In the Algorihthm part :
@@ -990,18 +982,18 @@ The project relies fully on louvain. One can speculate on whether modularity is 
 \item  Double-click on a node to fade out all but its immediate neighbours.
 \item We deal with large graphs thus it would be nice to have some search functionalities. jQuery can be used to create an autocompleting search box that can be featured on the graph display page which can search the name of the patient or the treatment that is needed. 
 \item Fish eye can be introduced. Since alchemy.js is a framework that runs on d3 it can easily be extended o d3. Hence the fish-eye module can help to view every node along  with it's neighbours in a more expanded format.
-\item Forced editor layout which is a tool to dynamically add nodes and edges after the graph visualization has taken place. D3 has a forced editor sample which could be useful for further study.
+\item Developing an editor which is a tool to dynamically add nodes and edges after the graph visualization has taken place. D3 has a ``forced editor" layout and ``Directed forced editor" layout sample which could be useful for further study.
 \end{enumerate}
 \item In the Overall structure:
 \begin{enumerate}
-\item The current dash board is before the graph board. The Dash board can be included in the graph board itselef to avoid switching back and front in the web application.
-\item  A simple Database  can be setup for storing passwords and improvization on sign-ins can deliver a better personlaizaed user experience.
+\item The current dash board is before the graph board. The Dash board can be included in the graph board itself to avoid switching back and front in the web application.
+\item  A simple Database can be set-up for storing passwords and improvisation on sign-ins can deliver a better personalised user experience. The project provides provision for password input which could be used as a starting point to build on further. 
 \end{enumerate}
 \end{enumerate}
 \section{Availability and requirements}
 \begin{enumerate}
 \item \textbf{Project Name}: Graph and matrix algorithms for visualizing high dimensional
-\item \textbf{Project Homepage}: \url{https://github.com/abhinavsv3/webproject dimensional}
+\item \textbf{Project Homepage}: \url{https://github.com/abhinavsv3/webproject}
 \item \textbf{Operating System}: Platform Independent. Preferably Unix--like operating system
 \item \textbf{Programming Language}: Python 2.7
 \item \textbf{Other Requirements} : Alchemy.js, Python Packages, Web.py
@@ -1010,12 +1002,7 @@ The project relies fully on louvain. One can speculate on whether modularity is 
 \subsection{Conclusion}
 This is one of the greatest project experience.	
 \subsection{Personal Conclusion}
-The project has made my mind very innovative. I can produly call myself an engineer. My director, prof.Ricard gave me a freedom to think freely and understand the project and made me do the project the way I have analysed it.  This made me develop an new characteristics of learning stuff in the fly and made me feel enthusiatic about working on projects that I have little knowledge on. I am sure given any project I can now make innovation and work hard to bring the project to a better light.  	
-
-
-
-\lstlistoflistings
-
+The project has made my mind very innovative. I can produly call myself an engineer. My director, prof.Ricard gave me a freedom to think freely and understand the project and made me do the project the way I have analysed it.  This made me develop an new characteristics of learning stuff in the fly and made me feel enthusiatic about working on projects that I have little knowledge on. I am sure given any project I can now make innovation and work hard to bring the project to a better light.
 
 \bibliographystyle{plain}
 \bibliography{mybib}{}

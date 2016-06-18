@@ -63,6 +63,17 @@ Santo Fortunato and Marc Barthelemy.
 \newblock {\em Proceedings of the National Academy of Sciences}, 104(1):36--41,
   2007.
 
+\bibitem{snap}
+Jure Leskovec and Andrej Krevl.
+\newblock {SNAP Datasets}: {Stanford} large network dataset collection.
+\newblock \url{http://snap.stanford.edu/data}, June 2014.
+
+\bibitem{newman2006modularity}
+Mark~EJ Newman.
+\newblock Modularity and community structure in networks.
+\newblock {\em Proceedings of the national academy of sciences},
+  103(23):8577--8582, 2006.
+
 \bibitem{pylouvain}
 Julien Odent and Michael Saint-Guillain.
 \newblock Automatic detection of community strucures in networks, November
