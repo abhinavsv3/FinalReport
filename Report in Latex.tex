@@ -548,11 +548,7 @@ The following figure ~\ref{Fig1} the average normalized performance rank of each
 The main objective of the project is to visualize the data on screen thus needs an algorithm that is fast and should be effective.  Hence louvain algorithm was choose for the implementation. The implementation can be found in the later section of the report.
 
 
-Louvain algorithm algorithm is considered as state-of-the art algorithm for community detection\cite{louvain}. The algorithm is fast,recursive and is more effective than the other algorithms in real-world graphs. Due to our goal of projecting medical domain we require an algorithm that gives a better trade off between being effective and being fast. Hence Louvain algoithm was chosen.
-
-
-\section{State-of-the-art in Graph Visualization}
-
+Louvain algorithm algorithm is considered as state-of-the art algorithm for community detection\cite{louvain}. The algorithm is fast,recursive and is more effective than the other algorithms in real-world graphs. Due to our goal of projecting medical domain we require an algorithm that gives a better trade off between being effective and being fast. Hence Louvain algorithm was chosen.
 
 \section{Degree Distribution}
 Degree of a node($v_i$) in the graph $G = (V,E)$ where $V$ is the set of vertices and $E$ is the set of edges is the number of edges that a  node has to other nodes. Usually denoted as deg($v_i$). \textit{Degree distribution} can be thus described as the probability distribution of there degrees over the entire graph.  Degree distribution is significant in the study of community networks and hence bringing it into consideration.  It is usually denoted as $P(k)$ of a graph which is the fraction of nodes in the network with degree $k$.
@@ -565,7 +561,16 @@ where $N_k$ is the number of  nodes with degree \textit{k} and \textit{N} is the
 \subsection{Scale-Free Graph}
 The graphs whose degree distribution follows power law are called as Scale-Free graphs or scale free networks. 
 \\
-Examples of Scale-Free graphs include Social network graph,protein-protien interation network etc.
+Examples of Scale-Free graphs include Social network graph,protein-protien interation network etc. 
+According to the paper "Resilience of the Internet to Random Breakdowns" \cite{scalefree}, removing randomly any fraction of nodes from scale free network will not destroy the network which is in contract to Erdos-Renyi graphs. The figure ~\ref{ranfig} demonstrates how the random graph is different from a scale free graph.  The highlighted spots are knon as the hubs. For example: In a large community the celebrities or politicians serve as the hub. In scale free graphs another interesting feature is that as the clustering coefficient decreases with increase in the node degree. This type if distribution will be used in the experimental phase of the project for generating test cases. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{sclaran.png}
+\caption{ \label{ranfig} Random network (a) and scale-free network (b). In the scale-free network, the larger hubs are highlighted.(Image Source: Wikipedia)}
+\end{figure}
+
+\section{State-of-the-art in Graph Visualization}
 
 \chapter{Louvain Community Detection Algorithm}
 In this section we would describe the community detection algorithms such as louvain and various tests that were performed to choose the algorithm. 
@@ -714,7 +719,7 @@ In the second phase the algorithm builds the new network. The communities that a
 \end{algorithm}
 \subsubsection{Observations of Louvain}
 \begin{enumerate}
-\item The final output of the louvain algorithm forms a complete hierachical structure.
+\item The final output of the Louvain algorithm forms a complete hierachical structure.
 \item Resolution limit problem \cite{ResolLimit} has been resolved in the algorithm stated in the current paper under discussion \cite{louvain} due to the multi-level nature of louvain algorithm.
 \item Modularity can be redefined for weighted graphs and Louvain works well with weighted graphs.
 \end{enumerate}

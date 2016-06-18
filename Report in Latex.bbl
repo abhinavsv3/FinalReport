@@ -26,6 +26,11 @@ Ulrik Brandes, Daniel Delling, Marco Gaertler, Robert G{\"o}rke, Martin Hoefer,
 \newblock Maximizing modularity is hard.
 \newblock {\em arXiv preprint physics/0608255}, 2006.
 
+\bibitem{scalefree}
+Reuven Cohen, Keren Erez, Daniel ben Avraham, and Shlomo Havlin.
+\newblock Resilience of the internet to random breakdowns.
+\newblock {\em Phys. Rev. Lett.}, 85:4626--4628, Nov 2000.
+
 \bibitem{matrep}
 David Emms, Edwin~R Hancock, Simone Severini, and Richard~C Wilson.
 \newblock A matrix representation of graphs and its spectrum as a graph
