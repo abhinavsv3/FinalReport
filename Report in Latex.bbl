@@ -1,8 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{Alchemy}
-Alchemy: Alchemy.js is a graph drawing application program.
-
 \bibitem{graphviz}
 Nikos Bikakis, John Liagouris, Maria Krommyda, George Papastefanatos, and Timos
   Sellis.
@@ -52,6 +49,10 @@ Santo Fortunato and Marc Barthelemy.
 Julien Odent and Michael Saint-Guillain.
 \newblock Automatic detection of community strucures in networks, November
   26,2012.
+
+\bibitem{bootstrap}
+Mark Otto and Jacob Thornton.
+\newblock Bootstrap.
 
 \bibitem{githubtest1}
 Pratha Sah, Lisa~O. Singh, Aaron Clauset, and Shweta Bansal.

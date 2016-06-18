@@ -34,49 +34,49 @@
 \contentsline {subsection}{\numberline {2.4.2}For Visualization}{14}
 \contentsline {section}{\numberline {2.5}Computational Complexity}{14}
 \contentsline {section}{\numberline {2.6}State-of-the-art in Community Detection}{15}
-\contentsline {section}{\numberline {2.7}State-of-the-art in Graph Visualization}{16}
-\contentsline {section}{\numberline {2.8}Degree Distribution}{16}
-\contentsline {subsection}{\numberline {2.8.1}Scale-Free Graph}{17}
-\contentsline {chapter}{\numberline {3}Louvain Community Detection Algorithm}{18}
-\contentsline {section}{\numberline {3.1}Introduction}{18}
-\contentsline {section}{\numberline {3.2}Modularity}{18}
-\contentsline {subsection}{\numberline {3.2.1}Definition}{19}
-\contentsline {subsection}{\numberline {3.2.2}Properties of Modularity}{20}
-\contentsline {section}{\numberline {3.3}Louvain}{20}
-\contentsline {section}{\numberline {3.4}Implementation of the Algorithm}{20}
-\contentsline {subsubsection}{\numberline {3.4.0.1}First Phase : Optimizing Modularity}{21}
-\contentsline {paragraph}{\numberline {3.4.0.1.1}Second Phase : Agglomerating the communities found in first phase into new nodes}{22}
-\contentsline {subsubsection}{\numberline {3.4.0.2}Observations of Louvain}{23}
-\contentsline {subsubsection}{\numberline {3.4.0.3}Usage of Louvain in the project}{23}
-\contentsline {subsection}{\numberline {3.4.1}Experiments}{23}
-\contentsline {subsubsection}{\numberline {3.4.1.1}Result}{26}
-\contentsline {section}{\numberline {3.5}Matrix Based Algorithm}{26}
-\contentsline {subsection}{\numberline {3.5.1}Matrix Algorithm}{26}
-\contentsline {subsubsection}{\numberline {3.5.1.1}Introduction}{26}
-\contentsline {subsubsection}{\numberline {3.5.1.2}Reasoning}{26}
-\contentsline {subsubsection}{\numberline {3.5.1.3}Description}{26}
-\contentsline {subsubsection}{\numberline {3.5.1.4}Implementation}{26}
-\contentsline {subsubsection}{\numberline {3.5.1.5}Experiments}{26}
-\contentsline {subsubsection}{\numberline {3.5.1.6}Result}{26}
-\contentsline {chapter}{\numberline {4}Visualization Module}{27}
-\contentsline {section}{\numberline {4.1}Alchemy.js}{27}
-\contentsline {subsection}{\numberline {4.1.1}Dependencies}{27}
-\contentsline {subsection}{\numberline {4.1.2}Steps to use the Alchemy.js}{27}
-\contentsline {section}{\numberline {4.2}Getting the data from the Louvain Python code to Alchemy }{28}
-\contentsline {subsubsection}{\numberline {4.2.0.1}Tests}{29}
-\contentsline {subsubsection}{\numberline {4.2.0.2}Result}{34}
-\contentsline {chapter}{\numberline {5}Overall System Description}{35}
-\contentsline {section}{\numberline {5.1}Choice of Web.py}{35}
-\contentsline {section}{\numberline {5.2}Front End frame work}{35}
-\contentsline {section}{\numberline {5.3}Using the application}{36}
-\contentsline {subsubsection}{\numberline {5.3.0.3}Implementation Benefits}{37}
-\contentsline {subsubsection}{\numberline {5.3.0.4}Description}{37}
-\contentsline {subsubsection}{\numberline {5.3.0.5}Result}{37}
-\contentsline {subsection}{\numberline {5.3.1}Benefits to the community}{37}
-\contentsline {chapter}{\numberline {6}Conclusion and Future Works}{39}
-\contentsline {section}{\numberline {6.1}Goals Achieved}{39}
-\contentsline {section}{\numberline {6.2}Revision of Planning and Budget}{39}
-\contentsline {section}{\numberline {6.3}Future Works}{39}
-\contentsline {section}{\numberline {6.4}Availability and requirements}{39}
-\contentsline {subsection}{\numberline {6.4.1}Conclusion}{40}
-\contentsline {subsection}{\numberline {6.4.2}Personal Conclusion}{40}
+\contentsline {section}{\numberline {2.7}Degree Distribution}{16}
+\contentsline {subsection}{\numberline {2.7.1}Scale-Free Graph}{17}
+\contentsline {section}{\numberline {2.8}State-of-the-art in Graph Visualization}{18}
+\contentsline {chapter}{\numberline {3}Louvain Community Detection Algorithm}{19}
+\contentsline {section}{\numberline {3.1}Introduction}{19}
+\contentsline {section}{\numberline {3.2}Modularity}{19}
+\contentsline {subsection}{\numberline {3.2.1}Definition}{20}
+\contentsline {subsection}{\numberline {3.2.2}Properties of Modularity}{21}
+\contentsline {section}{\numberline {3.3}Louvain}{21}
+\contentsline {section}{\numberline {3.4}Implementation of the Louvain Community detection Algorithm}{21}
+\contentsline {subsubsection}{\numberline {3.4.0.1}First Phase : Optimizing Modularity}{22}
+\contentsline {paragraph}{\numberline {3.4.0.1.1}Second Phase : Agglomerating the communities found in first phase into new nodes}{23}
+\contentsline {subsubsection}{\numberline {3.4.0.2}Observations of Louvain}{24}
+\contentsline {subsubsection}{\numberline {3.4.0.3}Usage of Louvain in the project}{24}
+\contentsline {subsection}{\numberline {3.4.1}Experiments}{24}
+\contentsline {subsubsection}{\numberline {3.4.1.1}Result}{27}
+\contentsline {section}{\numberline {3.5}Matrix Based Algorithm}{27}
+\contentsline {subsection}{\numberline {3.5.1}Matrix Algorithm}{27}
+\contentsline {subsubsection}{\numberline {3.5.1.1}Introduction}{27}
+\contentsline {subsubsection}{\numberline {3.5.1.2}Reasoning}{27}
+\contentsline {subsubsection}{\numberline {3.5.1.3}Description}{27}
+\contentsline {subsubsection}{\numberline {3.5.1.4}Implementation}{27}
+\contentsline {subsubsection}{\numberline {3.5.1.5}Experiments}{27}
+\contentsline {subsubsection}{\numberline {3.5.1.6}Result}{27}
+\contentsline {chapter}{\numberline {4}Visualization Module}{28}
+\contentsline {section}{\numberline {4.1}Alchemy.js}{29}
+\contentsline {section}{\numberline {4.2}Dependencies}{29}
+\contentsline {section}{\numberline {4.3}Steps to use the Alchemy.js}{29}
+\contentsline {section}{\numberline {4.4}Getting the data from the Louvain Python code to Alchemy }{30}
+\contentsline {section}{\numberline {4.5}Tests}{30}
+\contentsline {subsubsection}{\numberline {4.5.0.7}Result}{36}
+\contentsline {chapter}{\numberline {5}Overall System Description}{37}
+\contentsline {section}{\numberline {5.1}Choice of Web.py}{37}
+\contentsline {section}{\numberline {5.2}Frontend Framework}{38}
+\contentsline {section}{\numberline {5.3}Using the application}{38}
+\contentsline {subsubsection}{\numberline {5.3.0.8}Implementation Benefits}{39}
+\contentsline {subsubsection}{\numberline {5.3.0.9}Description}{39}
+\contentsline {subsubsection}{\numberline {5.3.0.10}Result}{40}
+\contentsline {subsection}{\numberline {5.3.1}Benefits to the community}{40}
+\contentsline {chapter}{\numberline {6}Conclusion and Future Works}{41}
+\contentsline {section}{\numberline {6.1}Goals Achieved}{41}
+\contentsline {section}{\numberline {6.2}Revision of Planning and Budget}{41}
+\contentsline {section}{\numberline {6.3}Future Works}{41}
+\contentsline {section}{\numberline {6.4}Availability and requirements}{42}
+\contentsline {subsection}{\numberline {6.4.1}Conclusion}{43}
+\contentsline {subsection}{\numberline {6.4.2}Personal Conclusion}{43}

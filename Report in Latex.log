@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.24)  18 JUN 2016 13:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.24)  18 JUN 2016 18:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -786,86 +786,92 @@ Overfull \hbox (21.53648pt too wide) in paragraph at lines 544--545
 File: sclaran.png Graphic file (type png)
 
 <use sclaran.png>
-Package pdftex.def Info: sclaran.png used on input line 573.
+Package pdftex.def Info: sclaran.png used on input line 569.
 (pdftex.def)             Requested size: 261.9741pt x 123.45905pt.
- [17 <./sclaran.png>]
+ [17 <./sclaran.png>] [18]
 Chapter 3.
-[18
+[19
 
 ]
-Overfull \hbox (3.11044pt too wide) in paragraph at lines 609--609
+Overfull \hbox (3.11044pt too wide) in paragraph at lines 607--607
 [] 
  []
 
-[19] <loustep.png, id=112, 757.83125pt x 420.57124pt>
+[20] <loustep.png, id=115, 757.83125pt x 420.57124pt>
 File: loustep.png Graphic file (type png)
  <use loustep.png>
-Package pdftex.def Info: loustep.png used on input line 667.
+Package pdftex.def Info: loustep.png used on input line 666.
 (pdftex.def)             Requested size: 378.9147pt x 210.28511pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[20] [21 <./loustep.png>] [22] <e1000.png, id=123, 1300.86pt x 624.3325pt>
+[21] [22 <./loustep.png>] [23] <e1000.png, id=126, 1300.86pt x 624.3325pt>
 File: e1000.png Graphic file (type png)
 
 <use e1000.png>
-Package pdftex.def Info: e1000.png used on input line 737.
+Package pdftex.def Info: e1000.png used on input line 736.
 (pdftex.def)             Requested size: 390.26102pt x 187.3012pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 733--739
+Underfull \hbox (badness 10000) in paragraph at lines 732--738
 
  []
 
-[23] <e1000b.png, id=127, 1260.71pt x 602.25pt>
+[24] <e1000b.png, id=131, 1260.71pt x 602.25pt>
 File: e1000b.png Graphic file (type png)
  <use e1000b.png>
-Package pdftex.def Info: e1000b.png used on input line 743.
+Package pdftex.def Info: e1000b.png used on input line 742.
 (pdftex.def)             Requested size: 378.21593pt x 180.67639pt.
 
-<e2000.png, id=128, 1273.75874pt x 609.27625pt>
+<e2000.png, id=132, 1273.75874pt x 609.27625pt>
 File: e2000.png Graphic file (type png)
  <use e2000.png>
-Package pdftex.def Info: e2000.png used on input line 749.
+Package pdftex.def Info: e2000.png used on input line 748.
 (pdftex.def)             Requested size: 382.13057pt x 182.78427pt.
- [24 <./e1000.png> <./e1000b.png>] <e2000b.png, id=135, 1218.5525pt x 599.23875
+ [25 <./e1000.png> <./e1000b.png>] <e2000b.png, id=138, 1218.5525pt x 599.23875
 pt>
 File: e2000b.png Graphic file (type png)
 
 <use e2000b.png>
-Package pdftex.def Info: e2000b.png used on input line 755.
+Package pdftex.def Info: e2000b.png used on input line 754.
 (pdftex.def)             Requested size: 365.56857pt x 179.77301pt.
- [25 <./e2000.png> <./e2000b.png>] [26]
+ [26 <./e2000.png> <./e2000b.png>] [27]
 Chapter 4.
+[28
 
-Overfull \hbox (11.5761pt too wide) in paragraph at lines 779--780
+]
+Overfull \hbox (7.37486pt too wide) in paragraph at lines 793--794
+\OT1/cmr/m/n/12 Alchemy needs three main units to form as an ap-pli-ca-tion nam
+ely: \OT1/cmr/m/it/12 alchemy.css\OT1/cmr/m/n/12 ,
+ []
+
+
+Overfull \hbox (11.5761pt too wide) in paragraph at lines 793--794
 \OT1/cmr/m/it/12 alchemy.js \OT1/cmr/m/n/12 and \OT1/cmr/m/it/12 data\OT1/cmr/m
 /n/12 . CSS and JavaScript are ma-jor de-pen-den-cies in Alchemy.js.
  []
 
 
-Overfull \hbox (44.07213pt too wide) in paragraph at lines 781--783
+Overfull \hbox (44.07213pt too wide) in paragraph at lines 795--797
 \OT1/cmr/m/n/12 In this project we have up-loaded the \OT1/cmr/m/it/12 alchemy.
 min.js\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 alchemy.css \OT1/cmr/m/n/12 and \OT1/c
 mr/m/it/12 alchemy.min.css
  []
 
 
-Overfull \hbox (111.1323pt too wide) in paragraph at lines 785--790
+Overfull \hbox (111.1323pt too wide) in paragraph at lines 799--804
 \OML/cmm/m/it/12 <$\OT1/cmr/m/n/12 link rel="stylesheet" href="http://abhinavsv
 3.github.io/javascriptsal/alchemy.min.css"/$\OML/cmm/m/it/12 >$ 
  []
 
 
-Overfull \hbox (31.75534pt too wide) in paragraph at lines 785--790
+Overfull \hbox (31.75534pt too wide) in paragraph at lines 799--804
 \OML/cmm/m/it/12 <$\OT1/cmr/m/n/12 script src="http://abhinavsv3.github.io/java
 scriptsal/alchemy.min1.js"$\OML/cmm/m/it/12 ><
  []
 
-[27
 
-]
-Overfull \hbox (6.77231pt too wide) in paragraph at lines 797--801
+Overfull \hbox (6.77231pt too wide) in paragraph at lines 811--815
 []\OT1/cmr/m/it/12 Begin Alchemy.js $\OML/cmm/m/it/12 <$\OT1/cmr/m/n/12 script$
 \OML/cmm/m/it/12 >$ \OT1/cmr/m/n/12 alchemy.begin$(\OMS/cmsy/m/n/12 f\OT1/cmr/m
 /n/12 "\OML/cmm/m/it/12 dataSource\OT1/cmr/m/n/12 " : \OML/cmm/m/it/12 someData
@@ -873,101 +879,101 @@ Overfull \hbox (6.77231pt too wide) in paragraph at lines 797--801
  []
 
 
-Overfull \hbox (6.35976pt too wide) in paragraph at lines 805--805
+Overfull \hbox (6.35976pt too wide) in paragraph at lines 819--819
 []\OT1/cmr/bx/n/17.28 Getting the data from the Lou-vain Python
  []
 
-<t1.png, id=147, 1026.83624pt x 824.07875pt>
+[29] <t1.png, id=153, 1026.83624pt x 824.07875pt>
 File: t1.png Graphic file (type png)
  <use t1.png>
-Package pdftex.def Info: t1.png used on input line 815.
+Package pdftex.def Info: t1.png used on input line 831.
 (pdftex.def)             Requested size: 308.05325pt x 247.22552pt.
- [28]
-<t2.png, id=151, 986.68625pt x 820.06375pt>
+ [30]
+<t2.png, id=158, 986.68625pt x 820.06375pt>
 File: t2.png Graphic file (type png)
  <use t2.png>
-Package pdftex.def Info: t2.png used on input line 821.
+Package pdftex.def Info: t2.png used on input line 837.
 (pdftex.def)             Requested size: 296.00815pt x 246.02103pt.
- [29 <./t1.png>]
-<t3.png, id=156, 1003.75pt x 747.79375pt>
+ [31 <./t1.png>]
+<t3.png, id=163, 1003.75pt x 747.79375pt>
 File: t3.png Graphic file (type png)
  <use t3.png>
-Package pdftex.def Info: t3.png used on input line 827.
+Package pdftex.def Info: t3.png used on input line 843.
 (pdftex.def)             Requested size: 301.12732pt x 224.33984pt.
 
-<t4.png, id=157, 849.1725pt x 787.94376pt>
+<t4.png, id=164, 849.1725pt x 787.94376pt>
 File: t4.png Graphic file (type png)
  <use t4.png>
-Package pdftex.def Info: t4.png used on input line 833.
+Package pdftex.def Info: t4.png used on input line 849.
 (pdftex.def)             Requested size: 254.75371pt x 236.38495pt.
- [30 <./t2.png> <./t3.png>] <t5.png, id=164, 1147.28625pt x 805.0075pt>
+ [32 <./t2.png> <./t3.png>] <t5.png, id=170, 1147.28625pt x 805.0075pt>
 File: t5.png Graphic file (type png)
  <use t5.png>
-Package pdftex.def Info: t5.png used on input line 839.
+Package pdftex.def Info: t5.png used on input line 855.
 (pdftex.def)             Requested size: 344.18852pt x 241.50412pt.
- [31 <./t4.png>]
-<t6.png, id=169, 1007.765pt x 818.05624pt>
+ [33 <./t4.png>]
+<t6.png, id=175, 1007.765pt x 818.05624pt>
 File: t6.png Graphic file (type png)
  <use t6.png>
-Package pdftex.def Info: t6.png used on input line 845.
+Package pdftex.def Info: t6.png used on input line 861.
 (pdftex.def)             Requested size: 302.33183pt x 245.41876pt.
- [32 <./t5.png>]
-<t7.png, id=174, 899.36pt x 726.715pt>
+ [34 <./t5.png>]
+<t7.png, id=180, 899.36pt x 726.715pt>
 File: t7.png Graphic file (type png)
  <use t7.png>
-Package pdftex.def Info: t7.png used on input line 851.
+Package pdftex.def Info: t7.png used on input line 867.
 (pdftex.def)             Requested size: 269.81007pt x 218.01617pt.
- [33 <./t6.png> <./t7.png>]
-[34]
+ [35 <./t6.png> <./t7.png>]
+[36]
 Chapter 5.
-[35
+[37
 
-] <s1.png, id=186, 1280.785pt x 993.7125pt>
+] [38] <s1.png, id=196, 1280.785pt x 993.7125pt>
 File: s1.png Graphic file (type png)
  <use s1.png>
-Package pdftex.def Info: s1.png used on input line 880.
+Package pdftex.def Info: s1.png used on input line 896.
 (pdftex.def)             Requested size: 170.71652pt x 132.44716pt.
 
-<s3.png, id=187, 1276.77pt x 991.705pt>
+<s3.png, id=197, 1276.77pt x 991.705pt>
 File: s3.png Graphic file (type png)
  <use s3.png>
-Package pdftex.def Info: s3.png used on input line 881.
+Package pdftex.def Info: s3.png used on input line 897.
 (pdftex.def)             Requested size: 170.71652pt x 132.58817pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 878--886
+Underfull \hbox (badness 10000) in paragraph at lines 894--902
 
  []
 
-[36] <s4.png, id=192, 1272.755pt x 1002.74625pt>
+<s4.png, id=198, 1272.755pt x 1002.74625pt>
 File: s4.png Graphic file (type png)
  <use s4.png>
-Package pdftex.def Info: s4.png used on input line 889.
+Package pdftex.def Info: s4.png used on input line 905.
 (pdftex.def)             Requested size: 170.71652pt x 134.49277pt.
 
-<serr.png, id=193, 1256.695pt x 997.7275pt>
+<serr.png, id=199, 1256.695pt x 997.7275pt>
 File: serr.png Graphic file (type png)
  <use serr.png>
-Package pdftex.def Info: serr.png used on input line 890.
+Package pdftex.def Info: serr.png used on input line 906.
 (pdftex.def)             Requested size: 170.71652pt x 135.52472pt.
- [37 <./s1.png> <./s3.png> <./s4.png> <./serr.png>] [38]
+ [39 <./s1.png> <./s3.png> <./s4.png> <./serr.png>] [40]
 Chapter 6.
+[41
 
-Overfull \hbox (70.59145pt too wide) in paragraph at lines 924--925
+]
+Overfull \hbox (70.59145pt too wide) in paragraph at lines 959--960
 []\OT1/cmr/bx/n/12 Project Home-page\OT1/cmr/m/n/12 : $\OT1/cmtt/m/n/12 https :
  / / github . com / abhinavsv3 / webprojectdimensional$ 
  []
 
-[39
-
-] [40] (./Report in Latex.lol)
+[42] [43] (./Report in Latex.lol)
 \tf@lol=\write5
 \openout5 = `"Report in Latex.lol"'.
 
- (./Report in Latex.bbl [41
+ (./Report in Latex.bbl [44
 
-] [42
+] [45
 
-]) [43]
+]) [46]
 (./Report in Latex.aux)
 
 LaTeX Warning: There were multiply-defined labels.
@@ -975,7 +981,7 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  14316 strings out of 495028
- 247772 string characters out of 6181497
+ 247774 string characters out of 6181497
  311261 words of memory out of 5000000
  17193 multiletter control sequences out of 15000+600000
  11978 words of font info for 43 fonts, out of 8000000 for 9000
@@ -994,10 +1000,10 @@ s/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb>
-Output written on "Report in Latex.pdf" (50 pages, 1979096 bytes).
+Output written on "Report in Latex.pdf" (53 pages, 1983570 bytes).
 PDF statistics:
- 270 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
+ 279 PDF objects out of 1000 (max. 8388607)
+ 165 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  123 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -573,12 +573,12 @@ According to the paper "Resilience of the Internet to Random Breakdowns" \cite{s
 \section{State-of-the-art in Graph Visualization}
 
 \chapter{Louvain Community Detection Algorithm}
-In this section we would describe the community detection algorithms such as louvain and various tests that were performed to choose the algorithm. 
+In this section we describe the community detection algorithms such as Louvain and various tests that were performed to choose the algorithm. 
 \section{Introduction}
 
 The problem of community detection requires the graph to be split into communities of tightly packed or in other words densely connected nodes with nodes of different community being sparely connected. 
 
-Several algorithms have been proposed for perfoming good partition in a reasonably good speed.
+Several algorithms have been proposed for performing good partition in a reasonably good speed.
 Distinguishably there are several types of community detection algorithms, namely: divisive algorithms, which aims in removal of the inter-community links, agglomerative algorithms, which aim in merging similar nodes and optimization methods which aim in maximizing the objective function. 
 \section{Modularity}
 The quality of partitioning that results from application of method is often measured using modularity. The \textit{modularity} of a partition is hence a scalar value between -1 and 1 that is used to measure the density of the links inside the communities as compared to the density of the links between the communities.
@@ -638,10 +638,11 @@ Q(C_s) \leq \frac{1}{2m} \sum_{ij} A_{ij} \delta(C_i,C_j) \leq \frac{1}{2m} \sum
  \end{enumerate}
  
  \section{Louvain}
- Louvian algorithm is considered as the state-of-the art algorithm for community detection for identifying community structures \cite{louvain}. Louvain algorithm consists of two phases:
+ Louvain algorithm is considered as the state-of-the art algorithm for community detection for identifying community structures \cite{louvain}. Louvain method developped by Blondel \textit{et al} \cite{louvain} finds high modularity partitions of large networks in short time. It unfolds a complete hierarchy community detection. 
+ 
 
 
-\section{Implementation of the Algorithm}
+\section{Implementation of the Louvain Community detection Algorithm}
 
 The implementation  of the algorihtm is based on the paper "Fast unfolding of communities in large networks" \cite{louvain}.  The implementation is done using basic python packages. 
  The Algorithm has two phases that are repeated iteratively to bring the final solution to the problem. The following figure ~\ref{loupic} demonstrates the algorithm in the form of a flow diagram,
@@ -767,15 +768,30 @@ In the project the above algorithm has been implemented in python taking inspira
 \subsubsection{Result}
 
 \chapter{Visualization Module}
-In the field of \textit{Mathematics} and \textit{Computer Science} graph drawing is an area that uses both graph theory and infomation visualization to generate a 2-D depection of graphs. 
+For visual representation, softwares such as D3, Alchemy.js, plot.ly, Gephi and graphviz were tested
+using example graphs. Graphviz was only used for structural representation and was more useful for
+only small graphs. Plot.ly is most used for representation over charts and not graphs. Gephi is a tool
+used for data analysis for understanding and exploring graph based data however it has some
+drawbacks in the logistics of the project. Softwares such as HyperTree, HyperGraphs were also
+searched upon but they did not have a python API or was not based on JavaScipt but instead has a
+Java Code based APIs. I have surely overlooked some of the tools but most of the important tools
+pertaining to the project were tested in my system. D3 and Alchemy.js were the last ones left. D3
+provided the necessary tools and was JavaScript and could be linked to python and was the best
+option for the project's logistics. Alchemy.js was built using D3. Alchemy.js required minimal code
+to generate the graphs as most of the customization could be done by just overriding or altering the
+“config” [Configuration part of the Alchemy.js] instead of implementing it entirely using
+JavaScript. Alchemy.js also provides a feature in which the core application can be further extended
+with any other feature of D3. Having D3 to be the base, with minimal code and maximum
+customization Alchemy.js was chosen for visual representation of the graph in this project. Thus the project director also considered alchemy.js as a visualization software as it fits the bigger project. 
 
 
 \section{Alchemy.js}
-According to the creator of the Alchemy.js Software \cite{Alchemy}
-Alchemy.js is a graph drawing software built on \textit{d3}. Alchemy.js is an application which provides graph visualization with very little over head.  
-\subsection{Dependencies}
-Alchemy needs 3 main units to  form as an application namely:  \textit{alchemy.css}, \textit{alchemy.js} and \textit{data}. CSS and JavaScript are major dependencies in Alchemy.js. Installation of \textit{jQuery} and \textit{d3} is also useful. \textit{alchemy.min.js}, \textit{alchemy.css} and \textit{alchemy.min.css } will be updated in the CDN (Content Delivery netwrok)
-\subsection{Steps to use the Alchemy.js}
+
+Alchemy.js is a graph drawing library built to proivde graph visualization with little overhead. It is built on the d3 library, written in Javascript, which runs in most web browsers.   
+
+\section{Dependencies}
+Alchemy needs three main units to  form as an application namely:  \textit{alchemy.css}, \textit{alchemy.js} and \textit{data}. CSS and JavaScript are major dependencies in Alchemy.js. Installation of \textit{jQuery} and \textit{d3} is also useful. \textit{alchemy.min.js}, \textit{alchemy.css} and \textit{alchemy.min.css } will be updated in the CDN (Content Delivery netwrok)
+\section{Steps to use the Alchemy.js}
  In this project we have uploaded the \textit{alchemy.min.js}, \textit{alchemy.css} and \textit{alchemy.min.css } into the project's file repository http://abhinavsv3.github.io/javascriptsal and hence will be using the link in the following explanation. 
 The following describes the steps that are followed in use of Alchemy.js :
 \begin{enumerate}
@@ -801,13 +817,15 @@ $<$/script$>$
 
 \end{enumerate}
 \section{Getting the data from the Louvain Python code to Alchemy }
-According to the authors of Alchemy.js. Alchemy.js takes a simple data format called GraphJSON. GraphJSON serves as a light weight and flexible representation of graph data, easily consued locally or over the web. 
+ Alchemy.js takes a simple data format called GraphJSON. GraphJSON serves as a light weight and flexible representation of graph data, easily consued locally or over the web. 
 \par 
 GraphJSON is a JSON Object which has 2 object namely: \textit{nodes} and  \textit{edges} . These are individual arrays that represent the nodes and edges that will be represented in the graph visualization. 
 \par \textbf{Nodes} : id key is the only unique value that should be present in the nodes
 \par \textbf{Edges} : source and target key are the only unique value that should be present in the edges.
 
-\subsubsection{Tests}
+\section{Tests}
+For the purpose of visualization various test were performed for analysising the compatiability of Alchemy.js and to explore and exploit all the functionalities of alchemy.js and choose the best ones for the project and implement them.
+The folowing will ennumerate the tests that were performed one after another.  Alchemy uses a force layout of d3. This enables the 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{t1.png}
@@ -854,13 +872,13 @@ GraphJSON is a JSON Object which has 2 object namely: \textit{nodes} and  \texti
 \subsubsection{Result}
 
 \chapter{Overall System Description}
-The project uses two indistinguishable technologies of a raw python code and a JavaScript program that can represent or draw the output of the python code on screen. This lead to a need to include a new element of a web framework that helps in combining both the tasks.  A web framework is one that aims to allevate the overhead associated with common activities performed in the web development. 
+The project uses two complementary technologies of a raw python code and a JavaScript program that can represent or draw the output of the python code on screen. This lead to a need to include a new element of a web framework for implementing the louvain algorithm and creating a JSON object, and JavaScript to represent the graph on a web browser.   A web framework is one that aims to remove the overhead associated with common activities performed in the web development. 
 \section{Choice of Web.py}
-An exploration one a few python web frameworks such as Django, Grok and web.py. A sample application in Django was built to see if Django suits the need of the project. Django was eliminated oweing to the fact that it was heavier for a simple task that we wish to perform in the project. Distinguishing the features of both Grok and web.py. Web.py was chosen as the web framework for the project as it allowed successful integration of the existing python code with the web framework. 
-The auxiliary main project was more associated with building a web project based on Angular.js , which was also the suggestion of the project director. But web.py commanded the current need of the project that is to perform the integration task.  
-\section{Front End frame work}
-Bootstrap was an intuitive web front-end frame work that has been implemented in the project.  Bootstrap can be divided into various matrix cubes enabling us to place buttons to run the application.
+An exploration one a few python web frameworks such as Django, Grok and web.py. A sample application in Django was built to see if Django suits the need of the project. Django was eliminated due to the fact that it was heavier for a simple task that we wish to perform in the project. Web.py was chosen as the web framework for the project as it allowed successful integration  of the existing python code with the web framework over grok.We must note that the larger project at the LARCA group does not use web.py instead another framework called Angular.js. However, Angular.js is designed to be used for large, complex projects, and after some evaluation it was clear that the overhead for this small project did not pay off. 
+Thus, Web.py suffices and was easy to used for the current need of the project that is to perform the integration task.  
 
+\section{Frontend Framework}
+Bootstrap was an intuitive web front-end frame work that has been implemented in the project.  Bootstrap allows to divide the screen into various matrix cubes enabling us to place buttons to run the application. Bootstrap, originally named Twitter Blueprint, was developed by Mark Otto and Jacob Thornton at Twitter as a framework to encourage consistency across internal tools. It is the second most starred project in github and has more than forty thousand forks \cite{bootstrap}.
 
 
 \section{Using the application}
@@ -911,11 +929,30 @@ analyzing and predicting the disease landscape of a region and in turn multiple 
 \section{Goals Achieved}
 \section{Revision of Planning and Budget}
 \section{Future Works}
-Order of inputs can influence the computation time. The problem of finding specific heuristics to solve this ordering problem can improve the louvain algorithms computation time.
-Zooming effect
-merging the dashboard to the graph board.
-The project relies fully on louvain. One can speculate on whether modularity is the only measure that exists. THinking about a completely new measure would be interesting. 
-Database for passwords. 
+In the span of five months we were able to build a basics project by comparing, contrasting, including the one that the director suggests and chosing the one that is simple and works well. In this project I would like to suggest a few improvemnets that we would have done given more time. We would like to enumerate on that:
+
+\begin{enumerate}
+\item In the Algorihthm part :
+\begin{enumerate}
+\item The order in which the information is presented can affect the computation of the louvain community detection algorithm. Hence the problem of finding specific heuristics to solve this ordering can improve the louvain algorithm computation time.
+\item Another intersting feature is to analyse whether every step in the louvain algorithm gives the exact or nearly exact hierachy of community detection
+\item 
+The project relies fully on louvain. One can speculate on whether modularity is the only measure that exists. Thinking about a completely new measure would be interesting. 
+\end{enumerate}
+
+\item In the visualization Module:
+\begin{enumerate}
+\item In the current project the communtiy graph is presented seperately from the main graph.  A zoom effect can be introduced to zoom into to community graph to reach different levels of hierachy. 
+\item  Double-click on a node to fade out all but its immediate neighbours.
+\item We deal with large graphs thus it would be nice to have some search functionalities. jQuery can be used to create an autocompleting search box that can be featured on the graph display page which can search the name of the patient or the treatment that is needed. 
+\item Fish eye can be introduced. Since alchemy.js is a framework that runs on d3 it can easily be extended o d3. Hence the fish-eye module can help to view every node along  with it's neighbours in a more expanded format.
+\end{enumerate}
+\item In the Overall strucutre:
+\begin{enumerate}
+\item The current dash board is before the graph board. The Dash board can be included in the graph board itselef to avoid switching back and front in the web application.
+\item  A simple Database  can be setup for storing passwords and improvization on sign-ins can deliver a better personlaizaed user experience.
+\end{enumerate}
+\end{enumerate}
 \section{Availability and requirements}
 \begin{enumerate}
 \item \textbf{Project Name}: Graph and matrix algorithms for visualizing high dimensional

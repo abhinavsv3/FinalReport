@@ -3,43 +3,42 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Report in Latex.aux
 The style file: plain.bst
 Database file #1: mybib.bib
+Warning--entry type for "bootstrap" isn't style-file defined
+--line 1 of file mybib.bib
 Warning--entry type for "pylouvain" isn't style-file defined
---line 67 of file mybib.bib
-Warning--entry type for "Alchemy" isn't style-file defined
---line 76 of file mybib.bib
-Warning--to sort, need author or key in Alchemy
+--line 79 of file mybib.bib
 Warning--empty journal in graphviz
 Warning--empty year in graphviz
 You've used 13 entries,
             2118 wiz_defined-function locations,
-            580 strings with 6302 characters,
-and the built_in function-call counts, 4381 in all, are:
-= -- 397
-> -- 271
+            580 strings with 6276 characters,
+and the built_in function-call counts, 4462 in all, are:
+= -- 404
+> -- 283
 < -- 2
-+ -- 108
-- -- 94
-* -- 343
-:= -- 755
-add.period$ -- 35
++ -- 112
+- -- 98
+* -- 347
+:= -- 778
+add.period$ -- 36
 call.type$ -- 13
-change.case$ -- 85
+change.case$ -- 87
 chr.to.int$ -- 0
-cite$ -- 16
+cite$ -- 15
 duplicate$ -- 141
-empty$ -- 310
-format.name$ -- 94
-if$ -- 876
+empty$ -- 309
+format.name$ -- 98
+if$ -- 888
 int.to.chr$ -- 0
 int.to.str$ -- 13
 missing$ -- 12
-newline$ -- 64
-num.names$ -- 24
-pop$ -- 92
+newline$ -- 65
+num.names$ -- 26
+pop$ -- 93
 preamble$ -- 1
-purify$ -- 73
+purify$ -- 75
 quote$ -- 0
-skip$ -- 104
+skip$ -- 105
 stack$ -- 0
 substring$ -- 202
 swap$ -- 19
@@ -47,8 +46,8 @@ text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 50
-warning$ -- 3
-while$ -- 36
+warning$ -- 2
+while$ -- 38
 width$ -- 15
-write$ -- 131
-(There were 5 warnings)
+write$ -- 133
+(There were 4 warnings)
