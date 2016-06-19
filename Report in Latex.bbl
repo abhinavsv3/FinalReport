@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{scalefree}
+Albert-L{\'a}szl{\'o} Barab{\'a}si.
+\newblock Scale-free networks: a decade and beyond.
+\newblock {\em science}, 325(5939):412--413, 2009.
+
 \bibitem{gephi}
 Mathieu Bastian, Sebastien Heymann, Mathieu Jacomy, et~al.
 \newblock Gephi: an open source software for exploring and manipulating
@@ -40,11 +45,6 @@ Ulrik Brandes, Daniel Delling, Marco Gaertler, Robert G{\"o}rke, Martin Hoefer,
   Zoran Nikoloski, and Dorothea Wagner.
 \newblock Maximizing modularity is hard.
 \newblock {\em arXiv preprint physics/0608255}, 2006.
-
-\bibitem{scalefree}
-Reuven Cohen, Keren Erez, Daniel ben Avraham, and Shlomo Havlin.
-\newblock Resilience of the internet to random breakdowns.
-\newblock {\em Phys. Rev. Lett.}, 85:4626--4628, Nov 2000.
 
 \bibitem{igraph}
 Gabor Csardi and Tamas Nepusz.

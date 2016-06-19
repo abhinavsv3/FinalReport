@@ -771,44 +771,48 @@ In the project the above algorithm has been implemented in python taking inspira
 
 \section{Experiments}
 In performing experiments we analyse the speed and capability of the python program to handle more input and also to see pattern of behaviour of the data. For this purpose test case inputs have to be generated or test cases that are available online must be used. 
-In this project we utilize both method to see the performance of the program.
+In this project we utilize both method to see the performance of the program. All the tests were run on 2.50GHz Intel Core i5-3210M with 8 GB RAM (Sony Vaio) running gnome-ubuntu 14.04 operating system. 
+
 \subsection{Nodes vs Time keeping modularity constant}
 \par In the paper "Exploring community structure in biological networks with random graphs" \cite{githubtest1}, have developed a generative model to produce undirected connected graphs with a degree and a pattern of communities while maintaining a graph strucuture that is as random as possible.  They have given 2 programs one which contains the degree distribution funtions such as scale-free degree  distribution, poisson degree distribution, regular distribution and geometric.  In this project we are intersted in scale-free distribution as most real-world networks are scale free in nature \cite{scalefree}. To run this test networkx package is a necessary component. 
 
+\par For the purpose of testing 2 programs in python were written. First program is a generator program that sets the degree distribution to scale-free, Q=0.4 [ Average Q value ] and N=150 to N=2300. This porgram generate a set of files conatins graphs with nodes in the range of N. Second program is the ploting program in which the files that were generated in the first program was supplied as input to the second program and Louvain algorithm was applied. Time of run for Louvain was calculated for each input and recorded. This was then ploted into graphs using the matplotlib function. The graphs are displayed in figure ~\ref{ex1}, ~\ref{ex2}, ~\ref{ex3} and ~\ref{ex4} for respective range of nodes mentioned in the caption of the graphs.
 
-\\
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{e1000.png}
-\caption{Experiment showing the plot of time vs number of nodes for 1000 nodes}
+\caption{\label{ex1}Experiment showing the plot of time vs number of nodes for 1000 nodes}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{e1000b.png}
-\caption{Experiment showing the plot of time vs number of nodes for 1000 nodes points joint by lines}
+\caption{\label{ex2}Experiment showing the plot of time vs number of nodes for 1000 nodes points joint by lines}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{e2000.png}
-\caption{Example Graph G=(V,E) Bull Graph}
+\caption{\label{ex3}Experiment showing the plot of time vs number of nodes for 2000 nodes}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{e2000b.png}
-\caption{Example Graph G=(V,E) Bull Graph}
+\caption{\label{ex4}Experiment showing the plot of time vs number of nodes for 2000 nodes points joint by lines}
 \end{figure}
+
+\par It  is interesting to note that for steady raise in the number of inputs there was a steady raise in the time. There were very few jitters that were caused by the computer.
 
 \subsubsection{Minor bugs}
 In the results obtained it is intersting to note that there is a set of slow runs that occur at regular intervals. These are due to the effect of garbage collection done by python automatic garbage collector. This issue was found by manually turning of the garbage collection and explicitly calling it every time after each run. 
 
 \subsection{SNAP}
+
 \cite{snap}
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.3]{e2000b.png}
+\includegraphics[scale=0.3]{fb.png}
 \caption{Example Graph G=(V,E) Bull Graph}
 \end{figure}
 
@@ -956,7 +960,7 @@ For the purpose of matrix visualization, protovis has been implemented in the pr
 \includegraphics[scale=0.3]{d4b.png}
 \caption{\label{test8}Matrix Visualization.}
 \end{figure}
-\end{enumerate}
+
 
 \subsection{Bug Report}
 In the project there was minor issues that were to be addressed:
@@ -1034,9 +1038,10 @@ In the following we describe the entire working flow of the Web Application:
 \item Error management involves a seperate class. Hence exact errors can be mentioned and presented to the user in an elegant web interface.
 \end{enumerate}
 \subsection{Drawback}
+\begin{enumerate}
 \item Very large graph needs a bigger screen for the entire graph to be displayed.
 \item To display such large graphs a browser that could handle large JSON objects is needed along with bigger screen size
-
+\end{enumerate}
 \subsubsection{Result}
 
 \chapter{Conclusion and Future Works}

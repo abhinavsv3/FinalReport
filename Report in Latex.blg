@@ -4,45 +4,49 @@ The top-level auxiliary file: Report in Latex.aux
 The style file: plain.bst
 Database file #1: mybib.bib
 Warning--entry type for "bootstrap" isn't style-file defined
---line 37 of file mybib.bib
+--line 62 of file mybib.bib
+Repeated entry---line 74 of file mybib.bib
+ : @article{scalefree
+ :                   ,
+I'm skipping whatever remains of this entry
 Warning--entry type for "pylouvain" isn't style-file defined
---line 115 of file mybib.bib
+--line 140 of file mybib.bib
 Warning--empty journal in graphviz
 Warning--empty year in graphviz
 Warning--empty journal in graphjslib
 Warning--empty year in graphjslib
 You've used 20 entries,
             2118 wiz_defined-function locations,
-            616 strings with 7219 characters,
-and the built_in function-call counts, 6419 in all, are:
-= -- 596
-> -- 377
+            615 strings with 7188 characters,
+and the built_in function-call counts, 6306 in all, are:
+= -- 587
+> -- 361
 < -- 2
-+ -- 150
-- -- 128
-* -- 476
-:= -- 1120
++ -- 144
+- -- 122
+* -- 462
+:= -- 1100
 add.period$ -- 56
 call.type$ -- 20
-change.case$ -- 122
+change.case$ -- 119
 chr.to.int$ -- 0
 cite$ -- 24
 duplicate$ -- 211
-empty$ -- 460
-format.name$ -- 128
-if$ -- 1282
+empty$ -- 459
+format.name$ -- 122
+if$ -- 1262
 int.to.chr$ -- 0
 int.to.str$ -- 20
 missing$ -- 18
 newline$ -- 99
 num.names$ -- 40
-pop$ -- 130
+pop$ -- 127
 preamble$ -- 1
-purify$ -- 103
+purify$ -- 100
 quote$ -- 0
 skip$ -- 157
 stack$ -- 0
-substring$ -- 307
+substring$ -- 301
 swap$ -- 25
 text.length$ -- 2
 text.prefix$ -- 0
@@ -52,4 +56,4 @@ warning$ -- 4
 while$ -- 58
 width$ -- 22
 write$ -- 203
-(There were 6 warnings)
+(There was 1 error message)
