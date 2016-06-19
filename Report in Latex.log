@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.24)  19 JUN 2016 10:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.24)  19 JUN 2016 10:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -596,11 +596,11 @@ Package pdftex.def Info: logo.png used on input line 138.
 ]
 (./Report in Latex.toc [2
 
-])
+] [3])
 \tf@toc=\write4
 \openout4 = `"Report in Latex.toc"'.
 
- [3]
+ [4]
 Chapter 1.
 [1
 
@@ -732,7 +732,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 326--346
 
 [6] [7] [8]
 Chapter 2.
-<bull.png, id=63, 337.26pt x 336.25626pt>
+<bull.png, id=66, 337.26pt x 336.25626pt>
 File: bull.png Graphic file (type png)
  <use bull.png>
 Package pdftex.def Info: bull.png used on input line 394.
@@ -749,7 +749,7 @@ Overfull \hbox (15.3282pt too wide) in paragraph at lines 434--435
 e al-go-rithms de-tect inter-community
  []
 
-[11] <graphpart.png, id=76, 536.0025pt x 511.9125pt>
+[11] <graphpart.png, id=80, 536.0025pt x 511.9125pt>
 File: graphpart.png Graphic file (type png)
  <use graphpart.png>
 Package pdftex.def Info: graphpart.png used on input line 463.
@@ -760,7 +760,7 @@ Overfull \hbox (0.43555pt too wide) in paragraph at lines 469--470
 er-ar-chi-cal clus-ter-ing aims to iden-
  []
 
-[12 <./graphpart.png>] <hirac.png, id=82, 834.11626pt x 340.27126pt>
+[12 <./graphpart.png>] <hirac.png, id=85, 834.11626pt x 340.27126pt>
 File: hirac.png Graphic file (type png)
 
 <use hirac.png>
@@ -771,7 +771,7 @@ Overfull \hbox (27.05711pt too wide) in paragraph at lines 481--482
  [][] 
  []
 
-[13 <./hirac.png>] [14] [15] <lou.png, id=93, 823.075pt x 298.11375pt>
+[13 <./hirac.png>] [14] [15] <lou.png, id=96, 823.075pt x 298.11375pt>
 File: lou.png Graphic file (type png)
 
 <use lou.png>
@@ -782,7 +782,7 @@ Overfull \hbox (21.53648pt too wide) in paragraph at lines 543--544
  [][] 
  []
 
-[16 <./lou.png>] <sclaran.png, id=98, 654.94687pt x 308.65312pt>
+[16 <./lou.png>] <sclaran.png, id=101, 654.94687pt x 308.65312pt>
 File: sclaran.png Graphic file (type png)
 
 <use sclaran.png>
@@ -809,7 +809,7 @@ Overfull \hbox (3.11044pt too wide) in paragraph at lines 650--650
 [] 
  []
 
-[22] <loustep.png, id=121, 757.83125pt x 420.57124pt>
+[22] <loustep.png, id=124, 757.83125pt x 420.57124pt>
 File: loustep.png Graphic file (type png)
  <use loustep.png>
 Package pdftex.def Info: loustep.png used on input line 708.
@@ -822,7 +822,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Overfull \vbox (26.90166pt too high) has occurred while \output is active []
 
 
-[24 <./loustep.png>] [25] <e1000.png, id=133, 1300.86pt x 624.3325pt>
+[24 <./loustep.png>] [25] <e1000.png, id=136, 1300.86pt x 624.3325pt>
 File: e1000.png Graphic file (type png)
 
 <use e1000.png>
@@ -833,18 +833,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 773--780
 
  []
 
-[26] <e1000b.png, id=137, 1260.71pt x 602.25pt>
+[26] <e1000b.png, id=140, 1260.71pt x 602.25pt>
 File: e1000b.png Graphic file (type png)
  <use e1000b.png>
 Package pdftex.def Info: e1000b.png used on input line 784.
 (pdftex.def)             Requested size: 378.21593pt x 180.67639pt.
 
-<e2000.png, id=138, 1273.75874pt x 609.27625pt>
+<e2000.png, id=141, 1273.75874pt x 609.27625pt>
 File: e2000.png Graphic file (type png)
  <use e2000.png>
 Package pdftex.def Info: e2000.png used on input line 790.
 (pdftex.def)             Requested size: 382.13057pt x 182.78427pt.
- [27 <./e1000.png> <./e1000b.png>] <e2000b.png, id=144, 1218.5525pt x 599.23875
+ [27 <./e1000.png> <./e1000b.png>] <e2000b.png, id=147, 1218.5525pt x 599.23875
 pt>
 File: e2000b.png Graphic file (type png)
 
@@ -899,52 +899,49 @@ Overfull \hbox (6.35976pt too wide) in paragraph at lines 858--858
 []\OT1/cmr/bx/n/17.28 Getting the data from the Lou-vain Python
  []
 
-[31] <t1.png, id=160, 1026.83624pt x 824.07875pt>
+[31] <t1.png, id=163, 1026.83624pt x 824.07875pt>
 File: t1.png Graphic file (type png)
  <use t1.png>
 Package pdftex.def Info: t1.png used on input line 880.
 (pdftex.def)             Requested size: 308.05325pt x 247.22552pt.
  [32]
-<t2.png, id=164, 986.68625pt x 820.06375pt>
+<t2.png, id=167, 986.68625pt x 820.06375pt>
 File: t2.png Graphic file (type png)
  <use t2.png>
 Package pdftex.def Info: t2.png used on input line 889.
 (pdftex.def)             Requested size: 296.00815pt x 246.02103pt.
  [33 <./t1.png>]
-<t3.png, id=169, 1003.75pt x 747.79375pt>
+<t3.png, id=172, 1003.75pt x 747.79375pt>
 File: t3.png Graphic file (type png)
  <use t3.png>
 Package pdftex.def Info: t3.png used on input line 897.
 (pdftex.def)             Requested size: 301.12732pt x 224.33984pt.
  [34 <./t2.png>]
-<t4.png, id=174, 849.1725pt x 787.94376pt>
+<t4.png, id=177, 849.1725pt x 787.94376pt>
 File: t4.png Graphic file (type png)
  <use t4.png>
 Package pdftex.def Info: t4.png used on input line 906.
 (pdftex.def)             Requested size: 254.75371pt x 236.38495pt.
  [35 <./t3.png>]
-<t5.png, id=179, 1147.28625pt x 805.0075pt>
+<t5.png, id=183, 1147.28625pt x 805.0075pt>
 File: t5.png Graphic file (type png)
  <use t5.png>
 Package pdftex.def Info: t5.png used on input line 915.
 (pdftex.def)             Requested size: 344.18852pt x 241.50412pt.
  [36 <./t4.png>]
-<t6.png, id=185, 1007.765pt x 818.05624pt>
+<t6.png, id=188, 1007.765pt x 818.05624pt>
 File: t6.png Graphic file (type png)
  <use t6.png>
 Package pdftex.def Info: t6.png used on input line 921.
 (pdftex.def)             Requested size: 302.33183pt x 245.41876pt.
  [37 <./t5.png>]
-<t7.png, id=190, 899.36pt x 726.715pt>
+<t7.png, id=193, 899.36pt x 726.715pt>
 File: t7.png Graphic file (type png)
  <use t7.png>
 Package pdftex.def Info: t7.png used on input line 931.
 (pdftex.def)             Requested size: 269.81007pt x 218.01617pt.
  [38 <./t6.png>]
-
-LaTeX Warning: Reference `test8' on page 39 undefined on input line 938.
-
-<d4b.png, id=195, 897.3525pt x 856.19875pt>
+<d4b.png, id=198, 897.3525pt x 856.19875pt>
 File: d4b.png Graphic file (type png)
  <use d4b.png>
 Package pdftex.def Info: d4b.png used on input line 941.
@@ -974,25 +971,25 @@ Things are pretty mixed up, but I think the worst is over.
 Chapter 5.
 [42
 
-] <s1.png, id=212, 1280.785pt x 993.7125pt>
+] <s1.png, id=216, 1280.785pt x 993.7125pt>
 File: s1.png Graphic file (type png)
  <use s1.png>
 Package pdftex.def Info: s1.png used on input line 976.
 (pdftex.def)             Requested size: 384.23846pt x 298.11604pt.
  [43]
-<s3.png, id=217, 1276.77pt x 991.705pt>
+<s3.png, id=220, 1276.77pt x 991.705pt>
 File: s3.png Graphic file (type png)
  <use s3.png>
 Package pdftex.def Info: s3.png used on input line 983.
 (pdftex.def)             Requested size: 383.03395pt x 297.5138pt.
  [44 <./s1.png>]
-<s4.png, id=222, 1272.755pt x 1002.74625pt>
+<s4.png, id=225, 1272.755pt x 1002.74625pt>
 File: s4.png Graphic file (type png)
  <use s4.png>
 Package pdftex.def Info: s4.png used on input line 994.
 (pdftex.def)             Requested size: 381.82945pt x 300.82619pt.
  [45 <./s3.png>]
-<serr.png, id=227, 1256.695pt x 997.7275pt>
+<serr.png, id=230, 1256.695pt x 997.7275pt>
 File: serr.png Graphic file (type png)
  <use serr.png>
 Package pdftex.def Info: serr.png used on input line 1002.
@@ -1018,16 +1015,13 @@ Overfull \hbox (2.66641pt too wide) in paragraph at lines 1063--1064
 
 ] [52]) [53] (./Report in Latex.aux)
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
  14331 strings out of 495028
  247888 string characters out of 6181497
- 311366 words of memory out of 5000000
+ 311377 words of memory out of 5000000
  17210 multiletter control sequences out of 15000+600000
  11678 words of font info for 42 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1044,10 +1038,10 @@ amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb>
-Output written on "Report in Latex.pdf" (60 pages, 2006754 bytes).
+Output written on "Report in Latex.pdf" (61 pages, 2007065 bytes).
 PDF statistics:
- 299 PDF objects out of 1000 (max. 8388607)
- 177 compressed objects within 2 object streams
+ 303 PDF objects out of 1000 (max. 8388607)
+ 180 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  128 words of extra memory for PDF output out of 10000 (max. 10000000)
 
