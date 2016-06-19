@@ -770,8 +770,12 @@ In the second phase the algorithm builds the new network. The communities that a
 In the project the above algorithm has been implemented in python taking inspiration and reusing some part of the pylouvain program API for implementation \cite{pylouvain}. Using python was a requirement of the project directors, in case the code has to be reused in a larger ongoing project which is programmed in Python and Javascript. Hence Python was used to implement the Louvain Algorithm.
 
 \section{Experiments}
-There are vaiour 
-\cite{githubtest1} \cite{snap} \cite{igraph}
+In performing experiments we analyse the speed and capability of the python program to handle more input and also to see pattern of behaviour of the data. For this purpose test case inputs have to be generated or test cases that are available online must be used. 
+In this project we utilize both method to see the performance of the program.
+\subsection{Nodes vs Time keeping modularity constant}
+\par In the paper "Exploring community structure in biological networks with random graphs" \cite{githubtest1}, have developed a generative model to produce undirected connected graphs with a degree and a pattern of communities while maintaining a graph strucuture that is as random as possible.  They have given 2 programs one which contains the degree distribution funtions such as scale-free degree  distribution, poisson degree distribution, regular distribution and geometric.  In this project we are intersted in scale-free distribution as most real-world networks are scale free in nature \cite{scalefree}. To run this test networkx package is a necessary component. 
+
+
 \\
 \begin{figure}[H]
 \centering
@@ -797,11 +801,22 @@ There are vaiour
 \caption{Example Graph G=(V,E) Bull Graph}
 \end{figure}
 
-\subsection{Minor bugs}
-Python gc . Garbage collection.
+\subsubsection{Minor bugs}
+In the results obtained it is intersting to note that there is a set of slow runs that occur at regular intervals. These are due to the effect of garbage collection done by python automatic garbage collector. This issue was found by manually turning of the garbage collection and explicitly calling it every time after each run. 
 
-\subsubsection{Result}
+\subsection{SNAP}
+\cite{snap}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{e2000b.png}
+\caption{Example Graph G=(V,E) Bull Graph}
+\end{figure}
 
+\subsection{igraph tests}
+Python provides an exciting package on igraph. igraph 
+\cite{igraph}
+
+\section{Result}
 
 \chapter{Visualization Module}
 Visualization module is developed keeping in mind that python API must exist and should be JavaScript based.As already said these were the requirements that were set by the project directors. In this section an analysis of the selected software and method of choice by exploring all the possible ways will be explained. 
