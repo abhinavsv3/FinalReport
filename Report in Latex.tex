@@ -172,9 +172,7 @@ of the main structures in the data.
 \clearpage
 \newpage
 \section*{Acknowledgement}
-I would like to Acknowledge the support provided by my faculty and admins at my home university -- SASTRA University, Thanjavur and UPC Barcelona for supporting me throughout the project.
-I thank the Gurudwara near in Collblanc at Barcelona for stand by us for our needs. 
-
+First of all
 \newpage
 
 \tableofcontents
@@ -772,18 +770,19 @@ In the second phase the algorithm builds the new network. The communities that a
 In the project the above algorithm has been implemented in python taking inspiration and reusing some part of the pylouvain program API for implementation \cite{pylouvain}. Using python was a requirement of the project directors, in case the code has to be reused in a larger ongoing project which is programmed in Python and Javascript. Hence Python was used to implement the Louvain Algorithm.
 
 \section{Experiments}
-\cite{githubtest1} \cite{snap}
+There are vaiour 
+\cite{githubtest1} \cite{snap} \cite{igraph}
 \\
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{e1000.png}
-\caption{Example Graph G=(V,E) Bull Graph}
+\caption{Experiment showing the plot of time vs number of nodes for 1000 nodes}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{e1000b.png}
-\caption{Example Graph G=(V,E) Bull Graph}
+\caption{Experiment showing the plot of time vs number of nodes for 1000 nodes points joint by lines}
 \end{figure}
 
 \begin{figure}[H]
@@ -798,13 +797,15 @@ In the project the above algorithm has been implemented in python taking inspira
 \caption{Example Graph G=(V,E) Bull Graph}
 \end{figure}
 
+\subsection{Minor bugs}
+Python gc . Garbage collection.
 
 \subsubsection{Result}
 
 
 \chapter{Visualization Module}
 Visualization module is developed keeping in mind that python API must exist and should be JavaScript based.As already said these were the requirements that were set by the project directors. In this section an analysis of the selected software and method of choice by exploring all the possible ways will be explained. 
-\section{Exploring the state-of-art}
+\section{Exploring the state-of-the-art}
 For visual representation, softwares such as Protovis, D3, Alchemy.js and Gephi were tested
 using example graphs.  Gephi is a tool
 used for data analysis for understanding and exploring graph based data,however it has some
@@ -850,6 +851,10 @@ $<$/script$>$
 
 
 \end{enumerate}
+\section{Protovis for Matrix Display}
+Protovis is considered as the predecessor D3.js. In Protovis there is an example for Matrix Diagrams. This example is of keen interest for the project for representing the data.It is JavaScript and can be visualized with just the JavaScript matrix as input.
+\par Since this is the only component that is taken from Protovis a Protovis template was adopted and from the Protovis repository and integrated with the project.
+
 \section{Getting the data from the Louvain Python code to Alchemy. }
  Alchemy.js takes a simple data format called GraphJSON. GraphJSON serves as a light weight and flexible representation of graph data, easily consued locally or over the web. 
 \par 
@@ -857,22 +862,31 @@ GraphJSON is a JSON Object which has 2 object namely: \textit{nodes} and  \texti
 \par \textbf{Nodes} : id key is the only unique value that should be present in the nodes
 \par \textbf{Edges} : source and target key are the only unique value that should be present in the edges.
 \par A python program was implemented to convert the output of the louvain program into json object using the python json package. This converts the output of the louvain program into two JSON object. one JSON object 
-This can be seen as the advantage of system. We compute once and reuse the computed result for various visualizations. 
+This can be seen as the advantage of system. We compute once and reuse the computed result for various visualizations.
+\par For the matrix representation the JavaScript file containing the matrix is created which is used by the protovis program to display and reorder the matrix.
 
 \section{Tests}
 For the purpose of visualization various test were performed for analysising the compatiability of Alchemy.js and to explore and exploit all the functionalities of alchemy.js and choose the best ones for the project and implement them.
 The folowing will ennumerate the tests that were performed one after another.  Alchemy uses a force layout of d3.
 
+\begin{enumerate}
+\item Test1 and Test2
+\par \textit{Test1} consists of providing the JSON object as input to the Alchemy.js to build a normal graph. Test 1 is performed to see if the nodes can be selected, viewed and seperated.
+\par \textit{Test 2} Test2 uses the same JSON object as input.In Test2 the Test1 graph is presented with custom graph weight, graph width and link distances. This makes it easier to integrate it with larger application. Figure ~\ref{test1} shows the graph that was used to perform test1 and test2.
+
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{t1.png}
-\caption{Example Graph G=(V,E) Bull Graph}
+\caption{\label{test1}Test 1 and Test 2 look the same. The JSON object has been taken from Alchemy.js Examples. One named node ``Trial and Error" has been selected and viewed.}
 \end{figure}
+
+\item \textit{Cluster Assignment Test}
+\par In this test cluster assignment is tested.Clusters are assigned in the JSON object by setting values for the cluster in the form of cluster number and assign seperate colors for these clusters.	Thus, this test focussed on node clustering or node coloring to assign each node into its cluster.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{t2.png}
-\caption{Example Graph G=(V,E) Bull Graph}
+\caption{Clustering based Alchemy.js}
 \end{figure}
 
 \begin{figure}[H]
@@ -904,9 +918,12 @@ The folowing will ennumerate the tests that were performed one after another.  A
 \includegraphics[scale=0.3]{t7.png}
 \caption{Example Graph G=(V,E) Bull Graph}
 \end{figure}
+\end{enumerate}
 
 \subsection{Bug Report}
-Bug #472 (https://github.com/GraphAlchemist/Alchemy/issues/472)
+Alchemy.js works well with firefox than with google chrome. It was found when rendering of edges.
+Bug number : 472 (https://github.com/GraphAlchemist/Alchemy/issues/472)
+
 
 \chapter{Overall System Description}
 The project uses two complementary technologies of a raw python code and a JavaScript program that can represent or draw the output of the python code on screen. This lead to a need to include a new element of a web framework for implementing the louvain algorithm and creating a JSON object, and JavaScript to represent the graph on a web browser.   A web framework is one that aims to remove the overhead associated with common activities performed in the web development. 
@@ -928,32 +945,42 @@ In the following we describe the entire working flow of the Web Application:
 \item \textbf{On Click Viz.} On clicking on the visualization the user wants to take the web aplication switches to the graph that the user has clicked.
 \item \textbf{Error Page} In case of mismatch in the format or the password was wrong or the visualization is not possible due the screen size or the browser is not able to handle the large JSON object Errors pages have been genrated to couter act on exceptions. 
 \end{enumerate}
-\begin{tabular}{|c|c|}
-      \hline
-      \addheight{\includegraphics[width=60mm]{s1.png}} &
-      \addheight{\includegraphics[width=60mm]{s3.png}} \\
-      \small ``row 2, column 1'' &  ``row 2, column 2'' \\
-      \hline
-\end{tabular}
-\\
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{s1.png}
+\caption{Landing page containing login}
+\end{figure}
 
-\begin{tabular}{|c|c|}
-      \hline
-      \addheight{\includegraphics[width=60mm]{s4.png}} &
-      \addheight{\includegraphics[width=60mm]{serr.png}} \\
-      \small ``row 2, column 1'' &  ``row 2, column 2'' \\
-      \hline
-\end{tabular}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{s3.png}
+\caption{After login, the application asks for the data and/or key }
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{s4.png}
+\caption{This Dash board is displayed after the computation process has been completed. }
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{serr.png}
+\caption{Error page showing the appropriate error message }
+\end{figure}
 
 
-\subsubsection{Implementation Benefits}
-2-format or single format it still works.  key label. propotional sizing of the commuity graph. Error management.
-\subsubsection{Drawback}
+\section{Implementation Benefits and Drawbacks}
+\subsection{Benefits}
+2-format or single format it still works.  key label. propotional sizing of the commuity graph. Error management. Key is optional.
+\subsection{Drawback}
 Very large graph needs a bigger screen and a browser that could handle large JSON objects.
-Alchemy.js works well with firefox than with google chrome. It was found when rendering of edges.
+
 \subsubsection{Result}
 
 \chapter{Conclusion and Future Works}
+In this section the final conclusion of the project, goals achieved, benefits the project presents to the community and future works are presented. 
+
 \section{Goals Achieved}
 
 \section{Benefits to the community}

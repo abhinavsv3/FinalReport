@@ -46,6 +46,11 @@ Reuven Cohen, Keren Erez, Daniel ben Avraham, and Shlomo Havlin.
 \newblock Resilience of the internet to random breakdowns.
 \newblock {\em Phys. Rev. Lett.}, 85:4626--4628, Nov 2000.
 
+\bibitem{igraph}
+Gabor Csardi and Tamas Nepusz.
+\newblock The igraph software package for complex network research.
+\newblock {\em InterJournal, Complex Systems}, 1695(5):1--9, 2006.
+
 \bibitem{matrep}
 David Emms, Edwin~R Hancock, Simone Severini, and Richard~C Wilson.
 \newblock A matrix representation of graphs and its spectrum as a graph
