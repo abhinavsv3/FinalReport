@@ -866,8 +866,9 @@ This can be seen as the advantage of system. We compute once and reuse the compu
 \par For the matrix representation the JavaScript file containing the matrix is created which is used by the protovis program to display and reorder the matrix.
 
 \section{Tests}
-For the purpose of visualization various test were performed for analysising the compatiability of Alchemy.js and to explore and exploit all the functionalities of alchemy.js and choose the best ones for the project and implement them.
-The folowing will ennumerate the tests that were performed one after another.  Alchemy uses a force layout of d3.
+For the purpose of visualization various test were performed for analysing the compatibility of Alchemy.js and to explore and exploit all the functionalities of alchemy.js and choose the best ones for the project and implement them.Protovis for the matrix visualization was used.
+\subsection{Alchemy.js Tests}
+The following will enumerate the tests that were performed one after another. Github pages were used to test host the web visualization.
 
 \begin{enumerate}
 \item Test1 and Test2
@@ -881,7 +882,7 @@ The folowing will ennumerate the tests that were performed one after another.  A
 \end{figure}
 
 \item \textit{Cluster Assignment Test}
-\par In this test cluster assignment is tested.Clusters are assigned in the JSON object by setting values for the cluster in the form of cluster number and assign seperate colors for these clusters.	Thus, this test focussed on node clustering or node coloring to assign each node into its cluster. Figure ~\ref{test3} show the result of the test. 
+\par In this test cluster assignment is tested.Clusters are assigned in the JSON object by setting values for the cluster in the form of cluster number and assign seperate colors for these clusters.	Thus, this test focussed on node clustering or node coloring to assign each node into its cluster. Figure ~\ref{test3} show the result of the test(Test3). 
 
 \begin{figure}[H]
 \centering
@@ -890,7 +891,7 @@ The folowing will ennumerate the tests that were performed one after another.  A
 \end{figure}
 
 \item \textit{Directed and weighted edges}
-\par In this test we explore the special JSON object with directed and weighted edges. The test also shows an instance of controlling edge thinkness, node diameter and node thickness. Figure ~\ref{test4} shows an example of this test.
+\par In this test we explore the special JSON object with directed and weighted edges. The test also shows an instance of controlling edge thinkness, node diameter and node thickness(Test4). Figure ~\ref{test4} shows an example of this test.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{t3.png}
@@ -898,7 +899,7 @@ The folowing will ennumerate the tests that were performed one after another.  A
 \end{figure}
 
 \item \textit{Network}
-\par A test in which a hairball network is generated having roots and nodes.  Figure ~\ref{test5} shows an example of seven minutes of communication between members of the AngularJS, EmberJS, and KnockoutJS IRC channels.
+\par A test in which a hairball network is generated having roots and nodes.  Figure ~\ref{test5} shows an example of seven minutes of communication between members of the AngularJS, EmberJS, and KnockoutJS IRC channels(Test5).
 
 \begin{figure}[H]
 \centering
@@ -907,7 +908,7 @@ The folowing will ennumerate the tests that were performed one after another.  A
 \end{figure}
 
 \item \textit{Graph with relatedness}
-\par A test in which a graph with relatedness was generated. Figure ~\ref{test6a} shows a sample having relatedness between philosophers. Figure ~\ref{test6b} shows a zoomed view of one of the philosopher graph.
+\par A test in which a graph with relatedness was generated. Figure ~\ref{test6a} shows a sample having relatedness between philosophers. Figure ~\ref{test6b} shows a zoomed view of one of the philosopher graph (Test6).
 
 \begin{figure}[H]
 \centering
@@ -922,7 +923,7 @@ The folowing will ennumerate the tests that were performed one after another.  A
 \end{figure}
 
 \item \textit{Node Area and Color}
-\par In this test the difference in node are and assignment of colors to nodes was tested. Figure ~\ref{test7} presents can example in which the test is performed.
+\par In this test the difference in node are and assignment of colors to nodes was tested. Figure ~\ref{test7} presents can example in which the test is performed (Test7).
 
 
 \begin{figure}[H]
@@ -932,10 +933,28 @@ The folowing will ennumerate the tests that were performed one after another.  A
 \end{figure}
 \end{enumerate}
 
-\subsection{Bug Report}
-Alchemy.js works well with firefox than with google chrome. It was found when rendering of edges.
-Bug number : 472 (https://github.com/GraphAlchemist/Alchemy/issues/472)
+\par After performing all the test few of the desired features were incorporated to fordisplaying th graph in the project. The project uses test7 for showing the size or the bulkiness of the node in comparison with other node. Test6 relatedness has also been added to the project to mark the edge values between the nodes. Test3, clustering has also been added to the project.
+\subsection{Protovis Tests}
+For the purpose of matrix visualization, protovis has been implemented in the project. A test run of it is presented in the Figure ~\ref{test8}.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{d4b.png}
+\caption{\label{test8}Matrix Visualization.}
+\end{figure}
+\end{enumerate}
 
+\subsection{Bug Report}
+In the project there was minor issues that were to be addressed:
+\begin{enumerate}
+\item  Alchemy.js does not render a few
+edges on screen when using web browsers that such as Google chrome. Mozilla Firefox use Gecko
+which helps to read web contents like JavaScript, html, css etc better than in Google chrome. Thus,
+it is recommended to run the project on mozilla firefox or sea monkey than on Google Chrome.
+\item \textit{Bug Number 472}: It was found when rendering of edges is an bug that was reported in Alchemy.js issues as Bug number : 472 ( \url{https://github.com/GraphAlchemist/Alchemy/issues/472}). We have also reiterated the issue. The issue is that in the graph where the communities are rendered seperately wil colors the edges that run between two communities are names and weights are assigned but the edge is not rendered.
+\end{enumerate}
+
+\section{Result}
+Finally the project adopted alchemy.js for the graph representation and Protovis layout for the matrix representation.  The errors were verified and necessary tests were performed to ensure that the visualization process runs smoothly. 
 
 \chapter{Overall System Description}
 The project uses two complementary technologies of a raw python code and a JavaScript program that can represent or draw the output of the python code on screen. This lead to a need to include a new element of a web framework for implementing the louvain algorithm and creating a JSON object, and JavaScript to represent the graph on a web browser.   A web framework is one that aims to remove the overhead associated with common activities performed in the web development. 

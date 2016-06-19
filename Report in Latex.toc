@@ -61,19 +61,22 @@
 \contentsline {section}{\numberline {4.5}Protovis for Matrix Display}{31}
 \contentsline {section}{\numberline {4.6}Getting the data from the Louvain Python code to Alchemy. }{31}
 \contentsline {section}{\numberline {4.7}Tests}{32}
-\contentsline {subsection}{\numberline {4.7.1}Bug Report}{38}
-\contentsline {chapter}{\numberline {5}Overall System Description}{39}
-\contentsline {section}{\numberline {5.1}Choice of Web.py}{39}
-\contentsline {section}{\numberline {5.2}Frontend Framework}{40}
-\contentsline {section}{\numberline {5.3}Using the application}{40}
-\contentsline {section}{\numberline {5.4}Implementation Benefits and Drawbacks}{44}
-\contentsline {subsection}{\numberline {5.4.1}Benefits}{44}
-\contentsline {subsection}{\numberline {5.4.2}Drawback}{44}
-\contentsline {subsubsection}{\numberline {5.4.2.1}Result}{44}
-\contentsline {chapter}{\numberline {6}Conclusion and Future Works}{45}
-\contentsline {section}{\numberline {6.1}Goals Achieved}{45}
-\contentsline {section}{\numberline {6.2}Benefits to the community}{45}
-\contentsline {section}{\numberline {6.3}Future Works}{45}
-\contentsline {section}{\numberline {6.4}Availability and requirements}{47}
-\contentsline {subsection}{\numberline {6.4.1}Conclusion}{47}
-\contentsline {subsection}{\numberline {6.4.2}Personal Conclusion}{47}
+\contentsline {subsection}{\numberline {4.7.1}Alchemy.js Tests}{32}
+\contentsline {subsection}{\numberline {4.7.2}Protovis Tests}{39}
+\contentsline {subsection}{\numberline {4.7.3}Bug Report}{40}
+\contentsline {section}{\numberline {4.8}Result}{41}
+\contentsline {chapter}{\numberline {5}Overall System Description}{42}
+\contentsline {section}{\numberline {5.1}Choice of Web.py}{42}
+\contentsline {section}{\numberline {5.2}Frontend Framework}{43}
+\contentsline {section}{\numberline {5.3}Using the application}{43}
+\contentsline {section}{\numberline {5.4}Implementation Benefits and Drawbacks}{47}
+\contentsline {subsection}{\numberline {5.4.1}Benefits}{47}
+\contentsline {subsection}{\numberline {5.4.2}Drawback}{47}
+\contentsline {subsubsection}{\numberline {5.4.2.1}Result}{47}
+\contentsline {chapter}{\numberline {6}Conclusion and Future Works}{48}
+\contentsline {section}{\numberline {6.1}Goals Achieved}{48}
+\contentsline {section}{\numberline {6.2}Benefits to the community}{48}
+\contentsline {section}{\numberline {6.3}Future Works}{48}
+\contentsline {section}{\numberline {6.4}Availability and requirements}{50}
+\contentsline {subsection}{\numberline {6.4.1}Conclusion}{50}
+\contentsline {subsection}{\numberline {6.4.2}Personal Conclusion}{50}
