@@ -881,42 +881,54 @@ The folowing will ennumerate the tests that were performed one after another.  A
 \end{figure}
 
 \item \textit{Cluster Assignment Test}
-\par In this test cluster assignment is tested.Clusters are assigned in the JSON object by setting values for the cluster in the form of cluster number and assign seperate colors for these clusters.	Thus, this test focussed on node clustering or node coloring to assign each node into its cluster.
+\par In this test cluster assignment is tested.Clusters are assigned in the JSON object by setting values for the cluster in the form of cluster number and assign seperate colors for these clusters.	Thus, this test focussed on node clustering or node coloring to assign each node into its cluster. Figure ~\ref{test3} show the result of the test. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{t2.png}
-\caption{Clustering based Alchemy.js}
+\caption{\label{test3}Clustering based Alchemy.js.  The JSON object has been taken from Alchemy.js Examples.}
 \end{figure}
 
+\item \textit{Directed and weighted edges}
+\par In this test we explore the special JSON object with directed and weighted edges. The test also shows an instance of controlling edge thinkness, node diameter and node thickness. Figure ~\ref{test4} shows an example of this test.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{t3.png}
-\caption{Example Graph G=(V,E) Bull Graph}
+\caption{\label{test4}Example Directed and weighted edges.  The JSON object has been taken from Alchemy.js Examples.}
 \end{figure}
+
+\item \textit{Network}
+\par A test in which a hairball network is generated having roots and nodes.  Figure ~\ref{test5} shows an example of seven minutes of communication between members of the AngularJS, EmberJS, and KnockoutJS IRC channels.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{t4.png}
-\caption{Example Graph G=(V,E) Bull Graph}
+\caption{\label{test5} Seven minutes of communication between members of the AngularJS, EmberJS, and KnockoutJS IRC channels. JSON object taken from the Alchemy.js examples.}
 \end{figure}
+
+\item \textit{Graph with relatedness}
+\par A test in which a graph with relatedness was generated. Figure ~\ref{test6a} shows a sample having relatedness between philosophers. Figure ~\ref{test6b} shows a zoomed view of one of the philosopher graph.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{t5.png}
-\caption{Example Graph G=(V,E) Bull Graph}
+\caption{\label{test6a}A graph in which the relatedness of scientists to the philosopher is shown. This example JSON was take from Alchemy.js example graphs}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{t6.png}
-\caption{Example Graph G=(V,E) Bull Graph}
+\caption{\label{test6b}Closeup view of one of the philosopher.}
 \end{figure}
+
+\item \textit{Node Area and Color}
+\par In this test the difference in node are and assignment of colors to nodes was tested. Figure ~\ref{test7} presents can example in which the test is performed.
+
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{t7.png}
-\caption{Example Graph G=(V,E) Bull Graph}
+\caption{\label{test7}Node area and node color.JSON object created manually.}
 \end{figure}
 \end{enumerate}
 
@@ -940,22 +952,23 @@ The web application thus developed is intutive enough such that even though it p
 In the following we describe the entire working flow of the Web Application:
 \begin{enumerate}
 \item \textbf{"Login Page"} In this part a simple login password is described.  
-\item \textbf{File Loader Page} After logining the user lands in a file loader page where provision has been provided to upload a text file containing the adjacency matrix of the graphs are present in the "start" "Destination" or "Start" "Weight" "Destination" format. In this space only numerical values can be accepted for supporting the simplity of the background process. Another space to provide a key that maps the names of the node numbers. This helps to present another dimention of seeing the data in the form of names.  Viewing the names of the node over nodes helps the user to deepen his vision of analysis. 
-\item \textbf{Dash Board} In this part of the web application the user lands in a page that presents to the user 4 different variety of visual representation of the input data :  Community graphs (Diplaying the links between various communities), Full graph split into communities represented with different colors, Original graph input(Helps to see if the input was proper) and a Matrix view of the graph
-\item \textbf{On Click Viz.} On clicking on the visualization the user wants to take the web aplication switches to the graph that the user has clicked.
-\item \textbf{Error Page} In case of mismatch in the format or the password was wrong or the visualization is not possible due the screen size or the browser is not able to handle the large JSON object Errors pages have been genrated to couter act on exceptions. 
-\end{enumerate}
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{s1.png}
 \caption{Landing page containing login}
 \end{figure}
 
+\item \textbf{File Loader Page} After logining the user lands in a file loader page where provision has been provided to upload a text file containing the adjacency matrix of the graphs are present in the "start" "Destination" or "Start" "Weight" "Destination" format. In this space only numerical values can be accepted for supporting the simplicity of the background process. Another space to provide a key that maps the names of the node numbers. This helps to present another dimension of seeing the data in the form of names.  Viewing the names of the node over nodes helps the user to deepen his vision of analysis. 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{s3.png}
 \caption{After login, the application asks for the data and/or key }
 \end{figure}
+
+
+\item \textbf{Dash Board} In this part of the web application the user lands in a page that presents to the user 4 different variety of visual representation of the input data :  Community graphs (Diplaying the links between various communities), Full graph split into communities represented with different colors, Original graph input(Helps to see if the input was proper) and a Matrix view of the graph
+
+\item \textbf{On Click Viz.} On clicking on the visualization the user wants to take the web aplication switches to the graph that the user has clicked.
 
 \begin{figure}[H]
 \centering
@@ -963,11 +976,19 @@ In the following we describe the entire working flow of the Web Application:
 \caption{This Dash board is displayed after the computation process has been completed. }
 \end{figure}
 
+
+\item \textbf{Error Page} In case of mismatch in the format or the password was wrong or the visualization is not possible due the screen size or the browser is not able to handle the large JSON object Errors pages have been genrated to couter act on exceptions. 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{serr.png}
 \caption{Error page showing the appropriate error message }
 \end{figure}
+
+\end{enumerate}
+
+
+
+
 
 
 \section{Implementation Benefits and Drawbacks}

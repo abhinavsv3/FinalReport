@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.24)  19 JUN 2016 03:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.24)  19 JUN 2016 07:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -895,106 +895,107 @@ Overfull \hbox (6.77231pt too wide) in paragraph at lines 846--850
  []
 
 [30]
-Overfull \hbox (6.35976pt too wide) in paragraph at lines 854--854
+Overfull \hbox (6.35976pt too wide) in paragraph at lines 858--858
 []\OT1/cmr/bx/n/17.28 Getting the data from the Lou-vain Python
  []
 
-<t1.png, id=157, 1026.83624pt x 824.07875pt>
+[31] <t1.png, id=160, 1026.83624pt x 824.07875pt>
 File: t1.png Graphic file (type png)
  <use t1.png>
-Package pdftex.def Info: t1.png used on input line 871.
+Package pdftex.def Info: t1.png used on input line 879.
 (pdftex.def)             Requested size: 308.05325pt x 247.22552pt.
- [31]
-<t2.png, id=161, 986.68625pt x 820.06375pt>
+ [32 <./t1.png>]
+<t2.png, id=165, 986.68625pt x 820.06375pt>
 File: t2.png Graphic file (type png)
  <use t2.png>
-Package pdftex.def Info: t2.png used on input line 877.
+Package pdftex.def Info: t2.png used on input line 888.
 (pdftex.def)             Requested size: 296.00815pt x 246.02103pt.
- [32 <./t1.png>]
+
 <t3.png, id=166, 1003.75pt x 747.79375pt>
 File: t3.png Graphic file (type png)
  <use t3.png>
-Package pdftex.def Info: t3.png used on input line 883.
+Package pdftex.def Info: t3.png used on input line 896.
 (pdftex.def)             Requested size: 301.12732pt x 224.33984pt.
-
-<t4.png, id=167, 849.1725pt x 787.94376pt>
+ [33 <./t2.png>]
+<t4.png, id=171, 849.1725pt x 787.94376pt>
 File: t4.png Graphic file (type png)
  <use t4.png>
-Package pdftex.def Info: t4.png used on input line 889.
+Package pdftex.def Info: t4.png used on input line 905.
 (pdftex.def)             Requested size: 254.75371pt x 236.38495pt.
- [33 <./t2.png> <./t3.png>] <t5.png, id=173, 1147.28625pt x 805.0075pt>
+ [34 <./t3.png>]
+<t5.png, id=176, 1147.28625pt x 805.0075pt>
 File: t5.png Graphic file (type png)
  <use t5.png>
-Package pdftex.def Info: t5.png used on input line 895.
+Package pdftex.def Info: t5.png used on input line 911.
 (pdftex.def)             Requested size: 344.18852pt x 241.50412pt.
- [34 <./t4.png>]
-<t6.png, id=178, 1007.765pt x 818.05624pt>
+ [35 <./t4.png>]
+<t6.png, id=181, 1007.765pt x 818.05624pt>
 File: t6.png Graphic file (type png)
  <use t6.png>
-Package pdftex.def Info: t6.png used on input line 901.
+Package pdftex.def Info: t6.png used on input line 917.
 (pdftex.def)             Requested size: 302.33183pt x 245.41876pt.
- [35 <./t5.png>]
-<t7.png, id=183, 899.36pt x 726.715pt>
+ [36 <./t5.png>]
+<t7.png, id=187, 899.36pt x 726.715pt>
 File: t7.png Graphic file (type png)
  <use t7.png>
-Package pdftex.def Info: t7.png used on input line 907.
+Package pdftex.def Info: t7.png used on input line 923.
 (pdftex.def)             Requested size: 269.81007pt x 218.01617pt.
 
-Overfull \hbox (136.64964pt too wide) in paragraph at lines 912--914
+Overfull \hbox (136.64964pt too wide) in paragraph at lines 929--931
 \OT1/cmr/m/n/12 when ren-der-ing of edges. Bug num-ber : 472 (https://github.co
 m/GraphAlchemist/Alchemy/issues/472) 
  []
 
-[36 <./t6.png> <./t7.png>] [37]
+[37 <./t6.png> <./t7.png>] [38]
 Chapter 5.
-[38
+[39
 
-] [39] <s1.png, id=199, 1280.785pt x 993.7125pt>
+] <s1.png, id=199, 1280.785pt x 993.7125pt>
 File: s1.png Graphic file (type png)
  <use s1.png>
-Package pdftex.def Info: s1.png used on input line 937.
+Package pdftex.def Info: s1.png used on input line 950.
 (pdftex.def)             Requested size: 384.23846pt x 298.11604pt.
-
-<s3.png, id=200, 1276.77pt x 991.705pt>
+ [40]
+<s3.png, id=203, 1276.77pt x 991.705pt>
 File: s3.png Graphic file (type png)
  <use s3.png>
-Package pdftex.def Info: s3.png used on input line 943.
+Package pdftex.def Info: s3.png used on input line 957.
 (pdftex.def)             Requested size: 383.03395pt x 297.5138pt.
- [40 <./s1.png>]
-<s4.png, id=205, 1272.755pt x 1002.74625pt>
+ [41 <./s1.png>]
+<s4.png, id=208, 1272.755pt x 1002.74625pt>
 File: s4.png Graphic file (type png)
  <use s4.png>
-Package pdftex.def Info: s4.png used on input line 949.
+Package pdftex.def Info: s4.png used on input line 968.
 (pdftex.def)             Requested size: 381.82945pt x 300.82619pt.
- [41 <./s3.png>]
-<serr.png, id=210, 1256.695pt x 997.7275pt>
+ [42 <./s3.png>]
+<serr.png, id=214, 1256.695pt x 997.7275pt>
 File: serr.png Graphic file (type png)
  <use serr.png>
-Package pdftex.def Info: serr.png used on input line 955.
+Package pdftex.def Info: serr.png used on input line 975.
 (pdftex.def)             Requested size: 377.01141pt x 299.32056pt.
- [42 <./s4.png>]
-[43 <./serr.png>]
+ [43 <./s4.png>]
+[44 <./serr.png>]
 Chapter 6.
-[44
+[45
 
-] [45]
-Overfull \hbox (2.66641pt too wide) in paragraph at lines 1010--1011
+] [46]
+Overfull \hbox (2.66641pt too wide) in paragraph at lines 1036--1037
 []\OT1/cmr/bx/n/12 Project Home-page\OT1/cmr/m/n/12 : $\OT1/cmtt/m/n/12 https :
  / / github . com / abhinavsv3 / webproject$ 
  []
 
-(./Report in Latex.bbl [46] [47
+(./Report in Latex.bbl [47] [48
 
-] [48]) [49] (./Report in Latex.aux)
+] [49]) [50] (./Report in Latex.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14318 strings out of 495028
- 247776 string characters out of 6181497
- 311288 words of memory out of 5000000
- 17198 multiletter control sequences out of 15000+600000
+ 14322 strings out of 495028
+ 247804 string characters out of 6181497
+ 311332 words of memory out of 5000000
+ 17202 multiletter control sequences out of 15000+600000
  11678 words of font info for 42 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  63i,21n,57p,1023b,636s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1010,10 +1011,10 @@ amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb>
-Output written on "Report in Latex.pdf" (56 pages, 1980494 bytes).
+Output written on "Report in Latex.pdf" (57 pages, 1983013 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
- 169 compressed objects within 2 object streams
+ 288 PDF objects out of 1000 (max. 8388607)
+ 171 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  123 words of extra memory for PDF output out of 10000 (max. 10000000)
 
