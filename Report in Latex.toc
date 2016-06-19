@@ -71,12 +71,12 @@
 \contentsline {section}{\numberline {5.3}Using the application}{43}
 \contentsline {section}{\numberline {5.4}Implementation Benefits and Drawbacks}{47}
 \contentsline {subsection}{\numberline {5.4.1}Benefits}{47}
-\contentsline {subsection}{\numberline {5.4.2}Drawback}{47}
-\contentsline {subsubsection}{\numberline {5.4.2.1}Result}{47}
-\contentsline {chapter}{\numberline {6}Conclusion and Future Works}{48}
-\contentsline {section}{\numberline {6.1}Goals Achieved}{48}
-\contentsline {section}{\numberline {6.2}Benefits to the community}{48}
-\contentsline {section}{\numberline {6.3}Future Works}{48}
-\contentsline {section}{\numberline {6.4}Availability and requirements}{50}
-\contentsline {subsection}{\numberline {6.4.1}Conclusion}{50}
-\contentsline {subsection}{\numberline {6.4.2}Personal Conclusion}{50}
+\contentsline {subsection}{\numberline {5.4.2}Drawback}{48}
+\contentsline {subsubsection}{\numberline {5.4.2.1}Result}{48}
+\contentsline {chapter}{\numberline {6}Conclusion and Future Works}{49}
+\contentsline {section}{\numberline {6.1}Goals Achieved}{49}
+\contentsline {section}{\numberline {6.2}Benefits to the community}{49}
+\contentsline {section}{\numberline {6.3}Future Works}{49}
+\contentsline {section}{\numberline {6.4}Availability and requirements}{51}
+\contentsline {subsection}{\numberline {6.4.1}Conclusion}{51}
+\contentsline {subsection}{\numberline {6.4.2}Personal Conclusion}{51}

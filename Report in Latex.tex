@@ -1012,9 +1012,15 @@ In the following we describe the entire working flow of the Web Application:
 
 \section{Implementation Benefits and Drawbacks}
 \subsection{Benefits}
-2-format or single format it still works.  key label. propotional sizing of the commuity graph. Error management. Key is optional.
+\begin{enumerate}
+\item The input given can be a weighted or an unweighted graph. The web input is still accepted and the output is generated.
+\item Key labels can be assigned to node numbers.  This file if not given the program usses the node number given as id in the input file. 
+\item Whether the input is a large graph such as Facebook graph or is a small one such as karate graph the community screen displays the community graph in a size that is propotional with the entire size of the graph on one screen. 
+\item Error management involves a seperate class. Hence exact errors can be mentioned and presented to the user in an elegant web interface.
+\end{enumerate}
 \subsection{Drawback}
-Very large graph needs a bigger screen and a browser that could handle large JSON objects.
+\item Very large graph needs a bigger screen for the entire graph to be displayed.
+\item To display such large graphs a browser that could handle large JSON objects is needed along with bigger screen size
 
 \subsubsection{Result}
 
