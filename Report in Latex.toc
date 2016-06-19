@@ -78,8 +78,8 @@
 \contentsline {subsubsection}{\numberline {5.4.2.1}Result}{50}
 \contentsline {chapter}{\numberline {6}Conclusion and Future Works}{51}
 \contentsline {section}{\numberline {6.1}Goals Achieved}{51}
-\contentsline {section}{\numberline {6.2}Benefits to the community}{51}
-\contentsline {section}{\numberline {6.3}Future Works}{51}
+\contentsline {section}{\numberline {6.2}Benefits to the community}{52}
+\contentsline {section}{\numberline {6.3}Future Works}{52}
 \contentsline {section}{\numberline {6.4}Availability and requirements}{53}
-\contentsline {subsection}{\numberline {6.4.1}Conclusion}{53}
-\contentsline {subsection}{\numberline {6.4.2}Personal Conclusion}{53}
+\contentsline {section}{\numberline {6.5}Conclusion}{54}
+\contentsline {section}{\numberline {6.6}Personal Conclusion}{54}
