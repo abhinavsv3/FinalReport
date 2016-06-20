@@ -636,7 +636,7 @@ In this section we describe the community detection algorithms such as Louvain a
 \section{Modularity}
 The quality of partitioning that results from application of method is often measured using modularity. The \textit{modularity} of a partition is hence a scalar value between -1 and 1 that is used to measure the density of the links inside the communities as compared to the density of the links between the communities. This concept was first put forward by Newman \cite{newman2006modularity}.
 \par
-Modularity not only serves as a quality measure for detecting the quality of split or -partition, but also acts as an objective function to optimize.  Exact modularity optimization is \textbf{NP-Complete} in the strong sense \cite{modularityNP}.
+Modularity not only serves as a quality measure for detecting the quality of split or partition, but also acts as an objective function to optimize.  Exact modularity optimization is \textbf{NP-Complete} in the strong sense \cite{modularityNP}.
 \subsection{Definition}
 Let G=(V,E) be a simple graph,where \textit{V} is the set of vertices and \textit{E} is the set of undirected edges. Let $n=|V|$ and $m=|E|$. Let degree of a vertex \textit{v} be, deg(\textit{v}) where \textit{v} $\in$ V. Let C be the community, $C \subseteq V$, be the subset of vertices. A \textit{clustering} $C_s =\{C_1,C_2, \ldots, C_k\}$ of G is a partition of V such each vertex is present exactly in one cluster.  We thus define \textit{modularity } as follows: \cite{modularityNP}
 
@@ -675,11 +675,11 @@ Q &= \frac{1}{2m} \sum_{ij} \left(A_{ij} - P_{ij}\right) \delta(C_i,C_j)
 \end{split}
 \end{equation}
 
-where, $P_{ij}$ is the expected number of edges between nodes $v_i$ and $v_j$. $P_ij$ is $\frac{k_ik_j}{2m}$ where $k_x$ is sum of the weights of the edges attached to the vertex $v_x$ for a given random graph G (This is otherwise called as a null model).
+where, $P_{ij}$ is the expected number of edges between nodes $v_i$ and $v_j$. $P_{ij}$ is $\frac{k_ik_j}{2m}$ where $k_x$ is sum of the weights of the edges attached to the vertex $v_x$ for a given random graph G (This is otherwise called as a null model).
     
 \subsection{Properties of Modularity}
 \begin{enumerate}
- \item Q depends on nodes in the same clusters only. 
+ \item $Q$ depends on nodes in the same clusters only. 
   \item Larger modularity implies better Communities.
     \item 
     \begin{equation}
@@ -711,7 +711,7 @@ Q(C_s) \leq \frac{1}{2m} \sum_{ij} A_{ij} \delta(C_i,C_j) \leq \frac{1}{2m} \sum
 \end{algorithm}
 
 
- \begin{figure}[h]
+ \begin{figure}[H]
 
 \includegraphics[scale=0.5]{loustep.png}
 \caption{\label{loupic} Visualization of the steps of our algorithm. Each pass is made of two phases:
@@ -723,7 +723,7 @@ possible. This was taken from the paper "Fast unfolding of communities in large 
 \end{figure}
 
 \subsection{First Phase : Optimizing Modularity}
-In the first phase the algorithm assigns a different community to each node in the network.  The number of nodes is equal to the number of communities in the graph. Let $v_i$ be be a node such that $v_j$ $\in$ N($v_i$). The gain of modularity is then calculated by removing $v_i$ and placing it in community of $v_j$. If the gain is positive the $v_i$ is moved to the community of $v_j$ else $v_i$ stays in it's original community. This procedure is iterated and the phase one stops when a local maxima of the modularity is achieved, that is when no more move of nodes from one community to another is possible. The ordering of the nodes can affect or effect the computation time which can be a part of future works. 
+In the first phase the algorithm assigns a different community to each node in the network.  The number of nodes is equal to the number of communities in the graph. Let $v_i$ be be a node such that $v_j$ $\in$ N($v_i$). The gain of modularity is then calculated by removing $v_i$ and placing it in community of $v_j$. If the gain is positive the $v_i$ is moved to the community of $v_j$ else $v_i$ stays in its original community. This procedure is iterated and the phase one stops when a local maxima of the modularity is achieved, that is when no more move of nodes from one community to another is possible. The ordering of the nodes can affect or effect the computation time which can be a part of future works. 
 
 \begin{algorithm}[H]
 \caption{Phase 1 in Louvain Algorithm Pseudocode}
@@ -745,7 +745,7 @@ In the first phase the algorithm assigns a different community to each node in t
 \end{algorithmic}
 \end{algorithm}
 
-\par The main algorithm relies on the calculation of modularity. Listing 3.1 demonstrated the calculation using a Python snippet. The first phase of the algorithm has been written into a Python code snippet and is presented in the Listing 3.2. 
+\par The main algorithm relies on the calculation of modularity.
 In the paper it is stated that the gain in modularity as $\bigtriangleup$Q
 
 \begin{equation}
@@ -756,7 +756,7 @@ In the paper it is stated that the gain in modularity as $\bigtriangleup$Q
 where $\sum_{in}$ is the sum of the weights of the links inside C and $\sum_{tot}$ is the sum of the weights of the links incident to nodes in C, $k_i$ is the sum of weights of the links incident to node i, $k_{i,in}$ is the sum of the weights  of all the links in the network.
 
 \subsection{Second Phase : Agglomerating the communities found in first phase into new nodes}
-In the second phase the algorithm builds the new network. The communities that are found during the first phase are now the nodes here. According to the paper \cite{Louvain}, the weights of the links between the new nodes are given by the sum of the weight of the links between nodes in the corresponding two communities. The edges between nodes of the same community lead to seld-loops for this community in the new network. The resulting new weighted network is then subjected to first phase  and this process is iteratively done. 
+In the second phase the algorithm builds the new network. The communities that are found during the first phase are now the nodes here. According to the paper \cite{Louvain}, the weights of the links between the new nodes are given by the sum of the weight of the links between nodes in the corresponding two communities. The edges between nodes of the same community lead to self-loops for this community in the new network. The resulting new weighted network is then subjected to first phase  and this process is iteratively done. 
 \begin{algorithm}[H]
 
 \caption{Phase 2 in Louvain Algorithm Pseudocode}
@@ -775,12 +775,13 @@ In the second phase the algorithm builds the new network. The communities that a
 \end{enumerate}
 
 \section{Mode of implementation of the Louvain Algorithm}
-\par Using Python was a requirement of the project directors, in case the code has to be reused in a larger ongoing project which is programmed in Python and Javascript. Hence Python was used to implement the Louvain Algorithm.Hence in the project the above algorithm has been implemented in Python taking inspiration and reusing some part of the pyLouvain program for implementation \cite{pyLouvain}. 
-\par pyLouvain cannot be directly used in the project as the input and output methods cannot fit into our problem of getting the raw data and giving out a JSON object to the web application. But pyLouvain use Louvain algorithm and tries to find communities which is of interest in this project. 
-\par The code in the project is structured the same way pylouvain is structured. Instead of storing the read input is separately read we store it in the matrix format. Getting the start node, weight or end nodes was simply the rows in the transpose of this matrix avoiding any function calls , which pyLouvain uses. To get an edge pyLouvain takes the help of function for a single edge, where as in this project we use zip method to simple zip the rows of transposed matrix . Labelling was introduced which enables the nodes to relabel with their corresponding names.
+\par Using Python was a requirement of the project directors, in case the code has to be reused in a larger ongoing project which is programmed in Python and JavaScript. Hence in the project the above algorithm has been implemented in Python utilizing some part of the pyLouvain program for implementation \cite{pyLouvain}. 
+\par The pyLouvain code cannot be directly used in the project as the input and output methods cannot fit into our problem of getting the raw data and giving out a JSON object to the web application. But pyLouvain uses Louvain algorithm and tries to find communities which is of interest in this project. 
+\par The code in the project is structured in the same way as pyLouvain is structured. Instead of storing the read input is separately read we store it in the matrix format. Getting the start node, weight or end nodes was simply the rows in the transpose of this matrix avoiding any function calls , which pyLouvain uses. To get an edge pyLouvain takes the help of function for a single edge, where as in this project we use zip method to simply zip the rows of transposed matrix. Labelling was introduced which enables the nodes to relabel with their corresponding names.
 \par The first phase in the pyLouvain removes the nodes of degree one and adds a self loop to its neighbour. This node gets reinserted at the end of the neighbours community.This aspect of the pyLouvain code was interesting and needed to be retained in the project.
 Hence the first phase of the pyLouvain was modified and added into the project. 
-This makes the code to run faster.
+This makes the code to run faster. The second phase is written as a part of the project. Since it is inspired from the pyLouvain and is the second phase considering the first phase was adopted it looks very similar to the pyLouvain program. Modification made is in the way the relabelling is done.
+
 \section{Experiments}
 In performing experiments we analyse the speed and capability of the Python program to handle more input and also to see pattern of behaviour of the data. For this purpose test case inputs have to be generated or test cases that are available online must be used. 
 In this project we utilize both method to see the performance of the program. All the tests were run on 2.50GHz Intel Core i5-3210M with 8 GB RAM (Sony Vaio) running gnome-ubuntu 14.04 operating system. 
@@ -797,9 +798,9 @@ data.
 Following the above bench marks three kinds of experiments were performed:
 \subsection{Synthetic Benchmarks}
 \subsubsection{Nodes vs Time keeping modularity constant}
-\par In the paper "Exploring community structure in biological networks with random graphs" \cite{githubtest1} \footnote{Random Modular Network Generator \url{https://github.com/bansallab/modular_graph_generator/}}, authors have developed a generative model to produce undirected connected graphs with a degree and a pattern of communities while maintaining a graph strucuture that is as random as possible.  They have given two programs one which contains the degree distribution funtions such as scale-free degree  distribution, poisson degree distribution, regular distribution and geometric and the other one that contains the graph generators that return a generated graph in networkX package.  In this project we are intersted in scale-free distribution as most real-world networks are scale free in nature \cite{scalefree}. To run this test networkx package is a necessary component. 
+\par In the paper ``Exploring community structure in biological networks with random graphs" \cite{githubtest1} \footnote{Random Modular Network Generator \url{https://github.com/bansallab/modular_graph_generator/}}, authors have developed a generative model to produce undirected connected graphs with a degree and a pattern of communities while maintaining a graph strucuture that is as random as possible.  They have given two programs one which contains the degree distribution funtions such as scale-free degree  distribution, poisson degree distribution, regular distribution and geometric and the other one that contains the graph generators that return a generated graph in networkX package.  In this project we are interested in scale-free distribution as most real-world networks are scale free in nature \cite{scalefree}. To run this test NetworkX package is a necessary component. 
 
-\par For the purpose of testing two programs in Python were written. First program is a generator program that sets the degree distribution to scale-free, $Q$=0.4 [ Average $Q$ value ] and $N$=150 to $N$=2300. This program generate a set of files contains graphs with nodes in the range of N. Second program is the plotting program in which the files that were generated in the first program was supplied as input to the second program and Louvain algorithm was applied. Time of run for Louvain was calculated for each input and recorded. This was then plotted into graphs using the matplotlib function. The graphs are displayed in figure ~\ref{ex3} for 2000 nodes.
+\par For the purpose of testing two programs in Python were written. First program is a generator program that sets the degree distribution to scale-free, $Q$=0.4 [ Average $Q$ value ] and $N$=150 to $N$=2300. This program generate a set of files contains graphs with nodes in the range of N. Second program is the plotting program in which the files that were generated in the first program was supplied as input to the second program and Louvain algorithm was applied. Time of run for Louvain was calculated for each input and recorded. This was then plotted into graphs using the matplotlib function. The graph for 2000 nodes is  displayed in figure ~\ref{ex3}.
 
 
 \begin{figure}[H]
@@ -820,7 +821,7 @@ In the results obtained it is interesting to note that there is a set of slow ru
 \end{figure}
 
 \subsubsection{Modularity vs Time keeping Number of nodes constant}
-Using the same code we retain the distribution and make the number of nodes as a constant and vary the $Q$ value. This experiment helps to find out the change in run time of the algorithm varying $Q$. Figure ~\ref{ex5} and ~\ref{ex6} show a sample of the test. We can infer from the graphs that there is no significant change in the run time when we modify the $Q$ value for same number of node. 
+Using the same code we retain the distribution and make the number of nodes as a constant and vary the $Q$ value. This experiment helps to find out the change in run time of the algorithm varying $Q$. Figure ~\ref{ex6} show a sample of the test conducted for 2000 nodes. We can infer from the graphs that there is no significant change in the run time when we modify the $Q$ value for same number of nodes. 
 
 
 \begin{figure}[H]
@@ -831,7 +832,23 @@ Using the same code we retain the distribution and make the number of nodes as a
 
 
 \subsection{Task Oriented Benchmark: Stanford Network Analysis Project(SNAP) data}
-SNAP\footnote{Stanford Network Analysis Project \url{http://snap.stanford.edu/}} collection of more than 50 large network datasets from tens of thousands of nodes and edges to tens of millions of nodes and edges. In includes social networks, web graphs, road networks, internet networks, citation networks, collaboration networks, and communication networks \cite{snap}. An instance of the facebook data having 5000 nodes and intersections was tested and the resulting output on screen. Time taken was 0.38 seconds.Figure ~\ref{digfb} shows the community graph of the facebook graph taken. Arxiv data of physics consiting of 18772 nodes and  396160 edges took 1.78s. Amazon ungraph with 334863 nodes  and 925872 edges took 5.13s.
+SNAP\footnote{Stanford Network Analysis Project \url{http://snap.stanford.edu/}} collection of more than 50 large network datasets from tens of thousands of nodes and edges to tens of millions of nodes and edges. In includes social networks, web graphs, road networks, internet networks, citation networks, collaboration networks, and communication networks \cite{snap}. An instance of the facebook data having 4039 nodes and 88234 edges was tested and the resulting output on screen. Time taken was 0.38 seconds.Figure ~\ref{digfb} shows the community graph of the facebook graph taken. Arxiv data of physics consiting of 18772 nodes and  396160 edges took 1.78s. Amazon ungraph with 334863 nodes  and 925872 edges took 5.13s.
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{1cm}||p{3cm}|p{2cm}|p{3cm}|p{3cm}|}
+ \hline
+ \multicolumn{5}{|c|}{Table 5 - Run Time Table using data taken from SNAP} \\
+ \hline
+ Sno: & Name of the graph &No: of nodes &No: of edges &Time taken (in seconds)\\
+ \hline
+1   & Social circles from Facebook (anonymized)  &4,039 &  88,234& 0.38  \\
+2   & Collaboration network of Arxiv Astro Physics  &18,772 &  3,96,160 & 1.78 \\
+3   & Amazon product network  &3,34,863 &  9,25,872  & 5.13 \\
+\hline
+
+\end{tabular}
+\end{table}
+
 
 \begin{figure}[H]
 \centering
@@ -840,7 +857,7 @@ SNAP\footnote{Stanford Network Analysis Project \url{http://snap.stanford.edu/}}
 \end{figure}
 
 \subsection{Some Real-world Benchmarks : igraph tests}
-Python provides an exciting package on igraph. igraph provides a functionality where famous graphs such as Zachary karate graph, bull graph etc can be obtained. A program was written to generate 28 famous graphs and time for running Louvain algorithm on the 28 graphs was calculated and recorded \cite{igraph}. 
+Python provides an exciting package called igraph. igraph provides a functionality where famous graphs such as Zachary karate graph, bull graph etc., can be obtained. A program was written to generate 28 famous graphs and time for running Louvain algorithm on the 28 graphs was calculated and recorded \cite{igraph}. 
 \par The names of the 28 graphs are : 
 \\``Zachary",``Chvatal",``Coxeter",``Cubical",``Diamond",\\
 ``Dodecahedral",``Folkman",``Franklin",``Frucht",``Grotzsch",\\
@@ -850,83 +867,83 @@ Python provides an exciting package on igraph. igraph provides a functionality w
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.4]{fam.png}
+\includegraphics[scale=0.5]{fam.png}
 \caption{Famous graphs and their timing}
 \end{figure}
 
 \section{Result}
-The algorithm was found to fast in terms of computation and effective in split. In medical domain the graph size is expected to be around $10^5$ to $10^6$ nodes with nearly 1 million edges. In the tests performed with Amazon data from SNAP this range was achieved. Hence the experiments and the analysis of the algorithm prove that Louvain algorithm implemented in the project is effective in its execution.
+The algorithm was found to be fast in terms of computation and effective in terms of splitting into communities. In medical domain the graph size is expected to be around $10^5$ to $10^6$ nodes with nearly 1 million edges. In the tests performed with Amazon data from SNAP this range was achieved. Hence the experiments and the analysis of the algorithm prove that Louvain algorithm implemented in the project is effective in its execution.
 
 \chapter{Visualization Module}
-The visualization module was developed keeping mind that it should be Javascript based and that it must interface with Python. 
+The visualization module was developed keeping mind that it should be JavaScript based and that it must interface with Python. 
 As already said these were the requirements that were set by the project directors. In this section an analysis of the selected software and method of choice by exploring all the possible ways will be explained. 
 \section{Exploring the state-of-the-art}
-\par In Chapter 2, section 2.8 , a few options on graph visualization were discussed which includes Protovois, D3.js, Gephi and Alchemy. Amongst these state of the art graph visualization algorithms we need to choose the one that suits the projects needs. 
+\par In Chapter 2, section 2.8 , a few options on graph visualization were discussed which includes Protovois, D3.js, Gephi and Alchemy.js. Amongst these state-of-the art graph visualization algorithms we need to choose the one that suits the projects needs. 
 \par  Gephi is a tool
-used for data analysis for understanding and exploring graph based data,however it has some
+used for data analysis for understanding and exploring graph based data, however it has some
 drawbacks in the logistics of the project such as Gephi is not JavaScript based although it has a JavaScript viewer. Gephi has more overhead being a software than a simple framework. For a similar reason we refrain from using softwares such as HyperTree, HyperGraphs as they did not have a Python API or are not based on JavaScript but instead has a
-Java Code based APIs.  D3
-provided the necessary tools and was JavaScript and could be linked to Python and was the best
+Java Code based APIs.  D3.js
+provided the necessary tools, was written in JavaScript and could be linked with Python.Hence D3.js was considered the best
 option for the project's logistics.
-\par Alchemy.js was built using D3. Alchemy.js required minimal code
+\par Alchemy.js was built using D3.js. Alchemy.js required minimal code
 to generate the graphs as most of the customization could be done by just overriding or altering the
 “config” [Configuration part of the Alchemy.js] instead of implementing it entirely using
 JavaScript. Alchemy.js also provides a feature in which the core application can be further extended
 with any other feature of D3. Having D3 to be the base, with minimal code and maximum
 customization Alchemy.js was chosen for visual representation of the graph in this project. \par Apart from graph visualization, matrix visualization was needed. Protovis provides a matrix drawing component called matrix diagram to represent the graph in matrix format.
 
-\par Thus the project directors considered alchemy.js as a visualization software as it fits the bigger project for graph visualization and Protovis  was used to visualize matrix representation. 
+\par Thus the project directors considered Alchemy.js as a visualization software as it fits the bigger project for graph visualization and Protovis  was considered to visualize matrix representation. 
 
 \section{Dependencies for Alchemy.js}
-Alchemy needs three main units to  form as an application namely:  \textit{alchemy.css}, \textit{alchemy.js} and \textit{data}. CSS and JavaScript are major dependencies in Alchemy.js. Installation of \textit{jQuery} and \textit{d3} is also useful. \textit{alchemy.min.js}, \textit{alchemy.css} and \textit{alchemy.min.css } will be updated in the CDN (Content Delivery netwrok)
+Alchemy needs three main units to  form as an application namely:  \textit{alchemy.css}, \textit{alchemy.js} and \textit{data}. CSS and JavaScript are major dependencies in Alchemy.js. Installation of \textit{jQuery} and \textit{D3} is also useful. \textit{alchemy.min.js}, \textit{alchemy.css} and \textit{alchemy.min.css } will be updated in the CDN (Content Delivery netwrok) as and when anew feature is added.
 \section{Steps to use Alchemy.js}
- In this project we have uploaded the \textit{alchemy.min.js}, \textit{alchemy.css} and \textit{alchemy.min.css } into the project's file repository http://abhinavsv3.github.io/javascriptsal and hence will be using the link in the following explanation. 
+ In this project we have uploaded the \textit{alchemy.min.js}, \textit{alchemy.css} and \textit{alchemy.min.css } into the project's file repository \url{http://abhinavsv3.github.io/javascriptsal} and hence will be using the link in the following explanation. 
 The following describes the steps that are followed in use of Alchemy.js :
 \begin{enumerate}
 
 \item \textit{Include the files in this format}\\
-$<$link rel="stylesheet" href="http://abhinavsv3.github.io/javascriptsal/alchemy.min.css"/$>$
+$<$link rel=``stylesheet" href=``\url{http://abhinavsv3.github.io/javascriptsal/alchemy.min.css}"/$>$
 \\
 \ldots\\
-$<$script src="http://abhinavsv3.github.io/javascriptsal/alchemy.min1.js"$></script>$
+$<$script src=``\url{http://abhinavsv3.github.io/javascriptsal/alchemy.min1.js}"$></script>$
 
-\item \textit{Include an element with "alchemy" ID as the id and class }\\
+\item \textit{Include an element with ``alchemy" ID as the id and class }\\
 The alchemy class is used to apply styles while the alchemy id is used programatically. By default Alchemy.js looks for the alchemy div but this can be overridden.
-$<$div class="alchemy" id="alchemy"$><$/div$>$
+$<$div class=``alchemy" id=``alchemy"$><$/div$>$
 
 \item \textit{Provide Alchemy.js with a JSON dataSource}
 
-\item \textit{Begin Alchemy.js}
-$<$script$>$
-  alchemy.begin$(\{"dataSource": someData\})$
-$<$/script$>$
+\item \textit{Begin Alchemy.js}\\
+$<$script$>$\\
+  alchemy.begin$(\{``dataSource": someData\})$\\
+$<$/script$>$\\
 
 
 
 \end{enumerate}
 \section{Protovis for Matrix Display}
 Protovis is considered as the predecessor D3.js. In Protovis there is an example for Matrix Diagrams. This example is of keen interest for the project for representing the data.It is JavaScript and can be visualized with just the JavaScript matrix as input.
-\par Since this is the only component that is taken from Protovis a Protovis template was adopted and from the Protovis repository and integrated with the project.
+\par Since this is the only component that is taken from Protovis a Protovis template was adopted from the Protovis repository and integrated with the project.
 
 \section{Getting the data from the Louvain Python code to Alchemy. }
- Alchemy.js takes a simple data format called GraphJSON. GraphJSON serves as a light weight and flexible representation of graph data, easily consued locally or over the web. 
+ Alchemy.js takes a simple data format called GraphJSON. GraphJSON serves as a light weight and flexible representation of graph data, easily used locally or over the web. 
 \par 
 GraphJSON is a JSON Object which has two kinds of objects namely: \textit{nodes} and  \textit{edges} . These are individual arrays that represent the nodes and edges that will be represented in the graph visualization. 
 \par \textbf{Nodes} : id key is the only unique value that should be present in the nodes
 \par \textbf{Edges} : source and target key are the only unique value that should be present in the edges.
-\par A Python program was implemented to convert the output of the Louvain program into JSON object using the Python JSON package. This converts the output of the Louvain program into two JSON object. one JSON object 
+\par A Python program was implemented to convert the output of the Louvain program into JSON object using the Python JSON package. This converts the output of the Louvain program into two JSON object. One JSON object for community graph and another one for the original graph.
 This can be seen as the advantage of system. We compute once and reuse the computed result for various visualizations.
 \par For the matrix representation the JavaScript file containing the matrix is created which is used by the protovis program to display and reorder the matrix.
 
 \section{Tests}
-For the purpose of visualization various test were performed for analysing the compatibility of Alchemy.js and to explore and exploit all the functionalities of alchemy.js and choose the best ones for the project and implement them.Protovis for the matrix visualization was used.
+For the purpose of visualization various test were performed for analysing the compatibility of Alchemy.js and to explore and exploit all the functionalities of alchemy.js and choose the best ones for the project and implement them.Protovis was used for the matrix visualization.
 \subsection{Alchemy.js Tests}
 The following will enumerate the tests that were performed one after another. Github pages were used to test host the web visualization.
 
 \begin{enumerate}
 \item Test1 and Test2
-\par \textit{Test1} consists of providing the JSON object as input to the Alchemy.js to build a normal graph. Test 1 is performed to see if the nodes can be selected, viewed and seperated.
-\par \textit{Test 2} Test2 uses the same JSON object as input.In Test2 the Test1 graph is presented with custom graph weight, graph width and link distances. This makes it easier to integrate it with larger application. Figure ~\ref{test1} shows the graph that was used to perform test1 and test2.
+\par \textit{Test1} consists of providing the JSON object as input to the Alchemy.js to build a normal graph. Test 1 is performed to see if the nodes can be selected, viewed and separated.
+\par \textit{Test 2} Test2 uses the same JSON object as input.In Test2, the Test1 graph is presented with custom graph weight, graph width and link distances. This makes it easier to integrate it with larger application. Figure ~\ref{test1} shows the graph that was used to perform test1 and test2.
 
 \begin{figure}[H]
 \centering
@@ -934,8 +951,8 @@ The following will enumerate the tests that were performed one after another. Gi
 \caption{\label{test1}Test 1 and Test 2 look the same. The JSON object has been taken from Alchemy.js Examples. One named node ``Trial and Error" has been selected and viewed.}
 \end{figure}
 
-\item \textit{Cluster Assignment Test}
-\par In this test cluster assignment is tested.Clusters are assigned in the JSON object by setting values for the cluster in the form of cluster number and assign seperate colors for these clusters.	Thus, this test focussed on node clustering or node coloring to assign each node into its cluster. Figure ~\ref{test3} show the result of the test(Test3). 
+\item \textit{Test3: Cluster Assignment Test}
+\par In this test cluster assignment is tested.Clusters are assigned in the JSON object by setting values for the cluster in the form of cluster number and assign separate colors for these clusters.	Thus, this test is focussed on node clustering or node colouring to assign each node into its cluster. Figure ~\ref{test3} show the result of the test. 
 
 \begin{figure}[H]
 \centering
@@ -943,15 +960,15 @@ The following will enumerate the tests that were performed one after another. Gi
 \caption{\label{test3}Clustering based Alchemy.js.  The JSON object has been taken from Alchemy.js Examples.}
 \end{figure}
 
-\item \textit{Directed and weighted edges}
-\par In this test we explore the special JSON object with directed and weighted edges. The test also shows an instance of controlling edge thinkness, node diameter and node thickness(Test4). Figure ~\ref{test4} shows an example of this test.
+\item \textit{Test4: Directed and weighted edges}
+\par In this test we explore the special JSON object with directed and weighted edges. The test also shows an instance of controlling edge thickness, node diameter and node thickness. Figure ~\ref{test4} shows an example of this test.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{t3.png}
 \caption{\label{test4}Example Directed and weighted edges.  The JSON object has been taken from Alchemy.js Examples.}
 \end{figure}
 
-\item \textit{Network}
+\item \textit{Test5: Network}
 \par A test in which a hairball network is generated having roots and nodes.  Figure ~\ref{test5} shows an example of seven minutes of communication between members of the AngularJS, EmberJS, and KnockoutJS IRC channels(Test5).
 
 \begin{figure}[H]
@@ -960,8 +977,8 @@ The following will enumerate the tests that were performed one after another. Gi
 \caption{\label{test5} Seven minutes of communication between members of the AngularJS, EmberJS, and KnockoutJS IRC channels. JSON object taken from the Alchemy.js examples.}
 \end{figure}
 
-\item \textit{Graph with relatedness}
-\par A test in which a graph with relatedness was generated. Figure ~\ref{test6a} shows a sample having relatedness between philosophers (Test6).
+\item \textit{Test6: Graph with relatedness}
+\par A test in which a graph with relatedness was generated. Figure ~\ref{test6a} shows a sample having relatedness between philosophers.
 
 \begin{figure}[H]
 \centering
@@ -969,8 +986,8 @@ The following will enumerate the tests that were performed one after another. Gi
 \caption{\label{test6a}A graph in which the relatedness of scientists to the philosopher is shown. This example JSON was take from Alchemy.js example graphs}
 \end{figure}
 
-\item \textit{Node Area and Color}
-\par In this test the difference in node are and assignment of colors to nodes was tested. Figure ~\ref{test7} presents can example in which the test is performed (Test7).
+\item \textit{Test7: Node Area and Color}
+\par In this test the difference in node area and assignment of colors to nodes was tested. Figure ~\ref{test7} presents can example in which the test is performed.
 
 
 \begin{figure}[H]
@@ -980,9 +997,9 @@ The following will enumerate the tests that were performed one after another. Gi
 \end{figure}
 \end{enumerate}
 
-\par After performing all the test few of the desired features were incorporated to fordisplaying th graph in the project. The project uses test7 for showing the size or the bulkiness of the node in comparison with other node. Test6 relatedness has also been added to the project to mark the edge values between the nodes. Test3, clustering has also been added to the project.
+\par After performing all the test few of the desired features were incorporated for displaying the graph in the project. The project uses \textit{Test7} for showing the size or the bulkiness of the node in comparison with other node. \textit{Test6} property of relatedness has also been added to the project to mark the edge values between the nodes. \textit{Test3}, clustering has also been added to the project.
 \subsection{Protovis Tests}
-For the purpose of matrix visualization, protovis has been implemented in the project. A test run of it is presented in the Figure ~\ref{test8}.
+For the purpose of matrix visualization, Protovis has been implemented in the project. A test run of it is presented in the Figure ~\ref{test8}.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{d4b.png}
@@ -997,7 +1014,7 @@ In the project there were minor issues that were to be addressed:
 edges on screen when using web browsers that such as Google chrome. Mozilla Firefox use Gecko
 which helps to read web contents like JavaScript, html, css etc better than in Google chrome. Thus,
 it is recommended to run the project on mozilla firefox or sea monkey than on Google Chrome.
-\item \textit{Bug Number 472}: It was found when rendering of edges is an bug that was reported in Alchemy.js issues as Bug number : 472 ( \url{https://github.com/GraphAlchemist/Alchemy/issues/472}). We have also reiterated the issue. The issue is that in the graph where the communities are rendered separately will colors the edges that run between two communities are names and weights are assigned but the edge is not rendered.
+\item \textit{Bug Number} 472: It was found when rendering of edges is an bug that was reported in Alchemy.js issues as Bug number : 472 ( \url{https://github.com/GraphAlchemist/Alchemy/issues/472}). We have also reiterated the issue. The issue is that in the graph where the communities are rendered separately with colors, the edges that run between two communities are named and weights are assigned but the edge color is not rendered.
 \end{enumerate}
 
 \section{Result and Output}

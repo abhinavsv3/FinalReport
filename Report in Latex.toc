@@ -42,40 +42,40 @@
 \contentsline {subsection}{\numberline {3.1.1}Definition}{21}
 \contentsline {subsection}{\numberline {3.1.2}Properties of Modularity}{22}
 \contentsline {section}{\numberline {3.2}Implementation of the Louvain Community detection Algorithm}{23}
-\contentsline {subsection}{\numberline {3.2.1}First Phase : Optimizing Modularity}{23}
+\contentsline {subsection}{\numberline {3.2.1}First Phase : Optimizing Modularity}{24}
 \contentsline {subsection}{\numberline {3.2.2}Second Phase : Agglomerating the communities found in first phase into new nodes}{25}
-\contentsline {section}{\numberline {3.3}Observations of Louvain}{25}
+\contentsline {section}{\numberline {3.3}Observations of Louvain}{26}
 \contentsline {section}{\numberline {3.4}Mode of implementation of the Louvain Algorithm}{26}
 \contentsline {section}{\numberline {3.5}Experiments}{27}
-\contentsline {subsection}{\numberline {3.5.1}Synthetic Benchmarks}{27}
-\contentsline {subsubsection}{\numberline {3.5.1.1}Nodes vs Time keeping modularity constant}{27}
-\contentsline {paragraph}{\numberline {3.5.1.1.1}Minor bugs}{28}
-\contentsline {subsubsection}{\numberline {3.5.1.2}Modularity vs Time keeping Number of nodes constant}{29}
-\contentsline {subsection}{\numberline {3.5.2}Task Oriented Benchmark: Stanford Network Analysis Project(SNAP) data}{30}
-\contentsline {subsection}{\numberline {3.5.3}Some Real-world Benchmarks : igraph tests}{31}
-\contentsline {section}{\numberline {3.6}Result}{32}
-\contentsline {chapter}{\numberline {4}Visualization Module}{33}
-\contentsline {section}{\numberline {4.1}Exploring the state-of-the-art}{33}
-\contentsline {section}{\numberline {4.2}Dependencies for Alchemy.js}{34}
-\contentsline {section}{\numberline {4.3}Steps to use Alchemy.js}{34}
-\contentsline {section}{\numberline {4.4}Protovis for Matrix Display}{35}
-\contentsline {section}{\numberline {4.5}Getting the data from the Louvain Python code to Alchemy. }{35}
-\contentsline {section}{\numberline {4.6}Tests}{36}
-\contentsline {subsection}{\numberline {4.6.1}Alchemy.js Tests}{36}
-\contentsline {subsection}{\numberline {4.6.2}Protovis Tests}{42}
-\contentsline {subsection}{\numberline {4.6.3}Bug Report}{43}
-\contentsline {section}{\numberline {4.7}Result and Output}{44}
-\contentsline {chapter}{\numberline {5}Overall System Description}{46}
-\contentsline {section}{\numberline {5.1}Choice of Web.py}{46}
-\contentsline {section}{\numberline {5.2}Frontend Framework}{47}
-\contentsline {section}{\numberline {5.3}Using the application}{47}
-\contentsline {section}{\numberline {5.4}Implementation Benefits and Drawbacks}{51}
-\contentsline {subsection}{\numberline {5.4.1}Benefits}{51}
-\contentsline {subsection}{\numberline {5.4.2}Drawbacks}{52}
-\contentsline {chapter}{\numberline {6}Conclusion and Future Works}{53}
-\contentsline {section}{\numberline {6.1}Goals Achieved}{53}
-\contentsline {section}{\numberline {6.2}Benefits to the community}{54}
-\contentsline {section}{\numberline {6.3}Future Works}{54}
-\contentsline {section}{\numberline {6.4}Availability and requirements}{55}
-\contentsline {section}{\numberline {6.5}Conclusion}{56}
-\contentsline {section}{\numberline {6.6}Personal Conclusion}{56}
+\contentsline {subsection}{\numberline {3.5.1}Synthetic Benchmarks}{28}
+\contentsline {subsubsection}{\numberline {3.5.1.1}Nodes vs Time keeping modularity constant}{28}
+\contentsline {paragraph}{\numberline {3.5.1.1.1}Minor bugs}{29}
+\contentsline {subsubsection}{\numberline {3.5.1.2}Modularity vs Time keeping Number of nodes constant}{30}
+\contentsline {subsection}{\numberline {3.5.2}Task Oriented Benchmark: Stanford Network Analysis Project(SNAP) data}{31}
+\contentsline {subsection}{\numberline {3.5.3}Some Real-world Benchmarks : igraph tests}{32}
+\contentsline {section}{\numberline {3.6}Result}{33}
+\contentsline {chapter}{\numberline {4}Visualization Module}{34}
+\contentsline {section}{\numberline {4.1}Exploring the state-of-the-art}{34}
+\contentsline {section}{\numberline {4.2}Dependencies for Alchemy.js}{35}
+\contentsline {section}{\numberline {4.3}Steps to use Alchemy.js}{35}
+\contentsline {section}{\numberline {4.4}Protovis for Matrix Display}{36}
+\contentsline {section}{\numberline {4.5}Getting the data from the Louvain Python code to Alchemy. }{36}
+\contentsline {section}{\numberline {4.6}Tests}{37}
+\contentsline {subsection}{\numberline {4.6.1}Alchemy.js Tests}{37}
+\contentsline {subsection}{\numberline {4.6.2}Protovis Tests}{43}
+\contentsline {subsection}{\numberline {4.6.3}Bug Report}{44}
+\contentsline {section}{\numberline {4.7}Result and Output}{45}
+\contentsline {chapter}{\numberline {5}Overall System Description}{47}
+\contentsline {section}{\numberline {5.1}Choice of Web.py}{47}
+\contentsline {section}{\numberline {5.2}Frontend Framework}{48}
+\contentsline {section}{\numberline {5.3}Using the application}{48}
+\contentsline {section}{\numberline {5.4}Implementation Benefits and Drawbacks}{52}
+\contentsline {subsection}{\numberline {5.4.1}Benefits}{52}
+\contentsline {subsection}{\numberline {5.4.2}Drawbacks}{53}
+\contentsline {chapter}{\numberline {6}Conclusion and Future Works}{54}
+\contentsline {section}{\numberline {6.1}Goals Achieved}{54}
+\contentsline {section}{\numberline {6.2}Benefits to the community}{55}
+\contentsline {section}{\numberline {6.3}Future Works}{55}
+\contentsline {section}{\numberline {6.4}Availability and requirements}{56}
+\contentsline {section}{\numberline {6.5}Conclusion}{57}
+\contentsline {section}{\numberline {6.6}Personal Conclusion}{57}
