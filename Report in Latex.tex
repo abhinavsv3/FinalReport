@@ -583,7 +583,7 @@ Scale graphs have a number of interesting properties, both theoretical and pract
 \end{figure}
 
 \section{State-of-the-art in Graph Visualization}
-Researchers have designed various tool-kits for the purpose of information visualization. Newer visualization techniques are introduced by creating new components or sub-classing the existing ones. The main aim of the project will be analyse the way inwhich the visual frameworks can be used and what kind of intermediate trasitions that are possible between the Python program and the visualization framework. The project director's sugestion was to go with a JavaScript Library.
+Researchers have designed various tool-kits for the purpose of information visualization. Newer visualization techniques are introduced by creating new components or sub-classing the existing ones. The main aim of the project will be analyse the way in which the visual frameworks can be used and what kind of intermediate transitions that are possible between the Python program and the visualization framework. The project director's suggestion was to go with a JavaScript Library.
 
 \textbf{Advantage of JavaScript Libraries} \cite{graphjslib}
 \begin{enumerate}
@@ -778,10 +778,12 @@ In the second phase the algorithm builds the new network. The communities that a
 \end{enumerate}
 
 \section{Mode of implementation of the Louvain Algorithm}
-In the project the above algorithm has been implemented in Python taking inspiration and reusing some part of the pyLouvain program API for implementation \cite{pyLouvain}. 
-pyLouvain cannot be directly used in the project as 
-\par Using Python was a requirement of the project directors, in case the code has to be reused in a larger ongoing project which is programmed in Python and Javascript. Hence Python was used to implement the Louvain Algorithm.
-
+\par Using Python was a requirement of the project directors, in case the code has to be reused in a larger ongoing project which is programmed in Python and Javascript. Hence Python was used to implement the Louvain Algorithm.Hence in the project the above algorithm has been implemented in Python taking inspiration and reusing some part of the pyLouvain program for implementation \cite{pyLouvain}. 
+\par pyLouvain cannot be directly used in the project as the input and output methods cannot fit into our problem of getting the raw data and giving out a JSON object to the web application. But pyLouvain use Louvain algorithm and tries to find communities which is of interest in this project. 
+\par The code in the project is structured the same way pylouvain is structured. Instead of storing the read input is separately read we store it in the matrix format. Getting the start node, weight or end nodes was simply the rows in the transpose of this matrix avoiding any function calls , which pyLouvain uses. To get an edge pyLouvain takes the help of function for a single edge, where as in this project we use zip method to simple zip the rows of transposed matrix . Labelling was introduced which enables the nodes to relabel with their corresponding names.
+\par The first phase in the pyLouvain removes the nodes of degree one and adds a self loop to its neighbour. This node gets reinserted at the end of the neighbours community.This aspect of the pyLouvain code was interesting and needed to be retained in the project.
+Hence the first phase of the pyLouvain was modified and added into the project. 
+This makes the code to run faster.
 \section{Experiments}
 In performing experiments we analyse the speed and capability of the Python program to handle more input and also to see pattern of behaviour of the data. For this purpose test case inputs have to be generated or test cases that are available online must be used. 
 In this project we utilize both method to see the performance of the program. All the tests were run on 2.50GHz Intel Core i5-3210M with 8 GB RAM (Sony Vaio) running gnome-ubuntu 14.04 operating system. 
@@ -800,7 +802,7 @@ Following the above bench marks three kinds of experiments were performed:
 \subsubsection{Nodes vs Time keeping modularity constant}
 \par In the paper "Exploring community structure in biological networks with random graphs" \cite{githubtest1} \footnote{Random Modular Network Generator \url{https://github.com/bansallab/modular_graph_generator/}}, authors have developed a generative model to produce undirected connected graphs with a degree and a pattern of communities while maintaining a graph strucuture that is as random as possible.  They have given two programs one which contains the degree distribution funtions such as scale-free degree  distribution, poisson degree distribution, regular distribution and geometric and the other one that contains the graph generators that return a generated graph in networkX package.  In this project we are intersted in scale-free distribution as most real-world networks are scale free in nature \cite{scalefree}. To run this test networkx package is a necessary component. 
 
-\par For the purpose of testing two programs in Python were written. First program is a generator program that sets the degree distribution to scale-free, Q=0.4 [ Average Q value ] and N=150 to N=2300. This program generate a set of files contains graphs with nodes in the range of N. Second program is the plotting program in which the files that were generated in the first program was supplied as input to the second program and Louvain algorithm was applied. Time of run for Louvain was calculated for each input and recorded. This was then plotted into graphs using the matplotlib function. The graphs are displayed in figure ~\ref{ex1}, ~\ref{ex2}, ~\ref{ex3} and ~\ref{ex4} for respective range of nodes mentioned in the caption of the graphs.
+\par For the purpose of testing two programs in Python were written. First program is a generator program that sets the degree distribution to scale-free, $Q$=0.4 [ Average $Q$ value ] and $N$=150 to $N$=2300. This program generate a set of files contains graphs with nodes in the range of N. Second program is the plotting program in which the files that were generated in the first program was supplied as input to the second program and Louvain algorithm was applied. Time of run for Louvain was calculated for each input and recorded. This was then plotted into graphs using the matplotlib function. The graphs are displayed in figure ~\ref{ex1}, ~\ref{ex2}, ~\ref{ex3} and ~\ref{ex4} for respective range of nodes mentioned in the caption of the graphs.
 
 \begin{figure}[H]
 \centering
@@ -832,17 +834,17 @@ Following the above bench marks three kinds of experiments were performed:
 In the results obtained it is interesting to note that there is a set of slow runs that occur at regular intervals. These are due to the effect of garbage collection done by Python automatic garbage collector after a number of runs of Louvain algorithm had exhausted available memory This issue was found by manually turning of the garbage collection and explicitly calling it every time after each run. Therefore, the "bottom" line of the plot should be taken as the true running time of the Louvain algorithm. 
 
 \subsubsection{Modularity vs Time keeping Number of nodes constant}
-Using the same code we retain the distribution and make the number of nodes as a constant and vary the Q value. This experiment helps to find out the change in run time of the algorithm varying Q. Figure ~\ref{ex5} and ~\ref{ex6} show a sample of the test.
+Using the same code we retain the distribution and make the number of nodes as a constant and vary the $Q$ value. This experiment helps to find out the change in run time of the algorithm varying $Q$. Figure ~\ref{ex5} and ~\ref{ex6} show a sample of the test. We can infer from the graphs that there is no significant change in the run time when we modify the $Q$ value for same number of node. 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{varq.png}
-\caption{\label{ex5}Experiment showing the plot of time vs number of nodes for 1000 nodes but Q is varying(X axis is scaled 10 times, that is 0.1 is 1 in the graph) }
+\caption{\label{ex5}Experiment showing the plot of time vs number of nodes for 1000 nodes but $Q$ is varying(X axis is scaled 10 times, that is 0.1 is 1 in the graph) }
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{varq2000pio.png}
-\caption{\label{ex6}Experiment showing the plot of time vs number of nodes for 2000 nodes but Q is varying (X axis is scaled 10 times, that is 0.1 is 1 in the graph) }
+\caption{\label{ex6}Experiment showing the plot of time vs number of nodes for 2000 nodes but $Q$ is varying (X axis is scaled 10 times, that is 0.1 is 1 in the graph) }
 \end{figure}
 
 
@@ -1170,9 +1172,10 @@ The project relies fully on Louvain. One can speculate on whether modularity is 
 \end{enumerate}
 
 \section{Conclusion}
-This is one of the greatest project experience.	
+
+
 \section{Personal Conclusion}
-The project has made my mind very innovative. I can proudly call myself an engineer. My directors, Prof.Ricard and Prof. Marta gave me a freedom to think freely and understand the project and made me do the project the way I have analysed it.  This made me develop an new characteristics of learning stuff in the fly and made me feel enthusiastic about working on projects that I have little knowledge on. I am sure given any project I can now make innovation and work hard to bring the project to a better light.
+The project has taught me to think about all the solutions that are possible for any problem. Given a task I will now start looking for all the soltion, evaluvate it and choose the best one that fits. Thus I can proudly call my self an engineer. My directors, Prof.Ricard and Prof. Marta gave me a freedom to think freely and understand the project and made me do the project the way I have analysed it.  This made me develop an new characteristics of learning things in the fly and made me feel enthusiastic about working on projects that I have some knowledge on. By doing this the project has made my mind more innovative. I am sure given any project I can now make innovation and work hard to bring the project to a better light.
 
 \bibliographystyle{plain}
 \bibliography{mybib}{}

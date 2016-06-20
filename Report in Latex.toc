@@ -50,7 +50,7 @@
 \contentsline {subsection}{\numberline {3.2.2}Second Phase : Agglomerating the communities found in first phase into new nodes}{25}
 \contentsline {section}{\numberline {3.3}Observations of Louvain}{25}
 \contentsline {section}{\numberline {3.4}Mode of implementation of the Louvain Algorithm}{26}
-\contentsline {section}{\numberline {3.5}Experiments}{26}
+\contentsline {section}{\numberline {3.5}Experiments}{27}
 \contentsline {subsection}{\numberline {3.5.1}Synthetic Benchmarks}{27}
 \contentsline {subsubsection}{\numberline {3.5.1.1}Nodes vs Time keeping modularity constant}{27}
 \contentsline {paragraph}{\numberline {3.5.1.1.1}Minor bugs}{30}
