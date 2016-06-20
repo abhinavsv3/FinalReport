@@ -4,56 +4,56 @@ The top-level auxiliary file: Report in Latex.aux
 The style file: plain.bst
 Database file #1: mybib.bib
 Warning--entry type for "bootstrap" isn't style-file defined
---line 62 of file mybib.bib
-Repeated entry---line 74 of file mybib.bib
+--line 68 of file mybib.bib
+Repeated entry---line 80 of file mybib.bib
  : @article{scalefree
  :                   ,
 I'm skipping whatever remains of this entry
 Warning--entry type for "pylouvain" isn't style-file defined
---line 140 of file mybib.bib
+--line 146 of file mybib.bib
 Warning--empty journal in graphviz
 Warning--empty year in graphviz
 Warning--empty journal in graphjslib
 Warning--empty year in graphjslib
-You've used 20 entries,
+You've used 21 entries,
             2118 wiz_defined-function locations,
-            615 strings with 7188 characters,
-and the built_in function-call counts, 6306 in all, are:
-= -- 587
-> -- 361
+            622 strings with 7350 characters,
+and the built_in function-call counts, 6546 in all, are:
+= -- 610
+> -- 374
 < -- 2
-+ -- 144
-- -- 122
-* -- 462
-:= -- 1100
-add.period$ -- 56
-call.type$ -- 20
-change.case$ -- 119
++ -- 149
+- -- 126
+* -- 474
+:= -- 1145
+add.period$ -- 59
+call.type$ -- 21
+change.case$ -- 124
 chr.to.int$ -- 0
-cite$ -- 24
-duplicate$ -- 211
-empty$ -- 459
-format.name$ -- 122
-if$ -- 1262
+cite$ -- 25
+duplicate$ -- 221
+empty$ -- 476
+format.name$ -- 126
+if$ -- 1310
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 18
-newline$ -- 99
-num.names$ -- 40
-pop$ -- 127
+int.to.str$ -- 21
+missing$ -- 19
+newline$ -- 104
+num.names$ -- 42
+pop$ -- 132
 preamble$ -- 1
-purify$ -- 100
+purify$ -- 104
 quote$ -- 0
-skip$ -- 157
+skip$ -- 165
 stack$ -- 0
-substring$ -- 301
-swap$ -- 25
+substring$ -- 306
+swap$ -- 26
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 78
+type$ -- 82
 warning$ -- 4
-while$ -- 58
-width$ -- 22
-write$ -- 203
+while$ -- 60
+width$ -- 23
+write$ -- 213
 (There was 1 error message)

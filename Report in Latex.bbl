@@ -17,7 +17,7 @@ Nikos Bikakis, John Liagouris, Maria Krommyda, George Papastefanatos, and Timos
 \newblock graphvizdb: A scalable platform for interactive large graph
   visualization.
 
-\bibitem{louvain}
+\bibitem{Louvain}
 Vincent~D Blondel, Jean-Loup Guillaume, Renaud Lambiotte, and Etienne Lefebvre.
 \newblock Fast unfolding of communities in large networks.
 \newblock {\em Journal of statistical mechanics: theory and experiment},
@@ -68,6 +68,11 @@ Santo Fortunato and Marc Barthelemy.
 \newblock {\em Proceedings of the National Academy of Sciences}, 104(1):36--41,
   2007.
 
+\bibitem{benchmarking}
+Conrad Lee and P{\'a}draig Cunningham.
+\newblock Benchmarking community detection methods on social media data.
+\newblock {\em arXiv preprint arXiv:1302.0739}, 2013.
+
 \bibitem{snap}
 Jure Leskovec and Andrej Krevl.
 \newblock {SNAP Datasets}: {Stanford} large network dataset collection.
@@ -79,7 +84,7 @@ Mark~EJ Newman.
 \newblock {\em Proceedings of the national academy of sciences},
   103(23):8577--8582, 2006.
 
-\bibitem{pylouvain}
+\bibitem{pyLouvain}
 Julien Odent and Michael Saint-Guillain.
 \newblock Automatic detection of community strucures in networks, November
   26,2012.
