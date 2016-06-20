@@ -5,11 +5,7 @@ The style file: plain.bst
 Database file #1: mybib.bib
 Warning--entry type for "bootstrap" isn't style-file defined
 --line 68 of file mybib.bib
-Repeated entry---line 80 of file mybib.bib
- : @article{scalefree
- :                   ,
-I'm skipping whatever remains of this entry
-Warning--entry type for "pylouvain" isn't style-file defined
+Warning--entry type for "pyLouvain" isn't style-file defined
 --line 146 of file mybib.bib
 Warning--empty journal in graphviz
 Warning--empty year in graphviz
@@ -17,36 +13,36 @@ Warning--empty journal in graphjslib
 Warning--empty year in graphjslib
 You've used 21 entries,
             2118 wiz_defined-function locations,
-            622 strings with 7350 characters,
-and the built_in function-call counts, 6546 in all, are:
-= -- 610
-> -- 374
+            623 strings with 7381 characters,
+and the built_in function-call counts, 6659 in all, are:
+= -- 619
+> -- 390
 < -- 2
-+ -- 149
-- -- 126
-* -- 474
-:= -- 1145
++ -- 155
+- -- 132
+* -- 488
+:= -- 1165
 add.period$ -- 59
 call.type$ -- 21
-change.case$ -- 124
+change.case$ -- 127
 chr.to.int$ -- 0
 cite$ -- 25
 duplicate$ -- 221
-empty$ -- 476
-format.name$ -- 126
-if$ -- 1310
+empty$ -- 477
+format.name$ -- 132
+if$ -- 1330
 int.to.chr$ -- 0
 int.to.str$ -- 21
 missing$ -- 19
 newline$ -- 104
 num.names$ -- 42
-pop$ -- 132
+pop$ -- 135
 preamble$ -- 1
-purify$ -- 104
+purify$ -- 107
 quote$ -- 0
 skip$ -- 165
 stack$ -- 0
-substring$ -- 306
+substring$ -- 312
 swap$ -- 26
 text.length$ -- 2
 text.prefix$ -- 0
@@ -56,4 +52,4 @@ warning$ -- 4
 while$ -- 60
 width$ -- 23
 write$ -- 213
-(There was 1 error message)
+(There were 6 warnings)

@@ -419,7 +419,7 @@ v_j, 1 \leq j \leq n\}$. The degree of a node $v_i$, or the size of
 the neighbourhood connected to $v_i$, is denoted as d($v_i$) =
 $|N(v_i)|$. 
 \par A degree sequence, \textit{D}, specifies the set of all node
-degrees as tuples, such that D = {($v_i, d(v_i)$} and follows a
+degrees as tuples, such that D = {($v_i, d(v_i))$} and follows a
 probability distribution called the \textit{degree distribution} with
 mean $d_m$ \cite{githubtest1}.
 
@@ -436,29 +436,26 @@ The adjacency matrix of a graph of order \textit{n} entitles the entire the topo
 \section{Approaches}
 In this section we discuss the various approaches that are involved in dealing with the input to the project for community identification, for clustering and for visualization purposes. 
 \subsection{For Community Identification}
-Virtually in every scientific field dealing with empirical data, primary approach to get a first impression on the data is by trying to identify groups having "similar" behaviour in data. There are numerous methods to achieve this objective of which 
+Virtually in every scientific field dealing with empirical data, primary approach to get a first impression on the data is by trying to identify groups having "similar" behaviour in data. There are numerous methods to achieve this objective of which two of them are of great concern namely,
 
 \begin{itemize}
 \item Community Detection
 \item Clustering
 \end{itemize}
-
+The following explains the both in detail.
 \subsubsection{Community Detection}
-\subsubsection{Definition of a Community}
-Communities are a part of the graph that has fewer ties with the rest of the system. Community detection traditionally focuses on the graph structures while clustering algorithms focuses on node attributes. This definition is admittedly somewhat informal. Different applications may require slightly different definitions, and certainly different algorithms formalize them in different ways. So there is not a unique, universally accepted, decomposition of a graph in communities. 
+Communities are a part of the graph that have fewer ties with the rest of the system. Community detection traditionally focuses on the graph structures while clustering algorithms focuses on node attributes. This definition is admittedly somewhat informal. Different applications may require slightly different definitions, and certainly different algorithms formalize them in different ways. So there is not a unique, universally accepted, decomposition of a graph in communities. 
 
 Several types of community detection algorithms can be distinguished:
-\paragraph{Divisive algorithms}
-Divisive algorithms detect inter-community links and remove them from the network
-
-\paragraph{Agglomerative algorithms}
-Agglomerative algorithm merges similar nodes or communities in a recursive manner.
-
-\paragraph{Optimization Methods}
-Optimization methods are mainly based on maximization of an objective function, informally the "goodness" of a community decomposition. 
+\begin{itemize}
+\item \textit{Divisive algorithms} -- which detect inter-community links and remove them from the network
+\item \textit{Agglomerative algorithms} -- which merges similar nodes or communities in a recursive manner
+\item  \textit{Optimization Methods} --
+Optimization methods are mainly based on maximization of an objective function, informally the ``goodness" of a community decomposition.
+\end{itemize}
 
 \subsubsection{Clustering}
-According to the paper "Community detection in graph" \cite{communitypaper} there are four major traditional clustering methods namely : 
+According to the paper ``Community detection in graph" \cite{communitypaper} there are four major traditional clustering methods namely : 
 \begin{itemize}
 
 \item Graph Partitioning 
@@ -526,7 +523,7 @@ are huge, the aforementioned visualizations pose significant
 technical challenges from a data management perspective \cite{graphviz}.
 
 \section{Computational Complexity}
- The estimate of the amount of resources required for by the algorithm to perform a task is defined as computational complexity. The humongous amount of data on the real graphs or real networks that are available in the current scenario causes the efficiency of the clustering algorithm to be crucial.
+ The estimate of the amount of resources required for by the algorithm to perform a task is defined as computational complexity. The large amount of data on the real graphs or real networks that are available in the current scenario causes the efficiency of the clustering algorithm to be crucial.
 \par In a brief, algorithms that have polynomial complexity describe the Class \textbf{P}. Problems whose solutions can be verified in a polynomial time span the class \textbf{NP} of \textit{non--deterministic polynomial time} problems, which includes \textbf{P}. problem is \textbf{NP}-hard if a solution for it can be
 translated into a solution for any \textbf{NP}-problem. However,
 a \textbf{NP}-hard problem needs not be in the class \textbf{NP}. If it
@@ -559,7 +556,7 @@ The following figure ~\ref{Fig1} from paper \cite{generalcommunity} the average 
 \caption{\label{Fig1}Average normalized performance rank of each algorithm in terms of partitioning quality and speed(Taken from the website of the paper that proposed Combo algorithm \cite{generalcommunity}.}
 
 \end{figure}
-The main objective of the project is to visualize the data on screen thus needs an algorithm that is fast and should be effective.  Hence Louvain algorithm was choose for the implementation. The implementation can be found in the Chapter 3 of the report.
+The main objective of the project is to visualize the data on screen thus needs an algorithm that is fast and should be effective.  Hence Louvain algorithm was chosen for the implementation. The implementation can be found in the Chapter 3 of the report.
 
 
 Louvain algorithm algorithm is considered as state-of-the art algorithm for community detection\cite{Louvain}. The algorithm is fast and more effective than the other algorithms in real-world graphs. Due to our goal of projecting medical domain we require an algorithm that gives a better trade off between being effective and being fast. 
@@ -610,28 +607,28 @@ SVG, and Flash. The above extract is as given in the main paper about Protovis
 \cite{protovis}.
 
 \subsection{D3.js}
-D3.js or simply D3 is a JavaScript library for manupulating documents based on data. D3 takes full advantage of cascading Style Sheets(CSS), HTML5 and Scalable vector graphics (SVG). D3 is viewed as the successor of Protovis. D3 targets at animation,interaction and complex and dynamic visualization in web.  It uses pre-built JavaScript
+D3.js or simply D3 is a JavaScript library for manipulating documents based on data. D3 takes full advantage of cascading Style Sheets(CSS), HTML5 and Scalable vector graphics (SVG). D3 is viewed as the successor of Protovis. D3 targets at animation,interaction and complex and dynamic visualization in web.  It uses pre-built JavaScript
 functions in its kernel in order to select elements, create SVG
 objects, style them or add transitions and dynamic effects to
 them.\cite{graphjslib}. Paper ``D3: Data-Driven Documents" \cite{d3} describes d3in its rightful way. D3 provides a wide set of example of which these were of great interest to the project:
 \begin{enumerate}
 \item
-For graph: Force-Directed Graph, Labeled Force Layout,Forced Graph Editor , Directed Graph Editor, CodeFlower, University Program Transfers - Interactive, Better force layout node selection
+For graph: Force-Directed Graph, Labelled Force Layout,Forced Graph Editor , Directed Graph Editor, CodeFlower, University Program Transfers - Interactive, Better force layout node selection
 \item For matrix visualization : Day/Hour Heatmap
 \end{enumerate}
 \subsection{Gephi}
 
-Gephi is an open source software which use 3D render engine for visualization of graphs. 
+Gephi is an open source software which uses 3D render engine for visualization of graphs. 
 A flexible and multi-task architecture brings new possibilities
 to work with complex data sets and produce
 valuable visual results. 
 Gephi involves many key features in the context of interactive exploration and
 interpretation of networks.  spatializing, filtering,
 navigating, manipulating and clustering are allowed in Gephi.Dynamic network visualization is also possible in Gephi \cite{gephi}.
-Although gephi is not JavaScript it is cited and considered for its externsive use in graph visualization. It is interesting to note that Gephi has JavaScript viewer such as JavaScript GEXF available on github. 
+Although gephi is not JavaScript it is cited and considered for its extensive use in graph visualization. It is interesting to note that Gephi has JavaScript viewer such as JavaScript GEXF available on github. 
 
 \subsection{Alchemy.js}
-Alchemy.js is a JavaScript framework build entirely on d3. The goal of Alchemy.js is help the developer build and run graph visualizations with minimal overhead. A developer in Alchemy.js does not have to write much code to visualize the data. Configuring Alchemy.js to visualize the data will be the only task to be done, along with whatever features that are wanted to be include in the application.
+Alchemy.js is a JavaScript framework built entirely on D3. The goal of Alchemy.js is help the developer build and run graph visualizations with minimal overhead. A developer in Alchemy.js does not have to write much code to visualize the data. Configuring Alchemy.js to visualize the data will be the only task to be done, along with whatever features that are wanted to be include in the application.
 
 \chapter{Louvain Community Detection Algorithm}
 In this section we describe the community detection algorithms such as Louvain and various tests that were performed to choose the algorithm. 
@@ -652,7 +649,7 @@ where E(I,J) is set of all edges between vertices in cluster I and J. E(C) = E(C
 The above equation can be continently rewritten as follows: 
 \begin{equation} \label{eq1}
 \begin{split}
-Q(C_s) &= \sum_{C \in C_s}\left[ \frac{|E(C)|}{m} - \left( \frac{\sum_{v \in C}deg(v)}{2m} \right)^2 \right(t]
+Q(C_s) &= \sum_{C \in C_s}\left[ \frac{|E(C)|}{m} - \left( \frac{\sum_{v \in C}deg(v)}{2m} \right)^2 \right]
 \end{split}
 \end{equation}
 In simpler terms the value is of Q can be expressed as 
@@ -802,19 +799,8 @@ Following the above bench marks three kinds of experiments were performed:
 \subsubsection{Nodes vs Time keeping modularity constant}
 \par In the paper "Exploring community structure in biological networks with random graphs" \cite{githubtest1} \footnote{Random Modular Network Generator \url{https://github.com/bansallab/modular_graph_generator/}}, authors have developed a generative model to produce undirected connected graphs with a degree and a pattern of communities while maintaining a graph strucuture that is as random as possible.  They have given two programs one which contains the degree distribution funtions such as scale-free degree  distribution, poisson degree distribution, regular distribution and geometric and the other one that contains the graph generators that return a generated graph in networkX package.  In this project we are intersted in scale-free distribution as most real-world networks are scale free in nature \cite{scalefree}. To run this test networkx package is a necessary component. 
 
-\par For the purpose of testing two programs in Python were written. First program is a generator program that sets the degree distribution to scale-free, $Q$=0.4 [ Average $Q$ value ] and $N$=150 to $N$=2300. This program generate a set of files contains graphs with nodes in the range of N. Second program is the plotting program in which the files that were generated in the first program was supplied as input to the second program and Louvain algorithm was applied. Time of run for Louvain was calculated for each input and recorded. This was then plotted into graphs using the matplotlib function. The graphs are displayed in figure ~\ref{ex1}, ~\ref{ex2}, ~\ref{ex3} and ~\ref{ex4} for respective range of nodes mentioned in the caption of the graphs.
+\par For the purpose of testing two programs in Python were written. First program is a generator program that sets the degree distribution to scale-free, $Q$=0.4 [ Average $Q$ value ] and $N$=150 to $N$=2300. This program generate a set of files contains graphs with nodes in the range of N. Second program is the plotting program in which the files that were generated in the first program was supplied as input to the second program and Louvain algorithm was applied. Time of run for Louvain was calculated for each input and recorded. This was then plotted into graphs using the matplotlib function. The graphs are displayed in figure ~\ref{ex3} for 2000 nodes.
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.3]{e1000.png}
-\caption{\label{ex1}Experiment showing the plot of time vs number of nodes for 1000 nodes}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.3]{e1000b.png}
-\caption{\label{ex2}Experiment showing the plot of time vs number of nodes for 1000 nodes points joint by lines}
-\end{figure}
 
 \begin{figure}[H]
 \centering
@@ -822,29 +808,25 @@ Following the above bench marks three kinds of experiments were performed:
 \caption{\label{ex3}Experiment showing the plot of time vs number of nodes for 2000 nodes}
 \end{figure}
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.3]{e2000b.png}
-\caption{\label{ex4}Experiment showing the plot of time vs number of nodes for 2000 nodes points joint by lines}
-\end{figure}
 
-\par It  is interesting to note that for steady raise in the number of inputs there was a steady raise in the time. There were very few jitters that were caused by the computer.
+\par It  is interesting to note that for steady raise in the number of inputs there was a steady raise in the time.
 
 \paragraph{Minor bugs}
-In the results obtained it is interesting to note that there is a set of slow runs that occur at regular intervals. These are due to the effect of garbage collection done by Python automatic garbage collector after a number of runs of Louvain algorithm had exhausted available memory This issue was found by manually turning of the garbage collection and explicitly calling it every time after each run. Therefore, the "bottom" line of the plot should be taken as the true running time of the Louvain algorithm. 
+In the results obtained it is interesting to note that there is a set of slow runs that occur at regular intervals. These are due to the effect of garbage collection done by Python automatic garbage collector after a number of runs of Louvain algorithm had exhausted available memory This issue was found by manually turning of the garbage collection and explicitly calling it every time after each run. Therefore, the "bottom" line of the plot should be taken as the true running time of the Louvain algorithm. Figure ~\ref{ex1} shows the result of the experiment when manual garbage collection was performed.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{e2000c.png}
+\caption{\label{ex1}Experiment showing the plot of time vs number of nodes for 2000 nodes (With manual garbage collection)}
+\end{figure}
 
 \subsubsection{Modularity vs Time keeping Number of nodes constant}
 Using the same code we retain the distribution and make the number of nodes as a constant and vary the $Q$ value. This experiment helps to find out the change in run time of the algorithm varying $Q$. Figure ~\ref{ex5} and ~\ref{ex6} show a sample of the test. We can infer from the graphs that there is no significant change in the run time when we modify the $Q$ value for same number of node. 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.3]{varq.png}
-\caption{\label{ex5}Experiment showing the plot of time vs number of nodes for 1000 nodes but $Q$ is varying(X axis is scaled 10 times, that is 0.1 is 1 in the graph) }
-\end{figure}
+
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.3]{varq2000pio.png}
-\caption{\label{ex6}Experiment showing the plot of time vs number of nodes for 2000 nodes but $Q$ is varying (X axis is scaled 10 times, that is 0.1 is 1 in the graph) }
+\includegraphics[scale=0.3]{varq2000pio3.png}
+\caption{\label{ex6}Experiment showing the plot of time vs number of nodes for 2000 nodes but $Q$ is varying }
 \end{figure}
 
 
@@ -868,7 +850,7 @@ Python provides an exciting package on igraph. igraph provides a functionality w
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.3]{fam.png}
+\includegraphics[scale=0.4]{fam.png}
 \caption{Famous graphs and their timing}
 \end{figure}
 
@@ -894,11 +876,6 @@ with any other feature of D3. Having D3 to be the base, with minimal code and ma
 customization Alchemy.js was chosen for visual representation of the graph in this project. \par Apart from graph visualization, matrix visualization was needed. Protovis provides a matrix drawing component called matrix diagram to represent the graph in matrix format.
 
 \par Thus the project directors considered alchemy.js as a visualization software as it fits the bigger project for graph visualization and Protovis  was used to visualize matrix representation. 
-
-
-\section{Alchemy.js}
-
-Alchemy.js is a graph drawing library built to provide graph visualization with little overhead. It is built on the d3 library, written in Javascript, which runs in most web browsers.   
 
 \section{Dependencies for Alchemy.js}
 Alchemy needs three main units to  form as an application namely:  \textit{alchemy.css}, \textit{alchemy.js} and \textit{data}. CSS and JavaScript are major dependencies in Alchemy.js. Installation of \textit{jQuery} and \textit{d3} is also useful. \textit{alchemy.min.js}, \textit{alchemy.css} and \textit{alchemy.min.css } will be updated in the CDN (Content Delivery netwrok)
@@ -984,18 +961,12 @@ The following will enumerate the tests that were performed one after another. Gi
 \end{figure}
 
 \item \textit{Graph with relatedness}
-\par A test in which a graph with relatedness was generated. Figure ~\ref{test6a} shows a sample having relatedness between philosophers. Figure ~\ref{test6b} shows a zoomed view of one of the philosopher graph (Test6).
+\par A test in which a graph with relatedness was generated. Figure ~\ref{test6a} shows a sample having relatedness between philosophers (Test6).
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{t5.png}
 \caption{\label{test6a}A graph in which the relatedness of scientists to the philosopher is shown. This example JSON was take from Alchemy.js example graphs}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.3]{t6.png}
-\caption{\label{test6b}Closeup view of one of the philosopher.}
 \end{figure}
 
 \item \textit{Node Area and Color}
@@ -1052,7 +1023,7 @@ Finally the project adopted alchemy.js for the graph representation and Protovis
 \chapter{Overall System Description}
 The project uses two complementary technologies of a raw Python code and a JavaScript program that can represent or draw the output of the Python code on screen. This lead to a need to include a new element of a web framework for implementing the Louvain algorithm and creating a JSON object, and JavaScript to represent the graph on a web browser.   A web framework is one that aims to remove the overhead associated with common activities performed in the web development. 
 \section{Choice of Web.py}
-An exploration one a few Python web frameworks such as Django, Grok and web.py. A sample application in Django was built to see if Django suits the need of the project. Django was eliminated due to the fact that it was heavier for a simple task that we wish to perform in the project. Web.py was chosen as the web framework for the project as it allowed successful integration  of the existing Python code with the web framework over grok.We must note that the larger project at the LARCA group does not use web.py instead another framework called Angular.js. However, Angular.js is designed to be used for large, complex projects, and after some evaluation it was clear that the overhead for this small project did not pay off. 
+An exploration on a few Python web frameworks such as Django, Grok and web.py. A sample application in Django was built to see if Django suits the need of the project. Django was eliminated due to the fact that it was heavier for a simple task that we wish to perform in the project. Web.py was chosen as the web framework for the project as it allowed successful integration  of the existing Python code with the web framework over grok.We must note that the larger project at the LARCA group does not use web.py instead another framework called Angular.js. However, Angular.js is designed to be used for large, complex projects, and after some evaluation it was clear that the overhead for this small project did not pay off. 
 Thus, Web.py suffices and was easy to used for the current need of the project that is to perform the integration task.  
 
 \section{Frontend Framework}
