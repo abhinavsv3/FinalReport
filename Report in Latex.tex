@@ -1040,15 +1040,15 @@ Finally the project adopted alchemy.js for the graph representation and Protovis
 \chapter{Overall System Description}
 The project uses two complementary technologies of a raw Python code and a JavaScript program that can represent or draw the output of the Python code on screen. This lead to a need to include a new element of a web framework for implementing the Louvain algorithm and creating a JSON object, and JavaScript to represent the graph on a web browser.   A web framework is one that aims to remove the overhead associated with common activities performed in the web development. 
 \section{Choice of Web.py}
-An exploration on a few Python web frameworks such as Django, Grok and web.py. A sample application in Django was built to see if Django suits the need of the project. Django was eliminated due to the fact that it was heavier for a simple task that we wish to perform in the project. Web.py was chosen as the web framework for the project as it allowed successful integration  of the existing Python code with the web framework over grok.We must note that the larger project at the LARCA group does not use web.py instead another framework called Angular.js. However, Angular.js is designed to be used for large, complex projects, and after some evaluation it was clear that the overhead for this small project did not pay off. 
-Thus, Web.py suffices and was easy to used for the current need of the project that is to perform the integration task.  
+An exploration on a few Python web frameworks such as Django, Grok and web.py was conducted. A sample application in Django was built to see if Django suits the need of the project. Django was eliminated due to the fact that it was heavier for a simple task that we wish to perform in the project. Web.py was chosen as the web framework for the project as it allowed successful integration  of the existing Python code with the web framework better over grok.We must note that the larger project at the LARCA group does not use web.py instead another framework called Angular.js. However, Angular.js is designed to be used for large, complex projects, and after some evaluation it was clear that the overhead for this small project did not pay off. 
+Thus, Web.py suffices and was easy to be used for the current need of the project, that is to perform the integration task.  
 
 \section{Frontend Framework}
-Bootstrap was an intuitive web front-end frame work that has been implemented in the project.  Bootstrap allows to divide the screen into various matrix cubes enabling us to place buttons to run the application. Bootstrap, originally named Twitter Blueprint, was developed by Mark Otto and Jacob Thornton at Twitter as a framework to encourage consistency across internal tools. It is the second most starred project in github and has more than forty thousand forks \cite{bootstrap}.
+Bootstrap is an intuitive web front-end frame work that has been implemented in the project.  Bootstrap allows to divide the screen into various matrix cubes enabling us to place buttons to run the application. Bootstrap, originally named Twitter Blueprint, was developed by Mark Otto and Jacob Thornton at Twitter as a framework to encourage consistency across internal tools. It is the second most starred project in github and has more than forty thousand forks \cite{bootstrap}.
 
 
 \section{Using the application}
-The web application thus developed is intutive enough such that even though it performs tasks of computation and integration into the web it looks simple. Minimal and most necessary elements have been implemented.
+The web application thus developed is intuitive enough such that even though it performs tasks of computation and integration into the web it looks simple, minimal and most necessary elements have been implemented.
 In the following we describe the entire working flow of the Web Application:
 \begin{enumerate}
 \item \textbf{"Login Page"} In this part a simple login password is described.  
@@ -1058,7 +1058,7 @@ In the following we describe the entire working flow of the Web Application:
 \caption{Landing page containing login}
 \end{figure}
 
-\item \textbf{File Loader Page} After logging in the user lands in a file loader page where provision has been provided to upload a text file containing the adjacency matrix of the graphs are present in the "start" "Destination" or "Start" "Weight" "Destination" format. In this space only numerical values can be accepted for supporting the simplicity of the background process. Another space to provide a key that maps the names of the node numbers. This helps to present another dimension of seeing the data in the form of names.  Viewing the names of the node over nodes helps the user to deepen his vision of analysis. 
+\item \textbf{File Loader Page} After logging in the user lands in a file loader page where provision has been provided to upload a text file containing the adjacency matrix of the graphs ."Start" "Destination" or "Start" "Weight" "Destination" is the fixed format for input. In this space only numerical values can be accepted for supporting the simplicity of the background process. Another space to provide a key that maps the names of the node to node numbers. This helps to present another dimension of seeing the data in the form of named nodes.  Viewing the names of the node over nodes helps the user to deepen his vision of analysis. 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{s3.png}
@@ -1066,9 +1066,9 @@ In the following we describe the entire working flow of the Web Application:
 \end{figure}
 
 
-\item \textbf{Dash Board} In this part of the web application the user lands in a page that presents to the user 4 different variety of visual representation of the input data :  Community graphs (Diplaying the links between various communities), Full graph split into communities represented with different colors, Original graph input(Helps to see if the input was proper) and a Matrix view of the graph
+\item \textbf{Dash Board} In this part of the web application the user lands in a page that presents to the user four different variety of visual representation of the input data :  Community graphs (Displaying the links between various communities), Full graph split into communities represented with different colors, Original graph input(Helps to see if the input was proper) and a Matrix view of the graph
 
-\item \textbf{On Click Viz.} On clicking on the visualization the user wants to take the web aplication switches to the graph that the user has clicked.
+\item \textbf{On Click Viz.} On clicking on the visualization the user wants to view, the web application switches to the graph that the user has clicked.
 
 \begin{figure}[H]
 \centering
@@ -1077,7 +1077,7 @@ In the following we describe the entire working flow of the Web Application:
 \end{figure}
 
 
-\item \textbf{Error Page} In case of mismatch in the format or the password was wrong or the visualization is not possible due the screen size or the browser is not able to handle the large JSON object Errors pages have been genrated to couter act on exceptions. 
+\item \textbf{Error Page} In case of mismatch in the format or the password was wrong or the visualization is not possible due the screen size or the browser is not able to handle the large JSON object Errors pages have been generated to counter act on exceptions. 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{serr.png}
@@ -1095,7 +1095,7 @@ In the following we describe the entire working flow of the Web Application:
 \subsection{Benefits}
 \begin{enumerate}
 \item The input given can be a weighted or an unweighted graph. The web input is still accepted and the output is generated.
-\item Key labels can be assigned to node numbers.  This file if not given the program uses the node number given as id in the input file. 
+\item Key labels can be assigned to node numbers.  This file if not given the program uses the node number given as id in the input file to label the nodes. 
 \item Whether the input is a large graph such as Facebook graph or is a small one such as karate graph the community screen displays the community graph in a size that is proportional with the entire size of the graph on one screen. 
 \item Error management involves a separate class. Hence exact errors can be mentioned and presented to the user in an elegant web interface.
 \end{enumerate}
