@@ -53,8 +53,9 @@
 \contentsline {section}{\numberline {3.5}Experiments}{26}
 \contentsline {subsection}{\numberline {3.5.1}Nodes vs Time keeping modularity constant}{26}
 \contentsline {subsubsection}{\numberline {3.5.1.1}Minor bugs}{29}
-\contentsline {subsection}{\numberline {3.5.2}SNAP}{30}
-\contentsline {subsection}{\numberline {3.5.3}igraph tests}{31}
+\contentsline {subsection}{\numberline {3.5.2}Modularity vs Time keeping Number of nodes constant}{30}
+\contentsline {subsection}{\numberline {3.5.3}SNAP}{30}
+\contentsline {subsection}{\numberline {3.5.4}igraph tests}{31}
 \contentsline {section}{\numberline {3.6}Result}{31}
 \contentsline {chapter}{\numberline {4}Visualization Module}{32}
 \contentsline {section}{\numberline {4.1}Exploring the state-of-the-art}{32}
