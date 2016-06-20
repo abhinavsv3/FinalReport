@@ -92,7 +92,7 @@
 %----------------------------------------------------------------------------------------
 
 \HRule \\[0.4cm]
-{ \huge \bfseries Graph and matrix algorithms for visualizing high dimensional data}\\[0.4cm] % Title of your document
+{ \huge \bfseries Graph algorithms for visualizing high dimensional data}\\[0.4cm] % Title of your document
 \HRule \\[1.5cm]
  
 %----------------------------------------------------------------------------------------
@@ -610,12 +610,7 @@ SVG, and Flash. The above extract is as given in the main paper about Protovis
 D3.js or simply D3 is a JavaScript library for manipulating documents based on data. D3 takes full advantage of cascading Style Sheets(CSS), HTML5 and Scalable vector graphics (SVG). D3 is viewed as the successor of Protovis. D3 targets at animation,interaction and complex and dynamic visualization in web.  It uses pre-built JavaScript
 functions in its kernel in order to select elements, create SVG
 objects, style them or add transitions and dynamic effects to
-them.\cite{graphjslib}. Paper ``D3: Data-Driven Documents" \cite{d3} describes D3 in its rightful way. D3 provides a wide set of example of which these were of great interest to the project:
-\begin{enumerate}
-\item
-For graph: Force-Directed Graph, Labelled Force Layout,Forced Graph Editor , Directed Graph Editor, CodeFlower, University Program Transfers - Interactive, Better force layout node selection
-\item For matrix visualization : Day/Hour Heatmap
-\end{enumerate}
+them.\cite{graphjslib}. Paper ``D3: Data-Driven Documents" \cite{d3} describes D3 in its rightful way. D3 provides a wide set of example of which these were of great interest to the project:  Force-Directed Graph, Labelled Force Layout,Forced Graph Editor , Directed Graph Editor, CodeFlower, University Program Transfers - Interactive, Better force layout node selection.
 \subsection{Gephi}
 
 Gephi is an open source software which uses 3D render engine for visualization of graphs. 
@@ -878,7 +873,7 @@ The algorithm was found to be fast in terms of computation and effective in term
 The visualization module was developed keeping mind that it should be JavaScript based and that it must interface with Python. 
 As already said these were the requirements that were set by the project directors. In this section an analysis of the selected software and method of choice by exploring all the possible ways will be explained. 
 \section{Exploring the state-of-the-art}
-\par In Chapter 2, section 2.8 , a few options on graph visualization were discussed which includes Protovois, D3.js, Gephi and Alchemy.js. Amongst these state-of-the art graph visualization algorithms we need to choose the one that suits the projects needs. 
+\par In Chapter 2, section 2.8 , a few options on graph visualization were discussed which includes Protovis, D3.js, Gephi and Alchemy.js. Amongst these state-of-the art graph visualization algorithms we need to choose the one that suits the projects needs. 
 \par  Gephi is a tool
 used for data analysis for understanding and exploring graph based data, however it has some
 drawbacks in the logistics of the project such as Gephi is not JavaScript based although it has a JavaScript viewer. Gephi has more overhead being a software than a simple framework. For a similar reason we refrain from using softwares such as HyperTree, HyperGraphs as they did not have a Python API or are not based on JavaScript but instead has a
@@ -890,9 +885,9 @@ to generate the graphs as most of the customization could be done by just overri
 “config” [Configuration part of the Alchemy.js] instead of implementing it entirely using
 JavaScript. Alchemy.js also provides a feature in which the core application can be further extended
 with any other feature of D3. Having D3 to be the base, with minimal code and maximum
-customization Alchemy.js was chosen for visual representation of the graph in this project. \par Apart from graph visualization, matrix visualization was needed. Protovis provides a matrix drawing component called matrix diagram to represent the graph in matrix format.
+customization Alchemy.js was chosen for visual representation of the graph in this project. 
 
-\par Thus the project directors considered Alchemy.js as a visualization software as it fits the bigger project for graph visualization and Protovis  was considered to visualize matrix representation. 
+\par Thus the project directors considered Alchemy.js as a visualization software as it fits the bigger project for graph visualization.
 
 \section{Dependencies for Alchemy.js}
 Alchemy needs three main units to  form as an application namely:  \textit{alchemy.css}, \textit{alchemy.js} and \textit{data}. CSS and JavaScript are major dependencies in Alchemy.js. Installation of \textit{jQuery} and \textit{D3} is also useful. \textit{alchemy.min.js}, \textit{alchemy.css} and \textit{alchemy.min.css } will be updated in the CDN (Content Delivery netwrok) as and when anew feature is added.
@@ -921,9 +916,6 @@ $<$/script$>$\\
 
 
 \end{enumerate}
-\section{Protovis for Matrix Display}
-Protovis is considered as the predecessor D3.js. In Protovis there is an example for Matrix Diagrams. This example is of keen interest for the project for representing the data.It is JavaScript and can be visualized with just the JavaScript matrix as input.
-\par Since this is the only component that is taken from Protovis a Protovis template was adopted from the Protovis repository and integrated with the project.
 
 \section{Getting the data from the Louvain Python code to Alchemy. }
  Alchemy.js takes a simple data format called GraphJSON. GraphJSON serves as a light weight and flexible representation of graph data, easily used locally or over the web. 
@@ -933,10 +925,10 @@ GraphJSON is a JSON Object which has two kinds of objects namely: \textit{nodes}
 \par \textbf{Edges} : source and target key are the only unique value that should be present in the edges.
 \par A Python program was implemented to convert the output of the Louvain program into JSON object using the Python JSON package. This converts the output of the Louvain program into two JSON object. One JSON object for community graph and another one for the original graph.
 This can be seen as the advantage of system. We compute once and reuse the computed result for various visualizations.
-\par For the matrix representation the JavaScript file containing the matrix is created which is used by the protovis program to display and reorder the matrix.
 
 \section{Tests}
-For the purpose of visualization various test were performed for analysing the compatibility of Alchemy.js and to explore and exploit all the functionalities of alchemy.js and choose the best ones for the project and implement them.Protovis was used for the matrix visualization.
+For the purpose of visualization various test were performed for analysing the compatibility of Alchemy.js and to explore and exploit all the functionalities of alchemy.js and choose the best ones for the project and implement them.
+
 \subsection{Alchemy.js Tests}
 The following will enumerate the tests that were performed one after another. Github pages were used to test host the web visualization.
 
@@ -998,13 +990,6 @@ The following will enumerate the tests that were performed one after another. Gi
 \end{enumerate}
 
 \par After performing all the test few of the desired features were incorporated for displaying the graph in the project. The project uses \textit{Test7} for showing the size or the bulkiness of the node in comparison with other node. \textit{Test6} property of relatedness has also been added to the project to mark the edge values between the nodes. \textit{Test3}, clustering has also been added to the project.
-\subsection{Protovis Tests}
-For the purpose of matrix visualization, Protovis has been implemented in the project. A test run of it is presented in the Figure ~\ref{test8}.
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.3]{d4b.png}
-\caption{\label{test8}Matrix Visualization.}
-\end{figure}
 
 
 \subsection{Bug Report}
@@ -1018,7 +1003,7 @@ it is recommended to run the project on mozilla firefox or sea monkey than on Go
 \end{enumerate}
 
 \section{Result and Output}
-Finally the project adopted alchemy.js for the graph representation and Protovis layout for the matrix representation.  The errors were verified and necessary tests were performed to ensure that the visualization process runs smoothly. Sample outputs that were obtained by using the application are shown in the figure ~\ref{o1},~\ref{o2},~\ref{o3}.
+Finally the project adopted alchemy.js for the graph representation. The errors were verified and necessary tests were performed to ensure that the visualization process runs smoothly. Sample outputs that were obtained by using the application are shown in the figure ~\ref{o1},~\ref{o2},~\ref{o3}.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{o1.png}
@@ -1066,7 +1051,7 @@ In the following we describe the entire working flow of the Web Application:
 \end{figure}
 
 
-\item \textbf{Dash Board} In this part of the web application the user lands in a page that presents to the user four different variety of visual representation of the input data :  Community graphs (Displaying the links between various communities), Full graph split into communities represented with different colors, Original graph input(Helps to see if the input was proper) and a Matrix view of the graph
+\item \textbf{Dash Board} In this part of the web application the user lands in a page that presents to the user four different variety of visual representation of the input data :  Community graphs (Displaying the links between various communities), Full graph split into communities represented with different colors, Original graph input(Helps to see if the input was proper).
 
 \item \textbf{On Click Viz.} On clicking on the visualization the user wants to view, the web application switches to the graph that the user has clicked.
 
@@ -1112,7 +1097,7 @@ In this section the final conclusion of the project, goals achieved, benefits th
 In the beginning of the project four major goals were set to be achieved. The following would enlist in the same order on it s achievement.
 \begin{enumerate}
 \item In the project we have surveyed a few algorithms that aim in community finding for instance Combo and Louvain keeping in mind that the input is taken from health care domain. 
-\item Louvain Community detection algorithm was chosen for community detection and for visualization. Alchemy.js and Protovis were selected after considering the input and a few state of the art algorithms. 
+\item Louvain Community detection algorithm was chosen for community detection and for visualization. Alchemy.js were selected after considering the input and a few state of the art algorithms. 
 \item The algorithms and frameworks thus found were implemented and tests were conducted for finding the efficiency of the algorithms.
 \item A GUI implementing Web.py and Bootstrap was created combining the visualization and the computation.
 \end{enumerate}
@@ -1152,7 +1137,7 @@ The project relies fully on Louvain. One can speculate on whether modularity is 
 \end{enumerate}
 \section{Availability and requirements}
 \begin{enumerate}
-\item \textbf{Project Name}: Graph and matrix algorithms for visualizing high dimensional
+\item \textbf{Project Name}: Graph algorithms for visualizing high dimensional
 \item \textbf{Project Homepage}: \url{https://github.com/abhinavsv3/webproject}
 \item \textbf{Operating System}: Platform Independent. Preferably Unix--like operating system
 \item \textbf{Programming Language}: Python 2.7
@@ -1161,7 +1146,7 @@ The project relies fully on Louvain. One can speculate on whether modularity is 
 
 \section{Conclusion}
 In this project we have developed an application that visualizes data that are in the form of graphs (having nodes, vertices and weights). 
-\par In the process of development a study on community detection algorithm was conducted and Louvain algorithm was chosen and implemented. The implementation of the algorithm is in Python. A study on a few visualization libraries were conducted and Alchemy.js was chosen for graph implementation and Protovis for matrix implementation.  Web.py was chosen for implementation as the web framework and the implementation was successful.
+\par In the process of development a study on community detection algorithm was conducted and Louvain algorithm was chosen and implemented. The implementation of the algorithm is in Python. A study on a few visualization libraries were conducted and Alchemy.js was chosen for graph implementation.  Web.py was chosen for implementation as the web framework and the implementation was successful.
 \par Analysis, experiments and tests were conducted in proper manner using reliable and stable data. Few data test cases were generated and a few which existed from stable and reliable source were used. The application is robust and can handle large inputs.
 \par The project is motivated by the presence of high dimension of data in medical domain. Hence the application was developed with this objective to visualize high dimensional data and has used algorithms for the benefit of speed. Finally, to think out of the box the project also suggests few future works that can enhance the current state of the project.
 
