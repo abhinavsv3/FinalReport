@@ -469,23 +469,23 @@ According to the paper ``Community detection in graph" \cite{communitypaper} the
 \end{itemize}
 
 \paragraph{Graph Partitioning}
-This problem deals with dividing graph into groups of predefined size such that the number of edges between the groups is minimized. The paper \cite{communitypaper}  also defines cut size as the number of edges lying between the clusters.  Figure ~\ref{grapar} shows a problem with 14 vetices and presents a solution for spliting into 2 groups. 
+This problem deals with dividing graph into groups of predefined size such that the number of edges between the groups is minimized. The paper \cite{communitypaper}  also defines cut size as the number of edges lying between the clusters.  Figure ~\ref{grapar} shows a problem with 14 vertices and presents a solution for splitting into 2 groups. 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{graphpart.png}
 \caption{\label{grapar}Graph Paritioning \cite{communitypaper}}
 
 \end{figure}
-\par \textit{Minimum Bisection Problem}, is a special problem case that considers partitioning the network into 2 groups of equal size. This problem is an NP-Hard problem. Intutively, to obtain ful partitioning we need to iteratively find all the minimum partition. This is not of significant use in the current problem of finding communities. 
+\par \textit{Minimum Bisection Problem}, is a special problem case that considers partitioning the network into 2 groups of equal size. This problem is an NP-Hard problem. Intuitively, to obtain full partitioning we need to iteratively find all the minimum partition. This is not of significant use in the current problem of finding communities. 
 \paragraph{Hierarchical Clustering}
-Hierarchical clustering aims to identify groups of vertices with high similarities. It can be calssifies into two categories:
+Hierarchical clustering aims to identify groups of vertices with high similarities. It can be classified into two categories:
  \begin{enumerate}
 \item \textit{Agglomerative algorithm} : in one in which Agglomerative algorithms, in which clusters are iteratively merged if their similarity is sufficiently
 high
 \item \textit{Divisive algorithms}, in which clusters are iteratively
 split by removing edges connecting vertices with
 low similarity.
-The figure ~\ref{herar} demonstrates the hierarchcal clustering in a diagramatic manner.
+The figure ~\ref{herar} demonstrates the hierarchical clustering in a diagrammatic manner.
 \end{enumerate} 
 
 \begin{figure}[H]
@@ -494,7 +494,7 @@ The figure ~\ref{herar} demonstrates the hierarchcal clustering in a diagramatic
 \caption{\label{herar}From a thickly knit graph to a dendogram [This intuitive diagram was taken from a powerpoint presentation for a data mining class]}
 \end{figure}
 \paragraph{Partitional Clustering}
-Partitional clustering is method to find the clusters as a set of data points.  The number of clusters is preassigned. let us call this number as $k$. The vertex is a point on the metric space with a defined distance measure between the pair of points in the space.  The distance represents the difference in dissimilarity between the vertices. The main objective in this method is to separate the points in $k$ clusters such to maximize ((or) minimize) a given cost function based on distances between points and from points to $centroids$ that are suitably defined positions in space. 
+Partitional clustering is method to find the clusters as a set of data points.  The number of clusters is preassigned. let us call this number as $k$. The vertex is a point on the metric space with a defined distance measure between the pair of points in the space.  The distance represents the difference in dissimilarity between the vertices. The main objective in this method is to separate the points into $k$ clusters so as to maximize ((or) minimize) a given cost function based on distances between points and from points to $centroids$ that are suitably defined positions in space. 
 Some of the most used functions are : \textit{Minimum k-clustering} ,  \textit{k-clustering sum}, \textit{k-center} and \textit{k-median}. One of the most popular partitional technique in literature is \textit{k-means clustering} where the cost function is total intra-cluster distance \cite{communitypaper}. This method of clustering is out of scope for the project in concern.
 \paragraph{Spectral Clustering}
 According to the paper \cite{communitypaper}, let us suppose to have a set of $n$ objects $x_1 , x_2 , \ldots , x_n$
@@ -523,7 +523,7 @@ are huge, the aforementioned visualizations pose significant
 technical challenges from a data management perspective \cite{graphviz}.
 
 \section{Computational Complexity}
- The estimate of the amount of resources required for by the algorithm to perform a task is defined as computational complexity. The large amount of data on the real graphs or real networks that are available in the current scenario causes the efficiency of the clustering algorithm to be crucial.
+ The estimate of the amount of resources required by the algorithm to perform a task is defined as computational complexity. The large amount of data on the real graphs or real networks that are available in the current scenario causes the efficiency of the clustering algorithm to be crucial.
 \par In a brief, algorithms that have polynomial complexity describe the Class \textbf{P}. Problems whose solutions can be verified in a polynomial time span the class \textbf{NP} of \textit{non--deterministic polynomial time} problems, which includes \textbf{P}. problem is \textbf{NP}-hard if a solution for it can be
 translated into a solution for any \textbf{NP}-problem. However,
 a \textbf{NP}-hard problem needs not be in the class \textbf{NP}. If it
@@ -550,7 +550,7 @@ As said before there are various algorithms that can be used for community detec
 \item extremal optimization
 \end{itemize}
 The following figure ~\ref{Fig1} from paper \cite{generalcommunity} the average normalized performance rank of each algorithm in terms of partitioning quality and speed.  
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{lou.png}
 \caption{\label{Fig1}Average normalized performance rank of each algorithm in terms of partitioning quality and speed(Taken from the website of the paper that proposed Combo algorithm \cite{generalcommunity}.}
@@ -571,7 +571,7 @@ P(k) &= \frac{N_k}{N}
 where $N_k$ is the number of  nodes with degree \textit{k} and \textit{N} is the total number of nodes in the graph.
 \subsection{Scale-Free Graph}
 The graphs whose degree distribution follows power law are called as Scale-Free graphs or scale free networks, fo examples of Scale-Free graphs include Social network graph,protein-protein interaction network etc. \\
-Scale graphs have a number of interesting properties, both theoretical and practical. For example, according to the paper  "Resilience of the Internet to Random Breakdowns" \cite{scalefree}, removing randomly any fraction of nodes from scale free network will not destroy the network which is in contract to Erdos-Renyi graphs which make them interesting for building networks of several types resilient to failures or attacks. The figure ~\ref{ranfig} demonstrates how the random graph is different from a scale free graph.  The highlighted spots are known as the hubs. For example: In a large community the celebrities or politicians serve as the hub. In scale free graphs another interesting feature is that as the clustering coefficient decreases with increase in the node degree. This type if distribution will be used in the experimental phase of the project for generating test cases. 
+Scale graphs have a number of interesting properties, both theoretical and practical. For example, according to the paper  "Resilience of the Internet to Random Breakdowns" \cite{scalefree}, removing randomly any fraction of nodes from scale free network will not destroy the network which is in contract to Erdos-Renyi graphs which make them interesting for building networks of several types resilient to failures or attacks. The figure ~\ref{ranfig} demonstrates how the random graph is different from a scale free graph.  The highlighted spots are known as the hubs. For example: In a large community the celebrities or politicians serve as the hub. In scale free graphs another interesting feature is that as the clustering coefficient decreases with increase in the node degree. This type of distribution will be used in the experimental phase of the project for generating test cases. 
 
 \begin{figure}[H]
 \centering
@@ -580,7 +580,7 @@ Scale graphs have a number of interesting properties, both theoretical and pract
 \end{figure}
 
 \section{State-of-the-art in Graph Visualization}
-Researchers have designed various tool-kits for the purpose of information visualization. Newer visualization techniques are introduced by creating new components or sub-classing the existing ones. The main aim of the project will be analyse the way in which the visual frameworks can be used and what kind of intermediate transitions that are possible between the Python program and the visualization framework. The project director's suggestion was to go with a JavaScript Library.
+Researchers have designed various tool-kits for the purpose of information visualization. Newer visualization techniques are introduced by creating new components or sub-classing the existing ones. The main aim of the project will be analyse the way in which the visual frameworks can be used and what kind of intermediate transitions that are possible between the Python program and the visualization framework. The project directors suggested to use a JavaScript library.
 
 \textbf{Advantage of JavaScript Libraries} \cite{graphjslib}
 \begin{enumerate}
@@ -602,7 +602,7 @@ defined as functions of data. Inheritance of properties across
 composed marks similar to cascading of style sheets used in web
 design enables concise visualization definitions with a large expressive
 range and a minimum of intervening abstractions. Protovis is implemented
-in JavaScript, with rendering support for HTML 5 canvas,
+in JavaScript, with rendering support for HTML5 canvas,
 SVG, and Flash. The above extract is as given in the main paper about Protovis
 \cite{protovis}.
 
@@ -610,7 +610,7 @@ SVG, and Flash. The above extract is as given in the main paper about Protovis
 D3.js or simply D3 is a JavaScript library for manipulating documents based on data. D3 takes full advantage of cascading Style Sheets(CSS), HTML5 and Scalable vector graphics (SVG). D3 is viewed as the successor of Protovis. D3 targets at animation,interaction and complex and dynamic visualization in web.  It uses pre-built JavaScript
 functions in its kernel in order to select elements, create SVG
 objects, style them or add transitions and dynamic effects to
-them.\cite{graphjslib}. Paper ``D3: Data-Driven Documents" \cite{d3} describes d3in its rightful way. D3 provides a wide set of example of which these were of great interest to the project:
+them.\cite{graphjslib}. Paper ``D3: Data-Driven Documents" \cite{d3} describes D3 in its rightful way. D3 provides a wide set of example of which these were of great interest to the project:
 \begin{enumerate}
 \item
 For graph: Force-Directed Graph, Labelled Force Layout,Forced Graph Editor , Directed Graph Editor, CodeFlower, University Program Transfers - Interactive, Better force layout node selection
@@ -628,7 +628,7 @@ navigating, manipulating and clustering are allowed in Gephi.Dynamic network vis
 Although gephi is not JavaScript it is cited and considered for its extensive use in graph visualization. It is interesting to note that Gephi has JavaScript viewer such as JavaScript GEXF available on github. 
 
 \subsection{Alchemy.js}
-Alchemy.js is a JavaScript framework built entirely on D3. The goal of Alchemy.js is help the developer build and run graph visualizations with minimal overhead. A developer in Alchemy.js does not have to write much code to visualize the data. Configuring Alchemy.js to visualize the data will be the only task to be done, along with whatever features that are wanted to be include in the application.
+Alchemy.js is a JavaScript framework built entirely on D3. The goal of Alchemy.js is to help the developer build and run graph visualizations with minimal overhead. A developer using  Alchemy.js does not have to write much code to visualize the data. Configuring the ``config" in Alchemy.js to visualize the data will be the only task to be done, along with whatever features that are wanted to be include in the application.
 
 \chapter{Louvain Community Detection Algorithm}
 In this section we describe the community detection algorithms such as Louvain and various tests that were performed to choose the algorithm. 
