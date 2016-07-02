@@ -1,0 +1,31 @@
+\select@language {english}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Example graph created using the project. This is called the "Bull Graph".}}{10}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Graph Paritioning \cite {communitypaper}}}{12}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces From a thickly knit graph to a dendogram [This intuitive diagram was taken from a powerpoint presentation for a data mining class]}}{13}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Average normalized performance rank of each algorithm in terms of partitioning quality and speed(Taken from the website of the paper that proposed Combo algorithm \cite {generalcommunity}.}}{16}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Random network (a) and scale-free network (b). In the scale-free network, the larger hubs are highlighted.(Image Source: Wikipedia)}}{18}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Visualization of the steps of our algorithm. Each pass is made of two phases: one where modularity is optimized by allowing only local changes of communities; one where the found communities are aggregated in order to build a new network of communities. The passes are repeated iteratively until no increase of modularity is possible. This was taken from the paper "Fast unfolding of communities in large networks" \cite {Louvain}}}{24}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Experiment showing the plot of time vs number of nodes for 2000 nodes}}{29}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Experiment showing the plot of time vs number of nodes for 2000 nodes (With manual garbage collection)}}{30}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Experiment showing the plot of time vs number of nodes for 2000 nodes but $Q$ is varying }}{30}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Community graph of facebook data taken from SNAP}}{32}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Famous graphs and their timing}}{33}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Test 1 and Test 2 look the same. The JSON object has been taken from Alchemy.js Examples. One named node ``Trial and Error" has been selected and viewed.}}{37}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Clustering based Alchemy.js. The JSON object has been taken from Alchemy.js Examples.}}{38}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Example Directed and weighted edges. The JSON object has been taken from Alchemy.js Examples.}}{39}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Seven minutes of communication between members of the AngularJS, EmberJS, and KnockoutJS IRC channels. JSON object taken from the Alchemy.js examples.}}{40}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces A graph in which the relatedness of scientists to the philosopher is shown. This example JSON was take from Alchemy.js example graphs}}{41}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Node area and node color.JSON object created manually.}}{42}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Community graph for Karate graph input.}}{43}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Community graph showing all nodes in the community for the Karate graph input}}{44}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Original Karate graph}}{44}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Landing page containing login}}{47}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces After login, the application asks for the data and/or key }}{48}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces This Dash board is displayed after the computation process has been completed. }}{49}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Error page showing the appropriate error message }}{50}
+\addvspace {10\p@ }

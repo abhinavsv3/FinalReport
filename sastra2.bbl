@@ -1,0 +1,121 @@
+\begin{thebibliography}{10}
+
+\bibitem{gephi}
+Mathieu Bastian, Sebastien Heymann, Mathieu Jacomy, et~al.
+\newblock Gephi: an open source software for exploring and manipulating
+  networks.
+\newblock {\em ICWSM}, 8:361--362, 2009.
+
+\bibitem{graphviz}
+Nikos Bikakis, John Liagouris, Maria Krommyda, George Papastefanatos, and Timos
+  Sellis.
+\newblock graphvizdb: A scalable platform for interactive large graph
+  visualization.
+
+\bibitem{Louvain}
+Vincent~D Blondel, Jean-Loup Guillaume, Renaud Lambiotte, and Etienne Lefebvre.
+\newblock Fast unfolding of communities in large networks.
+\newblock {\em Journal of statistical mechanics: theory and experiment},
+  2008(10):P10008, 2008.
+
+\bibitem{BondyNMurthy}
+John~Adrian Bondy and Uppaluri Siva~Ramachandra Murty.
+\newblock {\em Graph theory with applications}, volume 290.
+\newblock Macmillan London, 1976.
+
+\bibitem{protovis}
+Michael Bostock and Jeffrey Heer.
+\newblock Protovis: A graphical toolkit for visualization.
+\newblock {\em IEEE Trans. Visualization \& Comp. Graphics (Proc. InfoVis)},
+  2009.
+
+\bibitem{d3}
+Michael Bostock, Vadim Ogievetsky, and Jeffrey Heer.
+\newblock D3: Data-driven documents.
+\newblock {\em IEEE Trans. Visualization \& Comp. Graphics (Proc. InfoVis)},
+  2011.
+
+\bibitem{modularityNP}
+Ulrik Brandes, Daniel Delling, Marco Gaertler, Robert G{\"o}rke, Martin Hoefer,
+  Zoran Nikoloski, and Dorothea Wagner.
+\newblock Maximizing modularity is hard.
+\newblock {\em arXiv preprint physics/0608255}, 2006.
+
+\bibitem{scalefree}
+Reuven Cohen, Keren Erez, Daniel ben Avraham, and Shlomo Havlin.
+\newblock Resilience of the internet to random breakdowns.
+\newblock {\em Phys. Rev. Lett.}, 85:4626--4628, Nov 2000.
+
+\bibitem{igraph}
+Gabor Csardi and Tamas Nepusz.
+\newblock The igraph software package for complex network research.
+\newblock {\em InterJournal, Complex Systems}, 1695(5):1--9, 2006.
+
+\bibitem{matrep}
+David Emms, Edwin~R Hancock, Simone Severini, and Richard~C Wilson.
+\newblock A matrix representation of graphs and its spectrum as a graph
+  invariant.
+\newblock {\em Electr. J. Comb}, 13(1), 2006.
+
+\bibitem{communitypaper}
+Santo Fortunato.
+\newblock Community detection in graphs.
+\newblock {\em Physics reports}, 486(3):75--174, 2010.
+
+\bibitem{ResolLimit}
+Santo Fortunato and Marc Barthelemy.
+\newblock Resolution limit in community detection.
+\newblock {\em Proceedings of the National Academy of Sciences}, 104(1):36--41,
+  2007.
+
+\bibitem{benchmarking}
+Conrad Lee and P{\'a}draig Cunningham.
+\newblock Benchmarking community detection methods on social media data.
+\newblock {\em arXiv preprint arXiv:1302.0739}, 2013.
+
+\bibitem{snap}
+Jure Leskovec and Andrej Krevl.
+\newblock {SNAP Datasets}: {Stanford} large network dataset collection.
+\newblock \url{http://snap.stanford.edu/data}, June 2014.
+
+\bibitem{newman2006modularity}
+Mark~EJ Newman.
+\newblock Modularity and community structure in networks.
+\newblock {\em Proceedings of the national academy of sciences},
+  103(23):8577--8582, 2006.
+
+\bibitem{pyLouvain}
+Julien Odent and Michael Saint-Guillain.
+\newblock Automatic detection of community strucures in networks, November
+  26,2012.
+
+\bibitem{bootstrap}
+Mark Otto and Jacob Thornton.
+\newblock Bootstrap.
+
+\bibitem{graphjslib}
+Graciously Kharumnuid~Swarup Roy.
+\newblock Effectiveness of javascript graph visualization libraries in
+  visualizing gene regulatory networks (grn).
+
+\bibitem{githubtest1}
+Pratha Sah, Lisa~O. Singh, Aaron Clauset, and Shweta Bansal.
+\newblock Exploring community structure in biological networks with random
+  graphs.
+\newblock {\em BMC Bioinformatics}, 15(1):1--14, 2014.
+
+\bibitem{generalcommunity}
+Stanislav Sobolevsky, Riccardo Campari, Alexander Belyi, and Carlo Ratti.
+\newblock General optimization technique for high-quality community detection
+  in complex networks.
+\newblock {\em Physical Review E}, 90(1):012811, 2014.
+
+\bibitem{sirlarca}
+M.~Zamora, M.~Baradad, E.~Amado, S.~Cordomí, E.~Limón, J.~Ribera, M.~Arias,
+  and R.~Gavaldà.
+\newblock Characterizing chronic disease and polymedication prescription
+  patterns from electronic health records.
+\newblock In {\em Data Science and Advanced Analytics (DSAA), 2015. 36678 2015.
+  IEEE International Conference on}, pages 1--9, Oct 2015.
+
+\end{thebibliography}
